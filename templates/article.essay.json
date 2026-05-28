@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "article_content": {
+      "type": "brand-intro",
+      "settings": {
+        "brand": "musa",
+        "wrapper_class": "brand-musa",
+        "show_article_content": true,
+        "show_byline": true,
+        "show_back_link": true,
+        "back_link_label": "Back to Essays",
+        "back_link_url": "/blogs/essays",
+        "show_dropcap": true,
+        "show_author_bio": true,
+        "author_name": "Angela Serravalle",
+        "author_credentials": "Psy.D., LPCMH, NCC"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter-signup",
+      "settings": {
+        "eyebrow": "Subscribe",
+        "heading": "New essays, when they appear.",
+        "description": "No digest, no schedule. An email when something new is published.",
+        "button_label": "Subscribe",
+        "brand": "musa"
+      }
+    }
+  },
+  "order": [
+    "article_content",
+    "newsletter"
+  ]
+}

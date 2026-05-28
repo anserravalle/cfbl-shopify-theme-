@@ -1,0 +1,338 @@
+<style>
+  #shopify-section-{{ section.id }} .pathways {
+    background: var(--cfbl-sand);
+    padding: var(--space-9) 0;
+  }
+
+  #shopify-section-{{ section.id }} .pathways__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+  }
+
+  #shopify-section-{{ section.id }} .pathways__head {
+    margin-bottom: var(--space-8);
+    max-width: 560px;
+  }
+
+  #shopify-section-{{ section.id }} .pathways__eyebrow {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--cfbl-terracotta);
+    margin: 0 0 var(--space-3);
+  }
+
+  #shopify-section-{{ section.id }} .pathways__heading {
+    font-family: var(--cfbl-font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 500;
+    color: var(--cfbl-deep-navy);
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .pathways__subheading {
+    font-family: var(--cfbl-font-body);
+    font-size: 1.0625rem;
+    color: var(--cfbl-ink);
+    line-height: 1.6;
+    margin: var(--space-4) 0 0;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-7) var(--space-6);
+    background: var(--cfbl-sand-light);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: background var(--dur-base) var(--ease);
+    border: 1px solid var(--cfbl-rule);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card:hover {
+    background: var(--cfbl-sand-pale);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--cfbl-sand);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-5);
+    font-family: var(--cfbl-font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--cfbl-deep-navy);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--institute .pathway-card__icon {
+    background: var(--inst-sage-mist);
+    color: var(--inst-forest);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--musa .pathway-card__icon {
+    background: var(--musa-parchment);
+    color: var(--musa-walnut);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card__kicker {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--cfbl-terracotta);
+    margin: 0 0 var(--space-2);
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--institute .pathway-card__kicker {
+    color: var(--inst-sage);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--musa .pathway-card__kicker {
+    color: var(--musa-ochre);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card__title {
+    font-family: var(--cfbl-font-display);
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: var(--cfbl-deep-navy);
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    margin: 0 0 var(--space-3);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--institute .pathway-card__title {
+    color: var(--inst-forest);
+    font-family: var(--inst-font-display);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--musa .pathway-card__title {
+    color: var(--musa-ink);
+    font-family: var(--musa-font-display);
+    font-weight: 400;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card__description {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--cfbl-ink);
+    margin: 0 0 var(--space-5);
+    flex: 1;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--institute .pathway-card__description {
+    font-family: var(--inst-font-body);
+    color: var(--inst-ink);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--musa .pathway-card__description {
+    font-family: var(--musa-font-body);
+    color: var(--musa-ink);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card__cta {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--cfbl-sky-blue);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--institute .pathway-card__cta {
+    color: var(--inst-forest);
+    font-family: 'Inter', system-ui, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--musa .pathway-card__cta {
+    color: var(--musa-oxblood);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  @media (max-width: 900px) {
+    #shopify-section-{{ section.id }} .pathway-grid {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+    }
+  }
+</style>
+
+<section class="pathways brand-cfbl" aria-labelledby="pathways-heading-{{ section.id }}">
+  <div class="pathways__inner">
+    <div class="pathways__head">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="pathways__heading" id="pathways-heading-{{ section.id }}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="pathways__subheading">{{ section.settings.subheading }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="pathway-grid">
+        {%- for block in section.blocks -%}
+          {%- assign card_brand = block.settings.brand_color | default: 'cfbl' -%}
+          <a
+            href="{{ block.settings.cta_url }}"
+            class="pathway-card pathway-card--{{ card_brand }}"
+            {{ block.shopify_attributes }}
+          >
+            {%- if block.settings.icon != blank -%}
+              <div class="pathway-card__icon" aria-hidden="true">
+                {{ block.settings.icon | escape | truncate: 4, '' }}
+              </div>
+            {%- endif -%}
+
+            {%- if block.settings.title != blank -%}
+              <p class="pathway-card__kicker">{{ block.settings.title | escape }}</p>
+            {%- endif -%}
+
+            {%- if block.settings.title != blank -%}
+              <h3 class="pathway-card__title">{{ block.settings.title | escape }}</h3>
+            {%- endif -%}
+
+            {%- if block.settings.description != blank -%}
+              <p class="pathway-card__description">{{ block.settings.description }}</p>
+            {%- endif -%}
+
+            {%- if block.settings.cta_label != blank -%}
+              <span class="pathway-card__cta" aria-hidden="true">{{ block.settings.cta_label | escape }} &#8594;</span>
+            {%- endif -%}
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pathway Cards",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "One practice. Three doors."
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Section subheading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "pathway_card",
+      "name": "Pathway card",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon label (short text, e.g. CFBL)",
+          "default": "CBL"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "For Clients"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Therapy, psychological evaluation, groups, and consultation for individuals and families."
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "CTA label",
+          "default": "Explore Clinical Services"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "CTA URL"
+        },
+        {
+          "type": "select",
+          "id": "brand_color",
+          "label": "Brand color",
+          "options": [
+            { "value": "cfbl", "label": "CFBL (Navy)" },
+            { "value": "institute", "label": "Institute (Forest)" },
+            { "value": "musa", "label": "MUSA (Oxblood)" }
+          ],
+          "default": "cfbl"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pathway Cards",
+      "blocks": [
+        {
+          "type": "pathway_card",
+          "settings": {
+            "icon": "CBL",
+            "title": "For Clients",
+            "description": "Therapy, psychological evaluation, groups, and consultation for individuals and families.",
+            "cta_label": "Explore Clinical Services",
+            "brand_color": "cfbl"
+          }
+        },
+        {
+          "type": "pathway_card",
+          "settings": {
+            "icon": "CE",
+            "title": "For Professionals",
+            "description": "Continuing education in trauma-informed practice, assessment, and applied clinical reasoning.",
+            "cta_label": "View Trainings & CE",
+            "brand_color": "institute"
+          }
+        },
+        {
+          "type": "pathway_card",
+          "settings": {
+            "icon": "MS",
+            "title": "For Readers",
+            "description": "Books, essays, and longer-form writing on psychology, memory, and being human.",
+            "cta_label": "Read the Essays",
+            "brand_color": "musa"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

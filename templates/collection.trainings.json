@@ -1,0 +1,47 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "CFBL Institute · Training Catalog",
+        "heading": "Continuing Education for the Practicing Clinician.",
+        "subheading": "Live workshops, on-demand courses, and clinical consultation. All approved for CE credit.",
+        "cta_primary_label": "",
+        "cta_primary_url": "",
+        "cta_secondary_label": "CE Information",
+        "cta_secondary_url": "/pages/ce-information",
+        "image": "",
+        "brand": "institute"
+      }
+    },
+    "resource_grid": {
+      "type": "resource-grid",
+      "settings": {
+        "eyebrow": "All Trainings",
+        "heading": "Course Catalog",
+        "show_filters": true,
+        "filter_by_format": true,
+        "filter_by_ce_type": true,
+        "filter_by_topic": true,
+        "populate_from_collection": true,
+        "collection_handle": "trainings",
+        "brand": "institute"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter-signup",
+      "settings": {
+        "eyebrow": "Institute Updates",
+        "heading": "New training announcements.",
+        "description": "New course announcements, CE deadlines, and clinical resources. For clinicians.",
+        "button_label": "Subscribe",
+        "brand": "institute"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "resource_grid",
+    "newsletter"
+  ]
+}

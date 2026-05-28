@@ -1,0 +1,265 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "CFBL Brand Family",
+    "theme_version": "1.0.0",
+    "theme_author": "Center for Balanced Living",
+    "theme_documentation_url": "https://balancedlivingde.com",
+    "theme_support_url": "https://balancedlivingde.com/contact"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "select",
+        "id": "brand_mode",
+        "label": "Default brand context",
+        "info": "Sets the default brand when no page metafield is present. Individual pages override this via the brand.context metafield (cfbl / institute / musa).",
+        "options": [
+          { "value": "cfbl",      "label": "Center for Balanced Living (CFBL)" },
+          { "value": "institute", "label": "CFBL Institute" },
+          { "value": "musa",      "label": "MUSA" }
+        ],
+        "default": "cfbl"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_brand_switcher",
+        "label": "Show brand switcher in header",
+        "info": "Displays a compact brand navigation row (CFBL / Institute / MUSA) below the primary header. Useful on the homepage.",
+        "default": false
+      },
+      {
+        "type": "paragraph",
+        "content": "Brand palettes and typography are defined by CSS custom properties in base.css. The brand_mode setting controls the default <body> class. Per-page overrides come from the brand.context page metafield."
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "CFBL presets — Deep Navy #2B5275, Sky Blue #4E9FBF, Sand #EED9C5. Institute presets — Forest #3D5A52, Sage #6F8F7A, Cream #EAE2D0. MUSA presets — Oxblood #6E1F23, Ochre #C5A572, Bone #F1E8D8."
+      },
+      {
+        "type": "color",
+        "id": "body_bg",
+        "label": "Default page background",
+        "info": "Overrides the brand-default background for the active brand context. Leave blank to use the brand default.",
+        "default": "#EED9C5"
+      },
+      {
+        "type": "color",
+        "id": "body_text",
+        "label": "Default body text color",
+        "info": "Overrides the brand-default ink color. Leave blank to use the brand default.",
+        "default": "#1F2A33"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Primary accent color",
+        "info": "Used for links, buttons, and key UI elements. CFBL default: #2B5275. Institute default: #3D5A52. MUSA default: #6E1F23.",
+        "default": "#2B5275"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "range",
+        "id": "body_size",
+        "label": "Base body font size (px)",
+        "info": "CFBL default: 17px. Institute default: 18px. MUSA default: 19px. Adjust per brand recommendation.",
+        "min": 16,
+        "max": 21,
+        "step": 1,
+        "default": 17
+      },
+      {
+        "type": "select",
+        "id": "heading_weight",
+        "label": "Display heading weight",
+        "info": "Controls the font-weight applied to h1–h3 in Cormorant SC or DM Serif Display. 400–500 recommended for elegance; avoid 700 in display contexts.",
+        "options": [
+          { "value": "400", "label": "Regular (400)" },
+          { "value": "500", "label": "Medium (500)" },
+          { "value": "600", "label": "SemiBold (600)" }
+        ],
+        "default": "500"
+      }
+    ]
+  },
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Site logo",
+        "info": "Recommended: SVG or PNG at 2x resolution. CFBL: use cfbl-logo-rainbow.png. Institute: use institute-logo.png. MUSA: set in MUSA brand section."
+      },
+      {
+        "type": "range",
+        "id": "logo_max_width",
+        "label": "Logo max width (px)",
+        "min": 80,
+        "max": 280,
+        "step": 8,
+        "default": 160
+      },
+      {
+        "type": "select",
+        "id": "header_style",
+        "label": "Header style",
+        "options": [
+          { "value": "sticky", "label": "Sticky (scrolls with page, stays at top)" },
+          { "value": "static", "label": "Static (scrolls away)" }
+        ],
+        "default": "sticky"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_client_portal",
+        "label": "Show client portal link in header",
+        "default": true
+      },
+      {
+        "type": "url",
+        "id": "portal_url",
+        "label": "Client portal URL",
+        "info": "The URL for the client login / portal link. Typically a SimplePractice or similar EHR portal link."
+      },
+      {
+        "type": "text",
+        "id": "portal_label",
+        "label": "Client portal link label",
+        "default": "Client Portal"
+      }
+    ]
+  },
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_newsletter",
+        "label": "Show newsletter signup in footer",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "newsletter_heading",
+        "label": "Newsletter signup heading",
+        "default": "Stay connected"
+      },
+      {
+        "type": "text",
+        "id": "newsletter_subtext",
+        "label": "Newsletter signup subtext",
+        "default": "Essays, training announcements, and practice resources — infrequently, with intent."
+      },
+      {
+        "type": "link_list",
+        "id": "cfbl_footer_links",
+        "label": "CFBL footer navigation",
+        "info": "Links displayed under the Center for Balanced Living column in the footer."
+      },
+      {
+        "type": "link_list",
+        "id": "institute_footer_links",
+        "label": "Institute footer navigation",
+        "info": "Links displayed under the CFBL Institute column in the footer."
+      },
+      {
+        "type": "link_list",
+        "id": "musa_footer_links",
+        "label": "MUSA footer navigation",
+        "info": "Links displayed under the MUSA column in the footer."
+      },
+      {
+        "type": "textarea",
+        "id": "contact_address",
+        "label": "Practice address",
+        "info": "Displayed in the footer contact block and used in Schema.org markup."
+      },
+      {
+        "type": "text",
+        "id": "contact_email",
+        "label": "Contact email address"
+      },
+      {
+        "type": "text",
+        "id": "contact_phone",
+        "label": "Contact phone number"
+      },
+      {
+        "type": "link_list",
+        "id": "footer_utility_links",
+        "label": "Footer utility links",
+        "info": "Privacy Policy, Terms of Service, and similar bottom-row links."
+      }
+    ]
+  },
+  {
+    "name": "Social",
+    "settings": [
+      {
+        "type": "url",
+        "id": "instagram_url",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "url",
+        "id": "facebook_url",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "url",
+        "id": "linkedin_url",
+        "label": "LinkedIn URL"
+      },
+      {
+        "type": "url",
+        "id": "substack_url",
+        "label": "Substack URL",
+        "info": "Used on MUSA pages for the newsletter / essay subscription link."
+      }
+    ]
+  },
+  {
+    "name": "SEO",
+    "settings": [
+      {
+        "type": "text",
+        "id": "meta_title_suffix",
+        "label": "Page title suffix",
+        "info": "Appended to all page titles after a dash. Example: 'Delaware' produces 'Service Name — Center for Balanced Living · Delaware'. Leave blank for no suffix.",
+        "default": "Delaware"
+      },
+      {
+        "type": "image_picker",
+        "id": "share_image",
+        "label": "Default social share image",
+        "info": "Used as the og:image fallback when a page has no specific share image. Recommended: 1200 x 630px."
+      }
+    ]
+  },
+  {
+    "name": "Advanced",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "custom_css",
+        "label": "Custom CSS",
+        "info": "Additional CSS injected into the <head> after all theme stylesheets. Use sparingly. Brand variables are available."
+      },
+      {
+        "type": "paragraph",
+        "content": "Brand CSS variables are defined in assets/base.css. To override a single brand token, use the Custom CSS field above with a .brand-cfbl, .brand-institute, or .brand-musa selector."
+      }
+    ]
+  }
+]

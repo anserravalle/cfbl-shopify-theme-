@@ -1,0 +1,59 @@
+{%- comment -%}
+  card-book.liquid
+  ─────────────────────────────────────────────────────────────
+  MUSA book card.
+
+  Visual spec:
+  - Horizontal layout: cover image on left, content on right
+  - Cover: 2:3 aspect ratio, flush left
+  - Oxblood (#6E1F23) accent on title
+  - Author in Walnut uppercase Inter
+  - Description in EB Garamond (truncated to ~4 lines)
+  - Thin Walnut-rule top border (via .card-book CSS)
+
+  Parameters:
+    title        (required) — book title
+    author       (required) — author name, e.g. "Dr. Angela Serravalle"
+    description  (required) — book description or blurb
+    url          (required) — book detail page or purchase link
+    cover_image  (optional) — Shopify image object (from a metafield or product.featured_image)
+                              If blank, renders a placeholder block
+{%- endcomment -%}
+
+<article class="card-book" aria-label="{{ title | escape }}">
+  {%- if cover_image != blank -%}
+    <img
+      class="card-book__cover"
+      src="{{ cover_image | image_url: width: 240 }}"
+      srcset="
+        {{ cover_image | image_url: width: 120 }} 120w,
+        {{ cover_image | image_url: width: 240 }} 240w"
+      sizes="(min-width: 480px) 120px, 100px"
+      alt="{{ cover_image.alt | default: title | escape }}"
+      loading="lazy"
+      width="120"
+      height="180"
+    >
+  {%- else -%}
+    <div class="card-book__cover-placeholder" aria-hidden="true" role="presentation">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="opacity:0.3;">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  {%- endif -%}
+
+  <div class="card-book__content">
+    {%- if author != blank -%}
+      <p class="card-book__author">{{ author | escape }}</p>
+    {%- endif -%}
+
+    <h3 class="card-book__title">
+      <a href="{{ url }}">{{ title | escape }}</a>
+    </h3>
+
+    {%- if description != blank -%}
+      <p class="card-book__description">{{ description | strip_html | truncate: 280 }}</p>
+    {%- endif -%}
+  </div>
+</article>

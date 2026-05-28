@@ -1,0 +1,267 @@
+{% liquid
+  assign brand = section.settings.brand_context | default: 'cfbl'
+
+  case brand
+    when 'cfbl'
+      assign bg_color = 'var(--cfbl-deep-navy)'
+      assign text_color = 'var(--cfbl-sand-pale)'
+      assign btn_class = 'btn-primary'
+      assign btn2_style = 'background:transparent;color:var(--cfbl-sand-pale);border:1px solid rgba(245,231,214,0.45);'
+    when 'institute'
+      assign bg_color = 'var(--inst-forest)'
+      assign text_color = 'var(--inst-paper)'
+      assign btn_class = 'btn-primary'
+      assign btn2_style = 'background:transparent;color:var(--inst-paper);border:1px solid rgba(240,234,224,0.4);'
+    when 'musa'
+      assign bg_color = 'var(--musa-oxblood)'
+      assign text_color = 'var(--musa-bone)'
+      assign btn_class = 'btn-primary'
+      assign btn2_style = 'background:transparent;color:var(--musa-bone);border:1px solid rgba(241,232,216,0.4);'
+    else
+      assign bg_color = 'var(--cfbl-deep-navy)'
+      assign text_color = 'var(--cfbl-sand-pale)'
+  endcase
+%}
+
+<style>
+  #shopify-section-{{ section.id }} .contact-cta {
+    background: {{ bg_color }};
+    padding: var(--space-10) 0;
+  }
+
+  #shopify-section-{{ section.id }} .contact-cta__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .contact-cta__heading {
+    font-family: var(--cfbl-font-display);
+    font-size: clamp(1.875rem, 3.5vw, 2.875rem);
+    font-weight: 500;
+    color: {{ text_color }};
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+    margin: 0 0 var(--space-4);
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  {%- if brand == 'musa' -%}
+  #shopify-section-{{ section.id }} .contact-cta__heading {
+    font-family: var(--musa-font-display);
+    font-weight: 400;
+    letter-spacing: -0.005em;
+  }
+  {%- elsif brand == 'institute' -%}
+  #shopify-section-{{ section.id }} .contact-cta__heading {
+    font-family: var(--inst-font-display);
+  }
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} .contact-cta__subheading {
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: {{ text_color }};
+    opacity: 0.8;
+    margin: 0 0 var(--space-8);
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  {%- if brand == 'cfbl' -%}
+  #shopify-section-{{ section.id }} .contact-cta__subheading {
+    font-family: var(--cfbl-font-body);
+  }
+  {%- elsif brand == 'institute' -%}
+  #shopify-section-{{ section.id }} .contact-cta__subheading {
+    font-family: var(--inst-font-body);
+  }
+  {%- elsif brand == 'musa' -%}
+  #shopify-section-{{ section.id }} .contact-cta__subheading {
+    font-family: var(--musa-font-body);
+  }
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} .contact-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .contact-cta__btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background var(--dur-base) var(--ease), color var(--dur-base) var(--ease);
+    {{ btn2_style }}
+  }
+
+  #shopify-section-{{ section.id }} .contact-cta__btn-secondary:hover {
+    background: rgba(255,255,255,0.12) !important;
+  }
+
+  {%- if brand == 'cfbl' -%}
+  #shopify-section-{{ section.id }} .contact-cta .btn-primary {
+    background: var(--cfbl-sand-pale);
+    color: var(--cfbl-deep-navy);
+    font-family: var(--cfbl-font-body);
+    border: none;
+  }
+  #shopify-section-{{ section.id }} .contact-cta .btn-primary:hover {
+    background: #fff;
+  }
+  {%- elsif brand == 'institute' -%}
+  #shopify-section-{{ section.id }} .contact-cta .btn-primary {
+    background: var(--inst-paper);
+    color: var(--inst-forest);
+    font-family: var(--inst-font-utility);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8125rem;
+    border: none;
+  }
+  #shopify-section-{{ section.id }} .contact-cta .btn-primary:hover {
+    background: #fff;
+  }
+  {%- elsif brand == 'musa' -%}
+  #shopify-section-{{ section.id }} .contact-cta .btn-primary {
+    background: var(--musa-bone);
+    color: var(--musa-oxblood);
+    font-family: var(--musa-font-utility);
+    border: none;
+  }
+  #shopify-section-{{ section.id }} .contact-cta .btn-primary:hover {
+    background: #fff;
+  }
+  {%- endif -%}
+
+  @media (max-width: 500px) {
+    #shopify-section-{{ section.id }} .contact-cta__actions {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<section class="contact-cta brand-{{ brand }}" aria-labelledby="cta-heading-{{ section.id }}">
+  <div class="contact-cta__inner">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="contact-cta__heading" id="cta-heading-{{ section.id }}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <p class="contact-cta__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.cta_label != blank or section.settings.secondary_cta_label != blank -%}
+      <div class="contact-cta__actions">
+        {%- if section.settings.cta_label != blank -%}
+          <a href="{{ section.settings.cta_url }}" class="btn btn-primary">
+            {{ section.settings.cta_label | escape }}
+          </a>
+        {%- endif -%}
+        {%- if section.settings.secondary_cta_label != blank -%}
+          <a href="{{ section.settings.secondary_cta_url }}" class="contact-cta__btn-secondary">
+            {{ section.settings.secondary_cta_label | escape }}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Ready to start? We'll meet you where you are."
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Schedule a free consultation. We'll talk through fit, scheduling, and next steps."
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Primary CTA label",
+      "default": "Schedule a Consultation"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Primary CTA URL"
+    },
+    {
+      "type": "text",
+      "id": "secondary_cta_label",
+      "label": "Secondary CTA label",
+      "default": "Send a Message"
+    },
+    {
+      "type": "url",
+      "id": "secondary_cta_url",
+      "label": "Secondary CTA URL"
+    },
+    {
+      "type": "select",
+      "id": "brand_context",
+      "label": "Brand context",
+      "options": [
+        { "value": "cfbl", "label": "CFBL (Navy)" },
+        { "value": "institute", "label": "Institute (Forest)" },
+        { "value": "musa", "label": "MUSA (Oxblood)" }
+      ],
+      "default": "cfbl"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact CTA — CFBL",
+      "settings": {
+        "heading": "Ready to start? We'll meet you where you are.",
+        "subheading": "Schedule a free consultation. We'll talk through fit, scheduling, and next steps.",
+        "cta_label": "Schedule a Consultation",
+        "secondary_cta_label": "Send a Message",
+        "brand_context": "cfbl"
+      }
+    },
+    {
+      "name": "Contact CTA — Institute",
+      "settings": {
+        "heading": "Register for an upcoming training.",
+        "cta_label": "View Trainings",
+        "secondary_cta_label": "Apply for CE Credit",
+        "brand_context": "institute"
+      }
+    },
+    {
+      "name": "Contact CTA — MUSA",
+      "settings": {
+        "heading": "New writing, monthly.",
+        "cta_label": "Read the Essays",
+        "brand_context": "musa"
+      }
+    }
+  ]
+}
+{% endschema %}

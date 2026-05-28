@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "MUSA · Speaking",
+        "heading": "Speaking and Appearances.",
+        "subheading": "Angela Serravalle speaks on trauma, psychology, clinical practice, and the art of clinical writing. Available for academic conferences, clinical trainings, and literary events.",
+        "cta_primary_label": "",
+        "cta_primary_url": "",
+        "cta_secondary_label": "",
+        "cta_secondary_url": "",
+        "image": "musa-book-icon.png",
+        "brand": "musa"
+      }
+    },
+    "split_speaking": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "About",
+        "heading": "What speaking looks like.",
+        "body": "Dr. Serravalle's speaking engagements fall into two categories: clinical training (CE-approved presentations for professional audiences, typically through the CFBL Institute) and public lectures (university settings, literary conferences, and cultural organizations interested in psychology, memory, and clinical narrative). She speaks from a clinical and writerly perspective — never from a motivational one.",
+        "image": "musa-book-icon.png",
+        "image_position": "right",
+        "cta_label": "",
+        "cta_url": "",
+        "brand": "musa"
+      }
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Speaking inquiries.",
+        "subheading": "Please include your organization, event type, audience, and proposed dates. Responses within 5 business days.",
+        "cta_primary_label": "Send an Inquiry",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "",
+        "cta_secondary_url": "",
+        "footnote": "",
+        "brand": "musa"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "split_speaking",
+    "contact_cta"
+  ]
+}

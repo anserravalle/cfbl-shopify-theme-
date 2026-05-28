@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "",
+        "heading": "",
+        "subheading": "",
+        "cta_primary_label": "",
+        "cta_primary_url": "",
+        "cta_secondary_label": "",
+        "cta_secondary_url": "",
+        "image": "",
+        "layout": "simple",
+        "brand": "cfbl"
+      }
+    },
+    "split_content": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "",
+        "heading": "",
+        "body": "",
+        "image": "",
+        "image_position": "right",
+        "cta_label": "",
+        "cta_url": "",
+        "populate_from_page": true,
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "split_content"
+  ]
+}

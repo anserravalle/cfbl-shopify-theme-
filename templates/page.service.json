@@ -1,0 +1,91 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "Center for Balanced Living · Services",
+        "heading": "",
+        "subheading": "",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "",
+        "cta_secondary_url": "",
+        "image": "",
+        "brand": "cfbl"
+      }
+    },
+    "split_detail": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "About This Service",
+        "heading": "",
+        "body": "",
+        "image": "",
+        "image_position": "right",
+        "cta_label": "Schedule a Consultation",
+        "cta_url": "/pages/contact",
+        "brand": "cfbl"
+      }
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "settings": {
+        "eyebrow": "Common Questions",
+        "heading": "Frequently Asked Questions",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "faq_1": {
+          "type": "item",
+          "settings": {
+            "question": "Do you accept insurance?",
+            "answer": "We accept most major insurance plans. Please contact us to verify your specific coverage before scheduling."
+          }
+        },
+        "faq_2": {
+          "type": "item",
+          "settings": {
+            "question": "How long does a typical session last?",
+            "answer": "Individual therapy sessions are 50 minutes. Initial consultations are 15 minutes and complimentary."
+          }
+        },
+        "faq_3": {
+          "type": "item",
+          "settings": {
+            "question": "Do you offer telehealth?",
+            "answer": "Yes. We offer both in-person and telehealth sessions for clients in the state of Delaware."
+          }
+        }
+      },
+      "block_order": ["faq_1", "faq_2", "faq_3"]
+    },
+    "testimonial": {
+      "type": "testimonial-quote",
+      "settings": {
+        "quote": "The care here is unlike anything I'd experienced before — careful, steady, and attuned to what I actually needed.",
+        "attribution": "Client, Center for Balanced Living",
+        "brand": "cfbl"
+      }
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Ready to take the first step?",
+        "subheading": "We're accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Contact Us",
+        "cta_secondary_url": "/pages/contact",
+        "footnote": "Middletown, DE · In-person and telehealth · Most insurance accepted",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "split_detail",
+    "faq",
+    "testimonial",
+    "contact_cta"
+  ]
+}

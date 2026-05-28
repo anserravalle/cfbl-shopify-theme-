@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "Trauma-Informed Psychology · Middletown, DE",
+        "heading": "Healing Happens In Relationship.",
+        "subheading": "We pair evidence-based care with warmth, attunement, and a holistic approach to mind, body, and spirit.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Meet the Team",
+        "cta_secondary_url": "/pages/team",
+        "image": "cfbl-tree-portrait.jpeg",
+        "brand": "cfbl"
+      }
+    },
+    "service_cards": {
+      "type": "service-cards",
+      "settings": {
+        "eyebrow": "For Clients",
+        "heading": "Care that is clinically grounded and relationally warm.",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "service_therapy": {
+          "type": "service",
+          "settings": {
+            "kicker": "Individual Therapy",
+            "heading": "Trauma-Informed Therapy",
+            "description": "Individual therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based approaches tailored to your history and goals.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/therapy"
+          }
+        },
+        "service_eval": {
+          "type": "service",
+          "settings": {
+            "kicker": "Psychological Evaluation",
+            "heading": "Psychological Evaluations",
+            "description": "Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment planning, school supports, and clinical decision-making.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/evaluations"
+          }
+        },
+        "service_groups": {
+          "type": "service",
+          "settings": {
+            "kicker": "Groups and Workshops",
+            "heading": "Group Therapy",
+            "description": "Community-grounded groups focused on grief, parenting, and somatic resourcing. Structured and time-limited, with open enrollment periods.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/groups"
+          }
+        },
+        "service_consult": {
+          "type": "service",
+          "settings": {
+            "kicker": "Clinical Consultation",
+            "heading": "Consultation",
+            "description": "Case consultation for clinicians and referral conversations for families. Available by arrangement to licensed professionals and referring providers.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/consultation"
+          }
+        }
+      },
+      "block_order": ["service_therapy", "service_eval", "service_groups", "service_consult"]
+    },
+    "split_about": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "Who We Are",
+        "heading": "A practice built on relationship.",
+        "body": "Center for Balanced Living is a trauma-informed psychology practice in Middletown, Delaware. We work with adults, adolescents, and children navigating trauma, anxiety, grief, developmental challenges, and identity questions. Our approach is evidence-based, relationally grounded, and attentive to the whole person — mind, body, and spirit.",
+        "image": "cfbl-tree-portrait.jpeg",
+        "image_position": "right",
+        "cta_label": "Read more about us",
+        "cta_url": "/pages/about",
+        "brand": "cfbl"
+      }
+    },
+    "team": {
+      "type": "team-grid",
+      "settings": {
+        "eyebrow": "Our Team",
+        "heading": "Meet Our Team",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "member_serravalle": {
+          "type": "member",
+          "settings": {
+            "name": "Dr. Angela (Niki) Serravalle",
+            "credentials": "Psy.D., LPCMH, NCC",
+            "role": "Founder and Licensed Psychologist",
+            "bio_short": "A trauma-informed psychologist, educator, and writer. Dr. Serravalle founded the Center for Balanced Living to offer psychologically rigorous, relationally grounded care.",
+            "profile_image": ""
+          }
+        }
+      },
+      "block_order": ["member_serravalle"]
+    },
+    "testimonial": {
+      "type": "testimonial-quote",
+      "settings": {
+        "quote": "Working with this practice changed how I understand myself. The care here is unlike anything I'd experienced before — careful, steady, and real.",
+        "attribution": "Client, Center for Balanced Living",
+        "brand": "cfbl"
+      }
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Ready to take the first step?",
+        "subheading": "We're accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Contact Us",
+        "cta_secondary_url": "/pages/contact",
+        "footnote": "Middletown, DE · In-person and telehealth · Most insurance accepted",
+        "brand": "cfbl"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter-signup",
+      "settings": {
+        "eyebrow": "Stay Connected",
+        "heading": "Stay connected",
+        "description": "Practice updates, new service announcements, and resources. No more than twice a month.",
+        "button_label": "Subscribe",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "service_cards",
+    "split_about",
+    "team",
+    "testimonial",
+    "contact_cta",
+    "newsletter"
+  ]
+}

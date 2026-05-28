@@ -1,0 +1,714 @@
+/* ============================================================
+   SECTIONS.CSS — Section-level layout styles
+   CFBL Brand Family · Shopify 2.0 Theme
+   ============================================================ */
+
+/* ============================================================
+   BASE SECTION
+   ============================================================ */
+
+.section {
+  padding-block: var(--space-9);
+}
+
+.section--sm {
+  padding-block: var(--space-7);
+}
+
+.section--lg {
+  padding-block: var(--space-10);
+}
+
+/* ============================================================
+   BACKGROUND VARIANTS — Paper grounds per brand
+   ============================================================ */
+
+/* CFBL backgrounds */
+.section--sand {
+  background-color: var(--cfbl-sand);
+}
+
+.section--sand-light {
+  background-color: var(--cfbl-sand-light);
+}
+
+.section--sand-pale {
+  background-color: var(--cfbl-sand-pale);
+}
+
+/* Institute backgrounds */
+.section--cream {
+  background-color: var(--inst-cream);
+}
+
+.section--paper {
+  background-color: var(--inst-paper);
+}
+
+/* MUSA backgrounds */
+.section--bone {
+  background-color: var(--musa-bone);
+}
+
+.section--parchment {
+  background-color: var(--musa-parchment);
+}
+
+/* ============================================================
+   DARK SECTION VARIANTS — CTA blocks
+   ============================================================ */
+
+/* CFBL — Navy dark section */
+.section--navy {
+  background-color: var(--cfbl-deep-navy);
+  color: #fff;
+}
+
+.section--navy h1,
+.section--navy h2,
+.section--navy h3,
+.section--navy h4 {
+  font-family: var(--cfbl-font-display);
+  color: #fff;
+}
+
+.section--navy p,
+.section--navy li {
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--cfbl-font-body);
+}
+
+.section--navy a {
+  color: var(--cfbl-sky-blue);
+}
+
+.section--navy .btn-primary {
+  background: #fff;
+  color: var(--cfbl-deep-navy);
+}
+
+.section--navy .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.section--navy .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.section--navy .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+/* Institute — Forest dark section */
+.section--forest {
+  background-color: var(--inst-forest);
+  color: var(--inst-paper);
+}
+
+.section--forest h1,
+.section--forest h2,
+.section--forest h3,
+.section--forest h4 {
+  font-family: var(--inst-font-display);
+  color: var(--inst-paper);
+}
+
+.section--forest p,
+.section--forest li {
+  color: rgba(240, 234, 224, 0.9);
+  font-family: var(--inst-font-body);
+}
+
+.section--forest a {
+  color: var(--inst-sage-mist);
+}
+
+.section--forest .btn-primary {
+  background: var(--inst-paper);
+  color: var(--inst-forest);
+}
+
+.section--forest .btn-primary:hover {
+  background: rgba(240, 234, 224, 0.9);
+}
+
+.section--forest .btn-secondary {
+  border-color: rgba(240, 234, 224, 0.5);
+  color: var(--inst-paper);
+}
+
+.section--forest .btn-secondary:hover {
+  background: rgba(240, 234, 224, 0.1);
+  border-color: var(--inst-paper);
+}
+
+/* MUSA — Oxblood dark section */
+.section--oxblood {
+  background-color: var(--musa-oxblood);
+  color: var(--musa-bone);
+}
+
+.section--oxblood h1,
+.section--oxblood h2,
+.section--oxblood h3,
+.section--oxblood h4 {
+  font-family: var(--musa-font-display);
+  color: var(--musa-bone);
+}
+
+.section--oxblood p,
+.section--oxblood li {
+  color: rgba(241, 232, 216, 0.9);
+  font-family: var(--musa-font-body);
+}
+
+.section--oxblood a {
+  color: var(--musa-ochre);
+}
+
+.section--oxblood .btn-primary {
+  background: var(--musa-bone);
+  color: var(--musa-oxblood);
+}
+
+.section--oxblood .btn-primary:hover {
+  background: rgba(241, 232, 216, 0.9);
+}
+
+.section--oxblood .btn-secondary {
+  border-color: rgba(241, 232, 216, 0.5);
+  color: var(--musa-bone);
+}
+
+.section--oxblood .btn-secondary:hover {
+  background: rgba(241, 232, 216, 0.1);
+  border-color: var(--musa-bone);
+}
+
+/* ============================================================
+   SECTION HEADER — Centered headline block
+   ============================================================ */
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: var(--space-7);
+}
+
+.section-header--left {
+  text-align: left;
+  margin-inline: 0;
+}
+
+.section-header__eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--space-3);
+}
+
+.brand-cfbl .section-header__eyebrow {
+  font-family: var(--cfbl-font-body);
+  color: var(--cfbl-terracotta);
+}
+
+.brand-institute .section-header__eyebrow {
+  font-family: var(--inst-font-utility);
+  color: var(--inst-sage);
+}
+
+.brand-musa .section-header__eyebrow {
+  font-family: var(--musa-font-utility);
+  color: var(--musa-walnut);
+}
+
+.section-header__heading {
+  margin-bottom: var(--space-4);
+}
+
+.section-header__lead {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  max-width: 52ch;
+  margin-inline: auto;
+  opacity: 0.85;
+}
+
+.section-header--left .section-header__lead {
+  margin-inline: 0;
+}
+
+.brand-cfbl .section-header__lead { font-family: var(--cfbl-font-body); color: var(--cfbl-ink); }
+.brand-institute .section-header__lead { font-family: var(--inst-font-body); color: var(--inst-ink); }
+.brand-musa .section-header__lead { font-family: var(--musa-font-body); color: var(--musa-ink); }
+
+/* Dark sections: override section-header text colors */
+.section--navy .section-header__eyebrow,
+.section--navy .section-header__lead {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.section--forest .section-header__eyebrow,
+.section--forest .section-header__lead {
+  color: rgba(240, 234, 224, 0.75);
+}
+
+.section--oxblood .section-header__eyebrow,
+.section--oxblood .section-header__lead {
+  color: rgba(241, 232, 216, 0.75);
+}
+
+/* ============================================================
+   PATHWAY GRID — Three brand pathways on homepage
+   ============================================================ */
+
+.pathway-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+@media (min-width: 640px) {
+  .pathway-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pathway-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pathway-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-7) var(--space-6);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: transform var(--dur-base) var(--ease);
+}
+
+.pathway-card:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* CFBL pathway card */
+.pathway-card--cfbl {
+  background: var(--cfbl-sand-light);
+  border-bottom: 3px solid var(--cfbl-deep-navy);
+}
+
+/* Institute pathway card */
+.pathway-card--institute {
+  background: var(--inst-paper);
+  border-bottom: 3px solid var(--inst-forest);
+}
+
+/* MUSA pathway card */
+.pathway-card--musa {
+  background: var(--musa-parchment);
+  border-bottom: 3px solid var(--musa-oxblood);
+}
+
+.pathway-card__label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--space-3);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.pathway-card--cfbl .pathway-card__label { color: var(--cfbl-terracotta); }
+.pathway-card--institute .pathway-card__label { color: var(--inst-sage); }
+.pathway-card--musa .pathway-card__label { color: var(--musa-walnut); }
+
+.pathway-card__title {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: var(--space-3);
+}
+
+.pathway-card--cfbl .pathway-card__title {
+  font-family: var(--cfbl-font-display);
+  color: var(--cfbl-deep-navy);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+.pathway-card--institute .pathway-card__title {
+  font-family: var(--inst-font-display);
+  color: var(--inst-forest);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+.pathway-card--musa .pathway-card__title {
+  font-family: var(--musa-font-display);
+  color: var(--musa-ink);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 400;
+}
+
+.pathway-card__description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: var(--space-5);
+}
+
+.pathway-card--cfbl .pathway-card__description {
+  font-family: var(--cfbl-font-body);
+  color: var(--cfbl-ink);
+}
+
+.pathway-card--institute .pathway-card__description {
+  font-family: var(--inst-font-body);
+  color: var(--inst-ink);
+}
+
+.pathway-card--musa .pathway-card__description {
+  font-family: var(--musa-font-body);
+  color: var(--musa-ink);
+}
+
+.pathway-card__cta {
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: gap var(--dur-fast) var(--ease);
+}
+
+.pathway-card:hover .pathway-card__cta { gap: var(--space-3); }
+
+.pathway-card--cfbl .pathway-card__cta { color: var(--cfbl-sky-blue); font-family: var(--cfbl-font-body); }
+.pathway-card--institute .pathway-card__cta { color: var(--inst-forest); font-family: var(--inst-font-utility); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8125rem; }
+.pathway-card--musa .pathway-card__cta { color: var(--musa-oxblood); font-family: var(--musa-font-utility); }
+
+/* ============================================================
+   SERVICE GRID — CFBL service cards
+   ============================================================ */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+@media (min-width: 640px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================================
+   COURSE GRID — Institute training cards
+   ============================================================ */
+
+.course-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================================
+   ESSAY LIST — Vertical list for MUSA essays
+   ============================================================ */
+
+.essay-list {
+  display: flex;
+  flex-direction: column;
+  /* No gap — the top border on each card creates the separation */
+}
+
+.essay-list--grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (min-width: 768px) {
+  .essay-list--grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 var(--space-7);
+  }
+}
+
+/* ============================================================
+   SPLIT CONTENT — 50/50 image + text
+   ============================================================ */
+
+.split-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .split-content {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Alternating layout */
+  .split-content--reverse .split-content__media {
+    order: 2;
+  }
+
+  .split-content--reverse .split-content__body {
+    order: 1;
+  }
+}
+
+.split-content__media {
+  width: 100%;
+}
+
+.split-content__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+/* CFBL: allow a single warm photographic image */
+.brand-cfbl .split-content__media img {
+  /* Subtle veil via a sibling element — not on the img itself */
+}
+
+.split-content__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.split-content__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.brand-cfbl .split-content__eyebrow { font-family: var(--cfbl-font-body); color: var(--cfbl-terracotta); }
+.brand-institute .split-content__eyebrow { font-family: var(--inst-font-utility); color: var(--inst-sage); }
+.brand-musa .split-content__eyebrow { font-family: var(--musa-font-utility); color: var(--musa-walnut); }
+
+.split-content__heading { margin-bottom: 0; }
+
+.split-content__text {
+  line-height: 1.65;
+}
+
+.brand-cfbl .split-content__text { font-family: var(--cfbl-font-body); color: var(--cfbl-ink); }
+.brand-institute .split-content__text { font-family: var(--inst-font-body); color: var(--inst-ink); }
+.brand-musa .split-content__text { font-family: var(--musa-font-body); color: var(--musa-ink); }
+
+.split-content__actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-2);
+}
+
+/* ============================================================
+   TEAM GRID
+   ============================================================ */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 480px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.team-card__image {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  filter: grayscale(15%);
+  transition: filter var(--dur-slow) var(--ease);
+}
+
+.team-card:hover .team-card__image {
+  filter: grayscale(0);
+}
+
+.team-card__image-placeholder {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-cfbl .team-card__image-placeholder { background: var(--cfbl-sand-light); }
+.brand-institute .team-card__image-placeholder { background: var(--inst-paper); }
+.brand-musa .team-card__image-placeholder { background: var(--musa-parchment); }
+
+.team-card__name {
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.brand-cfbl .team-card__name { font-family: var(--cfbl-font-display); color: var(--cfbl-deep-navy); font-size: 1.125rem; }
+.brand-institute .team-card__name { font-family: var(--inst-font-display); color: var(--inst-forest); font-size: 1.125rem; }
+.brand-musa .team-card__name { font-family: var(--musa-font-display); color: var(--musa-ink); font-size: 1.125rem; font-weight: 400; }
+
+.team-card__title {
+  font-size: 0.8125rem;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
+.brand-cfbl .team-card__title { font-family: var(--cfbl-font-body); color: var(--cfbl-ink); }
+.brand-institute .team-card__title { font-family: var(--inst-font-utility); color: var(--inst-ink); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.75rem; }
+.brand-musa .team-card__title { font-family: var(--musa-font-utility); color: var(--musa-walnut); }
+
+.team-card__credentials {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.brand-cfbl .team-card__credentials { font-family: var(--cfbl-font-body); color: var(--cfbl-terracotta); }
+.brand-institute .team-card__credentials { font-family: var(--inst-font-utility); color: var(--inst-sage); }
+.brand-musa .team-card__credentials { font-family: var(--musa-font-utility); color: var(--musa-walnut); }
+
+/* ============================================================
+   THREE-BRANCH OVERVIEW — Full-width 3-column
+   ============================================================ */
+
+.three-branch-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .three-branch-overview {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.branch-panel {
+  padding: var(--space-8) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Panel dividers on desktop */
+@media (min-width: 1024px) {
+  .branch-panel + .branch-panel {
+    border-left: 1px solid rgba(31, 26, 22, 0.1);
+  }
+}
+
+/* Horizontal dividers on mobile */
+@media (max-width: 1023px) {
+  .branch-panel + .branch-panel {
+    border-top: 1px solid rgba(31, 26, 22, 0.1);
+  }
+}
+
+.branch-panel--cfbl { background: var(--cfbl-sand); }
+.branch-panel--institute { background: var(--inst-cream); }
+.branch-panel--musa { background: var(--musa-bone); }
+
+.branch-panel__brand-mark {
+  width: 48px;
+  height: auto;
+  display: block;
+}
+
+.branch-panel__tagline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--space-2);
+}
+
+.branch-panel--cfbl .branch-panel__tagline { font-family: var(--cfbl-font-body); color: var(--cfbl-terracotta); }
+.branch-panel--institute .branch-panel__tagline { font-family: var(--inst-font-utility); color: var(--inst-sage); }
+.branch-panel--musa .branch-panel__tagline { font-family: var(--musa-font-utility); color: var(--musa-walnut); }
+
+.branch-panel__heading {
+  margin-bottom: 0;
+}
+
+.branch-panel--cfbl .branch-panel__heading { font-family: var(--cfbl-font-display); color: var(--cfbl-deep-navy); font-size: 1.5rem; }
+.branch-panel--institute .branch-panel__heading { font-family: var(--inst-font-display); color: var(--inst-forest); font-size: 1.5rem; }
+.branch-panel--musa .branch-panel__heading { font-family: var(--musa-font-display); color: var(--musa-ink); font-size: 1.5rem; font-weight: 400; }
+
+.branch-panel__description {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.branch-panel--cfbl .branch-panel__description { font-family: var(--cfbl-font-body); color: var(--cfbl-ink); }
+.branch-panel--institute .branch-panel__description { font-family: var(--inst-font-body); color: var(--inst-ink); }
+.branch-panel--musa .branch-panel__description { font-family: var(--musa-font-body); color: var(--musa-ink); }
+
+.branch-panel__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+  margin-top: auto;
+  transition: gap var(--dur-fast) var(--ease);
+}
+
+.branch-panel__link:hover { gap: var(--space-3); text-decoration: none; }
+
+.branch-panel--cfbl .branch-panel__link { font-family: var(--cfbl-font-body); color: var(--cfbl-sky-blue); }
+.branch-panel--institute .branch-panel__link { font-family: var(--inst-font-utility); color: var(--inst-forest); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8125rem; }
+.branch-panel--musa .branch-panel__link { font-family: var(--musa-font-utility); color: var(--musa-oxblood); }

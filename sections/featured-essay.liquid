@@ -1,0 +1,218 @@
+{% liquid
+  assign bg = section.settings.background | default: 'bone'
+
+  case bg
+    when 'bone'
+      assign bg_color = 'var(--musa-bone)'
+      assign text_color = 'var(--musa-ink)'
+    when 'parchment'
+      assign bg_color = 'var(--musa-parchment)'
+      assign text_color = 'var(--musa-ink)'
+    when 'oxblood-dark'
+      assign bg_color = '#3D0E10'
+      assign text_color = 'var(--musa-bone)'
+    else
+      assign bg_color = 'var(--musa-bone)'
+      assign text_color = 'var(--musa-ink)'
+  endcase
+%}
+
+<style>
+  #shopify-section-{{ section.id }} .featured-essay {
+    background: {{ bg_color }};
+    padding: var(--space-9) 0;
+  }
+
+  #shopify-section-{{ section.id }} .featured-essay__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    max-width: var(--container-text);
+  }
+
+  #shopify-section-{{ section.id }} .featured-essay__rule {
+    width: 48px;
+    height: 2px;
+    background: var(--musa-ochre);
+    margin: 0 0 var(--space-6);
+    border: none;
+  }
+
+  #shopify-section-{{ section.id }} .featured-essay__byline {
+    font-family: var(--musa-font-utility);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--musa-walnut);
+    margin: 0 0 var(--space-4);
+    line-height: 1;
+  }
+
+  {%- if bg == 'oxblood-dark' -%}
+  #shopify-section-{{ section.id }} .featured-essay__byline {
+    color: rgba(241, 232, 216, 0.65);
+  }
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} .featured-essay__title {
+    font-family: var(--musa-font-display);
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 400;
+    color: {{ text_color }};
+    letter-spacing: -0.005em;
+    line-height: 1.1;
+    margin: 0 0 var(--space-5);
+  }
+
+  #shopify-section-{{ section.id }} .featured-essay__date {
+    font-family: var(--musa-font-utility);
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--musa-walnut);
+    margin: 0 0 var(--space-6);
+    line-height: 1;
+  }
+
+  {%- if bg == 'oxblood-dark' -%}
+  #shopify-section-{{ section.id }} .featured-essay__date {
+    color: rgba(241, 232, 216, 0.55);
+  }
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} .featured-essay__lede {
+    font-family: var(--musa-font-body);
+    font-size: 1.1875rem;
+    line-height: 1.7;
+    color: {{ text_color }};
+    margin: 0 0 var(--space-7);
+    max-width: var(--measure-prose);
+  }
+
+  #shopify-section-{{ section.id }} .featured-essay__lede p {
+    margin: 0 0 var(--space-4);
+  }
+
+  #shopify-section-{{ section.id }} .featured-essay__lede p:last-child {
+    margin-bottom: 0;
+  }
+
+  #shopify-section-{{ section.id }} .featured-essay__link {
+    font-family: var(--musa-font-utility);
+    font-size: 0.9375rem;
+    color: var(--musa-oxblood);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    letter-spacing: 0.01em;
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  {%- if bg == 'oxblood-dark' -%}
+  #shopify-section-{{ section.id }} .featured-essay__link {
+    color: var(--musa-ochre);
+  }
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} .featured-essay__link:hover {
+    color: var(--musa-walnut);
+  }
+</style>
+
+<section class="featured-essay brand-musa" aria-labelledby="fe-title-{{ section.id }}">
+  <div class="featured-essay__inner">
+    <div class="featured-essay__rule" aria-hidden="true"></div>
+
+    {%- if section.settings.byline != blank -%}
+      <p class="featured-essay__byline">{{ section.settings.byline | escape }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.title != blank -%}
+      <h2 class="featured-essay__title" id="fe-title-{{ section.id }}">
+        {{ section.settings.title | escape }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.date != blank -%}
+      <p class="featured-essay__date">
+        <time>{{ section.settings.date | escape }}</time>
+      </p>
+    {%- endif -%}
+
+    {%- if section.settings.lede != blank -%}
+      <div class="featured-essay__lede">{{ section.settings.lede }}</div>
+    {%- endif -%}
+
+    {%- if section.settings.url != blank -%}
+      <a href="{{ section.settings.url }}" class="featured-essay__link">
+        {{ section.settings.cta_label | default: 'Read the essay' | escape }} &#8594;
+      </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Essay",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Essay title",
+      "default": "The Quiet Room"
+    },
+    {
+      "type": "text",
+      "id": "byline",
+      "label": "Byline",
+      "default": "By Angela Serravalle"
+    },
+    {
+      "type": "text",
+      "id": "date",
+      "label": "Date",
+      "default": "November 2026"
+    },
+    {
+      "type": "richtext",
+      "id": "lede",
+      "label": "Lede (opening sentences)"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Essay URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Link label",
+      "default": "Read the essay"
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        { "value": "bone", "label": "Bone" },
+        { "value": "parchment", "label": "Parchment" },
+        { "value": "oxblood-dark", "label": "Dark Oxblood" }
+      ],
+      "default": "bone"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Essay",
+      "settings": {
+        "title": "The Quiet Room",
+        "byline": "By Angela Serravalle",
+        "date": "November 2026",
+        "cta_label": "Read the essay",
+        "background": "bone"
+      }
+    }
+  ]
+}
+{% endschema %}

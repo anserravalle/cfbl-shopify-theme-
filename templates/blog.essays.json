@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "editorial_archive": {
+      "type": "editorial-archive",
+      "settings": {
+        "eyebrow": "MUSA · Essays",
+        "heading": "Archive",
+        "show_lead": true,
+        "lead_essay_handle": "",
+        "posts_per_page": 12,
+        "brand": "musa"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter-signup",
+      "settings": {
+        "eyebrow": "Subscribe",
+        "heading": "New essays, when they appear.",
+        "description": "No digest, no schedule. An email when something new is published.",
+        "button_label": "Subscribe",
+        "brand": "musa"
+      }
+    }
+  },
+  "order": [
+    "editorial_archive",
+    "newsletter"
+  ]
+}

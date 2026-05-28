@@ -1,0 +1,240 @@
+{%- comment -%}
+  brand-vars.liquid
+  ─────────────────────────────────────────────────────────────
+  Emits a <style> block that scopes brand CSS custom property
+  overrides to a wrapper class. Use this for section-level brand
+  context overrides — e.g., an Institute block inside a CFBL page.
+
+  Parameters:
+    brand  (required) — 'cfbl' | 'institute' | 'musa'
+    scope  (optional) — custom wrapper class; defaults to
+                        .brand-{{ brand }}-block
+
+  Usage:
+    {% render 'brand-vars', brand: 'institute' %}
+    <div class="brand-institute-block">
+      ... Institute-branded content here ...
+    </div>
+
+  To pass a custom scope class:
+    {% render 'brand-vars', brand: 'musa', scope: '.my-musa-section' %}
+{%- endcomment -%}
+
+{%- liquid
+  assign resolved_brand = brand | default: 'cfbl'
+  if scope != blank
+    assign wrapper_class = scope
+  else
+    assign wrapper_class = '.brand-' | append: resolved_brand | append: '-block'
+  endif
+-%}
+
+<style>
+{%- case resolved_brand -%}
+
+  {%- when 'cfbl' -%}
+  /* ── CFBL block overrides ── */
+  {{ wrapper_class }} {
+    /* Palette */
+    --bg:              var(--cfbl-sand);
+    --bg-alt:          var(--cfbl-sand-light);
+    --bg-pale:         var(--cfbl-sand-pale);
+    --fg:              var(--cfbl-ink);
+    --fg-anchor:       var(--cfbl-deep-navy);
+    --fg-accent:       var(--cfbl-sky-blue);
+    --fg-kicker:       var(--cfbl-terracotta);
+    --border:          var(--cfbl-rule);
+
+    /* Typography */
+    --font-display:    var(--cfbl-font-display);
+    --font-body:       var(--cfbl-font-body);
+    --font-utility:    var(--cfbl-font-body);
+
+    /* Semantic */
+    background-color:  var(--cfbl-sand);
+    color:             var(--cfbl-ink);
+    font-family:       var(--cfbl-font-body);
+    font-size:         17px;
+    line-height:       1.6;
+  }
+  {{ wrapper_class }} h1,
+  {{ wrapper_class }} h2,
+  {{ wrapper_class }} h3,
+  {{ wrapper_class }} h4 {
+    font-family:  var(--cfbl-font-display);
+    color:        var(--cfbl-deep-navy);
+    font-weight:  500;
+    letter-spacing: 0.01em;
+    line-height:  1.15;
+  }
+  {{ wrapper_class }} a {
+    color:                    var(--cfbl-sky-blue);
+    text-decoration:          underline;
+    text-underline-offset:    3px;
+  }
+  {{ wrapper_class }} .btn-primary {
+    background:  var(--cfbl-deep-navy);
+    color:       #fff;
+    font-family: var(--cfbl-font-body);
+  }
+  {{ wrapper_class }} .btn-primary:hover { background: #1F4060; }
+  {{ wrapper_class }} .btn-secondary {
+    background:   transparent;
+    color:        var(--cfbl-deep-navy);
+    border-color: var(--cfbl-deep-navy);
+    font-family:  var(--cfbl-font-body);
+  }
+  {{ wrapper_class }} .btn-secondary:hover {
+    background: var(--cfbl-deep-navy);
+    color: #fff;
+  }
+
+  {%- when 'institute' -%}
+  /* ── Institute block overrides ── */
+  {{ wrapper_class }} {
+    /* Palette */
+    --bg:              var(--inst-cream);
+    --bg-alt:          var(--inst-paper);
+    --bg-pale:         var(--inst-paper);
+    --fg:              var(--inst-ink);
+    --fg-anchor:       var(--inst-forest);
+    --fg-accent:       var(--inst-sage);
+    --fg-kicker:       var(--inst-sage);
+    --border:          var(--inst-rule);
+
+    /* Typography */
+    --font-display:    var(--inst-font-display);
+    --font-body:       var(--inst-font-body);
+    --font-utility:    var(--inst-font-utility);
+
+    /* Semantic */
+    background-color:  var(--inst-cream);
+    color:             var(--inst-ink);
+    font-family:       var(--inst-font-body);
+    font-size:         18px;
+    line-height:       1.6;
+  }
+  {{ wrapper_class }} h1,
+  {{ wrapper_class }} h2,
+  {{ wrapper_class }} h3,
+  {{ wrapper_class }} h4 {
+    font-family:     var(--inst-font-display);
+    color:           var(--inst-forest);
+    font-weight:     500;
+    letter-spacing:  0.01em;
+    line-height:     1.18;
+  }
+  {{ wrapper_class }} h4 {
+    font-family:     var(--inst-font-utility);
+    font-size:       0.875rem;
+    text-transform:  uppercase;
+    letter-spacing:  0.08em;
+    font-weight:     600;
+  }
+  {{ wrapper_class }} a {
+    color:                 var(--inst-forest);
+    text-decoration:       underline;
+    text-underline-offset: 3px;
+  }
+  {{ wrapper_class }} .btn-primary {
+    background:      var(--inst-forest);
+    color:           var(--inst-paper);
+    font-family:     var(--inst-font-utility);
+    text-transform:  uppercase;
+    letter-spacing:  0.08em;
+    font-size:       0.8125rem;
+  }
+  {{ wrapper_class }} .btn-primary:hover { background: #2F4842; }
+  {{ wrapper_class }} .btn-secondary {
+    background:   transparent;
+    color:        var(--inst-forest);
+    border-color: var(--inst-forest);
+    font-family:  var(--inst-font-utility);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size:    0.8125rem;
+  }
+  {{ wrapper_class }} .btn-secondary:hover {
+    background: var(--inst-forest);
+    color: var(--inst-paper);
+  }
+  /* Card accent: left border on training cards within this block */
+  {{ wrapper_class }} .card-training {
+    border-left: 2px solid var(--inst-forest);
+  }
+
+  {%- when 'musa' -%}
+  /* ── MUSA block overrides ── */
+  {{ wrapper_class }} {
+    /* Palette */
+    --bg:              var(--musa-bone);
+    --bg-alt:          var(--musa-parchment);
+    --bg-pale:         var(--musa-parchment);
+    --fg:              var(--musa-ink);
+    --fg-anchor:       var(--musa-oxblood);
+    --fg-accent:       var(--musa-ochre);
+    --fg-kicker:       var(--musa-walnut);
+    --border:          var(--musa-rule);
+
+    /* Typography */
+    --font-display:    var(--musa-font-display);
+    --font-body:       var(--musa-font-body);
+    --font-utility:    var(--musa-font-utility);
+
+    /* Semantic */
+    background-color:  var(--musa-bone);
+    color:             var(--musa-ink);
+    font-family:       var(--musa-font-body);
+    font-size:         19px;
+    line-height:       1.65;
+  }
+  {{ wrapper_class }} h1,
+  {{ wrapper_class }} h2,
+  {{ wrapper_class }} h3,
+  {{ wrapper_class }} h4 {
+    font-family:     var(--musa-font-display);
+    color:           var(--musa-ink);
+    font-weight:     400;
+    line-height:     1.1;
+    letter-spacing:  -0.005em;
+  }
+  {{ wrapper_class }} h4 {
+    font-family:     var(--musa-font-utility);
+    font-size:       0.8125rem;
+    text-transform:  uppercase;
+    letter-spacing:  0.12em;
+    color:           var(--musa-walnut);
+    font-weight:     500;
+  }
+  {{ wrapper_class }} a {
+    color:                      var(--musa-oxblood);
+    text-decoration:            underline;
+    text-underline-offset:      4px;
+    text-decoration-thickness:  1px;
+  }
+  {{ wrapper_class }} .byline {
+    color:        var(--musa-walnut);
+    font-family:  var(--musa-font-utility);
+    font-size:    0.875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  {{ wrapper_class }} .btn-primary {
+    background:  var(--musa-oxblood);
+    color:       var(--musa-bone);
+    font-family: var(--musa-font-utility);
+  }
+  {{ wrapper_class }} .btn-primary:hover { background: #5A1518; }
+  {{ wrapper_class }} .btn-secondary {
+    background:   transparent;
+    color:        var(--musa-oxblood);
+    border-color: var(--musa-oxblood);
+    font-family:  var(--musa-font-utility);
+  }
+  {{ wrapper_class }} .btn-secondary:hover {
+    background: var(--musa-oxblood);
+    color: var(--musa-bone);
+  }
+
+{%- endcase -%}
+</style>

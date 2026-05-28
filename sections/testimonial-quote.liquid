@@ -1,0 +1,174 @@
+{% liquid
+  assign bg = section.settings.background | default: 'sand'
+
+  case bg
+    when 'sand'
+      assign bg_color = 'var(--cfbl-sand-light)'
+      assign text_color = 'var(--cfbl-ink)'
+      assign accent_color = 'var(--cfbl-deep-navy)'
+      assign brand_class = 'brand-cfbl'
+    when 'cream'
+      assign bg_color = 'var(--inst-cream)'
+      assign text_color = 'var(--inst-ink)'
+      assign accent_color = 'var(--inst-forest)'
+      assign brand_class = 'brand-institute'
+    when 'bone'
+      assign bg_color = 'var(--musa-bone)'
+      assign text_color = 'var(--musa-ink)'
+      assign accent_color = 'var(--musa-oxblood)'
+      assign brand_class = 'brand-musa'
+    when 'navy-dark'
+      assign bg_color = '#1A3347'
+      assign text_color = 'var(--cfbl-sand-pale)'
+      assign accent_color = 'var(--cfbl-sky-blue)'
+      assign brand_class = 'brand-cfbl'
+    when 'forest-dark'
+      assign bg_color = '#253831'
+      assign text_color = 'var(--inst-paper)'
+      assign accent_color = 'var(--inst-sage-mist)'
+      assign brand_class = 'brand-institute'
+    else
+      assign bg_color = 'var(--cfbl-sand-light)'
+      assign text_color = 'var(--cfbl-ink)'
+      assign accent_color = 'var(--cfbl-deep-navy)'
+      assign brand_class = 'brand-cfbl'
+  endcase
+%}
+
+<style>
+  #shopify-section-{{ section.id }} .testimonial-quote {
+    background: {{ bg_color }};
+    padding: var(--space-10) 0;
+  }
+
+  #shopify-section-{{ section.id }} .testimonial-quote__inner {
+    max-width: var(--container-text);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .testimonial-quote__mark {
+    display: block;
+    font-family: 'Cormorant SC', Georgia, serif;
+    font-size: 6rem;
+    line-height: 0.65;
+    color: {{ accent_color }};
+    opacity: 0.25;
+    margin: 0 0 var(--space-5);
+    pointer-events: none;
+    user-select: none;
+    aria-hidden: true;
+  }
+
+  {%- if bg == 'bone' or bg == 'musa' -%}
+  #shopify-section-{{ section.id }} .testimonial-quote__mark {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+  {%- endif -%}
+
+  #shopify-section-{{ section.id }} .testimonial-quote__text {
+    font-size: clamp(1.375rem, 2.5vw, 2rem);
+    line-height: 1.45;
+    color: {{ text_color }};
+    margin: 0 0 var(--space-6);
+    font-style: italic;
+  }
+
+  #shopify-section-{{ section.id }} .testimonial-quote__text--cfbl {
+    font-family: var(--cfbl-font-display);
+    font-weight: 400;
+  }
+
+  #shopify-section-{{ section.id }} .testimonial-quote__text--institute {
+    font-family: var(--inst-font-display);
+    font-weight: 400;
+  }
+
+  #shopify-section-{{ section.id }} .testimonial-quote__text--musa {
+    font-family: var(--musa-font-display);
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  #shopify-section-{{ section.id }} .testimonial-quote__attribution {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: {{ accent_color }};
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .testimonial-quote__rule {
+    width: 40px;
+    height: 1px;
+    background: {{ accent_color }};
+    opacity: 0.3;
+    margin: 0 auto var(--space-4);
+    border: none;
+  }
+</style>
+
+<section class="testimonial-quote {{ brand_class }}" aria-label="Testimonial">
+  <div class="testimonial-quote__inner">
+    <span class="testimonial-quote__mark" aria-hidden="true">&ldquo;</span>
+
+    {%- if section.settings.quote != blank -%}
+      <blockquote>
+        <p class="testimonial-quote__text testimonial-quote__text--{{ brand_class | remove: 'brand-' }}">
+          {{ section.settings.quote }}
+        </p>
+        {%- if section.settings.attribution != blank -%}
+          <hr class="testimonial-quote__rule" aria-hidden="true">
+          <footer>
+            <cite class="testimonial-quote__attribution">{{ section.settings.attribution | escape }}</cite>
+          </footer>
+        {%- endif -%}
+      </blockquote>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonial Quote",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "quote",
+      "label": "Quote text",
+      "default": "Working with the team at CFBL changed how I understand my own patterns. Evidence-based, thoughtful, and deeply human."
+    },
+    {
+      "type": "text",
+      "id": "attribution",
+      "label": "Attribution",
+      "default": "Client, Center for Balanced Living"
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        { "value": "sand", "label": "Sand (CFBL)" },
+        { "value": "cream", "label": "Cream (Institute)" },
+        { "value": "bone", "label": "Bone (MUSA)" },
+        { "value": "navy-dark", "label": "Deep Navy (dark)" },
+        { "value": "forest-dark", "label": "Forest (dark)" }
+      ],
+      "default": "sand"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Quote",
+      "settings": {
+        "background": "sand"
+      }
+    }
+  ]
+}
+{% endschema %}

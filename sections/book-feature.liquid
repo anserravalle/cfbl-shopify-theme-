@@ -1,0 +1,250 @@
+<style>
+  #shopify-section-{{ section.id }} .book-feature {
+    background: var(--musa-bone);
+    padding: var(--space-9) 0;
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-10);
+    align-items: start;
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__cover {
+    flex-shrink: 0;
+    width: 220px;
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__cover-placeholder {
+    width: 220px;
+    min-height: 320px;
+    background: var(--musa-parchment);
+    border: 1px solid var(--musa-rule);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+    text-align: center;
+    gap: var(--space-3);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__cover-placeholder .cover-author {
+    font-family: var(--musa-font-utility);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--musa-walnut);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__cover-placeholder .cover-title {
+    font-family: var(--musa-font-display);
+    font-size: 1.25rem;
+    color: var(--musa-ink);
+    line-height: 1.15;
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__copy {
+    padding-top: var(--space-4);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__label {
+    font-family: var(--musa-font-utility);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--musa-walnut);
+    margin: 0 0 var(--space-4);
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__title {
+    font-family: var(--musa-font-display);
+    font-size: clamp(1.75rem, 3.2vw, 2.625rem);
+    font-weight: 400;
+    color: var(--musa-ink);
+    letter-spacing: -0.005em;
+    line-height: 1.1;
+    margin: 0 0 var(--space-5);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__description {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.1875rem;
+    line-height: 1.7;
+    color: var(--musa-ink);
+    margin: 0 0 var(--space-6);
+    max-width: var(--measure-prose);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__description p {
+    margin: 0 0 var(--space-4);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__description p:last-child {
+    margin-bottom: 0;
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__isbn {
+    font-family: var(--musa-font-utility);
+    font-size: 0.8125rem;
+    color: rgba(74, 64, 54, 0.6);
+    letter-spacing: 0.04em;
+    margin: 0 0 var(--space-6);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__cta {
+    font-family: var(--musa-font-utility);
+    font-size: 0.9375rem;
+    color: var(--musa-oxblood);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    font-weight: 500;
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  #shopify-section-{{ section.id }} .book-feature__cta:hover {
+    color: var(--musa-walnut);
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .book-feature__inner {
+      grid-template-columns: 1fr;
+      gap: var(--space-7);
+    }
+
+    #shopify-section-{{ section.id }} .book-feature__cover,
+    #shopify-section-{{ section.id }} .book-feature__cover-placeholder {
+      width: 180px;
+    }
+  }
+</style>
+
+<section class="book-feature brand-musa" aria-labelledby="bf-title-{{ section.id }}">
+  <div class="book-feature__inner">
+
+    {%- comment -%} Cover image {%- endcomment -%}
+    <div class="book-feature__cover">
+      {%- if section.settings.cover_image != blank -%}
+        {{
+          section.settings.cover_image
+          | image_url: width: 440
+          | image_tag:
+            loading: 'lazy',
+            alt: section.settings.title | escape,
+            widths: '220, 440',
+            sizes: '220px'
+        }}
+      {%- else -%}
+        <div class="book-feature__cover-placeholder" aria-hidden="true">
+          {%- if section.settings.author != blank -%}
+            <p class="cover-author">{{ section.settings.author | escape }}</p>
+          {%- endif -%}
+          {%- if section.settings.title != blank -%}
+            <p class="cover-title">{{ section.settings.title | escape }}</p>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Copy {%- endcomment -%}
+    <div class="book-feature__copy">
+      {%- if section.settings.author != blank -%}
+        <p class="book-feature__label">{{ section.settings.author | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="book-feature__title" id="bf-title-{{ section.id }}">
+          {{ section.settings.title | escape }}
+        </h2>
+      {%- endif -%}
+
+      {%- if section.settings.description != blank -%}
+        <div class="book-feature__description">{{ section.settings.description }}</div>
+      {%- endif -%}
+
+      {%- if section.settings.isbn != blank -%}
+        <p class="book-feature__isbn">ISBN: {{ section.settings.isbn | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.purchase_url != blank -%}
+        <a href="{{ section.settings.purchase_url }}" class="book-feature__cta">
+          {{ section.settings.cta_label | default: 'Learn more' | escape }} &#8594;
+        </a>
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Book Feature",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Book title",
+      "default": "The Quiet Room"
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "Author",
+      "default": "Angela Serravalle"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Cover image"
+    },
+    {
+      "type": "url",
+      "id": "purchase_url",
+      "label": "Purchase / learn more URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA label",
+      "default": "Learn more"
+    },
+    {
+      "type": "text",
+      "id": "isbn",
+      "label": "ISBN (optional)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Book Feature",
+      "settings": {
+        "title": "The Quiet Room",
+        "author": "Angela Serravalle",
+        "cta_label": "Learn more"
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,220 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "Trauma-Informed Psychology · Middletown, DE",
+        "heading": "Healing Happens In Relationship.",
+        "subheading": "We pair evidence-based care with warmth, attunement, and a holistic approach to mind, body, and spirit.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Meet the Team",
+        "cta_secondary_url": "/pages/team",
+        "image": "cfbl-tree-portrait.jpeg",
+        "brand": "cfbl"
+      }
+    },
+    "pathway_cards": {
+      "type": "pathway-cards",
+      "settings": {
+        "heading": "Three Pathways to Support",
+        "eyebrow": "Where would you like to begin"
+      },
+      "blocks": {
+        "pathway_clients": {
+          "type": "pathway",
+          "settings": {
+            "kicker": "For Clients",
+            "heading": "Center for Balanced Living",
+            "description": "Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-informed care for adults, adolescents, and children.",
+            "cta_label": "Explore Clinical Services",
+            "cta_url": "/pages/cfbl",
+            "tone": "cfbl"
+          }
+        },
+        "pathway_professionals": {
+          "type": "pathway",
+          "settings": {
+            "kicker": "For Professionals",
+            "heading": "CFBL Institute",
+            "description": "Continuing education in trauma-informed practice, assessment, and applied clinical reasoning. Live workshops and on-demand courses for licensed clinicians.",
+            "cta_label": "View Trainings and CE",
+            "cta_url": "/pages/institute",
+            "tone": "institute"
+          }
+        },
+        "pathway_readers": {
+          "type": "pathway",
+          "settings": {
+            "kicker": "For Readers",
+            "heading": "MUSA",
+            "description": "Books, essays, and longer-form writing on psychology, memory, and being human. A publication by Dr. Angela Serravalle.",
+            "cta_label": "Read the Essays",
+            "cta_url": "/pages/musa",
+            "tone": "musa"
+          }
+        }
+      },
+      "block_order": ["pathway_clients", "pathway_professionals", "pathway_readers"]
+    },
+    "service_cards": {
+      "type": "service-cards",
+      "settings": {
+        "eyebrow": "For Clients",
+        "heading": "Therapy and Support Services",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "service_therapy": {
+          "type": "service",
+          "settings": {
+            "kicker": "Individual Therapy",
+            "heading": "Trauma-Informed Therapy",
+            "description": "Individual therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based approaches tailored to your history and goals.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/therapy"
+          }
+        },
+        "service_eval": {
+          "type": "service",
+          "settings": {
+            "kicker": "Psychological Evaluation",
+            "heading": "Psychological Evaluations",
+            "description": "Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment planning, school supports, and clinical decision-making.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/evaluations"
+          }
+        },
+        "service_groups": {
+          "type": "service",
+          "settings": {
+            "kicker": "Groups and Workshops",
+            "heading": "Group Therapy",
+            "description": "Community-grounded groups focused on grief, parenting, and somatic resourcing. Structured and time-limited, with open enrollment periods.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/groups"
+          }
+        },
+        "service_consult": {
+          "type": "service",
+          "settings": {
+            "kicker": "Clinical Consultation",
+            "heading": "Consultation",
+            "description": "Case consultation for clinicians and referral conversations for families. Available by arrangement to licensed professionals and referring providers.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/consultation"
+          }
+        }
+      },
+      "block_order": ["service_therapy", "service_eval", "service_groups", "service_consult"]
+    },
+    "three_branch": {
+      "type": "three-branch-overview",
+      "settings": {
+        "heading": "One practice. Three doors.",
+        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA are three distinct properties under one roof — each serving a different audience with its own voice and editorial identity."
+      }
+    },
+    "team": {
+      "type": "team-grid",
+      "settings": {
+        "eyebrow": "Our Team",
+        "heading": "Meet Our Team",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "member_serravalle": {
+          "type": "member",
+          "settings": {
+            "name": "Dr. Angela (Niki) Serravalle",
+            "credentials": "Psy.D., LPCMH, NCC",
+            "role": "Founder and Licensed Psychologist",
+            "bio_short": "A trauma-informed psychologist, educator, and writer. Founder of the Center for Balanced Living, the CFBL Institute, and MUSA.",
+            "profile_image": ""
+          }
+        }
+      },
+      "block_order": ["member_serravalle"]
+    },
+    "featured_training": {
+      "type": "featured-training",
+      "settings": {
+        "eyebrow": "CFBL Institute · Upcoming",
+        "heading": "Continuing education in trauma-informed practice.",
+        "brand": "institute"
+      },
+      "blocks": {
+        "training_1": {
+          "type": "training",
+          "settings": {
+            "kicker": "6.0 CE Hours · Live Online",
+            "title": "Trauma-Informed Assessment: Integrating the ACEs Framework",
+            "presenter": "Angela Serravalle, Psy.D.",
+            "date": "November 14, 2026",
+            "format": "Live Online",
+            "price": "$245",
+            "description": "Integrating psychometric reasoning with somatic and nervous-system awareness. A six-hour workshop for LCSWs, LPCs, psychologists, and PMHNPs.",
+            "cta_label": "Register",
+            "cta_url": "/collections/trainings"
+          }
+        }
+      },
+      "block_order": ["training_1"]
+    },
+    "featured_essay": {
+      "type": "featured-essay",
+      "settings": {
+        "eyebrow": "MUSA · Essays and Publications",
+        "heading": "New writing on psychology, memory, and being human.",
+        "brand": "musa"
+      },
+      "blocks": {
+        "essay_1": {
+          "type": "essay",
+          "settings": {
+            "title": "On Memory and the Body: What Trauma Teaches Us About Time",
+            "byline": "Angela Serravalle · May 2026",
+            "lede": "The body keeps a record that the mind is still learning to read. What clinical work reveals about the strangeness of traumatic memory.",
+            "cta_label": "Read the essay",
+            "cta_url": "/blogs/essays"
+          }
+        }
+      },
+      "block_order": ["essay_1"]
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Ready to take the first step?",
+        "subheading": "We're accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Contact Us",
+        "cta_secondary_url": "/pages/contact",
+        "footnote": "Middletown, DE · In-person and telehealth · Most insurance accepted",
+        "brand": "cfbl"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter-signup",
+      "settings": {
+        "eyebrow": "Stay Connected",
+        "heading": "Stay connected",
+        "description": "Updates from the practice, new trainings from the Institute, and new essays from MUSA. No more than twice a month.",
+        "button_label": "Subscribe",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "pathway_cards",
+    "service_cards",
+    "three_branch",
+    "team",
+    "featured_training",
+    "featured_essay",
+    "contact_cta",
+    "newsletter"
+  ]
+}

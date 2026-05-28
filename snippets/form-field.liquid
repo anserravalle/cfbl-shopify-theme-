@@ -1,0 +1,162 @@
+{%- comment -%}
+  form-field.liquid
+  ─────────────────────────────────────────────────────────────
+  Renders an accessible, brand-aware form field with visible
+  label, proper aria attributes, and consistent styling.
+
+  Parameters:
+    field_type    (required) — 'text' | 'email' | 'tel' | 'textarea' | 'select'
+    field_id      (required) — unique id for the field (used for label association)
+    label         (required) — visible label text
+    required      (optional) — 'true' to mark field as required
+                               Adds aria-required and visual asterisk
+    placeholder   (optional) — placeholder text for input/textarea
+    value         (optional) — pre-filled value
+    options       (optional) — for field_type 'select': array of option objects
+                               Each should have .value and .label properties
+                               Pass as a Liquid array of hashes
+    hint          (optional) — helper text shown below the field
+    error         (optional) — error message (shown when non-blank)
+    name          (optional) — form field name attribute (defaults to field_id)
+    autocomplete  (optional) — HTML autocomplete attribute
+    rows          (optional) — rows attribute for textarea (default: 5)
+    class         (optional) — additional CSS classes on the .field-group wrapper
+
+  Usage examples:
+    {% render 'form-field',
+       field_type: 'email',
+       field_id: 'contact-email',
+       label: 'Email address',
+       required: 'true',
+       placeholder: 'you@example.com',
+       autocomplete: 'email'
+    %}
+
+    {% render 'form-field',
+       field_type: 'textarea',
+       field_id: 'contact-message',
+       label: 'Message',
+       required: 'true',
+       placeholder: 'How can we help?',
+       rows: '6'
+    %}
+{%- endcomment -%}
+
+{%- liquid
+  assign f_type         = field_type   | default: 'text'
+  assign f_id           = field_id
+  assign f_label        = label        | default: ''
+  assign f_required     = required     | default: 'false'
+  assign f_placeholder  = placeholder  | default: ''
+  assign f_value        = value        | default: ''
+  assign f_hint         = hint         | default: ''
+  assign f_error        = error        | default: ''
+  assign f_name         = name         | default: field_id
+  assign f_autocomplete = autocomplete | default: ''
+  assign f_rows         = rows         | default: '5'
+  assign f_class        = class        | default: ''
+
+  assign is_required = false
+  if f_required == 'true' or f_required == true
+    assign is_required = true
+  endif
+
+  assign has_error = false
+  if f_error != blank
+    assign has_error = true
+  endif
+
+  assign aria_id     = f_id | append: '-input'
+  assign label_id    = f_id | append: '-label'
+  assign hint_id     = f_id | append: '-hint'
+  assign error_id    = f_id | append: '-error'
+-%}
+
+<div
+  class="field-group{% if f_class != blank %} {{ f_class }}{% endif %}"
+  id="{{ f_id }}"
+>
+  {%- comment -%} Visible label {%- endcomment -%}
+  <label
+    class="field-label{% if is_required %} field-label--required{% endif %}"
+    for="{{ aria_id }}"
+    id="{{ label_id }}"
+  >
+    {{ f_label | escape }}
+  </label>
+
+  {%- comment -%} Hint text {%- endcomment -%}
+  {%- if f_hint != blank -%}
+    <span class="field-hint" id="{{ hint_id }}">{{ f_hint | escape }}</span>
+  {%- endif -%}
+
+  {%- comment -%} Error message {%- endcomment -%}
+  {%- if has_error -%}
+    <span
+      class="field-error"
+      id="{{ error_id }}"
+      role="alert"
+      aria-live="polite"
+    >
+      {{ f_error | escape }}
+    </span>
+  {%- endif -%}
+
+  {%- comment -%} The field itself {%- endcomment -%}
+  {%- case f_type -%}
+
+    {%- when 'textarea' -%}
+      <textarea
+        class="field-textarea{% if has_error %} field-input--error{% endif %}"
+        id="{{ aria_id }}"
+        name="{{ f_name }}"
+        rows="{{ f_rows }}"
+        {%- if is_required %} required aria-required="true"{%- endif %}
+        {%- if f_placeholder != blank %} placeholder="{{ f_placeholder | escape }}"{%- endif %}
+        {%- if f_hint != blank %} aria-describedby="{{ hint_id }}{% if has_error %} {{ error_id }}{% endif %}"{%- elsif has_error %} aria-describedby="{{ error_id }}"{%- endif %}
+        {%- if has_error %} aria-invalid="true"{%- endif %}
+        {%- if f_autocomplete != blank %} autocomplete="{{ f_autocomplete }}"{%- endif %}
+      >{{ f_value | escape }}</textarea>
+
+    {%- when 'select' -%}
+      <select
+        class="field-select{% if has_error %} field-input--error{% endif %}"
+        id="{{ aria_id }}"
+        name="{{ f_name }}"
+        {%- if is_required %} required aria-required="true"{%- endif %}
+        {%- if f_hint != blank %} aria-describedby="{{ hint_id }}{% if has_error %} {{ error_id }}{% endif %}"{%- elsif has_error %} aria-describedby="{{ error_id }}"{%- endif %}
+        {%- if has_error %} aria-invalid="true"{%- endif %}
+        {%- if f_autocomplete != blank %} autocomplete="{{ f_autocomplete }}"{%- endif %}
+      >
+        {%- if f_placeholder != blank -%}
+          <option value="" disabled{% unless f_value != blank %} selected{% endunless %}>
+            {{ f_placeholder | escape }}
+          </option>
+        {%- endif -%}
+        {%- for opt in options -%}
+          <option
+            value="{{ opt.value | escape }}"
+            {%- if opt.value == f_value %} selected{%- endif %}
+          >
+            {{ opt.label | escape }}
+          </option>
+        {%- endfor -%}
+      </select>
+
+    {%- else -%}
+      {%- comment -%} text, email, tel, etc. {%- endcomment -%}
+      <input
+        class="field-input{% if has_error %} field-input--error{% endif %}"
+        type="{{ f_type }}"
+        id="{{ aria_id }}"
+        name="{{ f_name }}"
+        {%- if f_value != blank %} value="{{ f_value | escape }}"{%- endif %}
+        {%- if is_required %} required aria-required="true"{%- endif %}
+        {%- if f_placeholder != blank %} placeholder="{{ f_placeholder | escape }}"{%- endif %}
+        {%- if f_hint != blank %} aria-describedby="{{ hint_id }}{% if has_error %} {{ error_id }}{% endif %}"{%- elsif has_error %} aria-describedby="{{ error_id }}"{%- endif %}
+        {%- if has_error %} aria-invalid="true"{%- endif %}
+        {%- if f_autocomplete != blank %} autocomplete="{{ f_autocomplete }}"{%- endif %}
+      >
+
+  {%- endcase -%}
+</div>

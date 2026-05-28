@@ -1,0 +1,214 @@
+{%- comment -%}
+  breadcrumb.liquid
+  ─────────────────────────────────────────────────────────────
+  Renders an accessible breadcrumb trail.
+
+  Supports two data sources (auto-detected):
+  1. A `breadcrumb` array variable passed from the calling template.
+     Each item should be an object with keys: title, url
+     The last item is treated as the current page (aria-current="page").
+
+  2. Auto-built from Shopify's collection/product/article hierarchy
+     when no explicit breadcrumb array is provided.
+
+  The component respects Schema.org BreadcrumbList markup.
+
+  Parameters:
+    breadcrumb  (optional) — array of {title, url} objects.
+                             Last item is the current page.
+    separator   (optional) — separator character/string.
+                             Default: the › character.
+
+  Usage — manual array:
+    {%- liquid
+      assign crumbs = '' | split: ''
+      assign home = 'crumbs' | split: ''
+
+      assign crumb_home = hash
+      assign crumb_home['title'] = 'Home'
+      assign crumb_home['url'] = '/'
+
+      assign crumb_parent = hash
+      assign crumb_parent['title'] = 'Services'
+      assign crumb_parent['url'] = '/pages/services'
+
+      assign crumb_current = hash
+      assign crumb_current['title'] = page.title
+      assign crumb_current['url'] = page.url
+    -%}
+    Note: For simplicity, pass as a JSON-like structure via metafields
+    or build inline. See section schemas for practical usage.
+
+  Usage — auto-detection (no params):
+    {% render 'breadcrumb' %}
+{%- endcomment -%}
+
+{%- liquid
+  assign sep = separator | default: '›'
+
+  comment
+    Build breadcrumbs automatically when no explicit array is passed.
+    This covers the most common Shopify templates.
+  endcomment
+
+  if breadcrumb != blank
+    assign crumb_items = breadcrumb
+  else
+    comment
+      Auto-build based on template type.
+      We construct an array-like structure using capture/split.
+    endcomment
+    assign auto_crumbs = '' | split: ''
+  endif
+-%}
+
+{%- capture schema_items -%}
+  {%- assign schema_position = 1 -%}
+{%- endcapture -%}
+
+<nav class="breadcrumb" aria-label="{{ 'accessibility.breadcrumb' | t }}">
+  <ol
+    class="breadcrumb"
+    itemscope
+    itemtype="https://schema.org/BreadcrumbList"
+    style="list-style:none;margin:0;padding:0;display:flex;align-items:center;flex-wrap:wrap;gap:0.25rem;"
+  >
+    {%- comment -%} Home item is always first {%- endcomment -%}
+    <li
+      class="breadcrumb-item"
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      <a href="{{ routes.root_url }}" itemprop="item">
+        <span itemprop="name">{{ 'navigation.home' | t }}</span>
+      </a>
+      <meta itemprop="position" content="1">
+    </li>
+
+    {%- comment -%}
+      Explicit breadcrumb array (from calling template or section).
+      Usage: pass an array of objects via a section setting or metafield.
+    {%- endcomment -%}
+    {%- if breadcrumb != blank -%}
+      {%- assign crumb_count = breadcrumb | size -%}
+      {%- for crumb in breadcrumb -%}
+        {%- assign crumb_position = forloop.index | plus: 1 -%}
+        {%- assign is_last = forloop.last -%}
+
+        <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+
+        <li
+          class="breadcrumb-item{% if is_last %} breadcrumb-item--current{% endif %}"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          {%- if is_last %} aria-current="page"{%- endif %}
+        >
+          {%- if is_last -%}
+            <span itemprop="name">{{ crumb.title | escape }}</span>
+          {%- else -%}
+            <a href="{{ crumb.url }}" itemprop="item">
+              <span itemprop="name">{{ crumb.title | escape }}</span>
+            </a>
+          {%- endif -%}
+          <meta itemprop="position" content="{{ crumb_position }}">
+        </li>
+      {%- endfor -%}
+
+    {%- comment -%}
+      Auto-detection: build breadcrumbs from Shopify's template context.
+    {%- endcomment -%}
+    {%- elsif template.name == 'collection' -%}
+      <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+      <li
+        class="breadcrumb-item breadcrumb-item--current"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+        aria-current="page"
+      >
+        <span itemprop="name">{{ collection.title | escape }}</span>
+        <meta itemprop="position" content="2">
+      </li>
+
+    {%- elsif template.name == 'product' -%}
+      {%- if collection != blank -%}
+        <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+        <li
+          class="breadcrumb-item"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+        >
+          <a href="{{ collection.url }}" itemprop="item">
+            <span itemprop="name">{{ collection.title | escape }}</span>
+          </a>
+          <meta itemprop="position" content="2">
+        </li>
+        <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+        <li
+          class="breadcrumb-item breadcrumb-item--current"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          aria-current="page"
+        >
+          <span itemprop="name">{{ product.title | escape }}</span>
+          <meta itemprop="position" content="3">
+        </li>
+      {%- else -%}
+        <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+        <li
+          class="breadcrumb-item breadcrumb-item--current"
+          itemprop="itemListElement"
+          itemscope
+          itemtype="https://schema.org/ListItem"
+          aria-current="page"
+        >
+          <span itemprop="name">{{ product.title | escape }}</span>
+          <meta itemprop="position" content="2">
+        </li>
+      {%- endif -%}
+
+    {%- elsif template.name == 'article' -%}
+      <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+      <li
+        class="breadcrumb-item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a href="{{ blog.url }}" itemprop="item">
+          <span itemprop="name">{{ blog.title | escape }}</span>
+        </a>
+        <meta itemprop="position" content="2">
+      </li>
+      <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+      <li
+        class="breadcrumb-item breadcrumb-item--current"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+        aria-current="page"
+      >
+        <span itemprop="name">{{ article.title | escape }}</span>
+        <meta itemprop="position" content="3">
+      </li>
+
+    {%- elsif template.name == 'page' -%}
+      <li class="breadcrumb-sep" aria-hidden="true">{{ sep }}</li>
+      <li
+        class="breadcrumb-item breadcrumb-item--current"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+        aria-current="page"
+      >
+        <span itemprop="name">{{ page.title | escape }}</span>
+        <meta itemprop="position" content="2">
+      </li>
+
+    {%- endif -%}
+  </ol>
+</nav>

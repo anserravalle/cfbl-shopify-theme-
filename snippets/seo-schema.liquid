@@ -1,0 +1,263 @@
+{%- comment -%}
+  seo-schema.liquid
+  ─────────────────────────────────────────────────────────────
+  Outputs a <script type="application/ld+json"> block for
+  structured data markup. Place in the <head> or just before
+  </body> — Google accepts both locations.
+
+  Parameters:
+    schema_type   (required) — 'Organization' | 'Person' | 'Course'
+                               | 'Book' | 'Article'
+
+  Organization parameters (CFBL pages):
+    org_name      — organization name
+    org_url       — canonical URL
+    org_telephone — phone number
+    org_address   — street address string
+    org_logo_url  — absolute URL to logo image
+
+  Person parameters (Dr. Serravalle / MUSA pages):
+    person_name       — full name
+    person_job_title  — job title / credentials
+    person_url        — profile page URL
+    person_image_url  — absolute URL to headshot
+
+  Course parameters (Institute training pages):
+    course_name         — course/training title
+    course_description  — course description
+    course_provider     — provider name (default: CFBL Institute)
+    course_start_date   — ISO 8601 date string e.g. "2025-09-15"
+    course_url          — registration/detail page URL
+    course_mode         — 'online' | 'onsite' | 'blended'
+
+  Book parameters (MUSA book pages):
+    book_name       — book title
+    book_author     — author name
+    book_isbn       — ISBN-13 or ISBN-10
+    book_url        — book detail page URL
+    book_image_url  — absolute URL to cover image
+
+  Article parameters (MUSA essay pages):
+    article_headline   — essay/article title
+    article_author     — author name
+    article_date       — ISO 8601 published date e.g. "2025-04-01"
+    article_url        — canonical article URL
+    article_image_url  — absolute URL to article image (optional)
+    article_publisher  — publisher name (default: MUSA)
+{%- endcomment -%}
+
+{%- liquid
+  assign type = schema_type | default: 'Organization'
+-%}
+
+{%- case type -%}
+
+  {%- when 'Organization' -%}
+    {%- liquid
+      assign s_name      = org_name      | default: 'Center for Balanced Living'
+      assign s_url       = org_url       | default: shop.url
+      assign s_telephone = org_telephone | default: settings.contact_phone | default: ''
+      assign s_address   = org_address   | default: settings.contact_address | default: ''
+      assign s_logo      = org_logo_url  | default: ''
+      assign s_email     = settings.contact_email | default: ''
+    -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": {{ s_name | json }},
+      "url": {{ s_url | json }},
+      {%- if s_logo != blank %}
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ s_logo | json }}
+      },
+      {%- endif %}
+      {%- if s_telephone != blank %}
+      "telephone": {{ s_telephone | json }},
+      {%- endif %}
+      {%- if s_email != blank %}
+      "email": {{ s_email | json }},
+      {%- endif %}
+      {%- if s_address != blank %}
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ s_address | json }}
+      },
+      {%- endif %}
+      "sameAs": [
+        {%- if settings.instagram_url != blank %}{{ settings.instagram_url | json }}{%- if settings.facebook_url != blank or settings.linkedin_url != blank %},{%- endif %}{%- endif %}
+        {%- if settings.facebook_url != blank %}{{ settings.facebook_url | json }}{%- if settings.linkedin_url != blank %},{%- endif %}{%- endif %}
+        {%- if settings.linkedin_url != blank %}{{ settings.linkedin_url | json }}{%- endif %}
+      ]
+    }
+    </script>
+
+  {%- when 'Person' -%}
+    {%- liquid
+      assign s_name      = person_name      | default: 'Dr. Angela Serravalle'
+      assign s_job_title = person_job_title | default: 'Psychologist, Psy.D., LPCMH, NCC'
+      assign s_url       = person_url       | default: shop.url
+      assign s_image     = person_image_url | default: ''
+    -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ s_name | json }},
+      "jobTitle": {{ s_job_title | json }},
+      "url": {{ s_url | json }},
+      {%- if s_image != blank %}
+      "image": {{ s_image | json }},
+      {%- endif %}
+      "worksFor": {
+        "@type": "MedicalOrganization",
+        "name": "Center for Balanced Living",
+        "url": {{ shop.url | json }}
+      },
+      "sameAs": [
+        {%- if settings.instagram_url != blank %}{{ settings.instagram_url | json }}{%- if settings.linkedin_url != blank %},{%- endif %}{%- endif %}
+        {%- if settings.linkedin_url != blank %}{{ settings.linkedin_url | json }}{%- endif %}
+      ]
+    }
+    </script>
+
+  {%- when 'Course' -%}
+    {%- liquid
+      assign s_name        = course_name        | default: ''
+      assign s_description = course_description | default: ''
+      assign s_provider    = course_provider    | default: 'CFBL Institute'
+      assign s_start_date  = course_start_date  | default: ''
+      assign s_url         = course_url         | default: ''
+      assign s_mode        = course_mode        | default: 'online'
+
+      case s_mode
+        when 'online'
+          assign s_course_mode = 'https://schema.org/OnlineEventAttendanceMode'
+          assign s_location_type = 'VirtualLocation'
+        when 'onsite'
+          assign s_course_mode = 'https://schema.org/OfflineEventAttendanceMode'
+          assign s_location_type = 'Place'
+        else
+          assign s_course_mode = 'https://schema.org/MixedEventAttendanceMode'
+          assign s_location_type = 'VirtualLocation'
+      endcase
+    -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": {{ s_name | json }},
+      "description": {{ s_description | json }},
+      {%- if s_url != blank %}
+      "url": {{ s_url | json }},
+      {%- endif %}
+      "provider": {
+        "@type": "Organization",
+        "name": {{ s_provider | json }},
+        "url": {{ shop.url | json }}
+      },
+      "educationalCredentialAwarded": "Continuing Education Credits",
+      "courseMode": {{ s_mode | json }}
+      {%- if s_start_date != blank -%}
+      ,
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": {{ s_mode | json }},
+        "startDate": {{ s_start_date | json }},
+        "eventAttendanceMode": {{ s_course_mode | json }},
+        "location": {
+          "@type": {{ s_location_type | json }}
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": {{ s_provider | json }},
+          "url": {{ shop.url | json }}
+        }
+      }
+      {%- endif %}
+    }
+    </script>
+
+  {%- when 'Book' -%}
+    {%- liquid
+      assign s_name       = book_name       | default: ''
+      assign s_author     = book_author     | default: 'Dr. Angela Serravalle'
+      assign s_isbn       = book_isbn       | default: ''
+      assign s_url        = book_url        | default: ''
+      assign s_image      = book_image_url  | default: ''
+    -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Book",
+      "name": {{ s_name | json }},
+      "author": {
+        "@type": "Person",
+        "name": {{ s_author | json }}
+      },
+      {%- if s_isbn != blank %}
+      "isbn": {{ s_isbn | json }},
+      {%- endif %}
+      {%- if s_url != blank %}
+      "url": {{ s_url | json }},
+      {%- endif %}
+      {%- if s_image != blank %}
+      "image": {{ s_image | json }},
+      {%- endif %}
+      "publisher": {
+        "@type": "Organization",
+        "name": "MUSA",
+        "url": {{ shop.url | json }}
+      },
+      "inLanguage": "en"
+    }
+    </script>
+
+  {%- when 'Article' -%}
+    {%- liquid
+      assign s_headline   = article_headline  | default: ''
+      assign s_author     = article_author    | default: 'Dr. Angela Serravalle'
+      assign s_date       = article_date      | default: ''
+      assign s_url        = article_url       | default: ''
+      assign s_image      = article_image_url | default: ''
+      assign s_publisher  = article_publisher | default: 'MUSA'
+    -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ s_headline | json }},
+      "author": {
+        "@type": "Person",
+        "name": {{ s_author | json }}
+      },
+      {%- if s_date != blank %}
+      "datePublished": {{ s_date | json }},
+      {%- endif %}
+      {%- if s_url != blank %}
+      "url": {{ s_url | json }},
+      {%- endif %}
+      {%- if s_image != blank %}
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ s_image | json }}
+      },
+      {%- endif %}
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ s_publisher | json }},
+        "url": {{ shop.url | json }}
+        {%- if settings.share_image != blank -%}
+        ,
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ settings.share_image | image_url: width: 600 | json }}
+        }
+        {%- endif %}
+      },
+      "inLanguage": "en"
+    }
+    </script>
+
+{%- endcase -%}

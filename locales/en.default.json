@@ -1,0 +1,219 @@
+{
+  "accessibility": {
+    "skip_to_content": "Skip to main content",
+    "close_menu": "Close menu",
+    "open_menu": "Open menu",
+    "close_modal": "Close",
+    "breadcrumb": "Breadcrumb",
+    "required_field": "required",
+    "loading": "Loading",
+    "go_to_page": "Go to page {{ page }}",
+    "next_page": "Next page",
+    "previous_page": "Previous page",
+    "page_x_of_y": "Page {{ current }} of {{ total }}",
+    "external_link": "Opens in a new tab",
+    "image_alt_fallback": "Image"
+  },
+
+  "navigation": {
+    "home": "Home",
+    "for_clients": "For Clients",
+    "for_professionals": "For Professionals",
+    "musa": "MUSA",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services",
+    "training": "Training",
+    "essays": "Essays",
+    "books": "Books",
+    "resources": "Resources",
+    "team": "Our Team",
+    "about_cfbl": "About CFBL",
+    "about_institute": "About the Institute",
+    "about_musa": "About MUSA",
+    "individual_therapy": "Individual Therapy",
+    "couples_therapy": "Couples Therapy",
+    "child_adolescent": "Child and Adolescent",
+    "psychological_evaluations": "Psychological Evaluations",
+    "supervision": "Supervision",
+    "speaking": "Speaking",
+    "upcoming_trainings": "Upcoming Trainings",
+    "ce_catalog": "CE Catalog",
+    "self_study": "Self-Study Courses",
+    "apply_for_ce": "Apply for CE Credit",
+    "all_essays": "All Essays",
+    "essay_archive": "Archive",
+    "client_portal": "Client Portal",
+    "schedule": "Schedule"
+  },
+
+  "ctas": {
+    "schedule_consultation": "Schedule a consultation",
+    "meet_the_team": "Meet the team",
+    "contact_us": "Contact us",
+    "learn_more": "Learn more",
+    "read_more": "Read more",
+    "register": "Register",
+    "apply_for_ce": "Apply for CE credit",
+    "view_prerequisites": "View prerequisites",
+    "view_details": "View details",
+    "view_all": "View all",
+    "view_training": "View training",
+    "view_essay": "Read essay",
+    "view_book": "View book",
+    "subscribe": "Subscribe",
+    "download": "Download",
+    "back_to_top": "Back to top",
+    "return_to_archive": "Return to archive",
+    "explore_services": "Explore services",
+    "explore_training": "Explore training"
+  },
+
+  "training": {
+    "register": "Register",
+    "register_for": "Register for {{ title }}",
+    "apply_ce": "Apply for CE credit",
+    "view_prerequisites": "View prerequisites",
+    "ce_hours_label": "CE Hours",
+    "format_live_online": "Live Online",
+    "format_in_person": "In-Person",
+    "format_self_study": "Self-Study",
+    "upcoming": "Upcoming",
+    "date": "Date",
+    "location": "Location",
+    "prerequisites": "Prerequisites",
+    "learning_objectives": "Learning Objectives",
+    "approved_by": "Approved by",
+    "price": "Price",
+    "registration_closed": "Registration closed",
+    "waitlist": "Join waitlist",
+    "no_upcoming": "No upcoming trainings scheduled. Check back soon.",
+    "full_catalog": "Full CE catalog"
+  },
+
+  "cards": {
+    "learn_more": "Learn more",
+    "learn_more_about": "Learn more about {{ title }}",
+    "read_essay": "Read essay",
+    "register_for_training": "Register for training",
+    "view_book": "View book"
+  },
+
+  "forms": {
+    "first_name": "First name",
+    "last_name": "Last name",
+    "full_name": "Full name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "subject": "Subject",
+    "message": "Message",
+    "inquiry_type": "Type of inquiry",
+    "preferred_contact": "Preferred contact method",
+    "submit": "Send message",
+    "submitting": "Sending...",
+    "newsletter_email": "Email address",
+    "newsletter_submit": "Subscribe",
+    "newsletter_subscribing": "Subscribing...",
+    "contact_cta": "Schedule a consultation",
+
+    "placeholders": {
+      "first_name": "Angela",
+      "last_name": "Serravalle",
+      "email": "you@example.com",
+      "phone": "(302) 555-0100",
+      "message": "Please share what brings you here and how we can help.",
+      "newsletter_email": "your@email.com"
+    },
+
+    "inquiry_options": {
+      "individual_therapy": "Individual Therapy",
+      "couples_therapy": "Couples Therapy",
+      "child_adolescent": "Child or Adolescent Therapy",
+      "psychological_evaluation": "Psychological Evaluation",
+      "supervision": "Supervision or Consultation",
+      "training_ce": "Training or CE",
+      "speaking": "Speaking Engagement",
+      "musa": "MUSA / Writing",
+      "other": "Other"
+    },
+
+    "contact_method_options": {
+      "email": "Email",
+      "phone": "Phone"
+    }
+  },
+
+  "errors": {
+    "required": "This field is required.",
+    "email_invalid": "Please enter a valid email address.",
+    "phone_invalid": "Please enter a valid phone number.",
+    "message_too_short": "Please provide a bit more detail (at least 20 characters).",
+    "generic": "Something went wrong. Please try again or contact us directly.",
+    "newsletter_exists": "This email address is already subscribed.",
+    "newsletter_invalid": "Please enter a valid email address to subscribe.",
+    "form_incomplete": "Please complete all required fields before submitting."
+  },
+
+  "success": {
+    "contact_form": "Thank you for reaching out. We will be in touch within 2 business days.",
+    "newsletter": "You've been added to the list. Thank you.",
+    "ce_application": "Your CE application has been received. Allow 2–3 weeks for processing."
+  },
+
+  "footer": {
+    "cfbl_column_heading": "Center for Balanced Living",
+    "institute_column_heading": "CFBL Institute",
+    "musa_column_heading": "MUSA",
+    "contact_heading": "Contact",
+    "newsletter_heading": "Stay connected",
+    "newsletter_subtext": "Essays, training announcements, and practice resources — infrequently, with intent.",
+    "social_heading": "Follow",
+    "copyright": "© {{ year }} Center for Balanced Living. All rights reserved.",
+    "privacy_policy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "accessibility": "Accessibility",
+    "hipaa_notice": "HIPAA Notice of Privacy Practices",
+    "telehealth_disclosure": "Telehealth Informed Consent"
+  },
+
+  "hero": {
+    "cfbl_default_heading": "Healing happens in relationship.",
+    "cfbl_default_subhead": "Evidence-based care with warmth, attunement, and a whole-person approach.",
+    "institute_default_heading": "Continuing Education for Clinicians",
+    "institute_default_subhead": "Training for licensed professionals — rigorous, applied, and peer-facing.",
+    "musa_default_heading": "Essays on psychology, culture, and the examined life.",
+    "musa_default_byline": "Dr. Angela Serravalle, Psy.D."
+  },
+
+  "brands": {
+    "cfbl_full": "Center for Balanced Living",
+    "cfbl_short": "CFBL",
+    "institute_full": "CFBL Institute",
+    "institute_short": "Institute",
+    "musa": "MUSA",
+    "tagline_cfbl": "Clinical care for the whole person.",
+    "tagline_institute": "Continuing education for clinicians.",
+    "tagline_musa": "Essays and books by Dr. Angela Serravalle."
+  },
+
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of"
+  },
+
+  "search": {
+    "placeholder": "Search",
+    "submit": "Search",
+    "no_results": "No results for \"{{ query }}\".",
+    "results_for": "Results for \"{{ query }}\""
+  },
+
+  "cookies": {
+    "notice": "This site uses cookies to improve your experience.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "learn_more": "Learn more"
+  }
+}

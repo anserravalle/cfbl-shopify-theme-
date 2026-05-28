@@ -1,0 +1,58 @@
+{%- comment -%}
+  button-secondary.liquid
+  ─────────────────────────────────────────────────────────────
+  Renders a brand-aware secondary (outline) button.
+
+  Parameters:
+    label    (required) — visible button text
+    url      (optional) — if present, renders an <a> tag;
+                          if blank, renders a <button type="button">
+    brand    (optional) — 'cfbl' | 'institute' | 'musa';
+                          defaults to the body's data-brand attribute
+    size     (optional) — 'sm' for .btn-sm; default is normal size
+    class    (optional) — additional CSS classes
+    attrs    (optional) — additional HTML attributes string
+    icon     (optional) — Lucide icon name to append
+    disabled (optional) — if 'true', adds disabled/aria-disabled
+{%- endcomment -%}
+
+{%- liquid
+  assign btn_label    = label    | default: 'Learn more'
+  assign btn_url      = url      | default: ''
+  assign btn_size     = size     | default: ''
+  assign btn_class    = class    | default: ''
+  assign btn_attrs    = attrs    | default: ''
+  assign btn_icon     = icon     | default: ''
+  assign btn_disabled = disabled | default: 'false'
+
+  assign size_class = ''
+  if btn_size == 'sm'
+    assign size_class = ' btn-sm'
+  endif
+-%}
+
+{%- if btn_url != blank -%}
+  <a
+    href="{{ btn_url }}"
+    class="btn btn-secondary{{ size_class }}{% if btn_class != blank %} {{ btn_class }}{% endif %}"
+    {%- if btn_disabled == 'true' %} aria-disabled="true" tabindex="-1"{%- endif %}
+    {{ btn_attrs }}
+  >
+    {{- btn_label | escape -}}
+    {%- if btn_icon != blank -%}
+      <i data-lucide="{{ btn_icon }}" aria-hidden="true" style="width:16px;height:16px;stroke-width:1.75;flex-shrink:0;"></i>
+    {%- endif -%}
+  </a>
+{%- else -%}
+  <button
+    type="button"
+    class="btn btn-secondary{{ size_class }}{% if btn_class != blank %} {{ btn_class }}{% endif %}"
+    {%- if btn_disabled == 'true' %} disabled aria-disabled="true"{%- endif %}
+    {{ btn_attrs }}
+  >
+    {{- btn_label | escape -}}
+    {%- if btn_icon != blank -%}
+      <i data-lucide="{{ btn_icon }}" aria-hidden="true" style="width:16px;height:16px;stroke-width:1.75;flex-shrink:0;"></i>
+    {%- endif -%}
+  </button>
+{%- endif -%}

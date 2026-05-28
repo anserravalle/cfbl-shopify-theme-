@@ -1,0 +1,65 @@
+{%- comment -%}
+  card-training.liquid
+  ─────────────────────────────────────────────────────────────
+  CFBL Institute training card.
+
+  Visual spec:
+  - Paper (#F0EAE0) background, no shadow, 2px radius
+  - 2px Forest (#3D5A52) left border — full height of the card
+  - Inter uppercase kicker with optional CE hours
+  - Cormorant SC title in Forest
+  - Lora description in Ink
+  - Forest "Register →" link in Inter uppercase
+
+  Parameters:
+    title        (required) — training/course name
+    description  (required) — course abstract or description
+    url          (required) — registration or detail page URL
+    ce_hours     (optional) — numeric CE hours e.g. "6"
+    date         (optional) — date string e.g. "June 14, 2025"
+    format       (optional) — "Live Online" | "In-Person" | "Self-Study"
+{%- endcomment -%}
+
+<article class="card card-training" aria-label="{{ title | escape }}">
+  <div class="card-training__meta">
+    {%- if ce_hours != blank -%}
+      <span class="card-training__kicker">
+        {{- ce_hours -}} {{ 'training.ce_hours_label' | t }}
+      </span>
+    {%- endif -%}
+    {%- if format != blank -%}
+      <span class="card-training__format">{{ format | escape }}</span>
+    {%- endif -%}
+  </div>
+
+  <h3 class="card-training__title">
+    <a href="{{ url }}" style="color:inherit;text-decoration:none;">
+      {{ title | escape }}
+    </a>
+  </h3>
+
+  {%- if description != blank -%}
+    <div class="card-training__description">
+      {{ description }}
+    </div>
+  {%- endif -%}
+
+  <div class="card-training__footer">
+    {%- if date != blank -%}
+      <time class="card-training__date" datetime="{{ date }}">{{ date | escape }}</time>
+    {%- else -%}
+      <span></span>
+    {%- endif -%}
+
+    <a
+      href="{{ url }}"
+      class="card-training__link"
+      aria-label="{{ 'training.register_for' | t: title: title | escape }}"
+    >
+      {{ 'training.register' | t }}
+      <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" style="flex-shrink:0;">
+        <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</article>

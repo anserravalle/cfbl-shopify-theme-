@@ -1,0 +1,220 @@
+<style>
+  .three-branch {
+    padding: var(--space-9) 0;
+    background: var(--cfbl-sand-light);
+  }
+
+  .three-branch__head {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6) var(--space-8);
+    text-align: center;
+  }
+
+  .three-branch__eyebrow {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--cfbl-terracotta);
+    font-weight: 600;
+    margin: 0 0 var(--space-3);
+    display: block;
+  }
+
+  .three-branch__title {
+    font-family: var(--cfbl-font-display);
+    color: var(--cfbl-deep-navy);
+    font-weight: 500;
+    font-size: clamp(1.875rem, 3.2vw, 2.5rem);
+    margin: 0 0 var(--space-4);
+    line-height: 1.15;
+  }
+
+  .three-branch__subtitle {
+    font-family: var(--cfbl-font-body);
+    color: var(--cfbl-ink);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    max-width: 52ch;
+    margin: 0 auto;
+    opacity: 0.85;
+  }
+
+  .three-branch__grid {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--cfbl-rule);
+  }
+
+  .branch-panel {
+    padding: var(--space-7) var(--space-6);
+  }
+
+  .branch-panel--cfbl      { background: var(--cfbl-sand); }
+  .branch-panel--institute { background: var(--inst-cream); }
+  .branch-panel--musa      { background: var(--musa-bone); }
+
+  .branch-label {
+    display: block;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+    margin: 0 0 var(--space-4);
+  }
+
+  .branch-panel--cfbl      .branch-label { font-family: var(--cfbl-font-body);      color: var(--cfbl-terracotta); }
+  .branch-panel--institute .branch-label { font-family: var(--inst-font-utility);   color: var(--inst-forest); }
+  .branch-panel--musa      .branch-label { font-family: var(--musa-font-utility);   color: var(--musa-walnut); }
+
+  .branch-heading {
+    margin: 0 0 var(--space-4);
+    line-height: 1.15;
+  }
+
+  .branch-panel--cfbl      .branch-heading { font-family: var(--cfbl-font-display);  color: var(--cfbl-deep-navy); font-size: clamp(1.5rem, 2.2vw, 1.875rem); font-weight: 500; }
+  .branch-panel--institute .branch-heading { font-family: var(--inst-font-display);  color: var(--inst-forest);    font-size: clamp(1.5rem, 2.2vw, 1.875rem); font-weight: 500; }
+  .branch-panel--musa      .branch-heading { font-family: var(--musa-font-display);  color: var(--musa-ink);       font-size: clamp(1.5rem, 2.2vw, 1.875rem); font-weight: 400; }
+
+  .branch-body {
+    margin: 0 0 var(--space-6);
+    line-height: 1.6;
+    font-size: 0.9375rem;
+  }
+
+  .branch-panel--cfbl      .branch-body { font-family: var(--cfbl-font-body);   color: var(--cfbl-ink); }
+  .branch-panel--institute .branch-body { font-family: var(--inst-font-body);   color: var(--inst-ink); }
+  .branch-panel--musa      .branch-body { font-family: var(--musa-font-body);   color: var(--musa-ink); }
+
+  .branch-cta {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  .branch-panel--cfbl      .branch-cta { font-family: var(--cfbl-font-body);    color: var(--cfbl-sky-blue); }
+  .branch-panel--institute .branch-cta { font-family: var(--inst-font-utility); color: var(--inst-forest); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; }
+  .branch-panel--musa      .branch-cta { font-family: var(--musa-font-utility); color: var(--musa-oxblood); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; }
+
+  .branch-cta:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (max-width: 768px) {
+    .three-branch__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<section class="three-branch" id="section-{{ section.id }}" aria-label="Three brand pathways overview">
+  <div class="three-branch__head">
+    {% if section.settings.eyebrow != blank %}
+      <span class="three-branch__eyebrow">{{ section.settings.eyebrow }}</span>
+    {% endif %}
+    {% if section.settings.heading != blank %}
+      <h2 class="three-branch__title">{{ section.settings.heading }}</h2>
+    {% endif %}
+    {% if section.settings.subheading != blank %}
+      <p class="three-branch__subtitle">{{ section.settings.subheading }}</p>
+    {% endif %}
+  </div>
+
+  <div class="three-branch__grid">
+    <div class="branch-panel branch-panel--cfbl">
+      <span class="branch-label">For Clients</span>
+      <h3 class="branch-heading">{{ section.settings.cfbl_heading | default: 'Center for Balanced Living' }}</h3>
+      <p class="branch-body">{{ section.settings.cfbl_body | default: 'Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-informed care in Middletown, DE.' }}</p>
+      {% if section.settings.cfbl_cta_label != blank %}
+        <a href="{{ section.settings.cfbl_cta_url | default: '/pages/cfbl' }}" class="branch-cta">
+          {{ section.settings.cfbl_cta_label }} →
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="branch-panel branch-panel--institute">
+      <span class="branch-label">For Professionals</span>
+      <h3 class="branch-heading">{{ section.settings.inst_heading | default: 'CFBL Institute' }}</h3>
+      <p class="branch-body">{{ section.settings.inst_body | default: 'Continuing education in trauma-informed practice, assessment, and applied clinical reasoning. For licensed clinicians.' }}</p>
+      {% if section.settings.inst_cta_label != blank %}
+        <a href="{{ section.settings.inst_cta_url | default: '/pages/institute' }}" class="branch-cta">
+          {{ section.settings.inst_cta_label }} →
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="branch-panel branch-panel--musa">
+      <span class="branch-label">For Readers</span>
+      <h3 class="branch-heading">{{ section.settings.musa_heading | default: 'MUSA' }}</h3>
+      <p class="branch-body">{{ section.settings.musa_body | default: 'Books, essays, and longer-form writing on psychology, memory, and being human. A publication by Dr. Angela Serravalle.' }}</p>
+      {% if section.settings.musa_cta_label != blank %}
+        <a href="{{ section.settings.musa_cta_url | default: '/pages/musa' }}" class="branch-cta">
+          {{ section.settings.musa_cta_label }} →
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Three Branch Overview",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "One practice. Three doors."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Where would you like to begin?"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Center for Balanced Living, CFBL Institute, and MUSA are three distinct properties under one roof — each serving a different audience with its own voice and editorial identity."
+    },
+    { "type": "header", "content": "Center for Balanced Living" },
+    { "type": "text",     "id": "cfbl_heading",   "label": "Heading",   "default": "Center for Balanced Living" },
+    { "type": "textarea", "id": "cfbl_body",      "label": "Body",      "default": "Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-informed care in Middletown, DE." },
+    { "type": "text",     "id": "cfbl_cta_label", "label": "CTA label", "default": "Explore Clinical Services" },
+    { "type": "url",      "id": "cfbl_cta_url",   "label": "CTA URL" },
+    { "type": "header", "content": "CFBL Institute" },
+    { "type": "text",     "id": "inst_heading",   "label": "Heading",   "default": "CFBL Institute" },
+    { "type": "textarea", "id": "inst_body",      "label": "Body",      "default": "Continuing education in trauma-informed practice, assessment, and applied clinical reasoning. For licensed clinicians." },
+    { "type": "text",     "id": "inst_cta_label", "label": "CTA label", "default": "View Trainings and CE" },
+    { "type": "url",      "id": "inst_cta_url",   "label": "CTA URL" },
+    { "type": "header", "content": "MUSA" },
+    { "type": "text",     "id": "musa_heading",   "label": "Heading",   "default": "MUSA" },
+    { "type": "textarea", "id": "musa_body",      "label": "Body",      "default": "Books, essays, and longer-form writing on psychology, memory, and being human. A publication by Dr. Angela Serravalle." },
+    { "type": "text",     "id": "musa_cta_label", "label": "CTA label", "default": "Read the Essays" },
+    { "type": "url",      "id": "musa_cta_url",   "label": "CTA URL" }
+  ],
+  "presets": [
+    {
+      "name": "Three Branch Overview",
+      "settings": {
+        "eyebrow": "One practice. Three doors.",
+        "heading": "Where would you like to begin?",
+        "cfbl_heading": "Center for Balanced Living",
+        "cfbl_cta_label": "Explore Clinical Services",
+        "inst_heading": "CFBL Institute",
+        "inst_cta_label": "View Trainings and CE",
+        "musa_heading": "MUSA",
+        "musa_cta_label": "Read the Essays"
+      }
+    }
+  ]
+}
+{% endschema %}

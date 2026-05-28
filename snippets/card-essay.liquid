@@ -1,0 +1,40 @@
+{%- comment -%}
+  card-essay.liquid
+  ─────────────────────────────────────────────────────────────
+  MUSA essay card.
+
+  Visual spec:
+  - No fill (transparent background)
+  - 1px Ochre (#C5A572) top rule
+  - DM Serif Display title in Ink
+  - Walnut uppercase byline in Inter
+  - EB Garamond lede (truncated to ~3 lines)
+
+  Parameters:
+    title   (required) — essay title
+    lede    (required) — opening sentence or summary (plain text)
+    url     (required) — essay permalink
+    byline  (required) — author name, e.g. "Dr. Angela Serravalle"
+    date    (required) — publication date string, e.g. "April 2025"
+{%- endcomment -%}
+
+<article class="card-essay" aria-label="{{ title | escape }}">
+  <header class="card-essay__header">
+    <div class="card-essay__byline-row">
+      {%- if byline != blank -%}
+        <span class="card-essay__byline">{{ byline | escape }}</span>
+      {%- endif -%}
+      {%- if date != blank -%}
+        <time class="card-essay__date">{{ date | escape }}</time>
+      {%- endif -%}
+    </div>
+
+    <h2 class="card-essay__title">
+      <a href="{{ url }}">{{ title | escape }}</a>
+    </h2>
+  </header>
+
+  {%- if lede != blank -%}
+    <p class="card-essay__lede">{{ lede | escape }}</p>
+  {%- endif -%}
+</article>

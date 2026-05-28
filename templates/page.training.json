@@ -1,0 +1,100 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "CFBL Institute · Continuing Education",
+        "heading": "",
+        "subheading": "",
+        "cta_primary_label": "Register",
+        "cta_primary_url": "#register",
+        "cta_secondary_label": "View CE Information",
+        "cta_secondary_url": "/pages/ce-information",
+        "image": "",
+        "brand": "institute"
+      }
+    },
+    "featured_training": {
+      "type": "featured-training",
+      "settings": {
+        "eyebrow": "Course Detail",
+        "heading": "",
+        "populate_from_product": true,
+        "brand": "institute"
+      },
+      "blocks": {}
+    },
+    "presenter": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "About the Presenter",
+        "heading": "Angela Serravalle, Psy.D., LPCMH, NCC",
+        "body": "Dr. Serravalle is a licensed psychologist and founder of the Center for Balanced Living. She has been teaching trauma-informed clinical practice for over a decade and continues to carry an active caseload. Her training draws directly from clinical experience, not from the literature alone.",
+        "image": "",
+        "image_position": "left",
+        "cta_label": "Full faculty bio",
+        "cta_url": "/pages/faculty",
+        "brand": "institute"
+      }
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "settings": {
+        "eyebrow": "Common Questions",
+        "heading": "Registration and CE Credit",
+        "brand": "institute"
+      },
+      "blocks": {
+        "faq_1": {
+          "type": "item",
+          "settings": {
+            "question": "Which professions are approved for CE credit?",
+            "answer": "CFBL Institute trainings are approved for CE credit for LCSWs, LPCs, psychologists (PA, DE, MD), and PMHNPs. Check the specific course page for your state's approval status."
+          }
+        },
+        "faq_2": {
+          "type": "item",
+          "settings": {
+            "question": "What is the cancellation and refund policy?",
+            "answer": "Full refunds are available up to 7 days before the event. No refunds after that date, but credit toward a future training is available with 48-hour notice."
+          }
+        },
+        "faq_3": {
+          "type": "item",
+          "settings": {
+            "question": "Are there prerequisites for this training?",
+            "answer": "Prerequisites, if any, are listed on the individual course page. Most Institute trainings assume a licensed clinician audience but do not require prior coursework with CFBL Institute."
+          }
+        },
+        "faq_4": {
+          "type": "item",
+          "settings": {
+            "question": "How is CE credit documented?",
+            "answer": "Certificates of completion are issued within 5 business days after the training. Attendees must complete the full training and pass a post-test (where applicable) to receive credit."
+          }
+        }
+      },
+      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4"]
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Questions about this training?",
+        "subheading": "Contact the Institute for group rates, custom arrangements, or questions about CE approval in your state.",
+        "cta_primary_label": "Contact the Institute",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "View All Trainings",
+        "cta_secondary_url": "/collections/trainings",
+        "footnote": "",
+        "brand": "institute"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "featured_training",
+    "presenter",
+    "faq",
+    "contact_cta"
+  ]
+}

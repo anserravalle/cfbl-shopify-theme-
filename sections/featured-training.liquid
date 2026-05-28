@@ -1,0 +1,266 @@
+{% liquid
+  assign format = section.settings.format | default: 'Live Online'
+%}
+
+<style>
+  #shopify-section-{{ section.id }} .featured-training {
+    background: var(--inst-cream);
+    padding: var(--space-9) 0;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    gap: 0 var(--space-8);
+    align-items: stretch;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__accent {
+    background: var(--inst-forest);
+    border-radius: var(--radius-sm);
+    min-height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__body {
+    padding: var(--space-7) 0;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__eyebrow {
+    font-family: var(--inst-font-utility);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--inst-sage);
+    margin: 0 0 var(--space-4);
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__title {
+    font-family: var(--inst-font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 500;
+    color: var(--inst-forest);
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+    margin: 0 0 var(--space-5);
+    max-width: 680px;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin: 0 0 var(--space-6);
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__ce-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    background: var(--inst-forest);
+    color: var(--inst-paper);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-sm);
+    font-family: var(--inst-font-utility);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__meta-item {
+    font-family: var(--inst-font-utility);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(42, 53, 48, 0.65);
+    white-space: nowrap;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__meta-sep {
+    color: var(--inst-rule);
+    font-weight: 300;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__description {
+    font-family: var(--inst-font-body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--inst-ink);
+    margin: 0 0 var(--space-4);
+    max-width: var(--measure-prose);
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__description p {
+    margin: 0 0 var(--space-4);
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__description p:last-child {
+    margin-bottom: 0;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__prerequisites {
+    font-family: var(--inst-font-utility);
+    font-size: 0.8125rem;
+    color: rgba(42, 53, 48, 0.65);
+    margin: 0 0 var(--space-6);
+    line-height: 1.5;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__prerequisites strong {
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 0.75rem;
+  }
+
+  #shopify-section-{{ section.id }} .featured-training__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    #shopify-section-{{ section.id }} .featured-training__inner {
+      grid-template-columns: 3px 1fr;
+      gap: 0 var(--space-5);
+    }
+
+    #shopify-section-{{ section.id }} .featured-training__meta {
+      gap: var(--space-3);
+    }
+  }
+</style>
+
+<section class="featured-training brand-institute" aria-labelledby="ft-title-{{ section.id }}">
+  <div class="featured-training__inner">
+    <div class="featured-training__accent" aria-hidden="true"></div>
+
+    <div class="featured-training__body">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="featured-training__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="featured-training__title" id="ft-title-{{ section.id }}">
+          {{ section.settings.title | escape }}
+        </h2>
+      {%- endif -%}
+
+      <div class="featured-training__meta">
+        {%- if section.settings.ce_hours != blank -%}
+          <span class="featured-training__ce-badge">
+            {{ section.settings.ce_hours | escape }} CE Credits
+          </span>
+        {%- endif -%}
+        {%- if section.settings.date != blank -%}
+          <span class="featured-training__meta-item">{{ section.settings.date | escape }}</span>
+          <span class="featured-training__meta-sep" aria-hidden="true">&middot;</span>
+        {%- endif -%}
+        <span class="featured-training__meta-item">{{ format | escape }}</span>
+      </div>
+
+      {%- if section.settings.description != blank -%}
+        <div class="featured-training__description">{{ section.settings.description }}</div>
+      {%- endif -%}
+
+      {%- if section.settings.prerequisites != blank -%}
+        <p class="featured-training__prerequisites">
+          <strong>Prerequisites:</strong> {{ section.settings.prerequisites | escape }}
+        </p>
+      {%- endif -%}
+
+      <div class="featured-training__actions">
+        {%- if section.settings.cta_label != blank -%}
+          <a href="{{ section.settings.registration_url }}" class="btn btn-primary">
+            {{ section.settings.cta_label | escape }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Training",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Featured Training"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Training title",
+      "default": "Assessment for the Trauma Clinician"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "ce_hours",
+      "label": "CE hours",
+      "default": "6"
+    },
+    {
+      "type": "text",
+      "id": "date",
+      "label": "Date",
+      "default": "November 14, 2026"
+    },
+    {
+      "type": "select",
+      "id": "format",
+      "label": "Format",
+      "options": [
+        { "value": "Live Online", "label": "Live Online" },
+        { "value": "In-Person", "label": "In-Person" },
+        { "value": "Self-Study", "label": "Self-Study" }
+      ],
+      "default": "Live Online"
+    },
+    {
+      "type": "text",
+      "id": "prerequisites",
+      "label": "Prerequisites"
+    },
+    {
+      "type": "url",
+      "id": "registration_url",
+      "label": "Registration URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA button label",
+      "default": "Register"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Training",
+      "settings": {
+        "eyebrow": "Featured Training",
+        "title": "Assessment for the Trauma Clinician",
+        "ce_hours": "6",
+        "date": "November 14, 2026",
+        "format": "Live Online",
+        "cta_label": "Register"
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "Center for Balanced Living · Assessment Services",
+        "heading": "Psychological Evaluation Services",
+        "subheading": "Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs care, school supports, and clinical decision-making.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Learn About the Process",
+        "cta_secondary_url": "#process",
+        "image": "",
+        "brand": "cfbl"
+      }
+    },
+    "split_about": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "Our Approach",
+        "heading": "Assessment as a clinical act.",
+        "body": "Psychological evaluation at Center for Balanced Living is not a checkbox exercise. It is a clinical process — attentive to the whole person, grounded in current psychometric standards, and oriented toward actionable findings. Every evaluation concludes with a written report and a feedback session where results are explained clearly and completely.",
+        "image": "",
+        "image_position": "right",
+        "cta_label": "",
+        "cta_url": "",
+        "brand": "cfbl"
+      }
+    },
+    "eval_types": {
+      "type": "service-cards",
+      "settings": {
+        "eyebrow": "Evaluation Types",
+        "heading": "What We Assess",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "eval_psychodiagnostic": {
+          "type": "service",
+          "settings": {
+            "kicker": "Diagnostic Evaluation",
+            "heading": "Psychodiagnostic Evaluation",
+            "description": "Comprehensive clinical interview, behavioral observation, and standardized testing to clarify diagnosis for adults and adolescents presenting with mood, anxiety, trauma, or complex presentations.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/psychodiagnostic-evaluation"
+          }
+        },
+        "eval_psychoeducational": {
+          "type": "service",
+          "settings": {
+            "kicker": "Educational Support",
+            "heading": "Psychoeducational Evaluation",
+            "description": "Cognitive, academic, and processing assessments for children and adolescents. Results inform IEPs, 504 plans, academic accommodations, and school-based supports.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/psychoeducational-evaluation"
+          }
+        },
+        "eval_adhd": {
+          "type": "service",
+          "settings": {
+            "kicker": "Attention and Executive Function",
+            "heading": "ADHD and Executive Function Assessment",
+            "description": "Differentiated assessment of attention, working memory, processing speed, and executive function. For children, adolescents, and adults seeking diagnostic clarity.",
+            "cta_label": "Learn more",
+            "cta_url": "/pages/adhd-evaluation"
+          }
+        },
+        "eval_forensic": {
+          "type": "service",
+          "settings": {
+            "kicker": "Forensic and Specialized",
+            "heading": "Forensic and Specialized Evaluation",
+            "description": "Available by referral for disability documentation, custody proceedings, and specialized clinical purposes. Contact us to discuss your specific referral question.",
+            "cta_label": "Contact us",
+            "cta_url": "/pages/contact"
+          }
+        }
+      },
+      "block_order": ["eval_psychodiagnostic", "eval_psychoeducational", "eval_adhd", "eval_forensic"]
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "settings": {
+        "eyebrow": "Common Questions",
+        "heading": "Frequently Asked Questions",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "faq_1": {
+          "type": "item",
+          "settings": {
+            "question": "How long does an evaluation take?",
+            "answer": "Most evaluations require 6–10 hours of testing spread across multiple sessions, plus a feedback appointment. The full process typically takes 3–6 weeks from intake to report."
+          }
+        },
+        "faq_2": {
+          "type": "item",
+          "settings": {
+            "question": "Is the evaluation covered by insurance?",
+            "answer": "Coverage varies by plan and evaluation type. We can provide a superbill for out-of-network reimbursement. Contact us to discuss your specific insurance situation before scheduling."
+          }
+        },
+        "faq_3": {
+          "type": "item",
+          "settings": {
+            "question": "What does the evaluation process involve?",
+            "answer": "Every evaluation includes an intake interview, standardized testing, behavioral observation, collateral review (school records, prior reports), a written report, and a feedback session."
+          }
+        },
+        "faq_4": {
+          "type": "item",
+          "settings": {
+            "question": "Do you evaluate adults as well as children?",
+            "answer": "Yes. We conduct evaluations for children, adolescents, and adults. Adult evaluations focus on diagnostic clarification, ADHD, and conditions that may not have been identified in childhood."
+          }
+        }
+      },
+      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4"]
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Ready to schedule an evaluation?",
+        "subheading": "Start with a brief consultation. We'll help you determine which evaluation best fits the referral question.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Contact Us",
+        "cta_secondary_url": "/pages/contact",
+        "footnote": "Middletown, DE · In-person only for testing · Most insurance accepted",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "split_about",
+    "eval_types",
+    "faq",
+    "contact_cta"
+  ]
+}

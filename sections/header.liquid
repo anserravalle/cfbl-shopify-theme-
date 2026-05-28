@@ -1,0 +1,520 @@
+{% liquid
+  assign logo_width = section.settings.logo_width | default: 140
+  assign menu = section.settings.menu
+  assign linklists_menu = linklists[menu]
+%}
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--cfbl-sand);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--cfbl-rule);
+    transition: background var(--dur-base) var(--ease);
+  }
+
+  .site-header__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    height: 68px;
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .site-header__logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .site-header__logo img {
+    display: block;
+    height: auto;
+  }
+
+  .site-header__logo-text {
+    font-family: var(--cfbl-font-display);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--cfbl-deep-navy);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+
+  .site-header__nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-header__nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .site-header__nav-item {
+    position: relative;
+  }
+
+  .site-header__nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-2) var(--space-3);
+    font-family: var(--cfbl-font-body);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--cfbl-ink);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+    white-space: nowrap;
+  }
+
+  .site-header__nav-link:hover,
+  .site-header__nav-link[aria-expanded="true"] {
+    color: var(--cfbl-deep-navy);
+    background: var(--cfbl-sand-light);
+  }
+
+  .site-header__nav-link svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    transition: transform var(--dur-fast) var(--ease);
+  }
+
+  .site-header__nav-link[aria-expanded="true"] svg {
+    transform: rotate(180deg);
+  }
+
+  /* Dropdown */
+  .site-header__dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    min-width: 200px;
+    background: var(--cfbl-sand-pale);
+    border: 1px solid var(--cfbl-rule);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-2) 0;
+    z-index: 200;
+  }
+
+  .site-header__nav-item:hover .site-header__dropdown,
+  .site-header__nav-item:focus-within .site-header__dropdown,
+  .site-header__dropdown.is-open {
+    display: block;
+  }
+
+  .site-header__dropdown-link {
+    display: block;
+    padding: var(--space-2) var(--space-4);
+    font-family: var(--cfbl-font-body);
+    font-size: 0.875rem;
+    color: var(--cfbl-ink);
+    text-decoration: none;
+    transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+  }
+
+  .site-header__dropdown-link:hover {
+    background: var(--cfbl-sand-light);
+    color: var(--cfbl-deep-navy);
+  }
+
+  /* Utility row */
+  .site-header__utility {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .site-header__portal-link {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--cfbl-sky-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+  }
+
+  .site-header__portal-link:hover {
+    color: var(--cfbl-deep-navy);
+  }
+
+  /* Hamburger */
+  .site-header__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-2);
+    color: var(--cfbl-ink);
+    margin-left: auto;
+    border-radius: var(--radius-sm);
+  }
+
+  .site-header__hamburger:focus-visible {
+    outline: 2px solid var(--cfbl-deep-navy);
+    outline-offset: 3px;
+  }
+
+  /* Mobile panel */
+  .site-header__mobile-panel {
+    display: none;
+    position: fixed;
+    inset: 68px 0 0 0;
+    background: var(--cfbl-sand);
+    z-index: 99;
+    overflow-y: auto;
+    padding: var(--space-6);
+    border-top: 1px solid var(--cfbl-rule);
+  }
+
+  .site-header__mobile-panel.is-open {
+    display: block;
+  }
+
+  .site-header__mobile-nav-list {
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+  }
+
+  .site-header__mobile-nav-item {
+    border-bottom: 1px solid var(--cfbl-rule);
+  }
+
+  .site-header__mobile-nav-link {
+    display: block;
+    padding: var(--space-4) 0;
+    font-family: var(--cfbl-font-body);
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: var(--cfbl-ink);
+    text-decoration: none;
+  }
+
+  .site-header__mobile-nav-link:hover {
+    color: var(--cfbl-deep-navy);
+  }
+
+  .site-header__mobile-sub {
+    list-style: none;
+    margin: 0 0 var(--space-3);
+    padding: 0 0 0 var(--space-4);
+  }
+
+  .site-header__mobile-sub a {
+    display: block;
+    padding: var(--space-2) 0;
+    font-size: 0.9375rem;
+    color: var(--cfbl-sky-blue);
+    text-decoration: none;
+  }
+
+  .site-header__mobile-sub a:hover {
+    color: var(--cfbl-deep-navy);
+  }
+
+  .site-header__mobile-utility {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+  }
+
+  @media (max-width: 900px) {
+    .site-header__nav,
+    .site-header__utility {
+      display: none;
+    }
+
+    .site-header__hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 901px) {
+    .site-header__mobile-panel {
+      display: none !important;
+    }
+  }
+</style>
+
+<header class="site-header brand-cfbl" role="banner" id="site-header">
+  <div class="site-header__inner">
+
+    {%- comment -%} Logo {%- endcomment -%}
+    <a href="/" class="site-header__logo" aria-label="Center for Balanced Living — home">
+      {%- if section.settings.logo != blank -%}
+        {{
+          section.settings.logo
+          | image_url: width: 280
+          | image_tag:
+            width: logo_width,
+            height: 'auto',
+            loading: 'eager',
+            alt: section.settings.logo.alt | default: 'Center for Balanced Living'
+        }}
+      {%- else -%}
+        <span class="site-header__logo-text">Center for Balanced Living</span>
+      {%- endif -%}
+    </a>
+
+    {%- comment -%} Desktop navigation {%- endcomment -%}
+    <nav class="site-header__nav" aria-label="Main navigation">
+      <ul class="site-header__nav-list" role="list">
+        {%- for link in linklists_menu.links -%}
+          <li class="site-header__nav-item">
+            {%- if link.links != blank -%}
+              <button
+                class="site-header__nav-link"
+                aria-expanded="false"
+                aria-controls="dropdown-{{ forloop.index }}"
+                type="button"
+              >
+                {{- link.title -}}
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <ul
+                class="site-header__dropdown"
+                id="dropdown-{{ forloop.index }}"
+                role="list"
+              >
+                {%- for child in link.links -%}
+                  <li>
+                    <a href="{{ child.url }}" class="site-header__dropdown-link"
+                      {%- if child.current %} aria-current="page"{% endif -%}
+                    >{{ child.title }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- else -%}
+              <a
+                href="{{ link.url }}"
+                class="site-header__nav-link"
+                {%- if link.current %} aria-current="page"{% endif -%}
+              >{{ link.title }}</a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+
+    {%- comment -%} Utility: portal + CTA {%- endcomment -%}
+    <div class="site-header__utility">
+      {%- if section.settings.show_client_portal -%}
+        <a
+          href="{{ section.settings.client_portal_url }}"
+          class="site-header__portal-link"
+        >Client Portal</a>
+      {%- endif -%}
+      {%- if section.settings.cta_label != blank -%}
+        <a
+          href="{{ section.settings.cta_url }}"
+          class="btn btn-primary"
+        >{{ section.settings.cta_label }}</a>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Hamburger {%- endcomment -%}
+    <button
+      class="site-header__hamburger"
+      aria-expanded="false"
+      aria-controls="mobile-panel"
+      aria-label="Open navigation menu"
+      type="button"
+    >
+      <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="6" x2="21" y2="6" class="hamburger-line-top"></line>
+        <line x1="3" y1="12" x2="21" y2="12" class="hamburger-line-mid"></line>
+        <line x1="3" y1="18" x2="21" y2="18" class="hamburger-line-bot"></line>
+      </svg>
+    </button>
+  </div>
+
+  {%- comment -%} Mobile navigation panel {%- endcomment -%}
+  <div class="site-header__mobile-panel" id="mobile-panel" aria-hidden="true">
+    <ul class="site-header__mobile-nav-list" role="list">
+      {%- for link in linklists_menu.links -%}
+        <li class="site-header__mobile-nav-item">
+          <a href="{{ link.url }}" class="site-header__mobile-nav-link"
+            {%- if link.current %} aria-current="page"{% endif -%}
+          >{{ link.title }}</a>
+          {%- if link.links != blank -%}
+            <ul class="site-header__mobile-sub" role="list">
+              {%- for child in link.links -%}
+                <li>
+                  <a href="{{ child.url }}"
+                    {%- if child.current %} aria-current="page"{% endif -%}
+                  >{{ child.title }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    <div class="site-header__mobile-utility">
+      {%- if section.settings.show_client_portal -%}
+        <a href="{{ section.settings.client_portal_url }}" class="site-header__portal-link">Client Portal</a>
+      {%- endif -%}
+      {%- if section.settings.cta_label != blank -%}
+        <a href="{{ section.settings.cta_url }}" class="btn btn-primary">{{ section.settings.cta_label }}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</header>
+
+<script>
+  (function () {
+    var header = document.getElementById('site-header');
+    if (!header) return;
+
+    // Hamburger toggle
+    var hamburger = header.querySelector('.site-header__hamburger');
+    var mobilePanel = document.getElementById('mobile-panel');
+
+    if (hamburger && mobilePanel) {
+      hamburger.addEventListener('click', function () {
+        var isOpen = mobilePanel.classList.contains('is-open');
+        mobilePanel.classList.toggle('is-open', !isOpen);
+        hamburger.setAttribute('aria-expanded', String(!isOpen));
+        mobilePanel.setAttribute('aria-hidden', String(isOpen));
+        document.body.style.overflow = isOpen ? '' : 'hidden';
+      });
+    }
+
+    // Dropdown toggles (desktop)
+    var dropdownBtns = header.querySelectorAll('.site-header__nav-link[aria-expanded]');
+    dropdownBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        // Close all first
+        dropdownBtns.forEach(function (b) {
+          b.setAttribute('aria-expanded', 'false');
+          var id = b.getAttribute('aria-controls');
+          if (id) {
+            var panel = document.getElementById(id);
+            if (panel) panel.classList.remove('is-open');
+          }
+        });
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          var targetId = this.getAttribute('aria-controls');
+          if (targetId) {
+            var target = document.getElementById(targetId);
+            if (target) target.classList.add('is-open');
+          }
+        }
+      });
+    });
+
+    // Close dropdowns on outside click
+    document.addEventListener('click', function (e) {
+      if (!header.contains(e.target)) {
+        dropdownBtns.forEach(function (b) {
+          b.setAttribute('aria-expanded', 'false');
+          var id = b.getAttribute('aria-controls');
+          if (id) {
+            var panel = document.getElementById(id);
+            if (panel) panel.classList.remove('is-open');
+          }
+        });
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        dropdownBtns.forEach(function (b) {
+          b.setAttribute('aria-expanded', 'false');
+          var id = b.getAttribute('aria-controls');
+          if (id) {
+            var panel = document.getElementById(id);
+            if (panel) panel.classList.remove('is-open');
+          }
+        });
+        if (mobilePanel && mobilePanel.classList.contains('is-open')) {
+          mobilePanel.classList.remove('is-open');
+          if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+          mobilePanel.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      }
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 100,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 140
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Navigation menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_client_portal",
+      "label": "Show Client Portal link",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "client_portal_url",
+      "label": "Client Portal URL"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA button label",
+      "default": "Schedule"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA button URL"
+    }
+  ]
+}
+{% endschema %}

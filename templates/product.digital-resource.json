@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "split_resource": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "CFBL Institute · Resource",
+        "populate_from_product": true,
+        "show_purchase_form": true,
+        "image_position": "right",
+        "brand": "institute"
+      }
+    },
+    "resource_grid": {
+      "type": "resource-grid",
+      "settings": {
+        "eyebrow": "Related Resources",
+        "heading": "You may also find useful",
+        "show_filters": false,
+        "populate_from_product_related": true,
+        "brand": "institute"
+      }
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Questions about this resource?",
+        "subheading": "Contact the Institute for licensing, group access, or questions about how to use this resource in supervision or training.",
+        "cta_primary_label": "Contact the Institute",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "View All Resources",
+        "cta_secondary_url": "/collections/resources",
+        "footnote": "",
+        "brand": "institute"
+      }
+    }
+  },
+  "order": [
+    "split_resource",
+    "resource_grid",
+    "contact_cta"
+  ]
+}

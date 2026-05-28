@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "CFBL Institute · Continuing Education",
+        "heading": "Rigorous CE for the Practicing Clinician.",
+        "subheading": "Live workshops, on-demand courses, and clinical consultation. Taught by a practicing psychologist who carries a caseload.",
+        "cta_primary_label": "View Trainings",
+        "cta_primary_url": "/collections/trainings",
+        "cta_secondary_label": "CE Information",
+        "cta_secondary_url": "/pages/ce-information",
+        "image": "",
+        "brand": "institute"
+      }
+    },
+    "featured_training": {
+      "type": "featured-training",
+      "settings": {
+        "eyebrow": "Featured Training",
+        "heading": "Current and upcoming offerings.",
+        "brand": "institute"
+      },
+      "blocks": {
+        "training_1": {
+          "type": "training",
+          "settings": {
+            "kicker": "6.0 CE Hours · Live Online",
+            "title": "Trauma-Informed Assessment: Integrating the ACEs Framework",
+            "presenter": "Angela Serravalle, Psy.D.",
+            "date": "November 14, 2026",
+            "format": "Live Online",
+            "price": "$245",
+            "description": "Integrating psychometric reasoning with somatic and nervous-system awareness. Approved for 6.0 CE hours for LCSWs, LPCs, psychologists, and PMHNPs.",
+            "cta_label": "Register",
+            "cta_url": "/products/trauma-informed-assessment-2026"
+          }
+        },
+        "training_2": {
+          "type": "training",
+          "settings": {
+            "kicker": "3.0 CE Hours · Self-Study",
+            "title": "Somatic Approaches in Clinical Practice",
+            "presenter": "Angela Serravalle, Psy.D.",
+            "date": "Available now",
+            "format": "Self-Study",
+            "price": "$95",
+            "description": "An introduction to somatic theory for talk-therapy clinicians. Body-based methods, their evidence base, and how they integrate with cognitive approaches.",
+            "cta_label": "Register",
+            "cta_url": "/products/somatic-approaches"
+          }
+        },
+        "training_3": {
+          "type": "training",
+          "settings": {
+            "kicker": "12.0 CE Hours · Live Online Intensive",
+            "title": "Complex PTSD and Developmental Trauma",
+            "presenter": "Angela Serravalle, Psy.D.",
+            "date": "January 9–10, 2027",
+            "format": "Live Online Intensive",
+            "price": "$395",
+            "description": "A two-day intensive on complex and developmental trauma presentations: assessment, differential diagnosis, treatment sequencing, and stabilization approaches.",
+            "cta_label": "Register",
+            "cta_url": "/products/complex-ptsd-intensive"
+          }
+        }
+      },
+      "block_order": ["training_1", "training_2", "training_3"]
+    },
+    "resource_grid": {
+      "type": "resource-grid",
+      "settings": {
+        "eyebrow": "Resources",
+        "heading": "Resources for Clinicians",
+        "show_filters": true,
+        "brand": "institute"
+      }
+    },
+    "event_list": {
+      "type": "event-list",
+      "settings": {
+        "eyebrow": "Upcoming",
+        "heading": "Upcoming Events",
+        "brand": "institute"
+      }
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Questions about CE credit or registration?",
+        "subheading": "Contact the Institute directly for information about approved CE hours, prerequisites, group rates, or custom training arrangements.",
+        "cta_primary_label": "Contact the Institute",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "View CE Information",
+        "cta_secondary_url": "/pages/ce-information",
+        "footnote": "",
+        "brand": "institute"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter-signup",
+      "settings": {
+        "eyebrow": "Institute Updates",
+        "heading": "Training announcements and clinical resources.",
+        "description": "New course announcements, CE deadlines, and clinical resources from the Institute. For clinicians.",
+        "button_label": "Subscribe",
+        "brand": "institute"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "featured_training",
+    "resource_grid",
+    "event_list",
+    "contact_cta",
+    "newsletter"
+  ]
+}

@@ -1,0 +1,246 @@
+{% liquid
+  assign img_position = section.settings.image_position | default: 'left'
+  assign bg = section.settings.section_background | default: 'sand'
+
+  case bg
+    when 'sand'
+      assign bg_color = 'var(--cfbl-sand)'
+    when 'cream'
+      assign bg_color = 'var(--inst-cream)'
+    when 'bone'
+      assign bg_color = 'var(--musa-bone)'
+    when 'white'
+      assign bg_color = '#ffffff'
+    else
+      assign bg_color = 'var(--cfbl-sand)'
+  endcase
+%}
+
+<style>
+  #shopify-section-{{ section.id }} .split-content {
+    background: {{ bg_color }};
+    padding: var(--space-9) 0;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__inner--image-right {
+    direction: rtl;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__inner--image-right > * {
+    direction: ltr;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__media {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    min-height: 400px;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__media--placeholder {
+    background: var(--cfbl-sand-light);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  #shopify-section-{{ section.id }} .split-content__eyebrow {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--cfbl-terracotta);
+    margin: 0;
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__heading {
+    font-family: var(--cfbl-font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 500;
+    color: var(--cfbl-deep-navy);
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__body {
+    font-family: var(--cfbl-font-body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--cfbl-ink);
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__body p {
+    margin: 0 0 var(--space-4);
+  }
+
+  #shopify-section-{{ section.id }} .split-content__body p:last-child {
+    margin-bottom: 0;
+  }
+
+  #shopify-section-{{ section.id }} .split-content__cta {
+    margin-top: var(--space-3);
+    align-self: flex-start;
+  }
+
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .split-content__inner {
+      grid-template-columns: 1fr;
+    }
+
+    #shopify-section-{{ section.id }} .split-content__inner--image-right {
+      direction: ltr;
+    }
+
+    #shopify-section-{{ section.id }} .split-content__media {
+      min-height: 280px;
+    }
+  }
+</style>
+
+<section class="split-content brand-cfbl">
+  <div class="split-content__inner {% if img_position == 'right' %}split-content__inner--image-right{% endif %}">
+
+    {%- comment -%} Image column {%- endcomment -%}
+    <div class="split-content__media">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 900
+          | image_tag:
+            loading: 'lazy',
+            alt: section.settings.image.alt | default: section.settings.heading | escape,
+            widths: '450, 600, 750, 900',
+            sizes: '(max-width: 768px) 100vw, 50vw'
+        }}
+      {%- else -%}
+        <div class="split-content__media--placeholder" aria-hidden="true"></div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Text column {%- endcomment -%}
+    <div class="split-content__text">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="split-content__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.heading != blank -%}
+        <h2 class="split-content__heading">{{ section.settings.heading | escape }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.body != blank -%}
+        <div class="split-content__body">{{ section.settings.body }}</div>
+      {%- endif -%}
+
+      {%- if section.settings.cta_label != blank -%}
+        <div class="split-content__cta">
+          <a href="{{ section.settings.cta_url }}" class="btn btn-secondary">
+            {{ section.settings.cta_label | escape }}
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Split Content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "body",
+      "label": "Body text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "select",
+      "id": "section_background",
+      "label": "Background",
+      "options": [
+        { "value": "sand", "label": "Sand (CFBL)" },
+        { "value": "cream", "label": "Cream (Institute)" },
+        { "value": "bone", "label": "Bone (MUSA)" },
+        { "value": "white", "label": "White" }
+      ],
+      "default": "sand"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split Content",
+      "settings": {
+        "eyebrow": "About",
+        "heading": "Dr. Angela (Niki) Serravalle, Psy.D., LPCMH, NCC",
+        "image_position": "left",
+        "section_background": "sand"
+      }
+    }
+  ]
+}
+{% endschema %}

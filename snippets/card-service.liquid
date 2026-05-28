@@ -1,0 +1,48 @@
+{%- comment -%}
+  card-service.liquid
+  ─────────────────────────────────────────────────────────────
+  CFBL service card.
+
+  Visual spec:
+  - Sand-light (#F5E7D6) background, no shadow, 2px radius
+  - Terracotta (#9D654E) kicker in Montserrat uppercase
+  - Cormorant SC headline in Deep Navy
+  - Montserrat body text
+  - Sky-blue arrow link "Learn more →"
+
+  Parameters:
+    title        (required) — service name
+    description  (required) — service description text (may contain HTML)
+    url          (required) — destination link
+    kicker       (optional) — short category label above the title
+                              e.g., "Individual Therapy"
+{%- endcomment -%}
+
+<article class="card card-service" aria-label="{{ title | escape }}">
+  {%- if kicker != blank -%}
+    <p class="card-service__kicker" aria-hidden="true">{{ kicker | escape }}</p>
+  {%- endif -%}
+
+  <h3 class="card-service__title">
+    <a href="{{ url }}" style="color:inherit;text-decoration:none;">
+      {{ title | escape }}
+    </a>
+  </h3>
+
+  {%- if description != blank -%}
+    <div class="card-service__body">
+      {{ description }}
+    </div>
+  {%- endif -%}
+
+  <a
+    href="{{ url }}"
+    class="card-service__link"
+    aria-label="{{ 'cards.learn_more_about' | t: title: title | escape }}"
+  >
+    {{ 'cards.learn_more' | t }}
+    <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" style="flex-shrink:0;">
+      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</article>

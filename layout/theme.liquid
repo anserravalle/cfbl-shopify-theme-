@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {%- liquid
+    assign brand = page.metafields.brand.context | default: 'cfbl'
+    assign page_title = page_title | default: shop.name
+    assign meta_description = page_description | default: shop.description
+  -%}
+
+  <!-- Page Title -->
+  <title>
+    {%- if template == 'index' -%}
+      {{ shop.name }}{% if settings.meta_title_suffix != blank %} — {{ settings.meta_title_suffix }}{% endif %}
+    {%- else -%}
+      {{ page_title }} — {{ shop.name }}{% if settings.meta_title_suffix != blank %} · {{ settings.meta_title_suffix }}{% endif %}
+    {%- endif -%}
+  </title>
+
+  <!-- Meta -->
+  <meta name="description" content="{{ meta_description | escape }}">
+  {%- if settings.share_image != blank -%}
+    <meta property="og:image" content="{{ settings.share_image | image_url: width: 1200 }}">
+  {%- endif -%}
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:site_name" content="{{ shop.name }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  <!-- Preconnect for Google Fonts (performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Theme stylesheets -->
+  {{ 'base.css' | asset_url | stylesheet_tag }}
+  {{ 'components.css' | asset_url | stylesheet_tag }}
+  {{ 'sections.css' | asset_url | stylesheet_tag }}
+
+  <!-- Shopify required head content -->
+  {{ content_for_header }}
+
+  <!-- Lucide icons (stroke-based, restrained) -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- Custom CSS from theme settings -->
+  {%- if settings.custom_css != blank -%}
+    <style>{{ settings.custom_css }}</style>
+  {%- endif -%}
+
+  <!-- Schema.org Organization markup (CFBL parent brand) -->
+  {%- if brand == 'cfbl' or template == 'index' -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Center for Balanced Living",
+      "url": "{{ shop.url }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ 'cfbl-logo-rainbow.png' | asset_url }}"
+      },
+      "description": "{{ shop.description | escape }}",
+      "address": {%- if settings.contact_address != blank -%}
+        {
+          "@type": "PostalAddress",
+          "streetAddress": {{ settings.contact_address | json }}
+        }
+      {%- else -%}
+        null
+      {%- endif -%},
+      "telephone": {{ settings.contact_phone | default: '' | json }},
+      "email": {{ settings.contact_email | default: '' | json }},
+      "sameAs": [
+        {%- if settings.instagram_url != blank -%}{{ settings.instagram_url | json }}{%- if settings.facebook_url != blank or settings.linkedin_url != blank -%},{%- endif -%}{%- endif -%}
+        {%- if settings.facebook_url != blank -%}{{ settings.facebook_url | json }}{%- if settings.linkedin_url != blank -%},{%- endif -%}{%- endif -%}
+        {%- if settings.linkedin_url != blank -%}{{ settings.linkedin_url | json }}{%- endif -%}
+      ]
+    }
+    </script>
+  {%- endif -%}
+</head>
+
+<body class="brand-{{ brand }}" data-brand="{{ brand }}">
+
+  <!-- Skip to main content link (accessibility) -->
+  <a href="#main-content" class="skip-link">
+    {{ 'accessibility.skip_to_content' | t }}
+  </a>
+
+  <!-- Site header -->
+  {% section 'header' %}
+
+  <!-- Main content -->
+  <main id="main-content" tabindex="-1">
+    {{ content_for_layout }}
+  </main>
+
+  <!-- Site footer -->
+  {% section 'footer' %}
+
+  <!-- Lucide icon initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+
+  <!-- Sticky header scroll behavior -->
+  <script>
+    (function () {
+      var header = document.querySelector('.site-header');
+      if (!header) return;
+
+      var threshold = 10;
+      var ticking = false;
+
+      function handleScroll() {
+        if (window.scrollY > threshold) {
+          header.classList.add('is-scrolled');
+        } else {
+          header.classList.remove('is-scrolled');
+        }
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          requestAnimationFrame(handleScroll);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+  </script>
+
+</body>
+</html>
