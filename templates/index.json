@@ -30,7 +30,11 @@
             "cta_label": "Explore Clinical Services",
             "cta_url": "/pages/cfbl",
             "tone": "cfbl"
-          }
+          },
+          "kicker": "Clinical Services",
+          "heading": "CFBL Clinical Services",
+          "description": "<p>Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-based treatment for mental health across the lifespan.</p>",
+          "cta_label": "Explore Clinical Services"
         },
         "pathway_professionals": {
           "type": "pathway",
@@ -41,7 +45,11 @@
             "cta_label": "View Trainings and CE",
             "cta_url": "/pages/institute",
             "tone": "institute"
-          }
+          },
+          "kicker": "Education & Training",
+          "heading": "CFBL Institute",
+          "description": "<p>Continuing education for professionals seeking integrated training in trauma. Live workshops and on-demand courses built for licensed clinicians.</p>",
+          "cta_label": "View Trainings and CE"
         },
         "pathway_readers": {
           "type": "pathway",
@@ -52,7 +60,12 @@
             "cta_label": "Read the Essays",
             "cta_url": "/pages/musa",
             "tone": "musa"
-          }
+          },
+          "kicker": "For Everyone",
+          "heading": "CFBL Publications",
+          "description": "<p>Books, essays, and longer-form writing on psychology, memory, and being human. Writing by Dr. Angela Serravalle for readers everywhere.</p>",
+          "cta_label": "Read the Writing",
+          "tone": "musa"
         }
       },
       "block_order": [
