@@ -75,6 +75,16 @@
     background: var(--cfbl-sand-pale);
   }
 
+  /* MUSA cards use the Publications palette: parchment ground, bone on hover */
+  #shopify-section-{{ section.id }} .pathway-card--musa {
+    background: var(--musa-parchment);
+    border-color: rgba(74, 64, 54, 0.22);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card--musa:hover {
+    background: var(--musa-bone);
+  }
+
   #shopify-section-{{ section.id }} .pathway-card__icon {
     display: flex;
     align-items: center;
@@ -98,7 +108,7 @@
   }
 
   #shopify-section-{{ section.id }} .pathway-card--musa .pathway-card__icon {
-    background: var(--musa-parchment);
+    background: var(--musa-bone);
     color: var(--musa-walnut);
   }
 
