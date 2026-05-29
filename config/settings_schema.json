@@ -238,18 +238,66 @@
       },
       {
         "type": "header",
-        "content": "Body Font"
+        "content": "Body Fonts (per brand)"
       },
       {
         "type": "select",
-        "id": "font_body",
-        "label": "Body / UI font (all brands)",
+        "id": "cfbl_font_body",
+        "label": "CFBL body font",
         "options": [
-          { "value": "'Inter', system-ui, sans-serif", "label": "Inter (default)" },
+          { "value": "'Montserrat', system-ui, sans-serif", "label": "Montserrat (brand kit default)" },
+          { "value": "'Inter', system-ui, sans-serif", "label": "Inter" },
           { "value": "'Lato', sans-serif", "label": "Lato" },
           { "value": "'Source Sans 3', sans-serif", "label": "Source Sans 3" },
-          { "value": "'Nunito Sans', sans-serif", "label": "Nunito Sans" },
           { "value": "system-ui, sans-serif", "label": "System UI" }
+        ],
+        "default": "'Montserrat', system-ui, sans-serif"
+      },
+      {
+        "type": "select",
+        "id": "inst_font_body",
+        "label": "Institute body font",
+        "options": [
+          { "value": "'Lora', Georgia, serif", "label": "Lora (brand kit default)" },
+          { "value": "'Montserrat', system-ui, sans-serif", "label": "Montserrat" },
+          { "value": "'Inter', system-ui, sans-serif", "label": "Inter" },
+          { "value": "'Source Serif 4', Georgia, serif", "label": "Source Serif 4" },
+          { "value": "Georgia, serif", "label": "Georgia (system)" }
+        ],
+        "default": "'Lora', Georgia, serif"
+      },
+      {
+        "type": "select",
+        "id": "musa_font_body",
+        "label": "Publications body font",
+        "options": [
+          { "value": "'EB Garamond', Georgia, serif", "label": "EB Garamond (brand kit default)" },
+          { "value": "'Lora', Georgia, serif", "label": "Lora" },
+          { "value": "'Libre Baskerville', Georgia, serif", "label": "Libre Baskerville" },
+          { "value": "'Source Serif 4', Georgia, serif", "label": "Source Serif 4" },
+          { "value": "Georgia, serif", "label": "Georgia (system)" }
+        ],
+        "default": "'EB Garamond', Georgia, serif"
+      },
+      {
+        "type": "select",
+        "id": "inst_font_utility",
+        "label": "Institute utility font (buttons, metadata)",
+        "options": [
+          { "value": "'Inter', system-ui, sans-serif", "label": "Inter (default)" },
+          { "value": "'Montserrat', system-ui, sans-serif", "label": "Montserrat" },
+          { "value": "'Source Sans 3', sans-serif", "label": "Source Sans 3" }
+        ],
+        "default": "'Inter', system-ui, sans-serif"
+      },
+      {
+        "type": "select",
+        "id": "musa_font_utility",
+        "label": "Publications utility font (dates, captions)",
+        "options": [
+          { "value": "'Inter', system-ui, sans-serif", "label": "Inter (default)" },
+          { "value": "'Montserrat', system-ui, sans-serif", "label": "Montserrat" },
+          { "value": "'Source Sans 3', sans-serif", "label": "Source Sans 3" }
         ],
         "default": "'Inter', system-ui, sans-serif"
       },
