@@ -264,7 +264,7 @@
   <div class="site-header__inner">
 
     {%- comment -%} Logo {%- endcomment -%}
-    <a href="/" class="site-header__logo" aria-label="Center for Balanced Living — home">
+    <a href="/" class="site-header__logo" aria-label="CFBL — home">
       {%- if section.settings.logo != blank -%}      {%- assign logo_alt = section.settings.logo.alt | default: 'Center for Balanced Living' -%}
         {{
           section.settings.logo
@@ -276,7 +276,7 @@
             alt: logo_alt
         }}
       {%- else -%}
-        <span class="site-header__logo-text">Center for Balanced Living</span>
+        <span class="site-header__logo-text">CFBL</span>
       {%- endif -%}
     </a>
 

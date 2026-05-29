@@ -3,7 +3,7 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "Trauma-Informed Psychology \u00b7 Middletown, DE",
+        "eyebrow": "Integrated Trauma Based Clinical Services \u00b7 Townsend, DE",
         "heading": "Healing Happens In Relationship.",
         "subheading": "We pair evidence-based care with warmth, attunement, and a holistic approach to mind, body, and spirit.",
         "cta_primary_label": "Schedule a Consultation",
@@ -77,8 +77,8 @@
     "service_cards": {
       "type": "service-cards",
       "settings": {
-        "eyebrow": "For Clients",
-        "heading": "Therapy and Support Services",
+        "eyebrow": "CFBL Clinical Services",
+        "heading": "Individual, Group, and Evaluation Services",
         "brand": "cfbl"
       },
       "blocks": {
@@ -86,8 +86,8 @@
           "type": "service",
           "settings": {
             "kicker": "Individual Therapy",
-            "heading": "Trauma-Informed Therapy",
-            "description": "<p>Individual therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based approaches tailored to your history and goals.</p>",
+            "heading": "Individual Therapy",
+            "description": "<p>One-on-one therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based, trauma-informed, and tailored to your goals.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/therapy"
           }
@@ -95,7 +95,7 @@
         "service_eval": {
           "type": "service",
           "settings": {
-            "kicker": "Psychological Evaluation",
+            "kicker": "Psychological Evaluations",
             "heading": "Psychological Evaluations",
             "description": "<p>Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment planning, school supports, and clinical decision-making.</p>",
             "cta_label": "Learn more",
@@ -105,29 +105,18 @@
         "service_groups": {
           "type": "service",
           "settings": {
-            "kicker": "Groups and Workshops",
-            "heading": "Group Therapy",
+            "kicker": "Wellness Groups",
+            "heading": "Wellness Groups",
             "description": "<p>Community-grounded groups focused on grief, parenting, and somatic resourcing. Structured and time-limited, with open enrollment periods.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/groups"
-          }
-        },
-        "service_consult": {
-          "type": "service",
-          "settings": {
-            "kicker": "Clinical Consultation",
-            "heading": "Consultation",
-            "description": "<p>Case consultation for clinicians and referral conversations for families. Available by arrangement to licensed professionals and referring providers.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/consultation"
           }
         }
       },
       "block_order": [
         "service_therapy",
         "service_eval",
-        "service_groups",
-        "service_consult"
+        "service_groups"
       ]
     },
     "three_branch": {
