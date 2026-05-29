@@ -50,6 +50,7 @@
   }
 
   #shopify-section-{{ section.id }} .pathway-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: var(--space-7) var(--space-6);
@@ -58,6 +59,16 @@
     text-decoration: none;
     transition: background var(--dur-base) var(--ease);
     border: 1px solid var(--cfbl-rule);
+  }
+
+  #shopify-section-{{ section.id }} .pathway-card__logo {
+    position: absolute;
+    top: var(--space-5);
+    right: var(--space-5);
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    opacity: 0.85;
   }
 
   #shopify-section-{{ section.id }} .pathway-card:hover {
@@ -263,6 +274,15 @@
             class="pathway-card pathway-card--{{ card_brand }}"
             {{ block.shopify_attributes }}
           >
+            {%- if block.settings.logo_image != blank -%}
+              {%- assign logo_alt = block.settings.title | escape -%}
+              {{
+                block.settings.logo_image
+                | image_url: width: 64
+                | image_tag: class: 'pathway-card__logo', alt: logo_alt, loading: 'lazy'
+              }}
+            {%- endif -%}
+
             {%- if block.settings.icon != blank -%}
               <div class="pathway-card__icon" aria-hidden="true">
                 {{ block.settings.icon | escape | truncate: 4, '' }}
@@ -419,6 +439,11 @@
       "name": "Pathway card",
       "limit": 3,
       "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo / favicon (upper right corner)"
+        },
         {
           "type": "text",
           "id": "icon",
