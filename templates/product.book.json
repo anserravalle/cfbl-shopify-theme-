@@ -3,7 +3,7 @@
     "book_feature": {
       "type": "book-feature",
       "settings": {
-        "eyebrow": "MUSA · Books",
+        "eyebrow": "MUSA \u00b7 Books",
         "populate_from_product": true,
         "show_purchase_form": true,
         "brand": "musa"
@@ -15,7 +15,7 @@
       "settings": {
         "eyebrow": "Subscribe",
         "heading": "New essays, when they appear.",
-        "description": "No digest, no schedule. An email when something new is published.",
+        "description": "<p>No digest, no schedule. An email when something new is published.</p>",
         "button_label": "Subscribe",
         "brand": "musa"
       }

@@ -3,7 +3,7 @@
     "book_feature": {
       "type": "book-feature",
       "settings": {
-        "eyebrow": "MUSA · Books",
+        "eyebrow": "MUSA \u00b7 Books",
         "populate_from_product": true,
         "brand": "musa"
       },
@@ -21,7 +21,7 @@
           "type": "essay",
           "settings": {
             "title": "The Diagnostic Gaze: When Assessment Becomes Care",
-            "byline": "Angela Serravalle · April 2026",
+            "byline": "Angela Serravalle \u00b7 April 2026",
             "lede": "What changes when we treat the act of diagnosis as a clinical encounter rather than an administrative task.",
             "cta_label": "Read the essay",
             "cta_url": "/blogs/essays/the-diagnostic-gaze"
@@ -31,21 +31,24 @@
           "type": "essay",
           "settings": {
             "title": "What It Means to Witness: Notes from a Clinical Practice",
-            "byline": "Angela Serravalle · February 2026",
-            "lede": "On bearing witness as a clinical and ethical act — and what it costs to do it carefully.",
+            "byline": "Angela Serravalle \u00b7 February 2026",
+            "lede": "On bearing witness as a clinical and ethical act \u2014 and what it costs to do it carefully.",
             "cta_label": "Read the essay",
             "cta_url": "/blogs/essays/what-it-means-to-witness"
           }
         }
       },
-      "block_order": ["essay_related_1", "essay_related_2"]
+      "block_order": [
+        "essay_related_1",
+        "essay_related_2"
+      ]
     },
     "newsletter": {
       "type": "newsletter-signup",
       "settings": {
         "eyebrow": "Subscribe",
         "heading": "New essays, when they appear.",
-        "description": "No digest, no schedule. An email when something new is published.",
+        "description": "<p>No digest, no schedule. An email when something new is published.</p>",
         "button_label": "Subscribe",
         "brand": "musa"
       }

@@ -3,7 +3,7 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "Center for Balanced Living · Assessment Services",
+        "eyebrow": "Center for Balanced Living \u00b7 Assessment Services",
         "heading": "Psychological Evaluation Services",
         "subheading": "Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs care, school supports, and clinical decision-making.",
         "cta_primary_label": "Schedule a Consultation",
@@ -19,7 +19,7 @@
       "settings": {
         "eyebrow": "Our Approach",
         "heading": "Assessment as a clinical act.",
-        "body": "Psychological evaluation at Center for Balanced Living is not a checkbox exercise. It is a clinical process — attentive to the whole person, grounded in current psychometric standards, and oriented toward actionable findings. Every evaluation concludes with a written report and a feedback session where results are explained clearly and completely.",
+        "body": "<p>Psychological evaluation at Center for Balanced Living is not a checkbox exercise. It is a clinical process \u2014 attentive to the whole person, grounded in current psychometric standards, and oriented toward actionable findings. Every evaluation concludes with a written report and a feedback session where results are explained clearly and completely.</p>",
         "image": "",
         "image_position": "right",
         "cta_label": "",
@@ -40,7 +40,7 @@
           "settings": {
             "kicker": "Diagnostic Evaluation",
             "heading": "Psychodiagnostic Evaluation",
-            "description": "Comprehensive clinical interview, behavioral observation, and standardized testing to clarify diagnosis for adults and adolescents presenting with mood, anxiety, trauma, or complex presentations.",
+            "description": "<p>Comprehensive clinical interview, behavioral observation, and standardized testing to clarify diagnosis for adults and adolescents presenting with mood, anxiety, trauma, or complex presentations.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/psychodiagnostic-evaluation"
           }
@@ -50,7 +50,7 @@
           "settings": {
             "kicker": "Educational Support",
             "heading": "Psychoeducational Evaluation",
-            "description": "Cognitive, academic, and processing assessments for children and adolescents. Results inform IEPs, 504 plans, academic accommodations, and school-based supports.",
+            "description": "<p>Cognitive, academic, and processing assessments for children and adolescents. Results inform IEPs, 504 plans, academic accommodations, and school-based supports.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/psychoeducational-evaluation"
           }
@@ -60,7 +60,7 @@
           "settings": {
             "kicker": "Attention and Executive Function",
             "heading": "ADHD and Executive Function Assessment",
-            "description": "Differentiated assessment of attention, working memory, processing speed, and executive function. For children, adolescents, and adults seeking diagnostic clarity.",
+            "description": "<p>Differentiated assessment of attention, working memory, processing speed, and executive function. For children, adolescents, and adults seeking diagnostic clarity.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/adhd-evaluation"
           }
@@ -70,13 +70,18 @@
           "settings": {
             "kicker": "Forensic and Specialized",
             "heading": "Forensic and Specialized Evaluation",
-            "description": "Available by referral for disability documentation, custody proceedings, and specialized clinical purposes. Contact us to discuss your specific referral question.",
+            "description": "<p>Available by referral for disability documentation, custody proceedings, and specialized clinical purposes. Contact us to discuss your specific referral question.</p>",
             "cta_label": "Contact us",
             "cta_url": "/pages/contact"
           }
         }
       },
-      "block_order": ["eval_psychodiagnostic", "eval_psychoeducational", "eval_adhd", "eval_forensic"]
+      "block_order": [
+        "eval_psychodiagnostic",
+        "eval_psychoeducational",
+        "eval_adhd",
+        "eval_forensic"
+      ]
     },
     "faq": {
       "type": "faq-accordion",
@@ -90,7 +95,7 @@
           "type": "item",
           "settings": {
             "question": "How long does an evaluation take?",
-            "answer": "<p>Most evaluations require 6–10 hours of testing spread across multiple sessions, plus a feedback appointment. The full process typically takes 3–6 weeks from intake to report.</p>"
+            "answer": "<p>Most evaluations require 6\u201310 hours of testing spread across multiple sessions, plus a feedback appointment. The full process typically takes 3\u20136 weeks from intake to report.</p>"
           }
         },
         "faq_2": {
@@ -115,7 +120,12 @@
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4"]
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4"
+      ]
     },
     "contact_cta": {
       "type": "contact-cta",
@@ -126,7 +136,7 @@
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Contact Us",
         "cta_secondary_url": "/pages/contact",
-        "footnote": "Middletown, DE · In-person only for testing · Most insurance accepted",
+        "footnote": "Middletown, DE \u00b7 In-person only for testing \u00b7 Most insurance accepted",
         "brand": "cfbl"
       }
     }

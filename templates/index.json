@@ -3,14 +3,14 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "Trauma-Informed Psychology · Middletown, DE",
+        "eyebrow": "Trauma-Informed Psychology \u00b7 Middletown, DE",
         "heading": "Healing Happens In Relationship.",
         "subheading": "We pair evidence-based care with warmth, attunement, and a holistic approach to mind, body, and spirit.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Meet the Team",
         "cta_secondary_url": "/pages/team",
-        "image": "cfbl-tree-portrait.jpeg",
+        "image": "",
         "brand": "cfbl"
       }
     },
@@ -26,7 +26,7 @@
           "settings": {
             "kicker": "For Clients",
             "heading": "Center for Balanced Living",
-            "description": "Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-informed care for adults, adolescents, and children.",
+            "description": "<p>Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-informed care for adults, adolescents, and children.</p>",
             "cta_label": "Explore Clinical Services",
             "cta_url": "/pages/cfbl",
             "tone": "cfbl"
@@ -37,7 +37,7 @@
           "settings": {
             "kicker": "For Professionals",
             "heading": "CFBL Institute",
-            "description": "Continuing education in trauma-informed practice, assessment, and applied clinical reasoning. Live workshops and on-demand courses for licensed clinicians.",
+            "description": "<p>Continuing education in trauma-informed practice, assessment, and applied clinical reasoning. Live workshops and on-demand courses for licensed clinicians.</p>",
             "cta_label": "View Trainings and CE",
             "cta_url": "/pages/institute",
             "tone": "institute"
@@ -48,14 +48,18 @@
           "settings": {
             "kicker": "For Readers",
             "heading": "MUSA",
-            "description": "Books, essays, and longer-form writing on psychology, memory, and being human. A publication by Dr. Angela Serravalle.",
+            "description": "<p>Books, essays, and longer-form writing on psychology, memory, and being human. A publication by Dr. Angela Serravalle.</p>",
             "cta_label": "Read the Essays",
             "cta_url": "/pages/musa",
             "tone": "musa"
           }
         }
       },
-      "block_order": ["pathway_clients", "pathway_professionals", "pathway_readers"]
+      "block_order": [
+        "pathway_clients",
+        "pathway_professionals",
+        "pathway_readers"
+      ]
     },
     "service_cards": {
       "type": "service-cards",
@@ -70,7 +74,7 @@
           "settings": {
             "kicker": "Individual Therapy",
             "heading": "Trauma-Informed Therapy",
-            "description": "Individual therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based approaches tailored to your history and goals.",
+            "description": "<p>Individual therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based approaches tailored to your history and goals.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/therapy"
           }
@@ -80,7 +84,7 @@
           "settings": {
             "kicker": "Psychological Evaluation",
             "heading": "Psychological Evaluations",
-            "description": "Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment planning, school supports, and clinical decision-making.",
+            "description": "<p>Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment planning, school supports, and clinical decision-making.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/evaluations"
           }
@@ -90,7 +94,7 @@
           "settings": {
             "kicker": "Groups and Workshops",
             "heading": "Group Therapy",
-            "description": "Community-grounded groups focused on grief, parenting, and somatic resourcing. Structured and time-limited, with open enrollment periods.",
+            "description": "<p>Community-grounded groups focused on grief, parenting, and somatic resourcing. Structured and time-limited, with open enrollment periods.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/groups"
           }
@@ -100,19 +104,24 @@
           "settings": {
             "kicker": "Clinical Consultation",
             "heading": "Consultation",
-            "description": "Case consultation for clinicians and referral conversations for families. Available by arrangement to licensed professionals and referring providers.",
+            "description": "<p>Case consultation for clinicians and referral conversations for families. Available by arrangement to licensed professionals and referring providers.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/consultation"
           }
         }
       },
-      "block_order": ["service_therapy", "service_eval", "service_groups", "service_consult"]
+      "block_order": [
+        "service_therapy",
+        "service_eval",
+        "service_groups",
+        "service_consult"
+      ]
     },
     "three_branch": {
       "type": "three-branch-overview",
       "settings": {
         "heading": "One practice. Three doors.",
-        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA are three distinct properties under one roof — each serving a different audience with its own voice and editorial identity."
+        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA are three distinct properties under one roof \u2014 each serving a different audience with its own voice and editorial identity."
       }
     },
     "team": {
@@ -134,12 +143,14 @@
           }
         }
       },
-      "block_order": ["member_serravalle"]
+      "block_order": [
+        "member_serravalle"
+      ]
     },
     "featured_training": {
       "type": "featured-training",
       "settings": {
-        "eyebrow": "CFBL Institute · Upcoming",
+        "eyebrow": "CFBL Institute \u00b7 Upcoming",
         "heading": "Continuing education in trauma-informed practice.",
         "brand": "institute"
       },
@@ -147,24 +158,26 @@
         "training_1": {
           "type": "training",
           "settings": {
-            "kicker": "6.0 CE Hours · Live Online",
+            "kicker": "6.0 CE Hours \u00b7 Live Online",
             "title": "Trauma-Informed Assessment: Integrating the ACEs Framework",
             "presenter": "Angela Serravalle, Psy.D.",
             "date": "November 14, 2026",
             "format": "Live Online",
             "price": "$245",
-            "description": "Integrating psychometric reasoning with somatic and nervous-system awareness. A six-hour workshop for LCSWs, LPCs, psychologists, and PMHNPs.",
+            "description": "<p>Integrating psychometric reasoning with somatic and nervous-system awareness. A six-hour workshop for LCSWs, LPCs, psychologists, and PMHNPs.</p>",
             "cta_label": "Register",
             "cta_url": "/collections/trainings"
           }
         }
       },
-      "block_order": ["training_1"]
+      "block_order": [
+        "training_1"
+      ]
     },
     "featured_essay": {
       "type": "featured-essay",
       "settings": {
-        "eyebrow": "MUSA · Essays and Publications",
+        "eyebrow": "MUSA \u00b7 Essays and Publications",
         "heading": "New writing on psychology, memory, and being human.",
         "brand": "musa"
       },
@@ -173,14 +186,16 @@
           "type": "essay",
           "settings": {
             "title": "On Memory and the Body: What Trauma Teaches Us About Time",
-            "byline": "Angela Serravalle · May 2026",
+            "byline": "Angela Serravalle \u00b7 May 2026",
             "lede": "The body keeps a record that the mind is still learning to read. What clinical work reveals about the strangeness of traumatic memory.",
             "cta_label": "Read the essay",
             "cta_url": "/blogs/essays"
           }
         }
       },
-      "block_order": ["essay_1"]
+      "block_order": [
+        "essay_1"
+      ]
     },
     "contact_cta": {
       "type": "contact-cta",
@@ -191,7 +206,7 @@
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Contact Us",
         "cta_secondary_url": "/pages/contact",
-        "footnote": "Middletown, DE · In-person and telehealth · Most insurance accepted",
+        "footnote": "Middletown, DE \u00b7 In-person and telehealth \u00b7 Most insurance accepted",
         "brand": "cfbl"
       }
     },
@@ -200,7 +215,7 @@
       "settings": {
         "eyebrow": "Stay Connected",
         "heading": "Stay connected",
-        "description": "Updates from the practice, new trainings from the Institute, and new essays from MUSA. No more than twice a month.",
+        "description": "<p>Updates from the practice, new trainings from the Institute, and new essays from MUSA. No more than twice a month.</p>",
         "button_label": "Subscribe",
         "brand": "cfbl"
       }

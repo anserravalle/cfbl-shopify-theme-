@@ -195,9 +195,18 @@
       "id": "background",
       "label": "Background",
       "options": [
-        { "value": "bone", "label": "Bone" },
-        { "value": "parchment", "label": "Parchment" },
-        { "value": "oxblood-dark", "label": "Dark Oxblood" }
+        {
+          "value": "bone",
+          "label": "Bone"
+        },
+        {
+          "value": "parchment",
+          "label": "Parchment"
+        },
+        {
+          "value": "oxblood-dark",
+          "label": "Dark Oxblood"
+        }
       ],
       "default": "bone"
     }
@@ -213,6 +222,41 @@
         "background": "bone"
       }
     }
-  ]
+  ],
+  "blocks": [
+    {
+      "type": "essay",
+      "name": "Essay",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "byline",
+          "label": "Byline"
+        },
+        {
+          "type": "textarea",
+          "id": "lede",
+          "label": "Lede"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "Button label",
+          "default": "Read the essay"
+        },
+        {
+          "type": "url",
+          "id": "cta_url",
+          "label": "Button URL"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12
 }
 {% endschema %}

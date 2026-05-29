@@ -3,7 +3,7 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "CFBL Institute · Training Catalog",
+        "eyebrow": "CFBL Institute \u00b7 Training Catalog",
         "heading": "Continuing Education for the Practicing Clinician.",
         "subheading": "Live workshops, on-demand courses, and clinical consultation. All approved for CE credit.",
         "cta_primary_label": "",
@@ -33,7 +33,7 @@
       "settings": {
         "eyebrow": "Institute Updates",
         "heading": "New training announcements.",
-        "description": "New course announcements, CE deadlines, and clinical resources. For clinicians.",
+        "description": "<p>New course announcements, CE deadlines, and clinical resources. For clinicians.</p>",
         "button_label": "Subscribe",
         "brand": "institute"
       }

@@ -3,7 +3,7 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "CFBL Institute · Continuing Education",
+        "eyebrow": "CFBL Institute \u00b7 Continuing Education",
         "heading": "",
         "subheading": "",
         "cta_primary_label": "Register",
@@ -29,7 +29,7 @@
       "settings": {
         "eyebrow": "About the Presenter",
         "heading": "Angela Serravalle, Psy.D., LPCMH, NCC",
-        "body": "Dr. Serravalle is a licensed psychologist and founder of the Center for Balanced Living. She has been teaching trauma-informed clinical practice for over a decade and continues to carry an active caseload. Her training draws directly from clinical experience, not from the literature alone.",
+        "body": "<p>Dr. Serravalle is a licensed psychologist and founder of the Center for Balanced Living. She has been teaching trauma-informed clinical practice for over a decade and continues to carry an active caseload. Her training draws directly from clinical experience, not from the literature alone.</p>",
         "image": "",
         "image_position": "left",
         "cta_label": "Full faculty bio",
@@ -74,7 +74,12 @@
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4"]
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4"
+      ]
     },
     "contact_cta": {
       "type": "contact-cta",

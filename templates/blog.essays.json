@@ -3,7 +3,7 @@
     "editorial_archive": {
       "type": "editorial-archive",
       "settings": {
-        "eyebrow": "MUSA · Essays",
+        "eyebrow": "MUSA \u00b7 Essays",
         "heading": "Archive",
         "show_lead": true,
         "lead_essay_handle": "",
@@ -16,7 +16,7 @@
       "settings": {
         "eyebrow": "Subscribe",
         "heading": "New essays, when they appear.",
-        "description": "No digest, no schedule. An email when something new is published.",
+        "description": "<p>No digest, no schedule. An email when something new is published.</p>",
         "button_label": "Subscribe",
         "brand": "musa"
       }

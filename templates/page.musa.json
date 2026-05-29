@@ -3,14 +3,14 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "MUSA · Essays and Publications",
+        "eyebrow": "MUSA \u00b7 Essays and Publications",
         "heading": "Writing on psychology, memory, and being human.",
         "subheading": "Essays, books, and longer-form work by Angela Serravalle.",
         "cta_primary_label": "Read the Essays",
         "cta_primary_url": "/blogs/essays",
         "cta_secondary_label": "Books",
         "cta_secondary_url": "/pages/books",
-        "image": "musa-book-icon.png",
+        "image": "",
         "brand": "musa"
       }
     },
@@ -26,14 +26,16 @@
           "type": "essay",
           "settings": {
             "title": "On Memory and the Body: What Trauma Teaches Us About Time",
-            "byline": "Angela Serravalle · May 2026",
-            "lede": "The body keeps a record that the mind is still learning to read. What clinical practice reveals about the strangeness of traumatic memory — its resistance to narrative, its refusal of sequence.",
+            "byline": "Angela Serravalle \u00b7 May 2026",
+            "lede": "The body keeps a record that the mind is still learning to read. What clinical practice reveals about the strangeness of traumatic memory \u2014 its resistance to narrative, its refusal of sequence.",
             "cta_label": "Read the essay",
             "cta_url": "/blogs/essays/on-memory-and-the-body"
           }
         }
       },
-      "block_order": ["essay_1"]
+      "block_order": [
+        "essay_1"
+      ]
     },
     "book_feature": {
       "type": "book-feature",
@@ -48,7 +50,7 @@
             "title": "The Diagnostic Gaze",
             "subtitle": "When Assessment Becomes Care",
             "author": "Angela Serravalle",
-            "description": "A clinician's account of what happens in the space between observation and diagnosis — and what is at stake when a framework becomes a verdict.",
+            "description": "<p>A clinician's account of what happens in the space between observation and diagnosis \u2014 and what is at stake when a framework becomes a verdict.</p>",
             "publisher": "Pending",
             "year": "Forthcoming",
             "cover_image": "musa-book-icon.png",
@@ -57,7 +59,9 @@
           }
         }
       },
-      "block_order": ["book_1"]
+      "block_order": [
+        "book_1"
+      ]
     },
     "editorial_archive": {
       "type": "editorial-archive",
@@ -72,7 +76,7 @@
       "settings": {
         "eyebrow": "Subscribe",
         "heading": "New essays, when they appear.",
-        "description": "No digest, no schedule. An email when something new is published.",
+        "description": "<p>No digest, no schedule. An email when something new is published.</p>",
         "button_label": "Subscribe",
         "brand": "musa"
       }
