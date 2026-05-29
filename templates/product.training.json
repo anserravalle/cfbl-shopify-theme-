@@ -22,28 +22,28 @@
           "type": "item",
           "settings": {
             "question": "Which professions are approved for CE credit?",
-            "answer": "CFBL Institute trainings are approved for CE credit for LCSWs, LPCs, psychologists (PA, DE, MD), and PMHNPs. Check the course page for your state's approval status."
+            "answer": "<p>CFBL Institute trainings are approved for CE credit for LCSWs, LPCs, psychologists (PA, DE, MD), and PMHNPs. Check the course page for your state's approval status.</p>"
           }
         },
         "faq_2": {
           "type": "item",
           "settings": {
             "question": "What is the cancellation policy?",
-            "answer": "Full refunds are available up to 7 days before the event. After that, credit toward a future training is available with 48-hour notice."
+            "answer": "<p>Full refunds are available up to 7 days before the event. After that, credit toward a future training is available with 48-hour notice.</p>"
           }
         },
         "faq_3": {
           "type": "item",
           "settings": {
             "question": "How will I receive my CE certificate?",
-            "answer": "Certificates of completion are issued within 5 business days of the training. You must complete the full training and post-test (where required) to receive credit."
+            "answer": "<p>Certificates of completion are issued within 5 business days of the training. You must complete the full training and post-test (where required) to receive credit.</p>"
           }
         },
         "faq_4": {
           "type": "item",
           "settings": {
             "question": "Are group rates available?",
-            "answer": "Yes. Groups of 5 or more from the same organization receive a 15% discount. Contact the Institute to arrange group registration."
+            "answer": "<p>Yes. Groups of 5 or more from the same organization receive a 15% discount. Contact the Institute to arrange group registration.</p>"
           }
         }
       },

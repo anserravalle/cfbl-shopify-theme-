@@ -49,28 +49,28 @@
           "type": "item",
           "settings": {
             "question": "Which professions are approved for CE credit?",
-            "answer": "CFBL Institute trainings are approved for CE credit for LCSWs, LPCs, psychologists (PA, DE, MD), and PMHNPs. Check the specific course page for your state's approval status."
+            "answer": "<p>CFBL Institute trainings are approved for CE credit for LCSWs, LPCs, psychologists (PA, DE, MD), and PMHNPs. Check the specific course page for your state's approval status.</p>"
           }
         },
         "faq_2": {
           "type": "item",
           "settings": {
             "question": "What is the cancellation and refund policy?",
-            "answer": "Full refunds are available up to 7 days before the event. No refunds after that date, but credit toward a future training is available with 48-hour notice."
+            "answer": "<p>Full refunds are available up to 7 days before the event. No refunds after that date, but credit toward a future training is available with 48-hour notice.</p>"
           }
         },
         "faq_3": {
           "type": "item",
           "settings": {
             "question": "Are there prerequisites for this training?",
-            "answer": "Prerequisites, if any, are listed on the individual course page. Most Institute trainings assume a licensed clinician audience but do not require prior coursework with CFBL Institute."
+            "answer": "<p>Prerequisites, if any, are listed on the individual course page. Most Institute trainings assume a licensed clinician audience but do not require prior coursework with CFBL Institute.</p>"
           }
         },
         "faq_4": {
           "type": "item",
           "settings": {
             "question": "How is CE credit documented?",
-            "answer": "Certificates of completion are issued within 5 business days after the training. Attendees must complete the full training and pass a post-test (where applicable) to receive credit."
+            "answer": "<p>Certificates of completion are issued within 5 business days after the training. Attendees must complete the full training and pass a post-test (where applicable) to receive credit.</p>"
           }
         }
       },

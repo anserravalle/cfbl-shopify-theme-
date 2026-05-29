@@ -90,28 +90,28 @@
           "type": "item",
           "settings": {
             "question": "How long does an evaluation take?",
-            "answer": "Most evaluations require 6–10 hours of testing spread across multiple sessions, plus a feedback appointment. The full process typically takes 3–6 weeks from intake to report."
+            "answer": "<p>Most evaluations require 6–10 hours of testing spread across multiple sessions, plus a feedback appointment. The full process typically takes 3–6 weeks from intake to report.</p>"
           }
         },
         "faq_2": {
           "type": "item",
           "settings": {
             "question": "Is the evaluation covered by insurance?",
-            "answer": "Coverage varies by plan and evaluation type. We can provide a superbill for out-of-network reimbursement. Contact us to discuss your specific insurance situation before scheduling."
+            "answer": "<p>Coverage varies by plan and evaluation type. We can provide a superbill for out-of-network reimbursement. Contact us to discuss your specific insurance situation before scheduling.</p>"
           }
         },
         "faq_3": {
           "type": "item",
           "settings": {
             "question": "What does the evaluation process involve?",
-            "answer": "Every evaluation includes an intake interview, standardized testing, behavioral observation, collateral review (school records, prior reports), a written report, and a feedback session."
+            "answer": "<p>Every evaluation includes an intake interview, standardized testing, behavioral observation, collateral review (school records, prior reports), a written report, and a feedback session.</p>"
           }
         },
         "faq_4": {
           "type": "item",
           "settings": {
             "question": "Do you evaluate adults as well as children?",
-            "answer": "Yes. We conduct evaluations for children, adolescents, and adults. Adult evaluations focus on diagnostic clarification, ADHD, and conditions that may not have been identified in childhood."
+            "answer": "<p>Yes. We conduct evaluations for children, adolescents, and adults. Adult evaluations focus on diagnostic clarification, ADHD, and conditions that may not have been identified in childhood.</p>"
           }
         }
       },
