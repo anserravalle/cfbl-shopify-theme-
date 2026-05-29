@@ -184,6 +184,63 @@
       grid-column: 1;
     }
   }
+
+  /* DYNAMIC SECTION OVERRIDES */
+  {%- liquid
+    assign pt = section.settings.padding_top | default: 'medium'
+    assign pb = section.settings.padding_bottom | default: 'medium'
+    if pt == 'none'
+      assign pt_val = '0'
+    elsif pt == 'small'
+      assign pt_val = 'var(--space-6)'
+    elsif pt == 'large'
+      assign pt_val = 'var(--space-11)'
+    elsif pt == 'xl'
+      assign pt_val = 'calc(var(--space-11) * 1.5)'
+    else
+      assign pt_val = 'var(--space-9)'
+    endif
+    if pb == 'none'
+      assign pb_val = '0'
+    elsif pb == 'small'
+      assign pb_val = 'var(--space-6)'
+    elsif pb == 'large'
+      assign pb_val = 'var(--space-11)'
+    elsif pb == 'xl'
+      assign pb_val = 'calc(var(--space-11) * 1.5)'
+    else
+      assign pb_val = 'var(--space-9)'
+    endif
+    assign hs = section.settings.heading_size | default: 'md'
+    if hs == 'sm'
+      assign hs_scale = '0.8'
+    elsif hs == 'lg'
+      assign hs_scale = '1.2'
+    elsif hs == 'xl'
+      assign hs_scale = '1.45'
+    else
+      assign hs_scale = '1'
+    endif
+  -%}
+  {%- if section.settings.section_bg != blank -%}
+  #shopify-section-{{ section.id }} { background: {{ section.settings.section_bg }} !important; }
+  #shopify-section-{{ section.id }} > section,
+  #shopify-section-{{ section.id }} > div { background: {{ section.settings.section_bg }} !important; }
+  {%- endif -%}
+  #shopify-section-{{ section.id }} > section,
+  #shopify-section-{{ section.id }} > div:first-child {
+    padding-top: {{ pt_val }} !important;
+    padding-bottom: {{ pb_val }} !important;
+  }
+  {%- if section.settings.text_align == 'center' -%}
+  #shopify-section-{{ section.id }} h1,
+  #shopify-section-{{ section.id }} h2,
+  #shopify-section-{{ section.id }} h3,
+  #shopify-section-{{ section.id }} p { text-align: center; }
+  {%- endif -%}
+  #shopify-section-{{ section.id }} h1,
+  #shopify-section-{{ section.id }} h2,
+  #shopify-section-{{ section.id }} h3 { font-size: calc(1em * {{ hs_scale }}); }
 </style>
 
 <section class="event-list-section brand-institute" aria-labelledby="events-heading-{{ section.id }}">
@@ -260,6 +317,112 @@
       "id": "heading",
       "label": "Section heading",
       "default": "Upcoming Trainings & Events"
+    },
+    {
+      "type": "header",
+      "content": "Layout & Spacing"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Background color",
+      "info": "Leave blank to use the brand default background."
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "label": "Top padding",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (default)"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "xl",
+          "label": "Extra large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (default)"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "xl",
+          "label": "Extra large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Heading & text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left (default)"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        {
+          "value": "sm",
+          "label": "Small"
+        },
+        {
+          "value": "md",
+          "label": "Medium (default)"
+        },
+        {
+          "value": "lg",
+          "label": "Large"
+        },
+        {
+          "value": "xl",
+          "label": "Extra large"
+        }
+      ],
+      "default": "md"
     }
   ],
   "blocks": [
@@ -283,16 +446,25 @@
         {
           "type": "text",
           "id": "time",
-          "label": "Time (e.g. 9:00am–5:00pm ET)"
+          "label": "Time (e.g. 9:00am\u20135:00pm ET)"
         },
         {
           "type": "select",
           "id": "format",
           "label": "Format",
           "options": [
-            { "value": "Live Online", "label": "Live Online" },
-            { "value": "In-Person", "label": "In-Person" },
-            { "value": "Hybrid", "label": "Hybrid" }
+            {
+              "value": "Live Online",
+              "label": "Live Online"
+            },
+            {
+              "value": "In-Person",
+              "label": "In-Person"
+            },
+            {
+              "value": "Hybrid",
+              "label": "Hybrid"
+            }
           ],
           "default": "Live Online"
         },
@@ -329,7 +501,7 @@
           "settings": {
             "title": "Assessment for the Trauma Clinician",
             "date": "November 14, 2026",
-            "time": "9:00am–5:00pm ET",
+            "time": "9:00am\u20135:00pm ET",
             "format": "Live Online",
             "is_featured": true
           }

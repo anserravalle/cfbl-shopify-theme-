@@ -48,6 +48,100 @@
   <!-- Lucide icons (stroke-based, restrained) -->
   <script src="https://unpkg.com/lucide@latest" defer></script>
 
+  <!-- Theme settings → CSS variables -->
+  <style>
+    :root {
+      /* CFBL colors */
+      --cfbl-deep-navy:   {{ settings.cfbl_navy      | default: '#2B5275' }};
+      --cfbl-sky-blue:    {{ settings.cfbl_sky_blue  | default: '#4E9FBF' }};
+      --cfbl-terracotta:  {{ settings.cfbl_terracotta | default: '#A0533E' }};
+      --cfbl-sand:        {{ settings.cfbl_sand       | default: '#EED9C5' }};
+      --cfbl-sand-light:  {{ settings.cfbl_sand_light | default: '#F5E7D6' }};
+      --cfbl-sand-pale:   {{ settings.cfbl_sand_pale  | default: '#FAF1E6' }};
+      --cfbl-ink:         {{ settings.cfbl_ink        | default: '#1F2A33' }};
+      --cfbl-rule:        {{ settings.cfbl_rule       | default: '#D4C4B0' }};
+
+      /* Institute colors */
+      --inst-forest:    {{ settings.inst_forest    | default: '#3D5A52' }};
+      --inst-sage:      {{ settings.inst_sage      | default: '#6F8F7A' }};
+      --inst-sage-mist: {{ settings.inst_sage_mist | default: '#D0DDD8' }};
+      --inst-cream:     {{ settings.inst_cream     | default: '#EAE2D0' }};
+      --inst-ink:       {{ settings.inst_ink       | default: '#2A3530' }};
+
+      /* Publications colors */
+      --musa-oxblood:   {{ settings.musa_oxblood   | default: '#6E1F23' }};
+      --musa-ochre:     {{ settings.musa_ochre     | default: '#C5A572' }};
+      --musa-walnut:    {{ settings.musa_walnut    | default: '#8B6A4E' }};
+      --musa-bone:      {{ settings.musa_bone      | default: '#F1E8D8' }};
+      --musa-parchment: {{ settings.musa_parchment | default: '#EDE0C8' }};
+      --musa-ink:       {{ settings.musa_ink       | default: '#1F1A16' }};
+
+      /* Typography */
+      --cfbl-font-display: {{ settings.cfbl_font_display | default: "'Cormorant SC', serif" }};
+      --inst-font-display:  {{ settings.inst_font_display  | default: "'DM Serif Display', serif" }};
+      --musa-font-display:  {{ settings.musa_font_display  | default: "'Playfair Display', serif" }};
+      --cfbl-font-body:     {{ settings.font_body          | default: "'Inter', system-ui, sans-serif" }};
+      --inst-font-body:     {{ settings.font_body          | default: "'Inter', system-ui, sans-serif" }};
+      --musa-font-body:     {{ settings.font_body          | default: "'Inter', system-ui, sans-serif" }};
+      --inst-font-utility:  {{ settings.font_body          | default: "'Inter', system-ui, sans-serif" }};
+      --musa-font-utility:  {{ settings.font_body          | default: "'Inter', system-ui, sans-serif" }};
+      font-size: {{ settings.base_font_size | default: 16 }}px;
+
+      /* Buttons */
+      --btn-primary-bg:      {{ settings.btn_primary_bg    | default: '#2B5275' }};
+      --btn-primary-text:    {{ settings.btn_primary_text  | default: '#FFFFFF' }};
+      --btn-primary-hover:   {{ settings.btn_primary_hover | default: '#1F3D57' }};
+      --btn-secondary-text:  {{ settings.btn_secondary_text   | default: '#2B5275' }};
+      --btn-secondary-border: {{ settings.btn_secondary_border | default: '#2B5275' }};
+
+      /* Shape */
+      --radius-sm: {{ settings.border_radius | default: '8px' }};
+
+      /* Layout */
+      --container-max: {{ settings.container_width | default: '1120px' }};
+
+      /* Section spacing scale */
+      {%- liquid
+        assign sp = settings.section_spacing | default: 'medium'
+        if sp == 'compact'
+          assign sp_val = 'var(--space-7)'
+        elsif sp == 'relaxed'
+          assign sp_val = 'var(--space-10)'
+        elsif sp == 'spacious'
+          assign sp_val = 'var(--space-11)'
+        else
+          assign sp_val = 'var(--space-9)'
+        endif
+      -%}
+      --section-padding: {{ sp_val }};
+    }
+
+    /* Header colors */
+    .site-header {
+      background: {{ settings.header_bg | default: '#FFFFFF' }};
+      color: {{ settings.header_text | default: '#1F2A33' }};
+    }
+    .site-header a { color: {{ settings.header_text | default: '#1F2A33' }}; }
+
+    /* Footer colors */
+    .site-footer {
+      background: {{ settings.footer_bg | default: '#2A2520' }};
+      color: {{ settings.footer_text | default: '#C8BEB4' }};
+    }
+
+    /* Buttons from settings */
+    .btn-primary {
+      background: var(--btn-primary-bg);
+      color: var(--btn-primary-text);
+      border-color: var(--btn-primary-bg);
+    }
+    .btn-primary:hover { background: var(--btn-primary-hover); border-color: var(--btn-primary-hover); }
+    .btn-secondary {
+      color: var(--btn-secondary-text);
+      border-color: var(--btn-secondary-border);
+    }
+  </style>
+
   <!-- Custom CSS from theme settings -->
   {%- if settings.custom_css != blank -%}
     <style>{{ settings.custom_css }}</style>

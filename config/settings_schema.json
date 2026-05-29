@@ -2,7 +2,7 @@
   {
     "name": "theme_info",
     "theme_name": "CFBL Brand Family",
-    "theme_version": "1.0.0",
+    "theme_version": "2.0.0",
     "theme_author": "CFBL",
     "theme_documentation_url": "https://balancedlivingde.com",
     "theme_support_url": "https://balancedlivingde.com/contact"
@@ -14,54 +14,178 @@
         "type": "select",
         "id": "brand_mode",
         "label": "Default brand context",
-        "info": "Sets the default brand when no page metafield is present. Individual pages override this via the brand.context metafield (cfbl / institute / musa).",
+        "info": "Sets the default brand when no page metafield is present.",
         "options": [
           { "value": "cfbl",      "label": "Center for Balanced Living (CFBL)" },
           { "value": "institute", "label": "CFBL Institute" },
-          { "value": "musa",      "label": "MUSA" }
+          { "value": "musa",      "label": "CFBL Publications" }
         ],
         "default": "cfbl"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_brand_switcher",
-        "label": "Show brand switcher in header",
-        "info": "Displays a compact brand navigation row (CFBL / Institute / MUSA) below the primary header. Useful on the homepage.",
-        "default": false
-      },
-      {
-        "type": "paragraph",
-        "content": "Brand palettes and typography are defined by CSS custom properties in base.css. The brand_mode setting controls the default <body> class. Per-page overrides come from the brand.context page metafield."
       }
     ]
   },
   {
-    "name": "Colors",
+    "name": "CFBL Colors",
     "settings": [
       {
-        "type": "paragraph",
-        "content": "CFBL presets — Deep Navy #2B5275, Sky Blue #4E9FBF, Sand #EED9C5. Institute presets — Forest #3D5A52, Sage #6F8F7A, Cream #EAE2D0. MUSA presets — Oxblood #6E1F23, Ochre #C5A572, Bone #F1E8D8."
+        "type": "header",
+        "content": "Primary Colors"
       },
       {
         "type": "color",
-        "id": "body_bg",
-        "label": "Default page background",
-        "info": "Overrides the brand-default background for the active brand context. Leave blank to use the brand default.",
+        "id": "cfbl_navy",
+        "label": "Deep Navy (headings, buttons)",
+        "default": "#2B5275"
+      },
+      {
+        "type": "color",
+        "id": "cfbl_sky_blue",
+        "label": "Sky Blue (links, accents)",
+        "default": "#4E9FBF"
+      },
+      {
+        "type": "color",
+        "id": "cfbl_terracotta",
+        "label": "Terracotta (eyebrows, kickers)",
+        "default": "#A0533E"
+      },
+      {
+        "type": "header",
+        "content": "Backgrounds"
+      },
+      {
+        "type": "color",
+        "id": "cfbl_sand",
+        "label": "Sand (primary background)",
         "default": "#EED9C5"
       },
       {
         "type": "color",
-        "id": "body_text",
-        "label": "Default body text color",
-        "info": "Overrides the brand-default ink color. Leave blank to use the brand default.",
+        "id": "cfbl_sand_light",
+        "label": "Sand Light (card backgrounds)",
+        "default": "#F5E7D6"
+      },
+      {
+        "type": "color",
+        "id": "cfbl_sand_pale",
+        "label": "Sand Pale (hover states)",
+        "default": "#FAF1E6"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "color",
+        "id": "cfbl_ink",
+        "label": "Ink (body text)",
         "default": "#1F2A33"
       },
       {
         "type": "color",
-        "id": "accent_color",
-        "label": "Primary accent color",
-        "info": "Used for links, buttons, and key UI elements. CFBL default: #2B5275. Institute default: #3D5A52. MUSA default: #6E1F23.",
-        "default": "#2B5275"
+        "id": "cfbl_rule",
+        "label": "Rule (borders, dividers)",
+        "default": "#D4C4B0"
+      }
+    ]
+  },
+  {
+    "name": "Institute Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "inst_forest",
+        "label": "Forest (headings, buttons)",
+        "default": "#3D5A52"
+      },
+      {
+        "type": "color",
+        "id": "inst_sage",
+        "label": "Sage (accents, kickers)",
+        "default": "#6F8F7A"
+      },
+      {
+        "type": "color",
+        "id": "inst_sage_mist",
+        "label": "Sage Mist (icon backgrounds)",
+        "default": "#D0DDD8"
+      },
+      {
+        "type": "header",
+        "content": "Backgrounds"
+      },
+      {
+        "type": "color",
+        "id": "inst_cream",
+        "label": "Cream (primary background)",
+        "default": "#EAE2D0"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "color",
+        "id": "inst_ink",
+        "label": "Ink (body text)",
+        "default": "#2A3530"
+      }
+    ]
+  },
+  {
+    "name": "Publications Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primary Colors"
+      },
+      {
+        "type": "color",
+        "id": "musa_oxblood",
+        "label": "Oxblood (headings, buttons)",
+        "default": "#6E1F23"
+      },
+      {
+        "type": "color",
+        "id": "musa_ochre",
+        "label": "Ochre (accents, kickers)",
+        "default": "#C5A572"
+      },
+      {
+        "type": "color",
+        "id": "musa_walnut",
+        "label": "Walnut (secondary accents)",
+        "default": "#8B6A4E"
+      },
+      {
+        "type": "header",
+        "content": "Backgrounds"
+      },
+      {
+        "type": "color",
+        "id": "musa_bone",
+        "label": "Bone (primary background)",
+        "default": "#F1E8D8"
+      },
+      {
+        "type": "color",
+        "id": "musa_parchment",
+        "label": "Parchment (card backgrounds)",
+        "default": "#EDE0C8"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "color",
+        "id": "musa_ink",
+        "label": "Ink (body text)",
+        "default": "#1F1A16"
       }
     ]
   },
@@ -69,26 +193,186 @@
     "name": "Typography",
     "settings": [
       {
+        "type": "header",
+        "content": "Display / Heading Font"
+      },
+      {
+        "type": "select",
+        "id": "cfbl_font_display",
+        "label": "CFBL display font",
+        "options": [
+          { "value": "'Cormorant SC', serif", "label": "Cormorant SC (default)" },
+          { "value": "'Playfair Display', serif", "label": "Playfair Display" },
+          { "value": "'DM Serif Display', serif", "label": "DM Serif Display" },
+          { "value": "'Lora', serif", "label": "Lora" },
+          { "value": "'Libre Baskerville', serif", "label": "Libre Baskerville" },
+          { "value": "Georgia, serif", "label": "Georgia (system)" }
+        ],
+        "default": "'Cormorant SC', serif"
+      },
+      {
+        "type": "select",
+        "id": "inst_font_display",
+        "label": "Institute display font",
+        "options": [
+          { "value": "'DM Serif Display', serif", "label": "DM Serif Display (default)" },
+          { "value": "'Cormorant SC', serif", "label": "Cormorant SC" },
+          { "value": "'Playfair Display', serif", "label": "Playfair Display" },
+          { "value": "'Lora', serif", "label": "Lora" },
+          { "value": "'Libre Baskerville', serif", "label": "Libre Baskerville" }
+        ],
+        "default": "'DM Serif Display', serif"
+      },
+      {
+        "type": "select",
+        "id": "musa_font_display",
+        "label": "Publications display font",
+        "options": [
+          { "value": "'Playfair Display', serif", "label": "Playfair Display (default)" },
+          { "value": "'Cormorant SC', serif", "label": "Cormorant SC" },
+          { "value": "'DM Serif Display', serif", "label": "DM Serif Display" },
+          { "value": "'Lora', serif", "label": "Lora" },
+          { "value": "'EB Garamond', serif", "label": "EB Garamond" }
+        ],
+        "default": "'Playfair Display', serif"
+      },
+      {
+        "type": "header",
+        "content": "Body Font"
+      },
+      {
+        "type": "select",
+        "id": "font_body",
+        "label": "Body / UI font (all brands)",
+        "options": [
+          { "value": "'Inter', system-ui, sans-serif", "label": "Inter (default)" },
+          { "value": "'Lato', sans-serif", "label": "Lato" },
+          { "value": "'Source Sans 3', sans-serif", "label": "Source Sans 3" },
+          { "value": "'Nunito Sans', sans-serif", "label": "Nunito Sans" },
+          { "value": "system-ui, sans-serif", "label": "System UI" }
+        ],
+        "default": "'Inter', system-ui, sans-serif"
+      },
+      {
+        "type": "header",
+        "content": "Sizes"
+      },
+      {
         "type": "range",
-        "id": "body_size",
+        "id": "base_font_size",
         "label": "Base body font size (px)",
-        "info": "CFBL default: 17px. Institute default: 18px. MUSA default: 19px. Adjust per brand recommendation.",
-        "min": 16,
-        "max": 21,
+        "min": 14,
+        "max": 20,
         "step": 1,
-        "default": 17
+        "unit": "px",
+        "default": 16
       },
       {
         "type": "select",
         "id": "heading_weight",
         "label": "Display heading weight",
-        "info": "Controls the font-weight applied to h1–h3 in Cormorant SC or DM Serif Display. 400–500 recommended for elegance; avoid 700 in display contexts.",
         "options": [
           { "value": "400", "label": "Regular (400)" },
           { "value": "500", "label": "Medium (500)" },
-          { "value": "600", "label": "SemiBold (600)" }
+          { "value": "600", "label": "Semi-Bold (600)" }
         ],
         "default": "500"
+      }
+    ]
+  },
+  {
+    "name": "Buttons & Shapes",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Primary Button"
+      },
+      {
+        "type": "color",
+        "id": "btn_primary_bg",
+        "label": "Primary button background",
+        "default": "#2B5275"
+      },
+      {
+        "type": "color",
+        "id": "btn_primary_text",
+        "label": "Primary button text",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "btn_primary_hover",
+        "label": "Primary button hover background",
+        "default": "#1F3D57"
+      },
+      {
+        "type": "header",
+        "content": "Secondary Button"
+      },
+      {
+        "type": "color",
+        "id": "btn_secondary_bg",
+        "label": "Secondary button background",
+        "default": "transparent"
+      },
+      {
+        "type": "color",
+        "id": "btn_secondary_text",
+        "label": "Secondary button text",
+        "default": "#2B5275"
+      },
+      {
+        "type": "color",
+        "id": "btn_secondary_border",
+        "label": "Secondary button border",
+        "default": "#2B5275"
+      },
+      {
+        "type": "header",
+        "content": "Shape"
+      },
+      {
+        "type": "select",
+        "id": "border_radius",
+        "label": "Corner radius (cards, buttons)",
+        "options": [
+          { "value": "0px", "label": "Square (0px)" },
+          { "value": "4px", "label": "Slight (4px)" },
+          { "value": "8px", "label": "Rounded (8px — default)" },
+          { "value": "12px", "label": "More rounded (12px)" },
+          { "value": "999px", "label": "Pill (fully rounded)" }
+        ],
+        "default": "8px"
+      }
+    ]
+  },
+  {
+    "name": "Spacing",
+    "settings": [
+      {
+        "type": "select",
+        "id": "section_spacing",
+        "label": "Default section padding",
+        "info": "Controls the top and bottom padding on all sections. Individual sections can override this.",
+        "options": [
+          { "value": "compact", "label": "Compact" },
+          { "value": "medium", "label": "Medium (default)" },
+          { "value": "relaxed", "label": "Relaxed" },
+          { "value": "spacious", "label": "Spacious" }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "select",
+        "id": "container_width",
+        "label": "Max content width",
+        "options": [
+          { "value": "960px",  "label": "Narrow (960px)" },
+          { "value": "1120px", "label": "Standard (1120px — default)" },
+          { "value": "1280px", "label": "Wide (1280px)" },
+          { "value": "1440px", "label": "Full wide (1440px)" }
+        ],
+        "default": "1120px"
       }
     ]
   },
@@ -98,8 +382,7 @@
       {
         "type": "image_picker",
         "id": "logo",
-        "label": "Site logo",
-        "info": "Recommended: SVG or PNG at 2x resolution. CFBL: use cfbl-logo-rainbow.png. Institute: use institute-logo.png. MUSA: set in MUSA brand section."
+        "label": "Site logo"
       },
       {
         "type": "range",
@@ -108,14 +391,27 @@
         "min": 80,
         "max": 280,
         "step": 8,
+        "unit": "px",
         "default": 160
+      },
+      {
+        "type": "color",
+        "id": "header_bg",
+        "label": "Header background color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "header_text",
+        "label": "Header text / link color",
+        "default": "#1F2A33"
       },
       {
         "type": "select",
         "id": "header_style",
-        "label": "Header style",
+        "label": "Header behavior",
         "options": [
-          { "value": "sticky", "label": "Sticky (scrolls with page, stays at top)" },
+          { "value": "sticky", "label": "Sticky (stays at top when scrolling)" },
           { "value": "static", "label": "Static (scrolls away)" }
         ],
         "default": "sticky"
@@ -123,14 +419,13 @@
       {
         "type": "checkbox",
         "id": "show_client_portal",
-        "label": "Show client portal link in header",
+        "label": "Show client portal link",
         "default": true
       },
       {
         "type": "url",
         "id": "portal_url",
-        "label": "Client portal URL",
-        "info": "The URL for the client login / portal link. Typically a SimplePractice or similar EHR portal link."
+        "label": "Client portal URL"
       },
       {
         "type": "text",
@@ -144,6 +439,18 @@
     "name": "Footer",
     "settings": [
       {
+        "type": "color",
+        "id": "footer_bg",
+        "label": "Footer background color",
+        "default": "#2A2520"
+      },
+      {
+        "type": "color",
+        "id": "footer_text",
+        "label": "Footer text color",
+        "default": "#C8BEB4"
+      },
+      {
         "type": "checkbox",
         "id": "show_newsletter",
         "label": "Show newsletter signup in footer",
@@ -152,54 +459,38 @@
       {
         "type": "text",
         "id": "newsletter_heading",
-        "label": "Newsletter signup heading",
+        "label": "Newsletter heading",
         "default": "Stay connected"
-      },
-      {
-        "type": "text",
-        "id": "newsletter_subtext",
-        "label": "Newsletter signup subtext",
-        "default": "Essays, training announcements, and practice resources — infrequently, with intent."
       },
       {
         "type": "link_list",
         "id": "cfbl_footer_links",
-        "label": "CFBL footer navigation",
-        "info": "Links displayed under the Center for Balanced Living column in the footer."
+        "label": "CFBL footer navigation"
       },
       {
         "type": "link_list",
         "id": "institute_footer_links",
-        "label": "Institute footer navigation",
-        "info": "Links displayed under the CFBL Institute column in the footer."
+        "label": "Institute footer navigation"
       },
       {
         "type": "link_list",
         "id": "musa_footer_links",
-        "label": "MUSA footer navigation",
-        "info": "Links displayed under the MUSA column in the footer."
+        "label": "Publications footer navigation"
       },
       {
         "type": "textarea",
         "id": "contact_address",
-        "label": "Practice address",
-        "info": "Displayed in the footer contact block and used in Schema.org markup."
+        "label": "Practice address"
       },
       {
         "type": "text",
         "id": "contact_email",
-        "label": "Contact email address"
+        "label": "Contact email"
       },
       {
         "type": "text",
         "id": "contact_phone",
-        "label": "Contact phone number"
-      },
-      {
-        "type": "link_list",
-        "id": "footer_utility_links",
-        "label": "Footer utility links",
-        "info": "Privacy Policy, Terms of Service, and similar bottom-row links."
+        "label": "Contact phone"
       }
     ]
   },
@@ -224,8 +515,7 @@
       {
         "type": "url",
         "id": "substack_url",
-        "label": "Substack URL",
-        "info": "Used on MUSA pages for the newsletter / essay subscription link."
+        "label": "Substack URL"
       }
     ]
   },
@@ -236,14 +526,12 @@
         "type": "text",
         "id": "meta_title_suffix",
         "label": "Page title suffix",
-        "info": "Appended to all page titles after a dash. Example: 'Delaware' produces 'Service Name — Center for Balanced Living · Delaware'. Leave blank for no suffix.",
         "default": "Delaware"
       },
       {
         "type": "image_picker",
         "id": "share_image",
-        "label": "Default social share image",
-        "info": "Used as the og:image fallback when a page has no specific share image. Recommended: 1200 x 630px."
+        "label": "Default social share image"
       }
     ]
   },
@@ -254,11 +542,7 @@
         "type": "textarea",
         "id": "custom_css",
         "label": "Custom CSS",
-        "info": "Additional CSS injected into the <head> after all theme stylesheets. Use sparingly. Brand variables are available."
-      },
-      {
-        "type": "paragraph",
-        "content": "Brand CSS variables are defined in assets/base.css. To override a single brand token, use the Custom CSS field above with a .brand-cfbl, .brand-institute, or .brand-musa selector."
+        "info": "Additional CSS added after all theme styles. Brand variables are available."
       }
     ]
   }
