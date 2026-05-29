@@ -154,13 +154,13 @@
         {%- for block in section.blocks -%}
           <div class="team-card" {{ block.shopify_attributes }}>
             <div class="team-card__photo">
-              {%- if block.settings.photo != blank -%}
+              {%- if block.settings.photo != blank -%}                {%- assign member_alt = block.settings.name | escape -%}
                 {{
                   block.settings.photo
                   | image_url: width: 600
                   | image_tag:
                     loading: 'lazy',
-                    alt: block.settings.name | escape,
+                    alt: member_alt,
                     widths: '300, 450, 600',
                     sizes: '(max-width: 500px) 100vw, (max-width: 900px) 50vw, 33vw'
                 }}

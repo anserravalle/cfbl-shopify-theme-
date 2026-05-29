@@ -141,13 +141,13 @@
 
     {%- comment -%} Cover image {%- endcomment -%}
     <div class="book-feature__cover">
-      {%- if section.settings.cover_image != blank -%}
+      {%- if section.settings.cover_image != blank -%}        {%- assign cover_alt = section.settings.cover_image.alt | default: section.settings.title | escape -%}
         {{
           section.settings.cover_image
           | image_url: width: 440
           | image_tag:
             loading: 'lazy',
-            alt: section.settings.title | escape,
+            alt: cover_alt,
             widths: '220, 440',
             sizes: '220px'
         }}
