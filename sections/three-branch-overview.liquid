@@ -47,12 +47,15 @@
     padding: 0 var(--space-6);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: var(--cfbl-rule);
+    gap: 0;
   }
 
   .branch-panel {
     padding: var(--space-7) var(--space-6);
+  }
+
+  .branch-panel:not(:last-child) {
+    border-right: 1px solid var(--cfbl-rule);
   }
 
   .branch-panel--cfbl      { background: var(--cfbl-sand); }

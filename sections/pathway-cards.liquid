@@ -212,8 +212,8 @@
               </div>
             {%- endif -%}
 
-            {%- if block.settings.title != blank -%}
-              <p class="pathway-card__kicker">{{ block.settings.title | escape }}</p>
+            {%- if block.settings.kicker != blank -%}
+              <p class="pathway-card__kicker">{{ block.settings.kicker | escape }}</p>
             {%- endif -%}
 
             {%- if block.settings.title != blank -%}
@@ -260,13 +260,19 @@
           "type": "text",
           "id": "icon",
           "label": "Icon label (short text, e.g. CFBL)",
-          "default": "CBL"
+          "default": "CFBL"
+        },
+        {
+          "type": "text",
+          "id": "kicker",
+          "label": "Kicker (small label above title)",
+          "default": "For Clients"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
-          "default": "For Clients"
+          "label": "Card title",
+          "default": "CFBL Clinical Services"
         },
         {
           "type": "textarea",
