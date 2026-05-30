@@ -14,6 +14,16 @@
     margin: 0 0 var(--space-8);
   }
 
+  #shopify-section-{{ section.id }} .team-grid-section__eyebrow {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--cfbl-terracotta);
+    margin: 0 0 var(--space-3);
+  }
+
   #shopify-section-{{ section.id }} .team-grid-section__heading {
     font-family: var(--cfbl-font-display);
     font-size: clamp(1.75rem, 3vw, 2.5rem);
@@ -32,13 +42,47 @@
     margin: var(--space-4) 0 0;
   }
 
-  #shopify-section-{{ section.id }} .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-7) var(--space-6);
+  /* Scroll container */
+  #shopify-section-{{ section.id }} .team-scroll-outer {
+    overflow: hidden;
+    margin: 0 calc(-1 * var(--space-6));
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
   }
 
+  #shopify-section-{{ section.id }} .team-scroll-track {
+    display: flex;
+    gap: var(--space-6);
+    padding: var(--space-2) var(--space-6) var(--space-4);
+    width: max-content;
+    animation: team-marquee 50s linear infinite;
+  }
+
+  #shopify-section-{{ section.id }} .team-scroll-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes team-marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* Cards */
   #shopify-section-{{ section.id }} .team-card {
+    flex-shrink: 0;
+    width: 280px;
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
@@ -46,7 +90,7 @@
 
   #shopify-section-{{ section.id }} .team-card__photo {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 5;
     overflow: hidden;
     border-radius: var(--radius-sm);
     background: var(--cfbl-sand-light);
@@ -67,7 +111,7 @@
 
   #shopify-section-{{ section.id }} .team-card__photo-placeholder {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 5;
     background: var(--cfbl-sand-light);
     border-radius: var(--radius-sm);
     border: 1px solid var(--cfbl-rule);
@@ -89,13 +133,23 @@
     margin: 0;
   }
 
-  #shopify-section-{{ section.id }} .team-card__title {
+  #shopify-section-{{ section.id }} .team-card__credentials {
     font-family: var(--cfbl-font-body);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     color: var(--cfbl-terracotta);
     line-height: 1.4;
     margin: 0;
+    letter-spacing: 0.02em;
+  }
+
+  #shopify-section-{{ section.id }} .team-card__role {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.875rem;
+    color: var(--cfbl-ink);
+    line-height: 1.4;
+    margin: 0;
+    opacity: 0.75;
   }
 
   #shopify-section-{{ section.id }} .team-card__bio {
@@ -108,13 +162,15 @@
 
   #shopify-section-{{ section.id }} .team-card__link {
     font-family: var(--cfbl-font-body);
-    font-size: 0.9375rem;
-    font-weight: 500;
+    font-size: 0.875rem;
+    font-weight: 600;
     color: var(--cfbl-sky-blue);
     text-decoration: underline;
     text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
     align-self: flex-start;
     margin-top: var(--space-2);
+    white-space: nowrap;
     transition: color var(--dur-fast) var(--ease);
   }
 
@@ -122,15 +178,10 @@
     color: var(--cfbl-deep-navy);
   }
 
-  @media (max-width: 900px) {
-    #shopify-section-{{ section.id }} .team-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 500px) {
-    #shopify-section-{{ section.id }} .team-grid {
-      grid-template-columns: 1fr;
+  /* Reduce motion */
+  @media (prefers-reduced-motion: reduce) {
+    #shopify-section-{{ section.id }} .team-scroll-track {
+      animation: none;
     }
   }
 
@@ -195,6 +246,9 @@
 <section class="team-grid-section brand-cfbl" aria-labelledby="team-heading-{{ section.id }}">
   <div class="team-grid-section__inner">
     <div class="team-grid-section__head">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="team-grid-section__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
       {%- if section.settings.heading != blank -%}
         <h2 class="team-grid-section__heading" id="team-heading-{{ section.id }}">
           {{ section.settings.heading | escape }}
@@ -204,54 +258,107 @@
         <p class="team-grid-section__subheading">{{ section.settings.subheading }}</p>
       {%- endif -%}
     </div>
+  </div>
 
-    {%- if section.blocks.size > 0 -%}
-      <div class="team-grid">
+  {%- if section.blocks.size > 0 -%}
+    <div class="team-scroll-outer">
+      <div class="team-scroll-track">
+
+        {%- comment -%} Original set {%- endcomment -%}
         {%- for block in section.blocks -%}
           <div class="team-card" {{ block.shopify_attributes }}>
             <div class="team-card__photo">
-              {%- if block.settings.photo != blank -%}                {%- assign member_alt = block.settings.name | escape -%}
+              {%- if block.settings.photo != blank -%}
                 {{
                   block.settings.photo
                   | image_url: width: 600
                   | image_tag:
                     loading: 'lazy',
-                    alt: member_alt,
-                    widths: '300, 450, 600',
-                    sizes: '(max-width: 500px) 100vw, (max-width: 900px) 50vw, 33vw'
+                    alt: block.settings.name,
+                    widths: '280, 420, 560',
+                    sizes: '280px'
                 }}
               {%- else -%}
                 <div class="team-card__photo-placeholder" aria-hidden="true"></div>
               {%- endif -%}
             </div>
-
             <div class="team-card__body">
               {%- if block.settings.name != blank -%}
                 <h3 class="team-card__name">{{ block.settings.name | escape }}</h3>
               {%- endif -%}
-              {%- if block.settings.title != blank -%}
-                <p class="team-card__title">{{ block.settings.title | escape }}</p>
+              {%- if block.settings.credentials != blank -%}
+                <p class="team-card__credentials">{{ block.settings.credentials | escape }}</p>
               {%- endif -%}
-              {%- if block.settings.bio != blank -%}
-                <p class="team-card__bio">{{ block.settings.bio }}</p>
+              {%- if block.settings.role != blank -%}
+                <p class="team-card__role">{{ block.settings.role | escape }}</p>
+              {%- endif -%}
+              {%- if block.settings.bio_short != blank -%}
+                <p class="team-card__bio">{{ block.settings.bio_short }}</p>
               {%- endif -%}
               {%- if block.settings.url != blank -%}
                 <a href="{{ block.settings.url }}" class="team-card__link">
-                  Meet {{ block.settings.name | escape | split: ' ' | first }} &#8594;
+                  {{ block.settings.cta_label | default: 'View Full Bio' | escape }} &#8594;
                 </a>
               {%- endif -%}
             </div>
           </div>
         {%- endfor -%}
+
+        {%- comment -%} Duplicate set for seamless loop {%- endcomment -%}
+        {%- for block in section.blocks -%}
+          <div class="team-card" aria-hidden="true">
+            <div class="team-card__photo">
+              {%- if block.settings.photo != blank -%}
+                {{
+                  block.settings.photo
+                  | image_url: width: 600
+                  | image_tag:
+                    loading: 'lazy',
+                    alt: '',
+                    widths: '280, 420, 560',
+                    sizes: '280px'
+                }}
+              {%- else -%}
+                <div class="team-card__photo-placeholder"></div>
+              {%- endif -%}
+            </div>
+            <div class="team-card__body">
+              {%- if block.settings.name != blank -%}
+                <h3 class="team-card__name">{{ block.settings.name | escape }}</h3>
+              {%- endif -%}
+              {%- if block.settings.credentials != blank -%}
+                <p class="team-card__credentials">{{ block.settings.credentials | escape }}</p>
+              {%- endif -%}
+              {%- if block.settings.role != blank -%}
+                <p class="team-card__role">{{ block.settings.role | escape }}</p>
+              {%- endif -%}
+              {%- if block.settings.bio_short != blank -%}
+                <p class="team-card__bio">{{ block.settings.bio_short }}</p>
+              {%- endif -%}
+              {%- if block.settings.url != blank -%}
+                <span class="team-card__link" aria-hidden="true">
+                  {{ block.settings.cta_label | default: 'View Full Bio' | escape }} &#8594;
+                </span>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+
       </div>
-    {%- endif -%}
-  </div>
+    </div>
+  {%- endif -%}
 </section>
 
 {% schema %}
 {
   "name": "Team Grid",
   "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Our Team"
+    },
     {
       "type": "text",
       "id": "heading",
@@ -278,26 +385,11 @@
       "id": "padding_top",
       "label": "Top padding",
       "options": [
-        {
-          "value": "none",
-          "label": "None"
-        },
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium (default)"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        },
-        {
-          "value": "xl",
-          "label": "Extra large"
-        }
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium (default)" },
+        { "value": "large", "label": "Large" },
+        { "value": "xl", "label": "Extra large" }
       ],
       "default": "medium"
     },
@@ -306,42 +398,21 @@
       "id": "padding_bottom",
       "label": "Bottom padding",
       "options": [
-        {
-          "value": "none",
-          "label": "None"
-        },
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium (default)"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        },
-        {
-          "value": "xl",
-          "label": "Extra large"
-        }
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium (default)" },
+        { "value": "large", "label": "Large" },
+        { "value": "xl", "label": "Extra large" }
       ],
       "default": "medium"
     },
     {
       "type": "select",
       "id": "text_align",
-      "label": "Heading & text alignment",
+      "label": "Heading alignment",
       "options": [
-        {
-          "value": "left",
-          "label": "Left (default)"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        }
+        { "value": "left", "label": "Left (default)" },
+        { "value": "center", "label": "Center" }
       ],
       "default": "left"
     },
@@ -350,22 +421,10 @@
       "id": "heading_size",
       "label": "Heading size",
       "options": [
-        {
-          "value": "sm",
-          "label": "Small"
-        },
-        {
-          "value": "md",
-          "label": "Medium (default)"
-        },
-        {
-          "value": "lg",
-          "label": "Large"
-        },
-        {
-          "value": "xl",
-          "label": "Extra large"
-        }
+        { "value": "sm", "label": "Small" },
+        { "value": "md", "label": "Medium (default)" },
+        { "value": "lg", "label": "Large" },
+        { "value": "xl", "label": "Extra large" }
       ],
       "default": "md"
     }
@@ -374,7 +433,7 @@
     {
       "type": "member",
       "name": "Team member",
-      "limit": 8,
+      "limit": 12,
       "settings": [
         {
           "type": "image_picker",
@@ -389,19 +448,31 @@
         },
         {
           "type": "text",
-          "id": "title",
-          "label": "Title and credentials",
+          "id": "credentials",
+          "label": "Credentials (e.g. Psy.D., LPCMH)",
           "default": "Psy.D., LPCMH, NCC"
         },
         {
+          "type": "text",
+          "id": "role",
+          "label": "Role / title",
+          "default": "Founder and Licensed Psychologist"
+        },
+        {
           "type": "textarea",
-          "id": "bio",
+          "id": "bio_short",
           "label": "Short bio (1-2 sentences)"
         },
         {
           "type": "url",
           "id": "url",
           "label": "Profile page URL (optional)"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "Link label",
+          "default": "View Full Bio"
         }
       ]
     }
@@ -413,8 +484,9 @@
         {
           "type": "member",
           "settings": {
-            "name": "Dr. Angela Serravalle",
-            "title": "Psy.D., LPCMH, NCC \u00b7 Founder"
+            "name": "Dr. Angela (Niki) Serravalle",
+            "credentials": "Psy.D., LPCMH, NCC",
+            "role": "Founder and Licensed Psychologist"
           }
         }
       ]
