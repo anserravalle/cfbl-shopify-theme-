@@ -201,7 +201,7 @@
     <div class="branch-panel branch-panel--institute">
       <span class="branch-label">For Professionals</span>
       <h3 class="branch-heading">{{ section.settings.inst_heading | default: 'CFBL Institute' }}</h3>
-      <p class="branch-body">{{ section.settings.inst_body | default: 'Continuing education in trauma-informed practice, assessment, and applied clinical reasoning. For licensed clinicians.' }}</p>
+      <p class="branch-body">{{ section.settings.inst_body | default: 'Continuing education in trauma-based practice, assessment, and applied clinical reasoning. For licensed clinicians.' }}</p>
       {% if section.settings.inst_cta_label != blank %}
         <a href="{{ section.settings.inst_cta_url | default: '/pages/institute' }}" class="branch-cta">
           {{ section.settings.inst_cta_label }} →
@@ -286,7 +286,7 @@
       "type": "textarea",
       "id": "inst_body",
       "label": "Body",
-      "default": "Continuing education in trauma-informed practice, assessment, and applied clinical reasoning. For licensed clinicians."
+      "default": "Continuing education in trauma-based practice, assessment, and applied clinical reasoning. For licensed clinicians."
     },
     {
       "type": "text",

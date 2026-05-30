@@ -3,7 +3,7 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "Trauma-Informed Psychology \u00b7 Middletown, DE",
+        "eyebrow": "Trauma-Based Clinical Services \u00b7 Middletown, DE",
         "heading": "Healing Happens In Relationship.",
         "subheading": "We pair evidence-based care with warmth, attunement, and a holistic approach to mind, body, and spirit.",
         "cta_primary_label": "Schedule a Consultation",
@@ -26,7 +26,7 @@
           "type": "service",
           "settings": {
             "kicker": "Individual Therapy",
-            "heading": "Trauma-Informed Therapy",
+            "heading": "Trauma-Based Therapy",
             "description": "<p>Individual therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based approaches tailored to your history and goals.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/therapy"
@@ -75,7 +75,7 @@
       "settings": {
         "eyebrow": "Who We Are",
         "heading": "A practice built on relationship.",
-        "body": "<p>Center for Balanced Living is a trauma-informed psychology practice in Middletown, Delaware. We work with adults, adolescents, and children navigating trauma, anxiety, grief, developmental challenges, and identity questions. Our approach is evidence-based, relationally grounded, and attentive to the whole person \u2014 mind, body, and spirit.</p>",
+        "body": "<p>Center for Balanced Living is a trauma-based clinical services practice in Middletown, Delaware. We work with adults, adolescents, and children navigating trauma, anxiety, grief, developmental challenges, and identity questions. Our approach is evidence-based, relationally grounded, and attentive to the whole person \u2014 mind, body, and spirit.</p>",
         "image": "",
         "image_position": "right",
         "cta_label": "Read more about us",
@@ -97,7 +97,7 @@
             "name": "Dr. Angela (Niki) Serravalle",
             "credentials": "Psy.D., LPCMH, NCC",
             "role": "Founder and Licensed Psychologist",
-            "bio_short": "A trauma-informed psychologist, educator, and writer. Dr. Serravalle founded the Center for Balanced Living to offer psychologically rigorous, relationally grounded care.",
+            "bio_short": "A trauma-based psychologist, educator, and writer. Dr. Serravalle founded the Center for Balanced Living to offer psychologically rigorous, relationally grounded care.",
             "profile_image": ""
           }
         }

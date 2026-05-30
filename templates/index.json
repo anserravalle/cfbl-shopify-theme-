@@ -77,7 +77,7 @@
           "settings": {
             "kicker": "Individual Therapy",
             "heading": "Individual Therapy",
-            "description": "<p>One-on-one therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based, trauma-informed, and tailored to your goals.</p>",
+            "description": "<p>One-on-one therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based, trauma-based, and tailored to your goals.</p>",
             "cta_label": "Learn more",
             "cta_url": "/pages/therapy"
           }
@@ -130,7 +130,7 @@
             "name": "Dr. Angela (Niki) Serravalle",
             "credentials": "Psy.D., LPCMH, NCC",
             "role": "Founder and Licensed Psychologist",
-            "bio_short": "A trauma-informed psychologist, educator, and writer. Founder of the Center for Balanced Living, the CFBL Institute, and MUSA.",
+            "bio_short": "A trauma-based psychologist, educator, and writer. Founder of the Center for Balanced Living, the CFBL Institute, and MUSA.",
             "profile_image": ""
           }
         }
@@ -143,7 +143,7 @@
       "type": "featured-training",
       "settings": {
         "eyebrow": "CFBL Institute \u00b7 Upcoming",
-        "heading": "Continuing education in trauma-informed practice.",
+        "heading": "Continuing education in trauma-based practice.",
         "brand": "institute"
       },
       "blocks": {
@@ -151,7 +151,7 @@
           "type": "training",
           "settings": {
             "kicker": "6.0 CE Hours \u00b7 Live Online",
-            "title": "Trauma-Informed Assessment: Integrating the ACEs Framework",
+            "title": "Trauma-Based Assessment: Integrating the ACEs Framework",
             "presenter": "Angela Serravalle, Psy.D.",
             "date": "November 14, 2026",
             "format": "Live Online",
