@@ -146,6 +146,25 @@
     margin: var(--space-1) 0 0;
   }
 
+  #shopify-section-{{ section.id }} .team-card__contact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+  }
+
+  #shopify-section-{{ section.id }} .team-card__contact a {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.875rem;
+    color: var(--cfbl-deep-navy);
+    text-decoration: none;
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  #shopify-section-{{ section.id }} .team-card__contact a:hover {
+    color: var(--cfbl-terracotta);
+  }
+
   #shopify-section-{{ section.id }} .team-card__link {
     font-family: var(--cfbl-font-body);
     font-size: 0.875rem;
@@ -284,6 +303,16 @@
               {%- endif -%}
               {%- if block.settings.bio_short != blank -%}
                 <p class="team-card__bio">{{ block.settings.bio_short }}</p>
+              {%- endif -%}
+              {%- if block.settings.phone != blank or block.settings.email != blank -%}
+                <div class="team-card__contact">
+                  {%- if block.settings.phone != blank -%}
+                    <a href="tel:{{ block.settings.phone | remove: ' ' | remove: '(' | remove: ')' | remove: '-' }}">{{ block.settings.phone }}</a>
+                  {%- endif -%}
+                  {%- if block.settings.email != blank -%}
+                    <a href="mailto:{{ block.settings.email }}">{{ block.settings.email }}</a>
+                  {%- endif -%}
+                </div>
               {%- endif -%}
               {%- if block.settings.url != blank -%}
                 <a href="{{ block.settings.url }}" class="team-card__link">
@@ -446,6 +475,16 @@
           "type": "textarea",
           "id": "bio_short",
           "label": "Short bio (1-2 sentences)"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Phone number"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email address"
         },
         {
           "type": "url",
