@@ -32,7 +32,7 @@
     "musa_font_body": "'EB Garamond', Georgia, serif",
     "inst_font_utility": "'Inter', system-ui, sans-serif",
     "musa_font_utility": "'Inter', system-ui, sans-serif",
-    "base_font_size": 16,
+    "base_font_size": 17,
     "heading_weight": "500",
 
     "btn_primary_bg": "#2B5275",
@@ -43,7 +43,7 @@
     "border_radius": "8px",
 
     "section_spacing": "medium",
-    "container_width": "1340px",
+    "container_width": "1600px",
 
     "header_bg": "#FFFFFF",
     "header_text": "#1F2A33",
