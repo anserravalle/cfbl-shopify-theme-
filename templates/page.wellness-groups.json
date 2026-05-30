@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "brand": "cfbl",
+        "eyebrow": "CFBL Clinical Services",
+        "heading": "Wellness Groups",
+        "subheading": "Structured, time-limited groups grounded in community, creativity, and somatic awareness. Open to new members each enrollment period.",
+        "cta_primary_label": "Inquire About Groups",
+        "cta_primary_url": "/pages/contact"
+      }
+    },
+    "about_groups": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "About Our Groups",
+        "heading": "Healing in the presence of others.",
+        "body": "<p>Group therapy and wellness groups offer something individual therapy cannot: the experience of being witnessed, understood, and supported by others who know what you are navigating.</p><p>Our groups are small, structured, and led by licensed clinicians. They are not drop-in classes. Each group has a clear focus, a defined format, and a thoughtful enrollment process to ensure good fit for all members.</p><p>Groups are typically 6 to 10 weeks in duration and meet weekly. Some groups are ongoing with rolling enrollment.</p>",
+        "image_position": "right"
+      }
+    },
+    "current_groups": {
+      "type": "service-cards",
+      "settings": {
+        "heading": "Current Groups",
+        "subheading": "Contact us to ask about availability and upcoming enrollment dates.",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "rooted": {
+          "type": "service",
+          "settings": {
+            "kicker": "Art Therapy",
+            "title": "Rooted and Rising",
+            "description": "<p>An art therapy group for adults processing grief, loss, and life transitions. No art experience required. Facilitated by a licensed clinician with training in expressive arts and somatic approaches. 8 weeks. Small group format.</p>",
+            "url": "/pages/contact"
+          }
+        },
+        "writing": {
+          "type": "service",
+          "settings": {
+            "kicker": "Expressive Writing",
+            "title": "Write Your Way to Healing",
+            "description": "<p>A therapeutic writing group for adults using narrative and expressive writing as tools for processing experience and building self-understanding. No writing background necessary. 6 weeks. Small group format.</p>",
+            "url": "/pages/contact"
+          }
+        },
+        "petloss": {
+          "type": "service",
+          "settings": {
+            "kicker": "Grief Support",
+            "title": "Pet Loss Support Group",
+            "description": "<p>A grief support group for adults who have lost a pet. Addresses the often-underacknowledged depth of this loss, including disenfranchised grief. Ongoing with rolling enrollment. Meets biweekly.</p>",
+            "url": "/pages/contact"
+          }
+        }
+      },
+      "block_order": ["rooted", "writing", "petloss"]
+    },
+    "how_to_join": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "How to Join",
+        "heading": "Enrollment is a process, not a transaction.",
+        "body": "<p>We take enrollment seriously because group composition matters. A group that is poorly matched does not serve anyone well.</p><p>To inquire about a group, start by reaching out through our contact form. We will schedule a brief consultation to discuss the group, your goals, and whether the fit is right. If it is, we will add you to the enrollment list for the next available cycle.</p><p>Some groups maintain a waitlist. We will always be transparent about availability and timing.</p>",
+        "cta_label": "Inquire About Groups",
+        "cta_url": "/pages/contact",
+        "image_position": "left"
+      }
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "settings": {
+        "heading": "Common Questions"
+      },
+      "blocks": {
+        "q1": {
+          "type": "item",
+          "settings": {
+            "question": "Do I need to be in individual therapy to join a group?",
+            "answer": "Not necessarily. Some groups are appropriate as a standalone service. Others work best alongside individual therapy. We discuss this during the enrollment consultation."
+          }
+        },
+        "q2": {
+          "type": "item",
+          "settings": {
+            "question": "Does insurance cover group therapy?",
+            "answer": "Group therapy is often covered by insurance when it is clinically indicated. Wellness groups may be billed differently. We will help you understand your coverage before you enroll."
+          }
+        },
+        "q3": {
+          "type": "item",
+          "settings": {
+            "question": "What is the group size?",
+            "answer": "Our groups are intentionally small, typically 5 to 8 participants. This allows for meaningful connection and adequate clinical attention."
+          }
+        },
+        "q4": {
+          "type": "item",
+          "settings": {
+            "question": "Can I join a group mid-cycle?",
+            "answer": "Most of our groups are closed enrollment, meaning all members start together. This protects the safety and cohesion of the group. Ongoing groups with rolling enrollment are noted as such."
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4"]
+    },
+    "contact": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Interested in joining a group?",
+        "subheading": "Reach out to ask about current availability, upcoming enrollment dates, and whether a group is the right fit for where you are.",
+        "cta_primary_label": "Inquire About Groups",
+        "cta_primary_url": "/pages/contact",
+        "footnote": "Townsend, DE. In-person and telehealth options vary by group.",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": ["hero", "about_groups", "current_groups", "how_to_join", "faq", "contact"]
+}

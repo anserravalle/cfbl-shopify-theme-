@@ -1,0 +1,164 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "brand": "cfbl",
+        "eyebrow": "CFBL Clinical Services",
+        "heading": "Individual Therapy",
+        "subheading": "One-on-one therapy for adults and adolescents navigating trauma, anxiety, grief, identity, and life transitions. Evidence-based, trauma-based, and tailored to you.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact"
+      }
+    },
+    "what_therapy": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "What to Expect",
+        "heading": "Therapy that takes you seriously.",
+        "body": "<p>Individual therapy at Center for Balanced Living begins with a thorough intake process. We want to understand not just your current concerns, but your history, your nervous system, and what you are hoping for.</p><p>Sessions are typically 50 minutes and occur weekly or biweekly depending on your goals and scheduling. We offer both in-person sessions at our Townsend, DE office and telehealth sessions throughout Delaware.</p><p>Therapy is not a fixed protocol applied uniformly. It is a collaborative process, responsive to what emerges and adjusted as your needs change.</p>",
+        "image_position": "right"
+      }
+    },
+    "areas_of_care": {
+      "type": "service-cards",
+      "settings": {
+        "heading": "Areas of Care",
+        "subheading": "We work with adults and adolescents across a wide range of concerns.",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "trauma": {
+          "type": "service",
+          "settings": {
+            "kicker": "Trauma",
+            "title": "Trauma and PTSD",
+            "description": "<p>Complex and single-incident trauma, including childhood adversity, relational trauma, medical trauma, and acute stress responses.</p>"
+          }
+        },
+        "anxiety": {
+          "type": "service",
+          "settings": {
+            "kicker": "Anxiety",
+            "title": "Anxiety and Worry",
+            "description": "<p>Generalized anxiety, panic, social anxiety, OCD-spectrum concerns, and the chronic vigilance that often follows difficult life experiences.</p>"
+          }
+        },
+        "depression": {
+          "type": "service",
+          "settings": {
+            "kicker": "Mood",
+            "title": "Depression and Mood",
+            "description": "<p>Persistent low mood, anhedonia, bipolar spectrum concerns, and the emotional numbness that can follow prolonged stress or loss.</p>"
+          }
+        },
+        "grief": {
+          "type": "service",
+          "settings": {
+            "kicker": "Loss",
+            "title": "Grief and Loss",
+            "description": "<p>Bereavement, anticipatory grief, disenfranchised grief, and the complicated mourning that follows traumatic or sudden loss.</p>"
+          }
+        },
+        "identity": {
+          "type": "service",
+          "settings": {
+            "kicker": "Identity",
+            "title": "Identity and Self",
+            "description": "<p>Questions of identity, belonging, cultural and intergenerational experience, gender, sexuality, and the ongoing work of knowing oneself.</p>"
+          }
+        },
+        "relationships": {
+          "type": "service",
+          "settings": {
+            "kicker": "Relationships",
+            "title": "Relational Patterns",
+            "description": "<p>Attachment difficulties, relational trauma, conflict patterns, boundaries, and the ways early experience shapes how we connect with others.</p>"
+          }
+        },
+        "transitions": {
+          "type": "service",
+          "settings": {
+            "kicker": "Transitions",
+            "title": "Life Transitions",
+            "description": "<p>Career changes, relationship changes, parenthood, loss of role or identity, and the disorientation of major life shifts.</p>"
+          }
+        },
+        "burnout": {
+          "type": "service",
+          "settings": {
+            "kicker": "Burnout",
+            "title": "Burnout and Exhaustion",
+            "description": "<p>Occupational and caregiver burnout, chronic stress, and the depletion that comes from sustained demands without adequate support or recovery.</p>"
+          }
+        }
+      },
+      "block_order": ["trauma", "anxiety", "depression", "grief", "identity", "relationships", "transitions", "burnout"]
+    },
+    "modalities": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "Therapeutic Modalities",
+        "heading": "Evidence-based methods, integrated thoughtfully.",
+        "body": "<p>Our clinicians draw from a range of evidence-based approaches, selected based on what fits each client's presentation and goals:</p><p><strong>EMDR (Eye Movement Desensitization and Reprocessing)</strong> for trauma processing and desensitization of distressing memories.</p><p><strong>Cognitive Behavioral Therapy (CBT)</strong> for anxiety, depression, and patterns of thought that contribute to distress.</p><p><strong>Somatic and body-based approaches</strong> for clients whose experience of trauma lives in the body and nervous system.</p><p><strong>Psychodynamic and relational approaches</strong> for exploring how early experience shapes current patterns.</p>",
+        "image_position": "left"
+      }
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "settings": {
+        "heading": "Common Questions"
+      },
+      "blocks": {
+        "q1": {
+          "type": "item",
+          "settings": {
+            "question": "Do you accept insurance?",
+            "answer": "Yes. We accept most major insurance plans including Highmark Blue Cross Blue Shield, Aetna, Cigna, and United Healthcare. We recommend verifying your behavioral health benefits before your first appointment. Our administrative team can help with this process."
+          }
+        },
+        "q2": {
+          "type": "item",
+          "settings": {
+            "question": "Do you offer telehealth?",
+            "answer": "Yes. We offer telehealth sessions throughout the state of Delaware. Telehealth is available for individual therapy and most consultation services. Some evaluation services require in-person attendance."
+          }
+        },
+        "q3": {
+          "type": "item",
+          "settings": {
+            "question": "How long does therapy typically last?",
+            "answer": "This varies considerably depending on your goals and presentation. Some clients find meaningful resolution in 12 to 20 sessions. Others engage in longer-term work spanning a year or more. We revisit goals and progress regularly so that therapy remains purposeful."
+          }
+        },
+        "q4": {
+          "type": "item",
+          "settings": {
+            "question": "What is your cancellation policy?",
+            "answer": "We ask for 24 hours notice for cancellations. Late cancellations and no-shows may be subject to a fee. We understand that life is unpredictable and handle exceptions with flexibility."
+          }
+        },
+        "q5": {
+          "type": "item",
+          "settings": {
+            "question": "Are you currently accepting new clients?",
+            "answer": "Availability varies by clinician. Please reach out through our contact form or call the office to ask about current openings. We do our best to match you with the right clinician based on your needs and preferences."
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+    },
+    "contact": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Begin here.",
+        "subheading": "Schedule a free 15-minute consultation to discuss fit, availability, and next steps. No commitment required.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "footnote": "Townsend, DE. In-person and telehealth. Most insurance accepted.",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": ["hero", "what_therapy", "areas_of_care", "modalities", "faq", "contact"]
+}

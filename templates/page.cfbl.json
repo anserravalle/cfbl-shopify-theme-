@@ -3,148 +3,132 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "Trauma-Based Clinical Services \u00b7 Middletown, DE",
-        "heading": "Healing Happens In Relationship.",
-        "subheading": "We pair evidence-based care with warmth, attunement, and a holistic approach to mind, body, and spirit.",
+        "brand": "cfbl",
+        "eyebrow": "Center for Balanced Living",
+        "heading": "Trauma-Based Clinical Services in Townsend, DE",
+        "subheading": "We provide therapy, psychological evaluation, and group services for individuals and families. Our approach is evidence-based, relationally grounded, and attentive to the whole person.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Meet the Team",
-        "cta_secondary_url": "/pages/team",
-        "image": "",
-        "brand": "cfbl"
+        "cta_secondary_url": "/pages/team"
       }
     },
-    "service_cards": {
+    "services_overview": {
       "type": "service-cards",
       "settings": {
-        "eyebrow": "For Clients",
-        "heading": "Care that is clinically grounded and relationally warm.",
+        "heading": "Clinical Services",
+        "subheading": "Evidence-based care for adults, adolescents, and children.",
         "brand": "cfbl"
       },
       "blocks": {
-        "service_therapy": {
+        "therapy": {
           "type": "service",
           "settings": {
             "kicker": "Individual Therapy",
-            "heading": "Trauma-Based Therapy",
-            "description": "<p>Individual therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based approaches tailored to your history and goals.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/therapy"
+            "title": "Individual Therapy",
+            "description": "<p>One-on-one therapy for adults and adolescents navigating trauma, anxiety, grief, identity, and life transitions. Trauma-based, evidence-backed, and tailored to your goals.</p>",
+            "url": "/pages/individual-therapy"
           }
         },
-        "service_eval": {
+        "evaluations": {
           "type": "service",
           "settings": {
-            "kicker": "Psychological Evaluation",
-            "heading": "Psychological Evaluations",
-            "description": "<p>Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment planning, school supports, and clinical decision-making.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/evaluations"
+            "kicker": "Psychological Evaluations",
+            "title": "Psychological Evaluations",
+            "description": "<p>Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment, school supports, and clinical decision-making.</p>",
+            "url": "/pages/evaluations"
           }
         },
-        "service_groups": {
+        "groups": {
           "type": "service",
           "settings": {
-            "kicker": "Groups and Workshops",
-            "heading": "Group Therapy",
-            "description": "<p>Community-grounded groups focused on grief, parenting, and somatic resourcing. Structured and time-limited, with open enrollment periods.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/groups"
-          }
-        },
-        "service_consult": {
-          "type": "service",
-          "settings": {
-            "kicker": "Clinical Consultation",
-            "heading": "Consultation",
-            "description": "<p>Case consultation for clinicians and referral conversations for families. Available by arrangement to licensed professionals and referring providers.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/consultation"
+            "kicker": "Wellness Groups",
+            "title": "Wellness Groups",
+            "description": "<p>Community-grounded groups focused on grief, creative expression, and somatic resourcing. Structured and time-limited, with open enrollment periods.</p>",
+            "url": "/pages/groups"
           }
         }
       },
-      "block_order": [
-        "service_therapy",
-        "service_eval",
-        "service_groups",
-        "service_consult"
-      ]
+      "block_order": ["therapy", "evaluations", "groups"]
     },
-    "split_about": {
+    "approach": {
       "type": "split-content",
       "settings": {
-        "eyebrow": "Who We Are",
-        "heading": "A practice built on relationship.",
-        "body": "<p>Center for Balanced Living is a trauma-based clinical services practice in Middletown, Delaware. We work with adults, adolescents, and children navigating trauma, anxiety, grief, developmental challenges, and identity questions. Our approach is evidence-based, relationally grounded, and attentive to the whole person: mind, body, and spirit.</p>",
-        "image": "",
-        "image_position": "right",
-        "cta_label": "Read more about us",
-        "cta_url": "/pages/about",
-        "brand": "cfbl"
+        "eyebrow": "Our Approach",
+        "heading": "Clinically rigorous. Relationally warm.",
+        "body": "<p>At Center for Balanced Living, we work from a trauma-based framework, meaning we understand that symptoms, behaviors, and relational patterns are often adaptations to difficult experiences, not character flaws or fixed diagnoses.</p><p>Our clinicians integrate evidence-based modalities including EMDR, Cognitive Behavioral Therapy, somatic approaches, and psychodynamic work, tailored to each client's history, goals, and nervous system.</p>",
+        "cta_label": "Meet the Team",
+        "cta_url": "/pages/team",
+        "image_position": "right"
+      }
+    },
+    "credentials": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "Credentials and Training",
+        "heading": "Trained to a high standard.",
+        "body": "<p>Our clinicians hold doctoral and master's-level degrees in psychology and counseling. We are licensed in the state of Delaware and maintain active supervision, consultation, and continuing education.</p><p>Dr. Angela Serravalle is a licensed psychologist (Psy.D.) and licensed professional counselor (LPCMH, NCC), an EMDR Certified Therapist and Approved Consultant, and founder of the CFBL Institute for continuing professional education.</p><p>All clinicians participate in ongoing clinical supervision and peer consultation within the practice.</p>",
+        "image_position": "left"
       }
     },
     "team": {
       "type": "team-grid",
       "settings": {
-        "eyebrow": "Our Team",
-        "heading": "Meet Our Team",
-        "brand": "cfbl"
+        "heading": "Our Team",
+        "subheading": "Licensed clinicians with advanced training in trauma-based practice."
       },
       "blocks": {
-        "member_serravalle": {
+        "serravalle": {
           "type": "member",
           "settings": {
             "name": "Dr. Angela (Niki) Serravalle",
-            "credentials": "Psy.D., LPCMH, NCC",
-            "role": "Founder and Licensed Psychologist",
-            "bio_short": "A trauma-based psychologist, educator, and writer. Dr. Serravalle founded the Center for Balanced Living to offer psychologically rigorous, relationally grounded care.",
-            "profile_image": ""
+            "title": "Psy.D., LPCMH, NCC",
+            "bio": "Licensed psychologist, EMDR Certified Therapist and Approved Consultant, and founder of Center for Balanced Living. Specializing in trauma, psychological evaluation, and professional training.",
+            "url": "/pages/team"
+          }
+        },
+        "foxwell": {
+          "type": "member",
+          "settings": {
+            "name": "Amanda Foxwell",
+            "title": "LAMCH, NCC",
+            "bio": "EMDR-trained therapist specializing in trauma and anxiety for teens and adults. Holistic and nature-based approach. Accepting new clients.",
+            "url": "/pages/team"
+          }
+        },
+        "lowe": {
+          "type": "member",
+          "settings": {
+            "name": "Kirsten Lowe",
+            "title": "LAMCH, NCC",
+            "bio": "Trauma-based therapist specializing in CBT, goal-focused therapy, and accountability. Accepting new clients.",
+            "url": "/pages/team"
           }
         }
       },
-      "block_order": [
-        "member_serravalle"
-      ]
+      "block_order": ["serravalle", "foxwell", "lowe"]
     },
     "testimonial": {
       "type": "testimonial-quote",
       "settings": {
-        "quote": "Working with this practice changed how I understand myself. The care here is unlike anything I'd experienced before, careful, steady, and real.",
+        "quote": "Working with this practice changed how I understand myself. The care here is careful, steady, and real.",
         "attribution": "Client, Center for Balanced Living",
-        "brand": "cfbl"
+        "background": "sand"
       }
     },
-    "contact_cta": {
+    "contact": {
       "type": "contact-cta",
       "settings": {
         "heading": "Ready to take the first step?",
-        "subheading": "We're accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
+        "subheading": "We are accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Contact Us",
         "cta_secondary_url": "/pages/contact",
-        "footnote": "Middletown, DE \u00b7 In-person and telehealth \u00b7 Most insurance accepted",
-        "brand": "cfbl"
-      }
-    },
-    "newsletter": {
-      "type": "newsletter-signup",
-      "settings": {
-        "eyebrow": "Stay Connected",
-        "heading": "Stay connected",
-        "description": "<p>Practice updates, new service announcements, and resources. No more than twice a month.</p>",
-        "button_label": "Subscribe",
+        "footnote": "Townsend, DE. In-person and telehealth. Most insurance accepted.",
         "brand": "cfbl"
       }
     }
   },
-  "order": [
-    "hero",
-    "service_cards",
-    "split_about",
-    "team",
-    "testimonial",
-    "contact_cta",
-    "newsletter"
-  ]
+  "order": ["hero", "services_overview", "approach", "credentials", "team", "testimonial", "contact"]
 }

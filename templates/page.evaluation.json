@@ -3,149 +3,151 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "Center for Balanced Living \u00b7 Assessment Services",
-        "heading": "Psychological Evaluation Services",
-        "subheading": "Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs care, school supports, and clinical decision-making.",
+        "brand": "cfbl",
+        "eyebrow": "CFBL Clinical Services",
+        "heading": "Psychological Evaluations",
+        "subheading": "Comprehensive assessment for children, adolescents, and adults. Diagnostic clarity that informs treatment, supports school and workplace accommodations, and helps you understand yourself more fully.",
         "cta_primary_label": "Schedule a Consultation",
-        "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "Learn About the Process",
-        "cta_secondary_url": "#process",
-        "image": "",
-        "brand": "cfbl"
+        "cta_primary_url": "/pages/contact"
       }
     },
-    "split_about": {
+    "what_eval": {
       "type": "split-content",
       "settings": {
-        "eyebrow": "Our Approach",
-        "heading": "Assessment as a clinical act.",
-        "body": "<p>Psychological evaluation at Center for Balanced Living is not a checkbox exercise. It is a clinical process, attentive to the whole person, grounded in current psychometric standards, and oriented toward actionable findings. Every evaluation concludes with a written report and a feedback session where results are explained clearly and completely.</p>",
-        "image": "",
-        "image_position": "right",
-        "cta_label": "",
-        "cta_url": "",
-        "brand": "cfbl"
+        "eyebrow": "What Is a Psychological Evaluation",
+        "heading": "Not a checkbox exercise. A clinical process.",
+        "body": "<p>Psychological evaluation at Center for Balanced Living is a thorough, individualized process. We integrate clinical interview, record review, behavioral observation, and psychometric testing to produce findings that are accurate, actionable, and clearly communicated.</p><p>Every evaluation concludes with a written report and a dedicated feedback session, where results are explained in plain language and next steps are discussed. We do not simply deliver scores. We help you understand what they mean.</p><p>Evaluations are conducted by Dr. Angela Serravalle, a licensed psychologist with advanced training in psychometric assessment and trauma-based practice.</p>",
+        "image_position": "right"
       }
     },
     "eval_types": {
       "type": "service-cards",
       "settings": {
-        "eyebrow": "Evaluation Types",
-        "heading": "What We Assess",
+        "heading": "Types of Evaluation",
+        "subheading": "We conduct evaluations across a range of clinical questions.",
         "brand": "cfbl"
       },
       "blocks": {
-        "eval_psychodiagnostic": {
+        "autism": {
           "type": "service",
           "settings": {
-            "kicker": "Diagnostic Evaluation",
-            "heading": "Psychodiagnostic Evaluation",
-            "description": "<p>Comprehensive clinical interview, behavioral observation, and standardized testing to clarify diagnosis for adults and adolescents presenting with mood, anxiety, trauma, or complex presentations.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/psychodiagnostic-evaluation"
+            "kicker": "Autism Spectrum",
+            "title": "Autism Spectrum Evaluation",
+            "description": "<p>Comprehensive assessment for children, adolescents, and adults where autism spectrum disorder is a clinical question. Includes ADOS-2, ADI-R (when indicated), cognitive testing, and adaptive functioning measures.</p>",
+            "url": "/pages/autism-evaluation"
           }
         },
-        "eval_psychoeducational": {
-          "type": "service",
-          "settings": {
-            "kicker": "Educational Support",
-            "heading": "Psychoeducational Evaluation",
-            "description": "<p>Cognitive, academic, and processing assessments for children and adolescents. Results inform IEPs, 504 plans, academic accommodations, and school-based supports.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/psychoeducational-evaluation"
-          }
-        },
-        "eval_adhd": {
+        "adhd": {
           "type": "service",
           "settings": {
             "kicker": "Attention and Executive Function",
-            "heading": "ADHD and Executive Function Assessment",
-            "description": "<p>Differentiated assessment of attention, working memory, processing speed, and executive function. For children, adolescents, and adults seeking diagnostic clarity.</p>",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/adhd-evaluation"
+            "title": "ADHD and Executive Function",
+            "description": "<p>Assessment of attention, working memory, processing speed, and executive functioning for children, adolescents, and adults. Supports diagnosis, accommodation requests, and treatment planning.</p>",
+            "url": "/pages/adhd-evaluation"
           }
         },
-        "eval_forensic": {
+        "academic": {
           "type": "service",
           "settings": {
-            "kicker": "Forensic and Specialized",
-            "heading": "Forensic and Specialized Evaluation",
-            "description": "<p>Available by referral for disability documentation, custody proceedings, and specialized clinical purposes. Contact us to discuss your specific referral question.</p>",
-            "cta_label": "Contact us",
-            "cta_url": "/pages/contact"
+            "kicker": "Academic and Learning",
+            "title": "Academic and Learning Concerns",
+            "description": "<p>Evaluation for learning disabilities, reading disorders, processing differences, and academic underachievement. Commonly requested for IEP, 504 Plan, and college accommodation documentation.</p>",
+            "url": "/pages/academic-and-learning"
+          }
+        },
+        "personality": {
+          "type": "service",
+          "settings": {
+            "kicker": "Personality and Emotional Functioning",
+            "title": "Personality and Emotional Functioning",
+            "description": "<p>Assessment of personality structure, emotional regulation, relational patterns, and diagnostic questions related to mood, anxiety, trauma, and personality. Often requested when clinical picture is complex or unclear.</p>",
+            "url": "/pages/personality-and-emotional"
+          }
+        },
+        "diagnostic": {
+          "type": "service",
+          "settings": {
+            "kicker": "Diagnostic Clarification",
+            "title": "Diagnostic Clarification",
+            "description": "<p>Targeted assessment when an existing diagnosis is in question, when multiple diagnoses are present, or when prior testing was inconclusive. Helps refine treatment direction and supports second opinions.</p>",
+            "url": "/pages/diagnostic-clarification"
           }
         }
       },
-      "block_order": [
-        "eval_psychodiagnostic",
-        "eval_psychoeducational",
-        "eval_adhd",
-        "eval_forensic"
-      ]
+      "block_order": ["autism", "adhd", "academic", "personality", "diagnostic"]
+    },
+    "process": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "The Evaluation Process",
+        "heading": "What to expect, from intake to feedback.",
+        "body": "<p><strong>Intake consultation.</strong> We begin with a clinical interview to understand your referral question, history, and goals for the evaluation.</p><p><strong>Testing sessions.</strong> Depending on the evaluation type, testing may take place over one or more sessions, typically 2 to 4 hours each. We pace testing to optimize performance and comfort.</p><p><strong>Scoring and report.</strong> We analyze results, integrate all data sources, and produce a written report that is clear, jargon-minimal, and clinically useful.</p><p><strong>Feedback session.</strong> We review findings together, answer questions, and discuss recommendations. You will leave understanding what the results mean and what to do next.</p>",
+        "image_position": "left"
+      }
+    },
+    "testimonial": {
+      "type": "testimonial-quote",
+      "settings": {
+        "quote": "The evaluation gave us language for what we had been seeing for years. The feedback session was the first time we actually understood what our child needed.",
+        "attribution": "Parent of an adolescent client",
+        "background": "sand"
+      }
     },
     "faq": {
       "type": "faq-accordion",
       "settings": {
-        "eyebrow": "Common Questions",
-        "heading": "Frequently Asked Questions",
-        "brand": "cfbl"
+        "heading": "Common Questions"
       },
       "blocks": {
-        "faq_1": {
+        "q1": {
           "type": "item",
           "settings": {
             "question": "How long does an evaluation take?",
-            "answer": "<p>Most evaluations require 6\u201310 hours of testing spread across multiple sessions, plus a feedback appointment. The full process typically takes 3\u20136 weeks from intake to report.</p>"
+            "answer": "Most evaluations involve 2 to 4 hours of direct testing, distributed across one or two sessions. The full process from intake to feedback typically takes 4 to 8 weeks depending on scheduling and report turnaround."
           }
         },
-        "faq_2": {
+        "q2": {
           "type": "item",
           "settings": {
-            "question": "Is the evaluation covered by insurance?",
-            "answer": "<p>Coverage varies by plan and evaluation type. We can provide a superbill for out-of-network reimbursement. Contact us to discuss your specific insurance situation before scheduling.</p>"
+            "question": "Does insurance cover psychological evaluations?",
+            "answer": "Coverage varies by plan and by the reason for evaluation. Evaluations conducted for diagnostic or clinical purposes are often covered. Evaluations requested solely for school or workplace documentation may not be. We recommend contacting your insurance provider before scheduling."
           }
         },
-        "faq_3": {
+        "q3": {
           "type": "item",
           "settings": {
-            "question": "What does the evaluation process involve?",
-            "answer": "<p>Every evaluation includes an intake interview, standardized testing, behavioral observation, collateral review (school records, prior reports), a written report, and a feedback session.</p>"
+            "question": "Can you evaluate adults, or only children?",
+            "answer": "We evaluate children, adolescents, and adults. Many of our adult referrals involve questions about ADHD, autism, or complex diagnostic presentations that were not identified earlier in life."
           }
         },
-        "faq_4": {
+        "q4": {
           "type": "item",
           "settings": {
-            "question": "Do you evaluate adults as well as children?",
-            "answer": "<p>Yes. We conduct evaluations for children, adolescents, and adults. Adult evaluations focus on diagnostic clarification, ADHD, and conditions that may not have been identified in childhood.</p>"
+            "question": "Will I receive a written report?",
+            "answer": "Yes. Every evaluation includes a written psychological report and a live feedback session. We do not release reports without a feedback meeting."
+          }
+        },
+        "q5": {
+          "type": "item",
+          "settings": {
+            "question": "Do you provide documentation for school accommodations or disability services?",
+            "answer": "Yes. Our reports are written to meet the documentation standards required by most school districts, colleges, and universities. We are familiar with IEP, 504 Plan, and disability services office requirements."
           }
         }
       },
-      "block_order": [
-        "faq_1",
-        "faq_2",
-        "faq_3",
-        "faq_4"
-      ]
+      "block_order": ["q1", "q2", "q3", "q4", "q5"]
     },
-    "contact_cta": {
+    "contact": {
       "type": "contact-cta",
       "settings": {
-        "heading": "Ready to schedule an evaluation?",
-        "subheading": "Start with a brief consultation. We'll help you determine which evaluation best fits the referral question.",
+        "heading": "Schedule an evaluation consultation.",
+        "subheading": "Start with a brief consultation to discuss your referral question and determine which evaluation is the right fit.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "Contact Us",
-        "cta_secondary_url": "/pages/contact",
-        "footnote": "Middletown, DE \u00b7 In-person only for testing \u00b7 Most insurance accepted",
+        "footnote": "Townsend, DE. In-person testing. Reports provided within 4 to 6 weeks.",
         "brand": "cfbl"
       }
     }
   },
-  "order": [
-    "hero",
-    "split_about",
-    "eval_types",
-    "faq",
-    "contact_cta"
-  ]
+  "order": ["hero", "what_eval", "eval_types", "process", "testimonial", "faq", "contact"]
 }
