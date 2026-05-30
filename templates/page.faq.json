@@ -1,0 +1,832 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_8kXMEb": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_FbhgKM": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "OUR PHILOSOPHY"
+          }
+        },
+        "richtext_XUfTWJ": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h1>Frequently <br/>Asked Questions</h1>"
+          }
+        },
+        "liquid_BhkiCP": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<hr>"
+          }
+        },
+        "richtext_Gq3Reb": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "theme-tabs",
+            "content": "<ul><li><a href=\"#evaluation\" title=\"#evaluation\">Evaluation FAQs</a></li><li><a href=\"#therapy\" title=\"#therapy\">Therapy FAQs</a></li><li><a href=\"#supervision faq\" title=\"#supervision faq\">Supervision FAQs</a></li><li><a href=\"#consultation faq\" title=\"#consultation faq\">Consultation FAQs</a></li><li><a href=\"#Groups faq\" title=\"#Groups faq\">Groups FAQs</a></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_FbhgKM",
+        "richtext_XUfTWJ",
+        "liquid_BhkiCP",
+        "richtext_Gq3Reb"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "richtext-fullwidth",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ece5e1",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_GQ4zQJ": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_zTXqj8": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_zTXqj8"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "accordion_content_LdgqNH": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_fYJUji": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "What is a psychological evaluation?",
+            "content": "<p>A psychological evaluation is part of an overall assessment. This includes a clinical interview, a battery of cognitive, behavioral, emotional, and personality and psychopathology tests and self-report measures, a review of records, a collateral interview with family/friends/doctors/therapists, analysis of data, and report writing. </p><p>These evaluations are typically used to clarify diagnosis and guide treatment for therapeutic purposes (i.e., if you are in therapy). Clinical psychologists typically perform these types of evaluations. Psychologists will administer  tests and measures for various issues related to an individual’s psychological, emotional, and behavioral functioning. Specifically, a clinical psychologist will select the appropriate tests based on the referral question. (Do I have Bipolar Disorder?)</p>"
+          }
+        },
+        "item_4ByEYX": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "What can I expect on test day?",
+            "content": "<p>Testing day is a long day. It is best to rest the night before. During the testing sessions, we will complete various tests that examine cognitive abilities, problem solving, verbal and nonverbal abilities, memory, attention and perhaps social perception and abilities. Individuals are encouraged to take breaks and can end testing at any time. They are also encouraged to wear comfortable clothes, and to bring snacks and drinks. </p>"
+          }
+        },
+        "item_9RLUPG": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "Does insurance cover the evaluation?",
+            "content": "<p>Each insurance plan is different. We call for benefits prior to your intake. We send a financial responsibility email before scheduling. We try to be as transparent about the process as we can. There are some policies that cover 100% and others that do not. The best way to know is let us look up your benefits for you. </p>"
+          }
+        },
+        "item_aNBAHq": {
+          "type": "item",
+          "settings": {
+            "title": "How long is an evaluation?",
+            "content": "<p><em>The short answer is it depends. Each evaluation comes with a specific question and to answer those questions are different for each person. However, Dr. Serravalle works hard to complete the process as quickly as possible. Usually between 4-8 weeks. </em></p>"
+          }
+        },
+        "item_8aRMpC": {
+          "type": "item",
+          "settings": {
+            "title": "What is the difference between psychological and neuropsychological evaluation?",
+            "content": "<p><em>Similar to the psychological evaluation, the neuropsychological evaluation is part of an overall assessment. However, there are a few differences here. First, the psychologist conducting the neuropsychological evaluation must be specifically trained in neuropsychological tests and measures. </em></p><p><em>At a minimum, they are licensed psychologists in their state and can practice independently and hold the equivalent of two full-time years of experience and specialized training in neuropsychology and related neurosciences. At least one of the years must be obtained post-doc, and both years are supervised by a clinical neuropsychologist. </em></p><p><em>Secondly, neuropsychologists use their in-depth knowledge of brain-behavior relationships to assess and evaluate patients with neurological, medical, neurodevelopmental, psychiatric, and cognitive conditions. They use tests, puzzles, and game-like activities to evaluate different cognitive areas of the brain, such as attention, memory, language, executive functioning, visual-spatial relations, motor skills, and intelligence. This evaluation is looking at the whole person, not just psychological functioning. The results will aid in understanding the underlying neurocognitive processes and their relation to an individual’s behaviors. </em></p>"
+          }
+        },
+        "item_YyDTXK": {
+          "type": "item",
+          "settings": {
+            "title": "What can the results of the evaluation be used for?",
+            "content": "<p>The short answer is anything. Typically, they are used in healthcare, legal, education and for personal knowledge. They can be used to guide treatment, inform education and occupational settings for accommodations.  </p><p>•\tDr. Serravalle is not a forensic psychologist and therefore does not complete evaluations for custody, fitness for duty, competency, workmen’s comp or malpractice. Through her work with DPA she has met and worked with many forensic psychologist and can refer you to them.  </p><p></p>"
+          }
+        },
+        "item_NgDwq7": {
+          "type": "item",
+          "settings": {
+            "title": "What is an Educational Evaluation?",
+            "content": "<p><em>The purpose of this evaluation is to provide an in-depth study of the cognitive/intellectual processes and current academic levels of functioning. This evaluation might also include an assessment of memory and executive functioning. The outcome is not a diagnosis but the ways in which any deficits or strengths impact the learning environment. The results may indicate learning giftedness as well as learning disorders. This type of evaluation usually informs IEP, 504 and accommodations for school. These evaluations are not covered by insurance. </em></p>"
+          }
+        },
+        "item_8N4HDb": {
+          "type": "item",
+          "settings": {
+            "title": "What is a Psychological/Neuropsychological Evaluation",
+            "content": "<p><em>The purpose of this is to evaluate for emotional, social, personality and behaviors or cognitive strengths/deficits that impacting daily functioning . Results can include diagnosis for disorders such as Attention- Deficit/Hyperactivity Disorder, Autism Spectrum Disorders as well as Depression, or Anxiety disorders that may be affecting one’s functional abilities. These types of evaluations are often used to inform treatment including medication and therapy therefore these types of evaluations are often covered by insurance. </em></p>"
+          }
+        },
+        "item_C4hxwd": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "What is a Risk Assessment?",
+            "content": "<p>The purpose of this type of evaluation to determine a <br/>level of risk. The evaluation is examines one’s history, static and protective factors as well as current psychological functioning. They often require collateral data/participation. These assessments are not covered by insurance. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_fYJUji",
+        "item_4ByEYX",
+        "item_9RLUPG",
+        "item_aNBAHq",
+        "item_8aRMpC",
+        "item_YyDTXK",
+        "item_NgDwq7",
+        "item_8N4HDb",
+        "item_C4hxwd"
+      ],
+      "name": "Evaluation",
+      "settings": {
+        "blockId": "evaluation",
+        "full_width": true,
+        "subheading": "",
+        "title": "Evaluation FAQs",
+        "content": "<p>Psychological Evaluations provide an in-depth understanding of an individual’s mental health status and provide diagnostic clarification and treatment recommendations, using psychological tests and extensive review of collateral information.</p><p>Psychological Evaluations can also focus on cognitive functioning, neuro-cognitive development, expressive and receptive language skills, executive functioning, processing speed, visuomotor skills, social comprehension, memory and learning, and emotional/behavioral functioning.</p><p></p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "rgba(0,0,0,0)",
+        "accordion_text_color": ""
+      }
+    },
+    "accordion_content_h8VnXi": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_hqwyKj": {
+          "type": "item",
+          "settings": {
+            "title": "What is therapy like?",
+            "content": "<p><em>The first few sessions are essential to getting to know one another. After that, it’s being committed to showing up and a willingness to explore the parts of yourself or your life that need adjusting.</em></p>"
+          }
+        },
+        "item_HqccDh": {
+          "type": "item",
+          "settings": {
+            "title": "Do you have in-person or telehealth sessions?",
+            "content": "<p><em>At this time, I offer both in-person and telehealth sessions. We can discuss what works best for you and which location can best help you meet your needs.</em></p>"
+          }
+        },
+        "item_hkye9j": {
+          "type": "item",
+          "settings": {
+            "title": "How long does a therapy session last?",
+            "content": "<p><em>The individual sessions are usually about 50 minutes. Dr. Serravalle works hard to start on time and end on time out of respect for her clients.</em></p>"
+          }
+        },
+        "item_AmWA3C": {
+          "type": "item",
+          "settings": {
+            "title": "What is ACT?",
+            "content": "<p><em>The main goal of Acceptance and Commitment Therapy is to help individuals recognize ways they attempt to suppress, avoid, and control emotional experiences that can create further challenges. By compassionately recognizing and addressing these challenges, an individual can become more able to make room for values-based actions that support their well-being. Learning how to accept things as they come, without evaluating or attempting to change the situation is a skill that can be developed in sessions and can be practiced outside of the sessions. ACT is not about changing or stopping those unwanted feelings or thought processes, it is about changing your relationship with them. ACT therapy can offer freedom to people who struggle with not wanting to have “full control” or an inability to “let things go”.</em></p>"
+          }
+        },
+        "item_4YkDhQ": {
+          "type": "item",
+          "settings": {
+            "title": "What is CBT?",
+            "content": "<p><em>Cognitive Behavioral Therapy is a structured, problem-focused therapy in which individuals are taught to observe and document their negative thoughts so they can identify the associations between thoughts, feelings, physiology, and behavior. Individuals will learn to assess the rationality and usefulness of these cognitions and change dysfunctional cognitions to amore adaptive perspective. Behavioral techniques such as activity scheduling, self-monitoring of mastery and pleasure, and graded task assignments are used to help individuals overcome disinterest and expose themselves to rewarding experiences. Individuals also learn adaptive coping skills and problem-solving skills. Cognitive Behavioral counseling entails many strategies and techniques to help depressed individuals address their thinking including psychoeducation, guided discovery, Socratic questioning, role-playing, imagery, and behavioral experiments.</em></p>"
+          }
+        },
+        "item_ze83zx": {
+          "type": "item",
+          "settings": {
+            "title": "What is DBT?",
+            "content": "<p><em>Dialectical Behavior Therapy (DBT) is a therapy used to help individuals develop skills to better manage stress, emotional regulation, and to help redirect behavioral patterns such as self-harm or other compulsive behaviors. DBT combines the standard cognitive-behavioral techniques, acceptance therapy, and mindful awareness. Mindfulness is one of the core elements in DBT therapy. It is a great foundation for the other building blocks that come with therapy and DBT skills. The acceptance portion of DBT helps individuals tolerate the powerful emotions that can come with therapy and life. The acceptance and mindfulness that is taught within DBT therapy create the ability to pay attention, nonjudgmentally, to the moments at hand. And reframes one’s perspective to handle it with more positive outlets and responses. The acceptance skills taught help one to no longer judge themselves for having these emotions or for being in “negative” situations. This can create less distress and panic when things come up.</em></p>"
+          }
+        },
+        "item_XiBEUA": {
+          "type": "item",
+          "settings": {
+            "title": "What is EMDR?",
+            "content": "<p><em>Eye Movement Desensitization and Reprocessing (EMDR) is a form of therapy that is geared for individuals who have experienced physical and emotional trauma, and experience overall emotional distress from difficult life experiences. EMDR therapy is a parallel concept where your brain can heal from psychological trauma and how your body can recover from physical injury. EMDR therapy is a direct approach to one’s trauma, to be able to face the situation (at their own pace) under the supervision and guidance of a certified EMDR therapist. EMDR therapy is different from talk therapy in a few ways. EMDR therapy involves biological aspects such as eye movements (or other bilateral stimulations), that allows the brain to reprocess triggering memories.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_hqwyKj",
+        "item_HqccDh",
+        "item_hkye9j",
+        "item_AmWA3C",
+        "item_4YkDhQ",
+        "item_ze83zx",
+        "item_XiBEUA"
+      ],
+      "custom_css": [],
+      "name": "Therapy",
+      "settings": {
+        "blockId": "therapy",
+        "full_width": true,
+        "subheading": "",
+        "title": "Therapy FAQs",
+        "content": "<p>To be successful in therapy requires two things. One, a trusting therapeutic relationship. And two, a commitment from both individuals to show up and do the work. As a client, you want to feel connected and safe with your therapist. You want to believe their training, expertise, and style match your needs.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "rgba(0,0,0,0)",
+        "accordion_text_color": ""
+      }
+    },
+    "accordion_content_XCyNJ3": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_y3HCdt": {
+          "type": "item",
+          "settings": {
+            "title": "Who is supervision available for?",
+            "content": "<p><em>Supervision at Center for Balanced Living is available for LPC associates and PsyD trainees working toward licensure as mental health counselors and psychologists. If you are accumulating supervised hours toward licensure, this is the right fit.</em></p>"
+          }
+        },
+        "item_zVyR7m": {
+          "type": "item",
+          "settings": {
+            "title": "What does supervision focus on?",
+            "content": "<p><em>Supervision integrates case conceptualization, trauma-informed treatment planning, ethical decision making, and the development of clinical judgment. Sessions support both practical skill development and the theoretical integration that strong clinical practice requires.</em></p>"
+          }
+        },
+        "item_qjM63a": {
+          "type": "item",
+          "settings": {
+            "title": "How do I get started with supervision?",
+            "content": "<p><em>Reach out through our contact form or call (302) 608-3780 and someone from our office will be in touch within 24 hours to discuss your supervision needs and goals.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_y3HCdt",
+        "item_zVyR7m",
+        "item_qjM63a"
+      ],
+      "name": "Supervision",
+      "settings": {
+        "blockId": "supervision faq",
+        "full_width": true,
+        "subheading": "",
+        "title": "Supervision FAQ",
+        "content": "<p>Clinical supervision at Center for Balanced Living is available for LPC associates and PsyD trainees working toward licensure as mental health counselors and psychologists. Supervision is developmental, trauma-informed, and grounded in evidence-based practice. </p><p>Dr. Serravalle provides supervision that supports clinical growth, professional identity, and the practical skills needed to work effectively with complex presentations.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "accordion_content_JVEFeq": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_TqVW6J": {
+          "type": "item",
+          "settings": {
+            "title": "Do I need to complete EMDR basic training before seeking consultation?",
+            "content": "<p><em>Yes. EMDR consultation at Center for Balanced Living is specifically for therapists who have already completed an EMDRIA approved basic training program. Consultation is the next step in the formal certification process and builds directly on the foundation established in basic training.</em></p>"
+          }
+        },
+        "item_RqTcLa": {
+          "type": "item",
+          "settings": {
+            "title": "What happens during EMDR consultation sessions?",
+            "content": "<p><em>Sessions focus on case review, protocol refinement, and integration of EMDR with complex presentations including trauma, dissociation, attachment disruptions, and co-occurring conditions. Dr. Serravalle helps therapists develop fidelity to the adaptive information processing model and build the clinical reasoning skills that move practice beyond technique toward genuine mastery.</em></p>"
+          }
+        },
+        "item_7YFipV": {
+          "type": "item",
+          "settings": {
+            "title": "How many consultation hours do I need for EMDRIA certification?",
+            "content": "<p><em>EMDRIA requires 10 hours of consultation with an Approved Consultant as part of the certification process, with at least 4 of those hours being individual consultation. </em></p><p><em>Dr. Serravalle offers both group and individual consultation both </em>virtually<em> and in person. </em></p><p><em>Reach out through our contact form or call (302) 608-3780 to get started.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_TqVW6J",
+        "item_RqTcLa",
+        "item_7YFipV"
+      ],
+      "name": "Consultation ",
+      "settings": {
+        "blockId": "consultation faq",
+        "full_width": true,
+        "subheading": "",
+        "title": "Consultation FAQ",
+        "content": "<p>Dr. Serravalle is an EMDRIA Approved Consultant offering EMDR consultation for therapists who have completed basic training and are working toward EMDRIA certification. Consultation is structured to support both skill acquisition and thoughtful clinical reasoning, helping therapists move beyond procedural competence toward conceptual mastery of the EMDR model.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "accordion_content_EGJLBM": {
+      "type": "accordion-content",
+      "blocks": {
+        "item_qHHbnj": {
+          "type": "item",
+          "settings": {
+            "title": "Who are the wellness groups for?",
+            "content": "<p><em>Our wellness groups are open to adults and teens 16 and up who are seeking personal growth, nervous system regulation skills, and connection in a supportive community setting. </em></p><p><em>Groups are educational and experiential in nature, not therapy groups, and are not covered by insurance.</em></p>"
+          }
+        },
+        "item_UWC4dF": {
+          "type": "item",
+          "settings": {
+            "title": "Do I need to be in therapy to join a group?",
+            "content": "<p><em>No. Our wellness groups are open to community members whether or not you are currently in therapy. </em></p><p><em>They are designed to be accessible and valuable as a standalone experience or as a complement to individual therapy.</em></p>"
+          }
+        },
+        "item_LmfB8k": {
+          "type": "item",
+          "settings": {
+            "title": "How do I sign up for a group?",
+            "content": "<p><em>Each group has its own registration through Eventbrite. </em><a href=\"https://www.eventbrite.com/o/center-for-balanced-living-121062482552\" target=\"_blank\" title=\"https://www.eventbrite.com/o/center-for-balanced-living-121062482552\"><em>(CLICK HERE)</em></a></p><p><em>Visit the Groups page to see current offerings and available dates. </em></p><p><em>Advance registration is required as group sizes are intentionally small. </em></p><p><em>Reach out to our office at (302) 608-3780 with any questions.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_qHHbnj",
+        "item_UWC4dF",
+        "item_LmfB8k"
+      ],
+      "name": "Groups ",
+      "settings": {
+        "blockId": "groups faq",
+        "full_width": true,
+        "subheading": "",
+        "title": "Groups FAQ",
+        "content": "<p>Center for Balanced Living offers wellness groups for adults and teens seeking personal growth, nervous system regulation, and community connection. Groups are educational and experiential in nature, guided by therapeutic principles and facilitated by licensed clinicians. They are not therapy groups and are not covered by insurance. Current group offerings are listed below.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "text_with_icons_n4bDT4": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_KETj8d": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-chat",
+            "custom_icon": "shopify://shop_images/flexibletherapyIcon.svg",
+            "mobile_icon_width": 52,
+            "icon_width": 52,
+            "icon_background_type": "circle",
+            "icon_background": "#ece5e1",
+            "icon_color": "#389fbc",
+            "title": "",
+            "content": "<h4>Flexible Therapy <br/>Modes</h4><p>Offering both in-office and online therapy sessions, we ensure accessibility and convenience to fit your lifestyle. Whether you prefer the personal touch of face-to-face sessions or the flexibility of online consultations, our service adapts to meet your needs.</p>"
+          }
+        },
+        "item_gfNz7N": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-credit-card",
+            "custom_icon": "shopify://shop_images/insurance-cashpay.svg",
+            "mobile_icon_width": 52,
+            "icon_width": 52,
+            "icon_background_type": "circle",
+            "icon_background": "#ece5e1",
+            "icon_color": "#389fbc",
+            "title": "",
+            "content": "<h4>Multiple Payment <br/>Options</h4><p>Understanding the importance of mental health care, we provide various payment options including insurance billing, cash payments, and CareCredit plans. Our goal is to make therapy accessible, ensuring that financial constraints do not hinder your path to wellness.</p>"
+          }
+        },
+        "item_8rM3Wz": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-secure-profile",
+            "custom_icon": "shopify://shop_images/groupUserIcon.svg",
+            "mobile_icon_width": 52,
+            "icon_width": 52,
+            "icon_background_type": "circle",
+            "icon_background": "#ece5e1",
+            "icon_color": "#389fbc",
+            "title": "",
+            "content": "<h4>Personal & Group Sessions</h4><p>Our services are designed to cater to both individual preferences and the dynamics of group therapy. Whether seeking personalized care or the shared experiences of group sessions, our therapy programs are tailored to support your journey to healing in a setting that feels right for you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_KETj8d",
+        "item_gfNz7N",
+        "item_8rM3Wz"
+      ],
+      "disabled": true,
+      "settings": {
+        "blockId": "benefits",
+        "full_width": false,
+        "stack_on_mobile": true,
+        "title": "Our Benefits",
+        "heading_tag": "h4",
+        "text_alignment": "start",
+        "icon_spacing": "large",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(323deg, rgba(246, 243, 237, 1), rgba(221, 239, 242, 0) 68%)",
+        "text_color": "#162b3d"
+      }
+    },
+    "multi_column_C6yFdf": {
+      "type": "multi-column",
+      "blocks": {
+        "item_GrjDbC": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Office Hours",
+            "heading_tag": "h3",
+            "content": "<h5>Monday-Thursday: 10am - 6pm<br/>Friday: 10am - 4pm</h5>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_JweKiK": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Emergencies",
+            "heading_tag": "h3",
+            "content": "<h4>(302) 608-3780<br/>(302) 355-3226 fax</h4><h6><a href=\"mailto:admin@balancedlivingde.com\" title=\"mailto:admin@balancedlivingde.com\">admin@balancedlivingde.com</a></h6>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_Pi3GQf": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Therapy Cancellation Policy",
+            "heading_tag": "h4",
+            "content": "<p>To support your journey towards well-being, we gently remind you to prioritize attending your therapy sessions. We understand that unforeseen circumstances may arise; should you need to cancel or reschedule, please provide us with at least 24 hours' notice. For cancellations with less than 24 hours' notice or missed appointments, our policy is to apply the full charge for the session. For documentation purposes, we kindly request that you notify us via email.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_THiLFA": {
+          "type": "item",
+          "settings": {
+            "column_size": "2",
+            "title": "Testing Cancellation Policy",
+            "heading_tag": "h4",
+            "content": "<p>For intake appointments, please provide a notice of 48-72 hours if you need to cancel or reschedule. For testing days, we require at least one week's notice. Cancellations or rescheduling requests that do not meet these time frames may be subject to fees to cover reserved time. Please notify us of any changes via email to facilitate proper documentation and adjustments.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "spacer_zE48bW": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "column_size": "6"
+          }
+        },
+        "spacer_WKFpfe": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "column_size": "6"
+          }
+        },
+        "spacer_BQ6teU": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "column_size": "3"
+          }
+        }
+      },
+      "block_order": [
+        "item_GrjDbC",
+        "item_JweKiK",
+        "item_Pi3GQf",
+        "item_THiLFA",
+        "spacer_zE48bW",
+        "spacer_WKFpfe",
+        "spacer_BQ6teU"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_class_name": "default-multicol",
+        "blockId": "general",
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "",
+        "content": "<h3>General Info</h3>",
+        "background": "#f6f3ed",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_tJLrJx": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_hCQn3H": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h2>Still Have Questions?</h2><p>Whether you're seeking therapy, evaluations, consultations, or training, our dedicated team is here to support your journey toward well-being.</p><p>For immediate service please call our office.</p><h3>Call: (302) 608-3780</h3><p>Alternatively, our contact form is available for your convenience.</p><p>We typically respond within 24 hours.</p>"
+          }
+        },
+        "divider_hL7tdw": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {}
+        },
+        "liquid_CnrR4f": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"width:100%;\">\n<div class=\"klaviyo-form-RsFh4H\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_hCQn3H",
+        "divider_hL7tdw",
+        "liquid_CnrR4f"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ece5e1",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_XJwtWA": {
+      "type": "multi-column",
+      "blocks": {
+        "item_7PCB3y": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/faqfpo1.png",
+            "column_size": "3",
+            "title": "What is a psychological evaluation?",
+            "heading_tag": "h4",
+            "content": "<p>Psychological Evaluations provide an in-depth understanding of an individual’s mental health status and provide diagnostic clarification and treatment recommendations, using psychological tests and extensive review of collateral information. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_DYhw8c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/faqfpo2.png",
+            "column_size": "3",
+            "title": "What can I expect on test day?",
+            "heading_tag": "h4",
+            "content": "<p>Testing day is a long day. It is best to rest the night before. During the testing sessions, we will complete various tests that examine cognitive abilities, problem solving, verbal and nonverbal abilities, memory, attention and perhaps social perception and abilities. Individuals are encouraged to take breaks and can end testing at any time. They are also encouraged to wear comfortable clothes, and to bring snacks and drinks. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_ygTBTe": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/faqfpo4.png",
+            "column_size": "3",
+            "title": "Does insurance cover the evaluation?",
+            "heading_tag": "h4",
+            "content": "<p>Each insurance plan is different. We call for benefits prior to your intake. We send a financial responsibility email before scheduling. We try to be as transparent about the process as we can. There are some policies that cover 100% and others that do not. The best way to know is let us look up your benefits for you. </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_7PCB3y",
+        "item_DYhw8c",
+        "item_ygTBTe"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_class_name": "default-multicol",
+        "blockId": "",
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Evaluation FAQs",
+        "content": "",
+        "background": "#efefef",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_grid_qWyNhr": {
+      "type": "media-grid",
+      "blocks": {
+        "image_FHWC6B": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/faqfpo1.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 3,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_4Umzin": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/faqfpo4.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_MakkpB": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/faqfpo3.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_h6VBkf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/faqfpo2.png",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 2,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_FHWC6B",
+        "image_4Umzin",
+        "image_MakkpB",
+        "image_h6VBkf"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "reduce_width": false,
+        "desktop_row_height": 190,
+        "mobile_row_height": 220,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_8kXMEb",
+    "rich_text_GQ4zQJ",
+    "accordion_content_LdgqNH",
+    "accordion_content_h8VnXi",
+    "accordion_content_XCyNJ3",
+    "accordion_content_JVEFeq",
+    "accordion_content_EGJLBM",
+    "text_with_icons_n4bDT4",
+    "multi_column_C6yFdf",
+    "rich_text_tJLrJx",
+    "multi_column_XJwtWA",
+    "media_grid_qWyNhr"
+  ]
+}

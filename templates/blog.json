@@ -1,0 +1,332 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_bPJHcL": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify://shop_images/From_Dr._Serravalle_s_Blog.png",
+        "mobile_image": "shopify://shop_images/From_Dr._Serravalle_s_Blog.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_7cEpmD": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_MRpkTn": {
+          "type": "subheading",
+          "settings": {
+            "text": "ABOUT THE WRITING"
+          }
+        },
+        "heading_HQJMP4": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_4QrPT9": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p><em><strong>Make It Make Sense </strong></em>is where I think out loud. Some pieces are about the mental health field, what is broken in it, what is shifting, and what clinicians and clients should know. Some are clinical writing on diagnosis and practice. Some are reflections on what is happening in the world, read through a psychological lens. And some are practical, about the stress of daily life and how to move through it.</p><p>I write for clinicians, helping professionals, graduate students, and thoughtful readers who want clinical depth without jargon. The pieces are research-informed and clinically grounded, but they are written in my voice, with my words. An attempt to make sense of the work, the world, and the work of being an imperfect person, in public.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_MRpkTn",
+        "heading_HQJMP4",
+        "richtext_4QrPT9"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#aebbc1",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "newsletter_WHd963": {
+          "type": "newsletter",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "subtext": "",
+            "position": 5,
+            "background": "#fefff7",
+            "text_color": "#162b3d"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_WHd963"
+      ],
+      "custom_css": [],
+      "settings": {
+        "allow_transparent_header": false,
+        "content": "<p>This Month's Featured Blog</p>",
+        "show_newsletter_form": false,
+        "show_tags": false,
+        "banner_background": "#f4f2ee",
+        "banner_text_color": "#2b5275",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "",
+        "articles_per_page": 8,
+        "feature_first_article": true,
+        "feature_article_background": "#aebbc1",
+        "feature_article_text_color": "#ffffff",
+        "show_excerpt": false,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false
+      }
+    },
+    "media_with_text_dwFc9L": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_4MRA6i": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/black_suit.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "About the Author",
+            "title": "Dr. Serravalle",
+            "content": "<p>I am a licensed clinical psychologist, the founder of the Center for Balanced Living, and the writer behind Make It Make Sense. My clinical work centers on trauma-informed care, psychological evaluation, and the integration of nature-based and somatic approaches into therapeutic practice.</p><p>I write here for clinicians, students, and thoughtful readers who want clinical depth without jargon. The pieces are an attempt to make sense of the work, the world, and the work of being an imperfect person, in public.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#4d786e",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_4MRA6i"
+      ],
+      "custom_css": [
+        "section {background-color: #f6f3ed;}"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "section_class_name": "media-default-section",
+        "full_width": true,
+        "spacing": "none"
+      }
+    },
+    "custom_liquid_yCMz7X": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n/* Blog section top padding - reduce space below heading */\n#shopify-section-template--26086905250098__main {\n  --banner-content-padding-block-start: var(--spacing-8);\n}\n\n@media screen and (min-width: 700px) {\n  #shopify-section-template--26086905250098__main {\n    --banner-content-padding-block-start: var(--spacing-12);\n  }\n}\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blog_posts_eTiVqh": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_VtjWxN": {
+          "type": "blog",
+          "settings": {
+            "blog": "newsletter",
+            "posts_count": 3,
+            "stack_items": true
+          }
+        }
+      },
+      "block_order": [
+        "blog_VtjWxN"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_excerpt": false,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "Letters from CFBL",
+        "title": "From the Archive",
+        "content": "<p>Earlier essays, organized by topic. Some are about the work I do as a psychologist. Some are about the field itself. Some are simply about being a person trying to make sense of things.</p>",
+        "link_url": "shopify://blogs/balanced-living-blog",
+        "link_text": "Begin Browsing",
+        "background": "#b8c9bc",
+        "background_gradient": "",
+        "text_color": "#2b5275",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "multi_column_hDxPrR": {
+      "type": "multi-column",
+      "blocks": {
+        "item_PtXLAK": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Life & Coping",
+            "heading_tag": "h4",
+            "content": "<p>Practical psychology on stress, transitions, and the everyday work of being a person.</p>",
+            "link_url": "https://balancedlivingde.com/blogs/balanced-living-blog/tagged/life-and-coping",
+            "link_text": "Read The Articles",
+            "link_external": true,
+            "link_style": "link"
+          }
+        },
+        "item_3eJd3e": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "The Cultural Moment",
+            "heading_tag": "h4",
+            "content": "<p>Reflections on what is happening in the world, through a psychological lens.</p>",
+            "link_url": "https://balancedlivingde.com/blogs/balanced-living-blog/tagged/the-cultural-moment",
+            "link_text": "Read The Articles",
+            "link_external": true,
+            "link_style": "link"
+          }
+        },
+        "item_MEWbTt": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "The Field",
+            "heading_tag": "h4",
+            "content": "<p>Healthcare commentary, insurance frustrations, and the mental health system.</p>",
+            "link_url": "https://balancedlivingde.com/blogs/balanced-living-blog/tagged/the-field",
+            "link_text": "Read The Articles",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_V8UqmC": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "On Relationships",
+            "heading_tag": "h4",
+            "content": "<p>Relational practice, attachment, and the work of connection. Sprinkled with tones of vulnerability and self-compassion. </p>",
+            "link_url": "https://balancedlivingde.com/blogs/balanced-living-blog/tagged/on-relationships",
+            "link_text": "Read The Articles",
+            "link_external": true,
+            "link_style": "link"
+          }
+        },
+        "item_9knDnG": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "On Therapy",
+            "heading_tag": "h4",
+            "content": "<p>Reflections on therapeutic approaches, modalities, and how clinical interventions actually work.</p>",
+            "link_url": "https://balancedlivingde.com/blogs/balanced-living-blog/tagged/on-therapy",
+            "link_text": "Read The Articles",
+            "link_external": true,
+            "link_style": "link"
+          }
+        },
+        "item_tkzf7h": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "On Diagnosis",
+            "heading_tag": "h4",
+            "content": "<p>Clinical writing on diagnosis, evaluation, and the inside view of  practice of clinical evaluation. </p>",
+            "link_url": "https://balancedlivingde.com/blogs/balanced-living-blog/tagged/on-diagnosis",
+            "link_text": "Read The Articles",
+            "link_external": true,
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_PtXLAK",
+        "item_3eJd3e",
+        "item_MEWbTt",
+        "item_V8UqmC",
+        "item_9knDnG",
+        "item_tkzf7h"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "section_class_name": "default-multicol",
+        "blockId": "",
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Browse By Topic",
+        "content": "",
+        "background": "#4b6983",
+        "background_gradient": "",
+        "text_color": "#f6f3ed"
+      }
+    },
+    "custom_liquid_wHNLzG": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"background-color: #E5D4A8 ; padding: 64px 32px; text-align: center;\">\n  <div style=\"max-width: 540px; margin: 0 auto;\">\n    <h2 style=\"font-family: 'Spectral SC', serif; font-weight: 300; font-size: 32px; color: #2B5275; margin: 0 0 16px 0;\">Don't miss new writing</h2>\n    <p style=\"font-family: 'Montserrat', sans-serif; font-size: 16px; color: #2B5275; line-height: 1.6; margin: 0 0 32px 0;\">Get new essays and reflections delivered through Letters from CFBL Newsletter, alongside practice updates and what is coming next.</p>\n    {% form 'customer' %}\n      {{ form.errors | default_errors }}\n      <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter, blog-reader\">\n      <input type=\"hidden\" name=\"contact[accepts_marketing]\" value=\"true\">\n      <div style=\"display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 480px; margin: 0 auto;\">\n        <input type=\"email\" name=\"contact[email]\" placeholder=\"Email address\" required style=\"flex: 1; min-width: 220px; padding: 12px 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; border: 1px solid #2B5275; background: #ffffff; color: #2B5275;\">\n        <button type=\"submit\" style=\"padding: 12px 28px; font-family: 'Montserrat', sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; background-color: #2B5275; color: #ffffff; border: none; cursor: pointer;\">Subscribe</button>\n      </div>\n      {% if form.posted_successfully? %}\n        <p style=\"margin-top: 24px; font-family: 'Montserrat', sans-serif; color: #2B5275;\">Thank you. You are on the list.</p>\n      {% endif %}\n    {% endform %}\n  </div>\n</div>",
+        "background": "#2b5275",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_bPJHcL",
+    "rich_text_7cEpmD",
+    "main",
+    "media_with_text_dwFc9L",
+    "custom_liquid_yCMz7X",
+    "blog_posts_eTiVqh",
+    "multi_column_hDxPrR",
+    "custom_liquid_wHNLzG"
+  ]
+}

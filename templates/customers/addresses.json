@@ -10,10 +10,8 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
-      "settings": {
-        "content_width": "80ch"
-      }
+      "type": "main-customers-addresses",
+      "settings": {}
     }
   },
   "order": [

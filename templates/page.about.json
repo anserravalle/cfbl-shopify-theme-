@@ -1,0 +1,676 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "60ch"
+      }
+    },
+    "rich_text_Fxx4fb": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_emei3C": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h6>Balance of Mind, Body & Spirit</h6><p><em>Center for Balanced Living is a trauma-informed psychological practice in Townsend, Delaware, offering therapy, psychological evaluations, supervision, consultation, and educational programming. </em></p><p><em>Our work is grounded in nervous system awareness, somatic processing, relational attunement, and evidence-based care. </em></p><p><em>We believe healing happens in relationship and that every person deserves support that is thoughtful, individualized, and responsive to where they are in the process.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_emei3C"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#9cbea9",
+        "background_gradient": "linear-gradient(57deg, rgba(194, 215, 233, 0.44) 33%, rgba(105, 165, 208, 0.41) 47%, rgba(46, 149, 119, 0.32) 58%)",
+        "text_color": ""
+      }
+    },
+    "video_M9HfYx": {
+      "type": "video",
+      "blocks": {
+        "play_34CWqt": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_3dMUgV": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Lorem ipsum video intro title",
+            "heading_tag": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "play_34CWqt",
+        "heading_3dMUgV"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "auto",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#bff7ff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "media_with_text_NMPcNw": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_PG4a3M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0099.jpg",
+            "media_width": 45,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Our Approach</h3><p><em>Our approach integrates trauma-informed therapy, psychological evaluation, and professional training within one cohesive practice. We draw from EMDR, somatic psychology, Internal Family Systems, Dialectical Behavior Therapy, Acceptance and Commitment Therapy, Ecotherapy, and mindfulness-based frameworks, always tailoring care to the individual. </em></p><p><em>Our clinicians and counselors work with adults, teens, children, and families navigating anxiety, depression, complex trauma, PTSD, grief, identity concerns, and life transitions throughout Delaware.</em></p>",
+            "link_text": "Our Services",
+            "link_url": "shopify://pages/services",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#2b5275",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PG4a3M"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_class_name": "media-default-section",
+        "full_width": false,
+        "spacing": "large"
+      }
+    },
+    "rich_text_8TNfhi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yyTANX": {
+          "type": "heading",
+          "settings": {
+            "text": "Meet Our Team",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_z83XBy": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>The team at Center for Balanced Living includes psychologists, counselors, and support staff committed to trauma-informed, relationally grounded, and evidence-based care. </p><p>Our practice brings together a range of clinical specialties and professional backgrounds to support children, adolescents, adults, families, and clinicians with thoughtful, high-quality services. </p>"
+          }
+        },
+        "image_rQeKWf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/group.png",
+            "width_mode": "full_width",
+            "max_width": 1000,
+            "mobile_max_width": 400
+          }
+        },
+        "richtext_iqrYhg": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Across therapy, psychological evaluation, supervision, and consultation, our team is dedicated to care that is both clinically rigorous and deeply human.</p><p>Their collective expertise is aimed at providing holistic and comprehensive care, leveraging a variety of therapeutic practices to support each client's journey towards balanced living and wellness.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yyTANX",
+        "richtext_z83XBy",
+        "image_rQeKWf",
+        "richtext_iqrYhg"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f6f3ed",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "images_with_text_scrolling_mNTVkt": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_VNHBGj": {
+          "type": "item",
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/angela.jpg",
+            "icon": "none",
+            "icon_width": 36,
+            "title": "Dr. Niki Serravalle",
+            "content": "<p>Dr. Angela “Niki” Serravalle is the founder of Center for Balanced Living and a licensed psychologist and licensed professional counselor of mental health with more than two decades of clinical experience. Her work is grounded in trauma-informed care, psychological evaluation, and professional training, with advanced specialization in trauma treatment, EMDR, and integrative approaches to healing.</p><p>Dr. Serravalle began her career at Sheppard Pratt, where she was introduced to Dialectical Behavior Therapy (DBT) and trauma-focused treatment. Her clinical path continued through work in substance use treatment, intensive outpatient programming for children and adolescents, and community mental health across Maryland and Delaware. Over time, she pursued advanced training in EMDR, TF-CBT, DBT, ACT, IFS, CPT, and Ecotherapy, reflecting her commitment to both evidence-based and emerging approaches in trauma care.</p><p>She later earned her doctorate in Clinical Psychology, where she deepened her specialization in psychological evaluation. Her practicum, internship, and postdoctoral training included work under specialists in neuropsychology and school psychology, shaping her strong interest in diagnostic clarity, neurodevelopment, and the ways systems and environments influence clinical presentation.</p><p>Today, Dr. Serravalle’s work is focused primarily on psychological evaluation, supervision, consultation, and training. Through Center for Balanced Living, she has built a practice that reflects her commitment to clinical depth, high-quality care, and the development of other professionals. She is not currently accepting new individual therapy clients. Clients seeking therapy are welcome to connect with our clinical team to explore fit and availability.</p><p><a href=\"/pages/niki-serravalle\" target=\"_blank\" title=\"Niki Serravalle\">View Full Bio</a></p><p>Contact: drserravalle@gmail.com</p><p></p>"
+          }
+        },
+        "item_bQ3trm": {
+          "type": "item",
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/Jada_1_1.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Jada Senter",
+            "content": "<p>Jada Senter is the Practice Manager at Center for Balanced Living. She oversees daily operations across the practice, including client communication, scheduling, billing coordination, and administrative support. </p><p>Jada also helps coordinate onsite events and plays an important role in ensuring that clients experience the practice as organized, responsive, and welcoming.</p><p>Contact: admin@balancedlivingde.com</p><p>phone (302) 608-3780 I fax (302) 355-3226</p>"
+          }
+        },
+        "item_kYMzK9": {
+          "type": "item",
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/amanda.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Amanda Foxwell",
+            "content": "<p>Amanda Foxwell is a mental health counselor who works with teens and adults navigating trauma, anxiety, and related emotional concerns. She holds a master’s degree in Mental Health Counseling from Capella University and a bachelor’s degree in Applied Behavior Analysis from Purdue University. Amanda is currently working toward licensure as a Licensed Professional Counselor of Mental Health.</p><p>Amanda is EMDR-trained and certified in ecotherapy, reflecting her holistic and nature-informed approach to healing. She brings warmth, empathy, and evidence-based care to her work, creating a supportive therapeutic environment where clients can process challenges, build resilience, and move toward meaningful growth.</p><p><a href=\"/pages/amanda-foxwell\" target=\"_blank\" title=\"Amanda Foxwell\">Learn More About Amanda</a></p><p>Contact: amandaf@balancedlivingde.com</p><p>Phone: (302) 365-0610</p>"
+          }
+        },
+        "item_DYYGb4": {
+          "type": "item",
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/kirsten.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Kirsten Lowe",
+            "content": "<p>Kirsten Lowe is a mental health counselor with a master’s degree in Clinical Mental Health Counseling from Wilmington University. She also holds degrees in Elementary Education and Special Education, with advanced training in autism and severe intellectual disabilities. Before becoming a counselor, Kirsten worked as a special education teacher serving children ages 5 through 14.</p><p>Her therapeutic approach is collaborative, supportive, and individualized, drawing from Cognitive Behavioral Therapy, mindfulness-based strategies, and strengths-based care. Kirsten is also completing EMDR training as part of her continued commitment to trauma-informed, evidence-based practice. She works to create a safe and open space where clients feel heard, supported, and empowered in their growth.</p><p><a href=\"/pages/kirsten-lowe\" target=\"_blank\" title=\"Kirsten Lowe\">View Kirsten's Bio</a></p><p>Contact: KLowe@balancedlivingde.com</p><p>Phone:(302) 336-8037</p>"
+          }
+        },
+        "item_JnAx38": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/brianna.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Brianna Patton",
+            "content": "<p>Brianna Patton is a mental health counselor working toward licensure as a Licensed Professional Counselor of Mental Health. She provides supportive, evidence-based therapy focused on helping clients strengthen coping skills, build emotional resilience, and develop practical strategies for change.</p><p>Brianna’s work draws from Cognitive Behavioral Therapy and Solution-Focused Therapy, offering a structured and goal-oriented approach to treatment. She is also completing EMDR training to further support clients in processing distressing experiences and reducing the impact of trauma-related symptoms. Her clinical style is collaborative, grounded, and focused on meaningful progress.</p><p><a href=\"/pages/brianna-patton\" target=\"_blank\" title=\"Brianna Patton\">Learn More About Brianna </a></p><p>Contact: BPatton@balancedlivingde.com</p><p>Phone: (302) 608-3780</p>"
+          }
+        },
+        "item_yXEWQQ": {
+          "type": "item",
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/shay.jpg",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Shay Oliver",
+            "content": "<p>Shay Oliver is a graduate student at Capella University pursuing a master’s degree in Clinical Mental Health Counseling. She brings several years of experience in behavioral health as a Registered Behavior Technician, with work across school and clinical settings supporting children and families.</p><p>Her background includes Applied Behavior Analysis services and collaboration with families, educators, and interdisciplinary teams to support skill development, emotional regulation, and meaningful progress. Shay’s therapeutic style is warm, collaborative, and evidence-based. She approaches care from a holistic and individualized perspective, supporting clients emotionally, cognitively, socially, and environmentally while honoring their strengths and lived experiences.</p><p>Contact: SOliver@balancedlivingde.com</p>"
+          }
+        },
+        "item_CehRC3": {
+          "type": "item",
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/Untitled-15.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Kim Shiflett",
+            "content": "<p>Kim Shiflett is the Assessment Team Lead at Center for Balanced Living. She supports the evaluation process through coordination, organization, and attention to detail, helping ensure that clients receive thorough, timely, and compassionate care. Her work is an essential part of the practice’s assessment services and contributes to a smooth and supportive evaluation experience for families and individuals.</p><p>Contact: Kimmy@balancedlivingde.com</p><p>Phone: (302) 608-3780 I fax: (302) 355-3226</p>"
+          }
+        },
+        "item_AW8PxL": {
+          "type": "item",
+          "settings": {
+            "hide_on_mobile": false,
+            "image": "shopify://shop_images/kbrown.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Kimberly Brown",
+            "content": "<p>Kimberly is a Pn1 Nutrition Specialist and a Certified Personal Trainer. She believes that our health is a combination of the food we eat, how we move, our daily habits and who we have surrounding us in our lives.</p><p>As a wife, homeschool mom, and entrepreneur she gets that life can be busy, overwhelming and difficult. We often put our health and needs last but it’s incredibly important to start taking care of you mentally and  physically. Through 1:1 training or group training, Kimberly takes a whole body wellness approach to making healthy living custom to your lifestyle.</p><p>Phone: (302) 598-4135</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_VNHBGj",
+        "item_bQ3trm",
+        "item_kYMzK9",
+        "item_DYYGb4",
+        "item_JnAx38",
+        "item_yXEWQQ",
+        "item_CehRC3",
+        "item_AW8PxL"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "show_counter": false,
+        "desktop_image_effect": "fade",
+        "image_position": "end",
+        "background": "#ddeff2",
+        "background_gradient": "",
+        "text_color": "#3d5a52",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "press_PzngY7": {
+      "type": "press",
+      "blocks": {
+        "quote_WJrjJE": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Thank you immensely for the comprehensive report. I recognize the significant effort you and your team have invested in it. Gaining deeper insight into myself and understanding the roots of my challenges is invaluable to me. The report is both thorough and enlightening. I plan to share it with my therapist in hopes of making meaningful progress on these issues. Again, thank you very much.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_9VWHb7": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Dr Seravalle is wonderful! Her attention to detail and understanding of testing information is wonderful. I appreciated that she would let the testing and scores be her guide in helping to determine, what, if any, additional testing was recommended. We couldn't be happier with the invaluable information she helped us to gather.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_t8zQxF": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Jada is incredibly kind and understanding. She has a lot of empathy for the families and clients who come through the door. She is very thorough and always follows through.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_dLYYUT": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Having worked with Dr. Serravalle I am very confident that her practice and her team are highly trained, skilled, and equipped to help patients in the same or similar ways that she helped me. I felt like I received comprehensive and well-rounded treatment - of course related to my diagnosis but I also felt like I came out of therapy each session more connected to myself and more in tune with who I was and now am as a person. I would not be where I am in my life were it not for the time I spent working with Dr. Serravalle. The understanding of myself led to having such confidence in myself and that is invaluable.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_NQAxPM": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Dr. Serrevalle was very welcoming and friendly. She put me at ease and helped me with practices to calm myself and let go of my anger and sadness.",
+            "show_rating": false,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "quote_WJrjJE",
+        "quote_9VWHb7",
+        "quote_t8zQxF",
+        "quote_dLYYUT",
+        "quote_NQAxPM"
+      ],
+      "settings": {
+        "title": "What our clients say...",
+        "full_width": false,
+        "content_size": "large",
+        "background": "#b8c9bc",
+        "background_gradient": "",
+        "text_color": "#3d5a52",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "rich_text_r34jmX": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_hCQn3H": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h4><strong>Credentials and Clinical Background</strong></h4><p>At Center for Balanced Living, clinical work is grounded in thoughtful assessment, strong diagnostic reasoning, and a commitment to high-quality, individualized care.</p>"
+          }
+        },
+        "page_mjrQhW": {
+          "type": "page",
+          "settings": {
+            "page": "credentials"
+          }
+        },
+        "button_73jp4b": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "View Clinical Training Details",
+            "url": "shopify://pages/credentials",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "divider_hL7tdw": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "richtext_hCQn3H",
+        "page_mjrQhW",
+        "button_73jp4b",
+        "divider_hL7tdw"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "text-left-md-down",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_pnrXRa": {
+      "type": "multi-column",
+      "blocks": {
+        "item_wgyDLT": {
+          "type": "item",
+          "settings": {
+            "column_size": "1.5",
+            "title": "Consultation",
+            "heading_tag": "h4",
+            "content": "<p>Trauma, mindfulness-based practices and re-evaluation consulting for comprehensive diagnostics.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_zAmHKJ": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "Learn more",
+            "link_external": false,
+            "link_style": "button"
+          }
+        },
+        "item_URMwx9": {
+          "type": "item",
+          "settings": {
+            "column_size": "1.5",
+            "title": "Psychological Evaluation",
+            "heading_tag": "h4",
+            "content": "<p>Dr. Serravalle specializes in comprehensive evaluations for ADHD, Autism and Learning Disabilities.  </p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_nNzxbE": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "Learn more",
+            "link_external": false,
+            "link_style": "button"
+          }
+        },
+        "item_D3awMy": {
+          "type": "item",
+          "settings": {
+            "column_size": "1.5",
+            "title": "Therapy",
+            "heading_tag": "h4",
+            "content": "<p>Mindfulness-based practices and trauma-informed models, suitable for both insurance and self-pay clients.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_VybHxG": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "Learn more",
+            "link_external": false,
+            "link_style": "button"
+          }
+        },
+        "item_YYTNXB": {
+          "type": "item",
+          "settings": {
+            "column_size": "1.5",
+            "title": "Supervision",
+            "heading_tag": "h4",
+            "content": "<p>Dr. Serravalle supervises undergraduate and graduate counselors aiming for mental health licensure, fostering their professional growth.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_3biMGn": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "Learn more",
+            "link_external": false,
+            "link_style": "button"
+          }
+        },
+        "item_4aGYPi": {
+          "type": "item",
+          "settings": {
+            "column_size": "1.5",
+            "title": "Training",
+            "heading_tag": "h4",
+            "content": "<p>Available trainings cover treatment models, trauma, and women's issues, along with groups that integrate Trauma Conscious Yoga, Somatic Psychology, and Mindfulness-Based practices for holistic healing.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_MhULUf": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "Learn more",
+            "link_external": false,
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_wgyDLT",
+        "item_zAmHKJ",
+        "item_URMwx9",
+        "item_nNzxbE",
+        "item_D3awMy",
+        "item_VybHxG",
+        "item_YYTNXB",
+        "item_3biMGn",
+        "item_4aGYPi",
+        "item_MhULUf"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_class_name": "default-multicol",
+        "blockId": "",
+        "full_width": false,
+        "stack_on_mobile": true,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Our Services",
+        "content": "<h3>The services at the Center, led by Dr. Serravalle, encompass therapy, psychological evaluation, consultation, supervision, and training. For a comprehensive understanding of our full range of services and to delve deeper into the specifics of what we offer, please visit our <a href=\"/pages/services\" title=\"Services\">Services</a> page. </h3>",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "#162b3d"
+      }
+    },
+    "rich_text_tcTmH8": {
+      "type": "rich-text",
+      "blocks": {
+        "page_3JFEet": {
+          "type": "page",
+          "settings": {
+            "page": ""
+          }
+        },
+        "subheading_UXV8Xk": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_dwdVQw": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_MPNtFD": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "page_3JFEet",
+        "subheading_UXV8Xk",
+        "heading_dwdVQw",
+        "richtext_MPNtFD"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_LERJc4": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_ttWyGK": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "phone, email"
+          }
+        },
+        "text_fEV6df": {
+          "type": "text",
+          "settings": {
+            "title": "Phone",
+            "use_long_text": false,
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_ttWyGK",
+        "text_fEV6df"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "Let Us Answer Your questions?",
+        "content": "<p>Whether you are exploring therapy, evaluation, consultation, or simply learning more about our practice, we welcome you to reach out. Our team is happy to help you determine the next step that best fits your needs.</p><p><br/><br/><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#2b5275",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "#2b5275",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_Fxx4fb",
+    "video_M9HfYx",
+    "media_with_text_NMPcNw",
+    "rich_text_8TNfhi",
+    "images_with_text_scrolling_mNTVkt",
+    "press_PzngY7",
+    "rich_text_r34jmX",
+    "multi_column_pnrXRa",
+    "rich_text_tcTmH8",
+    "contact_LERJc4"
+  ]
+}

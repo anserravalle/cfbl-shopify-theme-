@@ -1,0 +1,124 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "collections": [
+          "all-services",
+          "ancillary-services",
+          "educational-training",
+          "groups",
+          "training-and-courses",
+          "workshops"
+        ],
+        "collections_per_row_mobile": "1",
+        "collections_per_row": 3,
+        "text_color": "#eed9c5",
+        "overlay_color": "#f6f3ed",
+        "overlay_opacity": 21
+      }
+    },
+    "featured_collection_YHw3fm": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "all-services",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Clinical Services",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_PznKhH": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "educational-programs",
+        "products": [
+          "workshops",
+          "groups",
+          "training-services"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Educational Services",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_eCJ8xD": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "ancillary-services",
+        "products": [
+          "consultation-services",
+          "groups",
+          "workshops"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_YHw3fm",
+    "featured_collection_PznKhH",
+    "featured_collection_eCJ8xD"
+  ]
+}

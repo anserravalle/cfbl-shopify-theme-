@@ -1,0 +1,140 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_9BnFgG": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h3>Center for Balanced Living offers Our wellness groups offer space for connection, insight, and growth through shared experiences guided by thoughtful clinical support.</h3><h3>Topics may evolve over time and may include trauma, creativity, values, emotional wellness, and other themes that support meaningful healing and reflection.</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_9BnFgG"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify://shop_images/supervision_2.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#2b5275",
+        "overlay_opacity": 65
+      }
+    },
+    "custom_liquid_em4KQE": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- ============================================\n     GROUPS PAGE: CURRENT GROUPS\n     ============================================ -->\n\n<section style=\"padding: 80px 20px; margin: 48px 0; background-color: #7a8c6e;\">\n  <div style=\"max-width: 1100px; margin: 0 auto; background-color: #f5f0ec; padding: 64px 40px;\">\n\n    <h2 style=\"font-size: 1.75rem; color: #3a342e; text-align: center; margin: 0 0 16px 0;\">Current Groups</h2>\n\n    <p style=\"font-size: 1.0625rem; line-height: 1.7; color: #4a443e; text-align: center; max-width: 720px; margin: 0 auto 56px auto;\">\n      Our groups are designed as intentional containers for healing, expression, and connection. Each is led by a clinician trained to hold space for the complexity of real growth.\n    </p>\n\n    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px;\">\n\n\n      <!-- CARD 1: ROOTED & RISING -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; border-top: 4px solid #7a8c6e; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 220px; background-color: #e8ede2; background-size: cover; background-position: center top; background-image: url('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/amandas_group.jpg?v=1779673189');\" data-image=\"rooted-and-rising\">\n        </div>\n        <div style=\"padding: 28px;\">\n          <p style=\"font-size: 0.75rem; color: #7a8c6e; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0; font-weight: 600;\">Art Therapy Group</p>\n          <h3 style=\"font-size: 1.375rem; color: #3a342e; margin: 0 0 6px 0; line-height: 1.25;\">Rooted &amp; Rising</h3>\n          <p style=\"font-size: 0.875rem; color: #6a635a; font-style: italic; margin: 0 0 16px 0;\">Led by Amanda</p>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a443e; margin: 0 0 20px 0;\">\n            A group built around art therapy techniques as a non-verbal entry point into creativity, emotional regulation, and trauma processing. For those who want a different way in: through making, not only through words.\n          </p>\n          <p style=\"font-size: 0.8125rem; color: #6a635a; margin: 0; border-top: 1px solid #e8dfd6; padding-top: 16px;\">\n            <strong style=\"color: #3a342e;\">Format:</strong> In-person / Virtual &nbsp;|&nbsp; <strong style=\"color: #3a342e;\">Frequency:</strong> Monthly\n          </p>\n        </div>\n      </div>\n\n\n      <!-- CARD 2: WRITE YOUR WAY TO HEALING -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; border-top: 4px solid #8b6f5c; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 220px; background-color: #efe6dc; background-size: cover; background-position: center; background-image: URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/drserravalleworkshop.png?v=1779553476');\" data-image=\"write-your-way-to-healing\">\n        </div>\n        <div style=\"padding: 28px;\">\n          <p style=\"font-size: 0.75rem; color: #8b6f5c; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0; font-weight: 600;\">Expressive Writing Group</p>\n          <h3 style=\"font-size: 1.375rem; color: #3a342e; margin: 0 0 6px 0; line-height: 1.25;\">Write Your Way to Healing</h3>\n          <p style=\"font-size: 0.875rem; color: #6a635a; font-style: italic; margin: 0 0 16px 0;\">Led by Dr. Niki</p>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a443e; margin: 0 0 20px 0;\">\n            A monthly gathering that uses guided writing techniques to support emotional processing and meaning-making. Grounded in the research on expressive writing as a clinical tool, this group offers a structured space to work with your own story.\n          </p>\n          <p style=\"font-size: 0.8125rem; color: #6a635a; margin: 0; border-top: 1px solid #e8dfd6; padding-top: 16px;\">\n            <strong style=\"color: #3a342e;\">Format:</strong> In-person / Virtual &nbsp;|&nbsp; <strong style=\"color: #3a342e;\">Frequency:</strong> Monthly\n          </p>\n        </div>\n      </div>\n\n\n      <!-- CARD 3: PET LOSS SUPPORT -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; border-top: 4px solid #8aa39a; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 220px; background-color: #e3eae6; background-size: cover; background-position: center; background-image: URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/petlosssupoort.png?v=1779673169')\" data-image=\"pet-loss-support\">\n        </div>\n        <div style=\"padding: 28px;\">\n          <p style=\"font-size: 0.75rem; color: #6e8a82; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0; font-weight: 600;\">Grief Support Group</p>\n          <h3 style=\"font-size: 1.375rem; color: #3a342e; margin: 0 0 6px 0; line-height: 1.25;\">Pet Loss Support Group</h3>\n          <p style=\"font-size: 0.875rem; color: #6a635a; font-style: italic; margin: 0 0 16px 0;\">Led by Dr. Niki</p>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a443e; margin: 0 0 20px 0;\">\n            A compassionate space for adults grieving the loss of a beloved pet. We honor this as the meaningful loss it is, offering connection, language, and ritual for a grief that is often quietly carried.\n          </p>\n          <p style=\"font-size: 0.8125rem; color: #6a635a; margin: 0; border-top: 1px solid #e8dfd6; padding-top: 16px;\">\n            <strong style=\"color: #3a342e;\">Format:</strong> In-person  &nbsp;|&nbsp; <strong style=\"color: #3a342e;\">Length:</strong> Ongoing\n          </p>\n        </div>\n      </div>\n\n\n    </div>\n\n\n    <!-- CTA UNDER THE GRID -->\n    <div style=\"text-align: center; margin-top: 56px;\">\n      <p style=\"font-size: 1rem; line-height: 1.65; color: #4a443e; max-width: 640px; margin: 0 auto 24px auto;\">\n        Not sure which group is the right fit? We offer brief consultations to help you find the group that matches your needs and stage of healing.\n      </p>\n      <a href=\"/pages/contact\" style=\"display: inline-block; background-color: #7a8c6e; color: #ffffff; padding: 14px 32px; text-decoration: none; font-size: 0.9375rem; letter-spacing: 0.05em;\">Request a Consultation</a>\n    </div>\n\n  </div>\n</section>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "17795817912f0b191b": {
+      "type": "apps",
+      "blocks": {
+        "cowlendar_booking_event_calendar_imyjCd": {
+          "type": "shopify://apps/cowlendar-booking/blocks/event-calendar/6d8b8f6a-9b3c-42b8-b2e6-a758c38d45bf",
+          "settings": {
+            "section_title": "",
+            "section_number": "event-calendar-1"
+          }
+        }
+      },
+      "block_order": [
+        "cowlendar_booking_event_calendar_imyjCd"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Share Your Interests",
+        "content": "<p>We welcome your input about the kinds of groups, workshops, guest speakers, and community events that would be most meaningful to you. Your feedback helps us build offerings that foster connection, learning, and support within our community.</p><p><strong>Contact Us at (302) 608-3780. </strong></p><p><em>We typically respond within 24 hours.</em></p><p>You may also complete our contact form, and a member of our team will be in touch.</p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "custom_liquid_em4KQE",
+    "17795817912f0b191b",
+    "contact_YJwAey"
+  ]
+}

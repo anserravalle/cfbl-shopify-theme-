@@ -1,0 +1,384 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "collections": [
+          "educational-programs"
+        ],
+        "collections_per_row_mobile": "1",
+        "collections_per_row": 2,
+        "text_color": "#ffffff",
+        "overlay_color": "#ece5e1",
+        "overlay_opacity": 30
+      }
+    },
+    "17764410118ac4e571": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fd9d855_nKj86H": {
+          "type": "ai_gen_block_fd9d855",
+          "name": "Hero heading",
+          "settings": {
+            "heading": "Welcome to our Educational Programs",
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "heading_size_mobile": 36,
+            "heading_size_desktop": 64,
+            "font_weight": "700",
+            "line_height": 1.2,
+            "text_color": "#2b5275",
+            "background_color": "#ece5e1",
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "padding_horizontal": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fd9d855_nKj86H"
+      ],
+      "settings": {}
+    },
+    "image_with_text_overlay_PCWzY7": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_6rQCnj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our educational programs offer opportunities for learning, reflection, and skill development in supportive group settings. These programs are designed to help participants build practical tools for emotional well-being, deepen self-understanding, and engage with ideas that support personal and professional growth.</p><p>Offerings include therapeutic groups, experiential workshops, and educational trainings that draw on evidence-informed psychological principles. Programs are facilitated by experienced clinicians and are structured to encourage thoughtful discussion, skill building, and meaningful insight.</p><p>Whether you are seeking a supportive group experience, a focused workshop, or professional training, our programs provide a space for learning, connection, and growth.</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_6rQCnj"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_jba9Yj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JTcNVe": {
+          "type": "heading",
+          "settings": {
+            "text": "Explore Our Offerings",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_JTcNVe"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ece5e1",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_KEBemH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eTC4gz": {
+          "type": "heading",
+          "settings": {
+            "text": "Groups",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_VYWHF3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Supportive, clinician-led spaces for reflection, connection, and growth. </p>"
+          }
+        },
+        "button_NxXjXX": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Explore Current Groups",
+            "url": "shopify://pages/wellness-groups",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_eTC4gz",
+        "richtext_VYWHF3",
+        "button_NxXjXX"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_nhQ3qG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AnqWPQ": {
+          "type": "heading",
+          "settings": {
+            "text": "Workshops",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_drEW6M": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Thoughtful educational experiences designed to offer insight, practical tools, and meaningful support.</p>"
+          }
+        },
+        "button_6KtG7V": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "View Workshops",
+            "url": "shopify://products/workshops",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_AnqWPQ",
+        "richtext_drEW6M",
+        "button_6KtG7V"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#93ced7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_7pKwzz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_e3Ktcm": {
+          "type": "heading",
+          "settings": {
+            "text": "Professional Trainings",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_3JYeWh": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Training opportunities for clinicians and professionals seeking greater depth in trauma-informed practice.</p>"
+          }
+        },
+        "button_miaQfp": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://products/professional-trainings-for-clinicians",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_e3Ktcm",
+        "richtext_3JYeWh",
+        "button_miaQfp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#73beac",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_hDirtd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XdFGJn": {
+          "type": "heading",
+          "settings": {
+            "text": "Current Offerings",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_7zmHnB": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>See what is currently available, including upcoming programs, courses, and special events.</p>"
+          }
+        },
+        "button_q84XYz": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "View Current Offerings",
+            "url": "shopify://products/training-services",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_XdFGJn",
+        "richtext_7zmHnB",
+        "button_q84XYz"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_9R6MKQ": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Share your Interest",
+        "content": "<p><br/>Tell us what kinds of groups, workshops, speakers, or community offerings you would like to see.<br/></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "rich_text_M8tFK8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xYrgWE": {
+          "type": "heading",
+          "settings": {
+            "text": "Event Calendar",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_rW3VFA": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Browse upcoming events, workshops, groups, guest speakers, and community offerings.</p>"
+          }
+        },
+        "button_Km8mhE": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "View Calendar",
+            "url": "shopify://pages/event-calendar",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_xYrgWE",
+        "richtext_rW3VFA",
+        "button_Km8mhE"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17764410118ac4e571",
+    "image_with_text_overlay_PCWzY7",
+    "rich_text_jba9Yj",
+    "rich_text_KEBemH",
+    "rich_text_nhQ3qG",
+    "rich_text_7pKwzz",
+    "rich_text_hDirtd",
+    "contact_9R6MKQ",
+    "rich_text_M8tFK8"
+  ]
+}

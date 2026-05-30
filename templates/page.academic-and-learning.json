@@ -1,0 +1,131 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "100ch"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>Academic and learning evaluations are designed to provide diagnostic clarity when there are questions about reading, writing, math, memory, processing speed, attention, executive functioning, language, or school performance.</h5><h5>At Center for Balanced Living, learning evaluations are completed with care and attention to the whole student. The goal is not simply to identify whether a learning disorder is present, but to understand how cognitive, academic, emotional, behavioral, developmental, and environmental factors may be affecting school performance and daily learning demands.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "custom_liquid_iNUXi6": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section class=\"learning-eval-section\">\n  <div class=\"learning-eval-container\">\n    <div class=\"learning-eval-intro\">\n      <p class=\"learning-eval-eyebrow\">Academic and Learning Evaluations</p>\n      <h2>Understanding learning, school performance, and the supports that may help</h2>\n      <p>\n        Academic and learning evaluations are designed to clarify patterns in reading, writing, math, attention, processing speed, executive functioning, confidence, and school performance.\n      </p>\n    </div>\n    <div class=\"learning-eval-grid\">\n      <div class=\"learning-eval-card\">\n        <h3>What this type of evaluation may help clarify</h3>\n        <p>\n          This evaluation may be appropriate when there are questions related to learning disorders, reading difficulties, dyslexia, writing challenges, math concerns, processing speed, working memory, attention, executive functioning, language-based learning needs, academic fluency, comprehension, or diagnostic clarification.\n        </p>\n        <p>\n          It may also be useful when a student appears capable but is underperforming, working much harder than peers, avoiding schoolwork, losing confidence, or struggling to keep up despite support.\n        </p>\n      </div>\n      <div class=\"learning-eval-card\">\n        <h3>Who may benefit</h3>\n        <p>\n          Children, teens, college students, and young adults may benefit from an academic and learning evaluation when there are concerns about reading, writing, math, test performance, homework completion, organization, academic confidence, school stress, or inconsistent achievement.\n        </p>\n        <p>\n          Evaluations may also be helpful for parents, schools, physicians, tutors, therapists, or other referral sources seeking diagnostic clarity and individualized recommendations.\n        </p>\n      </div>\n    </div>\n  </div>\n</section>\n<style>\n  .learning-eval-section {\n    width: 100%;\n    padding: 56px 0;\n    background: linear-gradient(135deg, #EAE2D0 0%, #ece5e1 100%);\n  }\n  .learning-eval-container {\n    max-width: 1120px;\n    margin: 0 auto;\n    padding: 0 20px;\n  }\n  .learning-eval-intro {\n    max-width: 800px;\n    margin: 0 auto 34px;\n    text-align: center;\n  }\n  .learning-eval-eyebrow {\n    margin: 0 0 10px;\n    font-family: Montserrat, sans-serif;\n    font-size: 13px;\n    line-height: 1.4;\n    letter-spacing: 0.14em;\n    text-transform: uppercase;\n    color: #b89370;\n    font-weight: 600;\n  }\n  .learning-eval-intro h2 {\n    margin: 0 0 14px;\n    font-family: 'Spectral SC', serif;\n    font-size: 40px;\n    line-height: 1.16;\n    font-weight: 300;\n    color: #1d486f;\n  }\n  .learning-eval-intro p {\n    margin: 0;\n    font-family: Montserrat, sans-serif;\n    font-size: 16px;\n    line-height: 1.8;\n    color: #2B5275;\n  }\n  .learning-eval-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    gap: 24px;\n  }\n  .learning-eval-card {\n    position: relative;\n    overflow: hidden;\n    background: #FFFFFF;\n    border: 1px solid rgba(29, 72, 111, 0.16);\n    border-radius: 26px;\n    padding: 38px;\n    box-shadow: 0 14px 34px rgba(29, 72, 111, 0.10);\n  }\n  .learning-eval-card::before {\n  content: \"\";\n  position: absolute;\n  top: -70px;\n  right: -70px;\n  width: 170px;\n  height: 170px;\n  border-radius: 50%;\n  background-color: #b8c9bc;\n}\n  .learning-eval-card h3 {\n    margin: 0 0 16px;\n    font-family: 'Spectral SC', serif;\n    font-size: 31px;\n    line-height: 1.18;\n    font-weight: 300;\n    color: #1d486f;\n    position: relative;\n    z-index: 1;\n  }\n  .learning-eval-card p {\n    margin: 0 0 14px;\n    font-family: Montserrat, sans-serif;\n    font-size: 16px;\n    line-height: 1.82;\n    color: #2B5275;\n    position: relative;\n    z-index: 1;\n  }\n  .learning-eval-card p:last-child {\n    margin-bottom: 0;\n  }\n  @media screen and (min-width: 850px) {\n    .learning-eval-grid {\n      grid-template-columns: repeat(2, 1fr);\n      align-items: stretch;\n    }\n  }\n  @media screen and (max-width: 700px) {\n    .learning-eval-section {\n      padding: 38px 0;\n    }\n    .learning-eval-intro h2 {\n      font-size: 31px;\n    }\n    .learning-eval-card {\n      padding: 30px 24px;\n      border-radius: 22px;\n    }\n    .learning-eval-card h3 {\n      font-size: 26px;\n    }\n    .learning-eval-card p {\n      font-size: 15px;\n      line-height: 1.75;\n    }\n  }\n</style>",
+        "background": "#b8c9bc",
+        "background_gradient": "",
+        "text_color": "#3d5a52"
+      }
+    },
+    "custom_liquid_aTct6W": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section class=\"learning-expect-section\">\n  <div class=\"learning-expect-container\">\n\n    <div class=\"learning-expect-card\">\n      <p class=\"learning-expect-eyebrow\">Academic and Learning Evaluations</p>\n      <h2>What to expect</h2>\n\n      <div class=\"learning-expect-list\">\n\n        <div class=\"learning-expect-item\">\n          <span class=\"learning-expect-dot\"></span>\n          <p>A clinical interview focused on current academic concerns, developmental history, school functioning, strengths, and evaluation goals.</p>\n        </div>\n\n        <div class=\"learning-expect-item\">\n          <span class=\"learning-expect-dot\"></span>\n          <p>Review of relevant records, which may include school records, prior evaluations, intervention history, report cards, standardized testing, medical information, or collateral information when appropriate.</p>\n        </div>\n\n        <div class=\"learning-expect-item\">\n          <span class=\"learning-expect-dot\"></span>\n          <p>Standardized assessment of cognitive functioning, academic achievement, attention, executive functioning, emotional and behavioral functioning, and other areas as clinically indicated.</p>\n        </div>\n\n        <div class=\"learning-expect-item\">\n          <span class=\"learning-expect-dot\"></span>\n          <p>A feedback session and integrated written report with diagnostic impressions, individualized recommendations, and next steps for school planning, treatment, accommodations, or academic support.</p>\n        </div>\n\n      </div>\n    </div>\n\n  </div>\n</section>\n\n<style>\n  .learning-expect-section {\n    width: 100%;\n    padding: 46px 0;\n    background-color: transparent;\n  }\n\n  .learning-expect-container {\n    max-width: 980px;\n    margin: 0 auto;\n    padding: 0 20px;\n  }\n\n  .learning-expect-card {\n    background: linear-gradient(135deg, #FFFFFF 0%, #F6F3ED 100%);\n    border: 1px solid rgba(43, 82, 117, 0.16);\n    border-radius: 24px;\n    padding: 38px;\n    box-shadow: 0 14px 34px rgba(43, 82, 117, 0.10);\n  }\n\n  .learning-expect-eyebrow {\n    margin: 0 0 10px;\n    font-family: Montserrat, sans-serif;\n    font-size: 13px;\n    line-height: 1.4;\n    letter-spacing: 0.12em;\n    text-transform: uppercase;\n    color: #9D654E;\n    font-weight: 600;\n  }\n\n  .learning-expect-card h2 {\n    margin: 0 0 24px;\n    font-family: 'Spectral SC', serif;\n    font-size: 38px;\n    line-height: 1.15;\n    font-weight: 300;\n    color: #2B5275;\n  }\n\n  .learning-expect-list {\n    display: flex;\n    flex-direction: column;\n    gap: 16px;\n  }\n\n  .learning-expect-item {\n    display: grid;\n    grid-template-columns: 12px 1fr;\n    gap: 14px;\n    align-items: start;\n  }\n\n  .learning-expect-dot {\n    width: 8px;\n    height: 8px;\n    margin-top: 11px;\n    border-radius: 50%;\n    background-color: #6f8f7a;\n    display: block;\n  }\n\n  .learning-expect-item p {\n    margin: 0;\n    font-family: Montserrat, sans-serif;\n    font-size: 16px;\n    line-height: 1.8;\n    color: #3D2D29;\n  }\n\n  @media screen and (max-width: 600px) {\n    .learning-expect-section {\n      padding: 32px 0;\n    }\n\n    .learning-expect-card {\n      padding: 28px 24px;\n      border-radius: 20px;\n    }\n\n    .learning-expect-card h2 {\n      font-size: 31px;\n    }\n\n    .learning-expect-item p {\n      font-size: 15px;\n      line-height: 1.75;\n    }\n  }\n</style>",
+        "background": "#6f8f7a",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "disabled": true,
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Begin Here",
+        "content": "<p>If your child, teen, or young adult is struggling academically despite effort, an academic and learning evaluation can help clarify what may be getting in the way. These evaluations are especially helpful when concerns involve reading, writing, math, attention, processing speed, working memory, comprehension, school avoidance, inconsistent performance, or uncertainty about the right supports.</p><p> <em>We usually respond within 24 hours. </em></p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p><p></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#2b5275",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "#2b5275",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "custom_liquid_iNUXi6",
+    "custom_liquid_aTct6W",
+    "contact_YJwAey"
+  ]
+}

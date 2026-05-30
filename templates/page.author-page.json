@@ -1,0 +1,206 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "two_col_layout_ptFFW7": {
+      "type": "two-col-layout",
+      "settings": {
+        "image": "{{ page.metafields.custom.author_headshot.value }}",
+        "subheading": "",
+        "title": "{{ page.metafields.custom.author_display_name.value }}",
+        "rich_text": "<p>{{ page.metafields.custom.author_bio | metafield_tag }}</p>",
+        "image_position": "right",
+        "display_mode": "all",
+        "section_background": "",
+        "section_text_color": "",
+        "button_text": "",
+        "button_url": "",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_b6VKHY": {
+      "type": "rich-text",
+      "blocks": {
+        "button_zdyG3B": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Explore Services",
+            "url": "shopify://pages/services",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_zdyG3B"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blog_posts_UHmRbi": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_QPY8qG": {
+          "type": "blog",
+          "settings": {
+            "blog": "balanced-living-blog",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_QPY8qG"
+      ],
+      "name": "Blog posts",
+      "settings": {
+        "full_width": false,
+        "show_excerpt": false,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "Dr. Serravalle's Blog",
+        "title": "Make It Make Sense",
+        "content": "<p><br/>Clinical reflections, thoughtful writing, and practical insight on trauma, healing, and psychological growth.</p><p><strong>Explore articles, reflections, and clinical insights from Center for Balanced Living.</strong></p><p></p>",
+        "link_url": "shopify://blogs/balanced-living-blog",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_3dqzWM": {
+      "type": "rich-text",
+      "blocks": {
+        "button_PzMPfR": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Read New Posts First",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLScIURJMuGKRUs3zgW29BqGDqv33tr6nsChovuc__XOkCvFVfg/viewform?usp=publish-editor",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_PzMPfR"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blog_posts_eCbfFp": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_c7EAaP": {
+          "type": "blog",
+          "settings": {
+            "blog": "newsletter",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_c7EAaP"
+      ],
+      "name": "Blog posts",
+      "settings": {
+        "full_width": false,
+        "show_excerpt": false,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "CFBL Community Newletter",
+        "title": "At the Center",
+        "content": "<p>Updates, offerings, workshops, and community news from Center for Balanced Living.</p>",
+        "link_url": "shopify://pages/newsletters",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_cWDWV4": {
+      "type": "rich-text",
+      "blocks": {
+        "button_pP8Eim": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Subscribe To Our Newsletter",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSe3LxJJIZJjBHzzrd3xZHAh6StHxAM0oeuX0Barn7JXwcymGg/viewform?usp=publish-editor",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_pP8Eim"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#9cbea9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "two_col_layout_ptFFW7",
+    "main",
+    "rich_text_b6VKHY",
+    "blog_posts_UHmRbi",
+    "rich_text_3dqzWM",
+    "blog_posts_eCbfFp",
+    "rich_text_cWDWV4"
+  ]
+}

@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "collection_title_size": "h0",
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "featured_product": "",
+        "featured_product_heading": "",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_mjBmNK": {
+      "type": "rich-text",
+      "blocks": {
+        "button_rQfCkW": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Contact Us to Learn More",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "richtext_GWXXHX": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h1>Our Services</h1><p>Center for Balanced Living offers integrative therapy, specialized psychological evaluations, professional supervision, clinical consultation, and educational programming. Our services are grounded in current research, trauma-informed care, and a holistic understanding of human development. Across all offerings, we emphasize clinical rigor, thoughtful conceptualization, ethical practice, and sustainable growth for individuals, families, and professionals.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "button_rQfCkW",
+        "richtext_GWXXHX"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "featured_collection_LWJAVY": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "frontpage",
+        "products": [
+          "therapy",
+          "psychological-evaluations",
+          "supervision-services",
+          "consultation-services"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Our Clinical Services",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "sidebar",
+        "show_sort_by": false,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": false,
+        "open_first_filter_group": false
+      }
+    },
+    "featured_collection_N36FBY": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "educational-programs",
+        "products": [
+          "training-services",
+          "workshops",
+          "groups"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Educational Programs",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_apqtMP": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "training-and-courses",
+        "products": [
+          "supervision-services",
+          "workshops",
+          "training-services"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Training and Courses",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_BXyYXq": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "workshops",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Workshops",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "rich_text_ycr6HQ": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_RE9D7q": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h2>Contact Us</h2><p>For immediate service please call our office.</p><h3>(302) 608-3780</h3><p>Alternatively, our contact form is available for your convenience. We typically respond within 24-48 hours.</p>"
+          }
+        },
+        "liquid_EKRFgi": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-RsFh4H\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_RE9D7q",
+        "liquid_EKRFgi"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ddeff2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "rich_text_mjBmNK",
+    "featured_collection_LWJAVY",
+    "main",
+    "featured_collection_N36FBY",
+    "featured_collection_apqtMP",
+    "featured_collection_BXyYXq",
+    "rich_text_ycr6HQ"
+  ]
+}

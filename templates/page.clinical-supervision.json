@@ -1,0 +1,384 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "100ch"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Supervision offers a space to deepen clinical skill, strengthen case conceptualization, and support thoughtful professional growth. </h4><h4>At Center for Balanced Living, supervision is grounded in reflection, clinical integrity, and the development of more intentional, effective work with clients.</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_DaQDyr": {
+      "type": "rich-text",
+      "blocks": {
+        "button_cd8fMb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Request Information About Supervision",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_cd8fMb"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_Qya8dM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GiBh9t": {
+          "type": "heading",
+          "settings": {
+            "text": "Who Supervision May Support",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_C4cfCH": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Supervision may be helpful for clinicians seeking support with licensure-related development, clinical skill building, trauma-informed practice, complex case consultation, and professional identity. It can provide a space for both practical guidance and deeper reflection on the work.</p><p><strong>Supervision may support growth in areas such as:</strong></p>"
+          }
+        },
+        "liquid_tcQb8w": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<ul class=\"service-list\">\n  <li>Case conceptualization</li>\n  <li>Trauma-informed clinical work</li>\n  <li>Ethical and professional decision-making</li>\n  <li>Clinical confidence and skill development</li>\n  <li>Reflective practice and self-awareness</li>\n  <li>Working with complex presentations</li>\n  <li>Professional identity development</li>\n  <li>Licensure-related support</li>\n</ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GiBh9t",
+        "richtext_C4cfCH",
+        "liquid_tcQb8w"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#9cbea9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_iqJ9kj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qpFQwy": {
+          "type": "heading",
+          "settings": {
+            "text": "Dr. Serravalle's Approach to Supervision",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YPUUga": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Supervision is more than oversight. It is a collaborative space for reflection, learning, and professional development. The process is designed to support developing clinicians in building competence, deepening insight, and approaching their work with greater clarity, confidence, and intention.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpFQwy",
+        "richtext_YPUUga"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BCUGzw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vwcczb": {
+          "type": "heading",
+          "settings": {
+            "text": "Supervision Approaches",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_dyBmGT": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Supervision is tailored to the clinician’s level of training, goals, and areas of focus. Sessions may include discussion of clinical cases, diagnostic and treatment considerations, ethical questions, professional growth, and the development of a more grounded and intentional therapeutic approach.</p>"
+          }
+        },
+        "button_EQPft9": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More About Our Credentials",
+            "url": "shopify://pages/credentials",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vwcczb",
+        "richtext_dyBmGT",
+        "button_EQPft9"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#e5f3f6",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "17795820788b315778": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_018fd06_DKMJeE": {
+          "type": "ai_gen_block_018fd06",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding": 40,
+            "layout_bg_color": "#98b9d7",
+            "min_height": 500,
+            "vertical_alignment": "flex-start",
+            "horizontal_alignment": "flex-start",
+            "mobile_spacing": 20,
+            "image": "shopify://shop_images/black_suit.png",
+            "image_width": 60,
+            "image_aspect_ratio": "1/1",
+            "image_shape": "square",
+            "image_border_radius": 25,
+            "image_z_index": 2,
+            "text_box_position": "bottom-right",
+            "text_box_offset_horizontal": 10,
+            "text_box_offset_vertical": 10,
+            "text_box_width": 40,
+            "text_box_padding": 30,
+            "text_box_shape": "rounded",
+            "text_box_border_radius": 15,
+            "text_box_bg_color": "#af855d",
+            "text_box_z_index": 2,
+            "text_box_shadow": true,
+            "text_box_shadow_y": 8,
+            "text_box_shadow_blur": 20,
+            "text_box_shadow_opacity": 1,
+            "heading": "<p>Meet Dr. Serravalle</p>",
+            "text": "<p>Training is how clinical knowledge moves from one clinician to the next. I teach because the best of what I learned came from clinicians who showed me how they thought, not just what to do. That is the kind of training I try to offer now.</p>",
+            "button_text": "",
+            "button_link": "",
+            "heading_font": "archivo_narrow_n4",
+            "heading_size": 24,
+            "heading_color": "#ffffff",
+            "heading_line_height": 1,
+            "heading_spacing": 0,
+            "text_font": "sans_serif_n4",
+            "text_size": 16,
+            "text_color": "#ffffff",
+            "text_line_height": 1.3,
+            "text_alignment": "left",
+            "button_spacing": 20,
+            "button_padding_vertical": 5,
+            "button_padding_horizontal": 10,
+            "button_text_size": 12,
+            "button_border_radius": 4,
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_hover_bg_color": "#333333",
+            "button_hover_text_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_018fd06_DKMJeE"
+      ],
+      "settings": {}
+    },
+    "two_col_layout_A9FUKx": {
+      "type": "two-col-layout",
+      "name": "Two Column Layout",
+      "settings": {
+        "subheading": "",
+        "title": "What to Expect",
+        "rich_text": "<p>Supervision is tailored to the clinician’s level of training, goals, and areas of focus. Sessions may include discussion of clinical cases, diagnostic and treatment considerations, ethical questions, professional growth, and the development of a more grounded and intentional therapeutic approach. They can be held in person, virtually, individually or in group formats. </p>",
+        "image_position": "left",
+        "display_mode": "all",
+        "section_background": "",
+        "section_text_color": "",
+        "button_text": "",
+        "button_url": "",
+        "button_background": "#2b5275",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Supervision Matters",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Strong supervision helps clinicians grow not only in knowledge and skill, but also in their capacity for thoughtful, ethical, and attuned clinical work. It creates space to think more deeply, respond more effectively, and continue developing as a professional.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Begin Here",
+        "content": "<p>Whether you are seeking supervision for licensure, consultation around clinical work, or support in your professional development, we welcome you to reach out to discuss fit and next steps.<br/><br/>Contact our office to learn more about supervision and determine whether this is the right fit for your goals.</p><p><strong>Schedule a free consultation call at (302) 608-3780. </strong><em>We typically respond within 24 hours.</em></p><p>You may also complete our contact form, and a member of our team will be in touch.</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "rich_text_DaQDyr",
+    "rich_text_Qya8dM",
+    "rich_text_iqJ9kj",
+    "rich_text_BCUGzw",
+    "17795820788b315778",
+    "two_col_layout_A9FUKx",
+    "rich_text_LJLekq",
+    "contact_YJwAey"
+  ]
+}

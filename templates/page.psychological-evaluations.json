@@ -1,0 +1,318 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "p {font-size: 28px;}"
+      ],
+      "settings": {
+        "content_width": "120ch"
+      }
+    },
+    "image_with_text_overlay_6Edc39": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_ApWWD9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>Psychological evaluations at Center for Balanced Living are designed to provide thoughtful, comprehensive insight into emotional, behavioral, cognitive, and personality functioning. </h2><h2>Evaluations may help clarify diagnoses, identify strengths and challenges, inform treatment planning, support academic or workplace accommodations, and provide a deeper understanding of an individual’s functioning across settings. </h2><h2>Our approach emphasizes clinical depth, diagnostic clarity, and individualized recommendations grounded in evidence-based assessment practices.</h2>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_ApWWD9"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f6f3ed",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "two_col_layout_A9FUKx": {
+      "type": "two-col-layout",
+      "disabled": true,
+      "name": "Two Column Layout",
+      "settings": {
+        "image": "shopify://shop_images/not-game-puzzles-or-game-blocks-more-like-psychological-assessment.png",
+        "subheading": "",
+        "title": "What to Expect",
+        "rich_text": "<p>The evaluation process typically includes an initial consultation, record review when relevant, testing sessions, scoring and interpretation, and a feedback appointment to review results. Each evaluation is tailored to the referral question and may vary depending on age, presenting concerns, and the scope of the assessment.</p>",
+        "image_position": "left",
+        "display_mode": "all",
+        "section_background": "",
+        "section_text_color": "",
+        "button_text": "",
+        "button_url": "",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "tabs_nmw3cm": {
+      "type": "tabs",
+      "blocks": {
+        "tab_pkig78": {
+          "type": "tab",
+          "settings": {
+            "title": "AUTISM SPECTRUM",
+            "content": "<p>These evaluations help clarify questions related to autism spectrum presentation, including social communication differences, sensory experiences, repetitive patterns, masking, and developmental history. The goal is to provide a thoughtful and comprehensive understanding of the individual’s profile.</p><h4><a href=\"/pages/autism\" target=\"_blank\" title=\"Autism Evaluations for Diagnostic Clarity and Deeper Understanding\"><strong>Learn More Here</strong></a></h4>",
+            "page": ""
+          }
+        },
+        "tab_fchYWT": {
+          "type": "tab",
+          "settings": {
+            "title": "PERSONALITY AND EMOTIONAL FUNCTIONING",
+            "content": "<p>These evaluations help clarify patterns related to mood, anxiety, personality functioning, coping, emotional regulation, and interpersonal style. They can be useful when concerns are complex, longstanding, or difficult to fully understand through conversation alone.</p><h4><a href=\"/pages/personality-and-emotion-and-functioning\" target=\"_blank\" title=\"Personality and Emotion and Functioning\">Learn More Here</a></h4>",
+            "page": "personality-and-emotion-and-functioning"
+          }
+        },
+        "tab_a48zQz": {
+          "type": "tab",
+          "settings": {
+            "title": "ATTENTION AND EXECUTIVE FUNCTIONING",
+            "content": "<p>Evaluations in this area help clarify concerns related to attention, impulsivity, organization, working memory, task initiation, and self-regulation. They can support understanding of ADHD and related executive functioning difficulties across school, work, and daily life.</p><h4><a href=\"/pages/adhd-evaluations\" target=\"_blank\" title=\"ADHD and Executive Functioning Evaluations\">Learn More Here</a></h4>",
+            "page": "adhd-evaluations"
+          }
+        },
+        "tab_PJrCt6": {
+          "type": "tab",
+          "settings": {
+            "title": "ACADEMIC AND LEARNING CONCERNS",
+            "content": "<p>Evaluations in this area explore concerns related to reading, writing, math, academic performance, learning differences, and the cognitive processes that may affect school functioning. They can help also identify strengths, challenges, and recommendations for support.</p><h4><a href=\"/pages/adhd-evaluations\" target=\"_blank\" title=\"ADHD and Executive Functioning Evaluations\">Learn More Here</a></h4>",
+            "page": "academic-and-learning-concerns"
+          }
+        },
+        "tab_jpctwN": {
+          "type": "tab",
+          "settings": {
+            "title": "DIAGNOSTIC CLARIFICATION",
+            "content": "<p>Some evaluations are designed to answer broader or more complex diagnostic questions when there is uncertainty about the nature of the concerns. The goal is to provide greater clarity, more accurate understanding, and practical recommendations for next steps.</p><h4><a href=\"/pages/diagnostic-clarification-evaluations\" target=\"_blank\" title=\"Diagnostic Clarification Evaluations\">Learn More Here</a></h4>",
+            "page": "diagnostic-clarification-evaluations"
+          }
+        }
+      },
+      "block_order": [
+        "tab_pkig78",
+        "tab_fchYWT",
+        "tab_a48zQz",
+        "tab_PJrCt6",
+        "tab_jpctwN"
+      ],
+      "name": "Tabs",
+      "settings": {
+        "blockId": "",
+        "full_width": false,
+        "content_size": "medium",
+        "subheading": "Types of Evaluations",
+        "title": "Areas of Evaluations",
+        "first_tab_open": false,
+        "background": "#93ced7",
+        "background_gradient": "linear-gradient(270deg, rgba(229, 243, 246, 1), rgba(147, 206, 215, 1) 100%)",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Why Clarity Matters",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>For many individuals and families, the evaluation process provides language for experiences that have felt confusing, frustrating, or difficult to explain. Greater clarity can support treatment planning, educational advocacy, self-understanding, and more effective support across settings.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Begin Here",
+        "content": "<p>Whether you are exploring therapy, psychological evaluation, supervision, consultation, or educational offerings, we welcome you to reach out. Our team can help guide you to the service or next step that best fits your needs.<strong><br/></strong><br/>Contact our office to discuss your concerns and learn more about the evaluation process.</p><p> <em>We usually respond within 24 hours. </em></p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p><p></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "press_jinxiQ": {
+      "type": "press",
+      "blocks": {
+        "quote_qHJTKx": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Everything was very quick and efficient in getting the appointments scheduled and there was a decent turn-around time for getting my results back. I also feel like I understood the results because of the feedback session.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_GKxFyx": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "I felt very seen. Dr. Serravale and staff were very knowledgeable, passionate, and showed immense empathy to me when I was having a bad time. I am extremely grateful to have worked with her through the testing and assessment process.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_jDj8i6": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "The Center for Balanced living helped give us the answers we needed to help get the right support for our daughter. I am so glad we did the testing. Without it we would have never know how to move forward.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_yKPYcY": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Dr Seravalle is wonderful! Her attention to detail and understanding of testing information is wonderful. I appreciated that she would let the testing and scores be her guide in helping to determine, what, if any, additional testing was recommended. We couldn't be happier with the invaluable information she helped us to gather.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_TjpQcY": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "All our questions were answered whenever asked, and we felt like our evaluations were very thorough and gave us a true picture of our child's neurological profile.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_3tbTgf": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Dr. Serravalle was very patient and accommodating with my son.  She took her time and explained every step of the way.",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "quote_qHJTKx",
+        "quote_GKxFyx",
+        "quote_jDj8i6",
+        "quote_yKPYcY",
+        "quote_TjpQcY",
+        "quote_3tbTgf"
+      ],
+      "name": "Press",
+      "settings": {
+        "title": "What Our Clients Have Told Us...",
+        "full_width": false,
+        "content_size": "large",
+        "background": "#6589a9",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_6Edc39",
+    "two_col_layout_A9FUKx",
+    "tabs_nmw3cm",
+    "rich_text_LJLekq",
+    "press_jinxiQ",
+    "contact_YJwAey"
+  ]
+}

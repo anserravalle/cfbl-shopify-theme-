@@ -10,9 +10,17 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "main-search",
       "settings": {
-        "content_width": "80ch"
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "sidebar",
+        "show_sort_by": false,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": false,
+        "open_first_filter_group": false
       }
     }
   },

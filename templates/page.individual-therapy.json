@@ -1,0 +1,211 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "{font-size: 28px;}",
+        " {position-area: <center-align;}"
+      ],
+      "settings": {
+        "content_width": "100%"
+      }
+    },
+    "rich_text_DaQDyr": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_Vc7zma": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- ============================================\n     INDIVIDUAL THERAPY: AREAS OF CARE\n     =========================================== -->\n\n<section style=\"padding: 80px 20px; margin: 48px 0; background-color: #d9e3d4 ; border-top: 1px solid #d4c5b9; border-bottom: 1px solid #d4c5b9;\">\n  \n<div style=\"max-width: 1320px; margin-left: auto; margin-right: auto; width: 100%; box-sizing: border-box;\">\n\n    <p style=\"font-size: 0.75rem; color: #8b6f5c; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 14px 0; text-align: center; font-weight: 600;\">Individual Therapy</p>\n\n    <h2 style=\"font-size: 2rem; color: #3a342e; text-align: center; margin: 0 0 20px 0; line-height: 1.2;\">Areas of Care</h2>\n\n    <p style=\"font-size: 1.0625rem; line-height: 1.7; color: #4a443e; text-align: center; max-width: 660px; margin: 0 auto 56px auto;\">\n      The presentations we most often work with. Each one shows up differently in different people. The work is shaped to you.\n    </p>\n<div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 280px)); gap: 24px; justify-content: center;\">\n\n      <!-- CARD 1: TRAUMA AND TRAUMATIC STRESS - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/nature2.avif?v=1779761361');\" data-image=\"trauma\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Trauma and Traumatic Stress</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 2: ANXIETY AND CHRONIC WORRY - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/natrure_1212.avif?v=1779762293');\" data-image=\"anxiety\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Anxiety and Chronic Worry</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 3: DEPRESSION AND MOOD CHANGES - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/nature_10.avif?v=1779761467');\" data-image=\"depression\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Depression and Mood Changes</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 4: GRIEF AND LOSS - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/nature_11.avif?v=1779761467');\" data-image=\"grief\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Grief and Loss</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 5: RELATIONSHIP AND FAMILY STRESS - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/nature_4.avif?v=1779761361');\" data-image=\"relationships\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Relationship and Family Stress</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 6: LIFE TRANSITIONS - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/ture_9.avif?v=1779761361');\" data-image=\"life-transitions\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Life Transitions</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 7: IDENTITY DEVELOPMENT - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/re_5.avif?v=1779761361');\" data-image=\"identity\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Identity Development</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 8: EMOTIONAL REGULATION - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/nature_6.avif?v=1779761361');\" data-image=\"emotional-regulation\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Emotional Regulation Difficulties</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 9: PARENTING SUPPORT - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/ure_3.avif?v=1779761360');\" data-image=\"parenting\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Parenting Support</h3>\n        </div>\n      </div>\n\n\n      <!-- CARD 10: STRESS AND BURNOUT - replace 'none' with your URL -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 160px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/nature_1.jpg?v=1779761349');\" data-image=\"burnout\">\n        </div>\n        <div style=\"padding: 20px 22px; min-height: 84px;\">\n          <h3 style=\"font-size: 1.0625rem; color: #3a342e; margin: 0; line-height: 1.3;\">Stress and Burnout</h3>\n        </div>\n      </div>\n\n\n    </div>\n\n  </div>\n</section>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BCUGzw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vwcczb": {
+          "type": "heading",
+          "settings": {
+            "text": "Therapeutic Modalities",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_dyBmGT": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Our clinicians draw from evidence-based and insight-oriented approaches based on each client’s needs, goals, and developmental stage. Depending on the presenting concerns, therapy may include work focused on emotional insight, nervous system regulation, coping skills, trauma processing, relationship patterns, or identity development.</p>"
+          }
+        },
+        "button_EQPft9": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More About Our Credentials",
+            "url": "shopify://pages/credentials",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vwcczb",
+        "richtext_dyBmGT",
+        "button_EQPft9"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#e5f3f6",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "two_col_layout_A9FUKx": {
+      "type": "two-col-layout",
+      "name": "Two Column Layout",
+      "settings": {
+        "image": "shopify://shop_images/fpo-therapy.jpg",
+        "subheading": "",
+        "title": "What to Expect",
+        "rich_text": "<p>The therapy process begins with getting to know you, understanding your concerns, and identifying what kind of support feels like the right fit. Early sessions focus on building context, clarifying goals, and creating a foundation of safety and trust. From there, treatment is shaped collaboratively, with attention to both immediate needs and longer-term growth.</p>",
+        "image_position": "left",
+        "display_mode": "all",
+        "section_background": "",
+        "section_text_color": "",
+        "button_text": "",
+        "button_url": "",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "settings": {
+            "text": "Finding the Right Fit",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>We know that reaching out for therapy can feel vulnerable. You do not need to have everything figured out before contacting us. If you are unsure where to start, our team can help you think through what type of service, therapist, or level of support makes the most sense for your needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#cdd6dd",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Begin Here",
+        "content": "<p>You do not need to have the right words to reach out. If something on this page resonated, that is enough. </p><p>Our team can help you determine what kind of support feels like the best fit before you commit to anything.</p><p><strong>Schedule a free consultation call at (302) 608-3780. </strong><em>We typically respond within 24 hours.</em></p><p>You may also complete our contact form, and a member of our team will be in touch.</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#5c84a8",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#f4f2ee",
+        "contact_text_color": "#2b5275",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_DaQDyr",
+    "custom_liquid_Vc7zma",
+    "rich_text_BCUGzw",
+    "two_col_layout_A9FUKx",
+    "rich_text_LJLekq",
+    "contact_YJwAey"
+  ]
+}

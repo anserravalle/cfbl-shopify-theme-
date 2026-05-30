@@ -1,0 +1,146 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "newsletter_WHd963": {
+          "type": "newsletter",
+          "disabled": true,
+          "settings": {
+            "title": "Sign up for our Newsletter",
+            "content": "<p>Receive monthly news, updates, and helpful tips!</p>",
+            "button_text": "Subscribe",
+            "subtext": "",
+            "position": 5,
+            "background": "#fefff7",
+            "text_color": "#162b3d"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_WHd963"
+      ],
+      "disabled": true,
+      "settings": {
+        "allow_transparent_header": false,
+        "content": "<p>{{ blog.metafields.custom.current_newsletter | metafield_tag }}</p>",
+        "show_newsletter_form": false,
+        "show_tags": false,
+        "banner_background": "rgba(0,0,0,0)",
+        "banner_text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "",
+        "articles_per_page": 10,
+        "feature_first_article": true,
+        "feature_article_background": "#f6f3ee",
+        "feature_article_text_color": "",
+        "show_excerpt": true,
+        "show_date": true,
+        "show_author": true,
+        "show_comments_count": false,
+        "show_category": true
+      }
+    },
+    "blog_posts_BVwUQT": {
+      "type": "blog-posts",
+      "blocks": {
+        "article_zhpWtL": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "article_zhpWtL"
+      ],
+      "name": "Featured blog post",
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": false,
+        "subheading": "",
+        "title": "",
+        "content": "<p>{{ blog.metafields.custom.current_newsletter | metafield_tag }}</p>",
+        "link_url": "shopify://blogs/current-newsletter",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "blog_posts_PHFhMk": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_GJkDJ9": {
+          "type": "blog",
+          "settings": {
+            "blog": "newsletter",
+            "posts_count": 6,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_GJkDJ9"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": true,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "",
+        "content": "<h3><a href=\"https://us16.campaign-archive.com/home\" target=\"_blank\" title=\"https://us16.campaign-archive.com/home\">Read  Past Newsletters Here </a></h3>",
+        "link_url": "https://us16.campaign-archive.com/home/?u=9cfbb72dbd162e608c3a83099&id=8bd17ddd3a",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "newsletter_J98ENC": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "full_width": true,
+        "show_icon": false,
+        "title": "",
+        "content": "<h3></h3><h6>Keep up with all the events and offerings at CFBL </h6><h3><a href=\"http://eepurl.com/jqWszs\" target=\"_blank\" title=\"http://eepurl.com/jqWszs\">Subscribe </a></h3><h3><a href=\"https://us16.campaign-archive.com/home/?u=9cfbb72dbd162e608c3a83099&id=8bd17ddd3a\" target=\"_blank\" title=\"https://us16.campaign-archive.com/home/?u=9cfbb72dbd162e608c3a83099&id=8bd17ddd3a\">Past Issues</a></h3><p></p>",
+        "button_text": "",
+        "subtext": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blog_posts_BVwUQT",
+    "blog_posts_PHFhMk",
+    "newsletter_J98ENC"
+  ]
+}

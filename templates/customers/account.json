@@ -10,10 +10,17 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
-      "settings": {
-        "content_width": "80ch"
-      }
+      "type": "main-customers-account",
+      "blocks": {
+        "orders": {
+          "type": "orders",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "orders"
+      ],
+      "settings": {}
     }
   },
   "order": [

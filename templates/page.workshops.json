@@ -1,0 +1,198 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "177644047668ab21ad": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fd9d855_x6bEeV": {
+          "type": "ai_gen_block_fd9d855",
+          "settings": {
+            "heading": "Welcome to our workshops",
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "heading_size_mobile": 36,
+            "heading_size_desktop": 64,
+            "font_weight": "700",
+            "line_height": 1.2,
+            "text_color": "#2b5275",
+            "background_color": "#f4f2ee",
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "padding_horizontal": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fd9d855_x6bEeV"
+      ],
+      "settings": {}
+    },
+    "image_with_text_overlay_PCWzY7": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_6rQCnj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h1>WORKSHOPS</h1><h3>A different kind of clinical learning</h3><h4>At the Center for Balanced Living explore thoughtful, clinician-led workshops designed to offer insight, practical tools, and meaningful support. </h4><h4>Workshop topics may vary throughout the year and can include trauma, emotional wellness, values, relationships, creativity, self-understanding, and personal growth.</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_6rQCnj"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 28
+      }
+    },
+    "media_with_text_NFyK3P": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_HbwAKA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/black_suit.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Writing Your Way to Healing",
+            "content": "<p>Writing has long served as a clinical tool for emotional processing, reflection, and integration. In this guided workshop, Dr. Niki Serravalle leads participants through a structured series of writing experiences designed to support nervous system regulation, bring language to what is hard to name, and create space for personal insight.</p><p>Open to clinicians, helping professionals, and adults drawn to writing as a path to healing.</p>",
+            "link_text": "Join The Waitlist",
+            "link_url": "shopify://pages/newsletters",
+            "background": "#1d486f",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#eed9c5",
+            "button_text_color": "#2b5275"
+          }
+        }
+      },
+      "block_order": [
+        "image_HbwAKA"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "section_class_name": "media-default-section",
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "custom_liquid_qGGCph": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- =====================================================\n     SECTION: AREAS OF TRAINING (primary content block)\n     Replaces the existing bullet list of training areas.\n     Place directly under the page intro, above Our Approach.\n     ===================================================== -->\n\n<section style=\"background-color: #b8c9bc; padding: 72px 20px 56px 20px;\">\n  <div style=\"max-width: 1100px; margin: 0 auto;\">\n\n    <h2 style=\"font-size: 1.875rem; color: #2a3530; text-align: center; margin: 0 0 14px 0;\">Areas of Training</h2>\n    <p style=\"font-size: 1.0625rem; line-height: 1.65; color: #4a5a52; text-align: center; max-width: 680px; margin: 0 auto 56px auto;\">\n      CFBL Institute develops continuing education across six clinical domains. Offerings rotate throughout the year. Join the mailing list to be notified as new trainings open for registration.\n    </p>\n\n    <div style=\"display: flex; flex-wrap: wrap; gap: 28px; justify-content: center; align-items: stretch;\">\n\n      <!-- Card 1: Trauma Therapy -->\n      <div style=\"flex: 1 1 320px; max-width: 340px; background-color: #f0eae0; border-left: 3px solid #3d5a52; display: flex; flex-direction: column;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0861/1528/7346/files/nature_based.jpg?v=1779752916\" alt=\"Layered river stones along a still shoreline, banner image for CFBL Institute trauma therapy continuing education.\" style=\"width: 100%; height: 240px; object-fit: cover; display: block;\">\n        <div style=\"padding: 22px 26px 28px 26px;\">\n          <p style=\"font-size: 0.75rem; color: #3d5a52; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0;\">Clinical Domain</p>\n          <h3 style=\"font-size: 1.3125rem; color: #2a3530; margin: 0 0 12px 0;\">Trauma Therapy</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a5a52; margin: 0;\">\n            Continuing education in trauma-focused care, stabilization, and the integration of evidence-based modalities for complex presentations.\n          </p>\n        </div>\n      </div>\n\n      <!-- Card 2: Nature-Informed EMDR -->\n      <div style=\"flex: 1 1 320px; max-width: 340px; background-color: #f0eae0; border-left: 3px solid #3d5a52; display: flex; flex-direction: column;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0861/1528/7346/files/IMG_0060.png?v=1779655181\" alt=\"Sunlight through pine forest along a quiet path, banner image for the CFBL Institute Nature-Informed EMDR workshop.\" style=\"width: 100%; height: 240px; object-fit: cover; display: block;\">\n        <div style=\"padding: 22px 26px 28px 26px;\">\n          <p style=\"font-size: 0.75rem; color: #3d5a52; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0;\">Advanced EMDR</p>\n          <h3 style=\"font-size: 1.3125rem; color: #2a3530; margin: 0 0 12px 0;\">Nature-Informed EMDR</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a5a52; margin: 0;\">\n            Advanced workshops for EMDR-trained clinicians on the disciplined integration of nature-informed considerations within standard EMDR practice.\n          </p>\n        </div>\n      </div>\n\n      <!-- Card 3: Psychological Assessment -->\n      <div style=\"flex: 1 1 320px; max-width: 340px; background-color: #f0eae0; border-left: 3px solid #3d5a52; display: flex; flex-direction: column;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0861/1528/7346/files/IMG_5840.jpg?v=1779658778\" alt=\"Pressed botanical specimen on cream paper, banner image for CFBL Institute psychological assessment training.\" style=\"width: 100%; height: 240px; object-fit: cover; display: block;\">\n        <div style=\"padding: 22px 26px 28px 26px;\">\n          <p style=\"font-size: 0.75rem; color: #3d5a52; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0;\">Clinical Domain</p>\n          <h3 style=\"font-size: 1.3125rem; color: #2a3530; margin: 0 0 12px 0;\">Psychological Assessment</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a5a52; margin: 0;\">\n            Training in diagnostic precision, integrative case conceptualization, and the disciplined use of psychological testing in clinical practice.\n          </p>\n        </div>\n      </div>\n\n      <!-- Card 4: Somatic and Nervous System -->\n      <div style=\"flex: 1 1 320px; max-width: 340px; background-color: #f0eae0; border-left: 3px solid #3d5a52; display: flex; flex-direction: column;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0861/1528/7346/files/IMG_5841.jpg?v=1779658834\" alt=\"Folds of natural linen in soft window light, banner image for CFBL Institute somatic and nervous system training.\" style=\"width: 100%; height: 240px; object-fit: cover; display: block;\">\n        <div style=\"padding: 22px 26px 28px 26px;\">\n          <p style=\"font-size: 0.75rem; color: #3d5a52; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0;\">Clinical Domain</p>\n          <h3 style=\"font-size: 1.3125rem; color: #2a3530; margin: 0 0 12px 0;\">Somatic and Nervous System</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a5a52; margin: 0;\">\n            Continuing education on nervous system regulation, somatic awareness, and the body's role in trauma-focused clinical work.\n          </p>\n        </div>\n      </div>\n\n      <!-- Card 5: Ethics and Clinical Reasoning -->\n      <div style=\"flex: 1 1 320px; max-width: 340px; background-color: #f0eae0; border-left: 3px solid #3d5a52; display: flex; flex-direction: column;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0861/1528/7346/files/IMG_5842.webp?v=1779658777\" alt=\"Empty chair in morning window light, banner image for CFBL Institute ethics and clinical decision-making training.\" style=\"width: 100%; height: 240px; object-fit: cover; display: block;\">\n        <div style=\"padding: 22px 26px 28px 26px;\">\n          <p style=\"font-size: 0.75rem; color: #3d5a52; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0;\">Clinical Domain</p>\n          <h3 style=\"font-size: 1.3125rem; color: #2a3530; margin: 0 0 12px 0;\">Ethics and Clinical Reasoning</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a5a52; margin: 0;\">\n            Continuing education on ethical clinical reasoning, scope of practice, and structured case decision-making for licensed clinicians.\n          </p>\n        </div>\n      </div>\n\n      <!-- Card 6: Group Facilitation -->\n      <div style=\"flex: 1 1 320px; max-width: 340px; background-color: #f0eae0; border-left: 3px solid #3d5a52; display: flex; flex-direction: column;\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0861/1528/7346/files/IMG_5844.jpg?v=1779658843\" alt=\"Ceramic cups arranged on a wooden table, banner image for CFBL Institute group therapy facilitation training.\" style=\"width: 100%; height: 240px; object-fit: cover; display: block;\">\n        <div style=\"padding: 22px 26px 28px 26px;\">\n          <p style=\"font-size: 0.75rem; color: #3d5a52; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px 0;\">Clinical Domain</p>\n          <h3 style=\"font-size: 1.3125rem; color: #2a3530; margin: 0 0 12px 0;\">Group Facilitation</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #4a5a52; margin: 0;\">\n            Continuing education on group therapy facilitation, relational dynamics, and the clinical structure of healing in community.\n          </p>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_9R6MKQ": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Share your Interest",
+        "content": "<p><br/>Tell us what kinds of groups, workshops, speakers, or community offerings you would like to see.<br/></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "#2b5275",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "collections": [
+          "educational-programs"
+        ],
+        "collections_per_row_mobile": "1",
+        "collections_per_row": 2,
+        "text_color": "#ffffff",
+        "overlay_color": "#ece5e1",
+        "overlay_opacity": 30
+      }
+    },
+    "1779556915584c853b": {
+      "type": "apps",
+      "blocks": {
+        "cowlendar_booking_event_calendar_CDyXhT": {
+          "type": "shopify://apps/cowlendar-booking/blocks/event-calendar/6d8b8f6a-9b3c-42b8-b2e6-a758c38d45bf",
+          "settings": {
+            "section_title": "WorkShops",
+            "section_number": "event-calendar-1"
+          }
+        }
+      },
+      "block_order": [
+        "cowlendar_booking_event_calendar_CDyXhT"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#6387a7",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_q8QYDR": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"background-color: #eae2do; padding: 64px 32px; text-align: center;\">\n  <div style=\"max-width: 540px; margin: 0 auto;\">\n    <h2 style=\"font-family: 'Spectral SC', serif; font-weight: 300; font-size: 32px; color: #2B5275; margin: 0 0 16px 0;\">Stay informed about future workshops</h2>\n    <p style=\"font-family: 'Montserrat', sans-serif; font-size: 16px; color: #2B5275; line-height: 1.6; margin: 0 0 32px 0;\">New workshops are developed throughout the year and announced through Letters from CFBL Newsletter. Join the list to be the first to know.</p>\n    {% form 'customer' %}\n      {{ form.errors | default_errors }}\n      <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter, workshops-interest\">\n      <input type=\"hidden\" name=\"contact[accepts_marketing]\" value=\"true\">\n      <div style=\"display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 480px; margin: 0 auto;\">\n        <input type=\"email\" name=\"contact[email]\" placeholder=\"Email address\" required style=\"flex: 1; min-width: 220px; padding: 12px 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; border: 1px solid #2B5275; background: #ffffff; color: #2B5275;\">\n        <button type=\"submit\" style=\"padding: 12px 28px; font-family: 'Montserrat', sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; background-color: #2B5275; color: #ffffff; border: none; cursor: pointer;\">Subscribe</button>\n      </div>\n      {% if form.posted_successfully? %}\n        <p style=\"margin-top: 24px; font-family: 'Montserrat', sans-serif; color: #2B5275;\">Thank you. You are on the list.</p>\n      {% endif %}\n    {% endform %}\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "177644047668ab21ad",
+    "image_with_text_overlay_PCWzY7",
+    "media_with_text_NFyK3P",
+    "custom_liquid_qGGCph",
+    "contact_9R6MKQ",
+    "main",
+    "1779556915584c853b",
+    "custom_liquid_q8QYDR"
+  ]
+}
