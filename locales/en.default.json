@@ -157,7 +157,7 @@
   "success": {
     "contact_form": "Thank you for reaching out. We will be in touch within 2 business days.",
     "newsletter": "You've been added to the list. Thank you.",
-    "ce_application": "Your CE application has been received. Allow 2–3 weeks for processing."
+    "ce_application": "Your CE application has been received. Allow 2 to 3 weeks for processing."
   },
 
   "footer": {
@@ -166,7 +166,7 @@
     "musa_column_heading": "MUSA",
     "contact_heading": "Contact",
     "newsletter_heading": "Stay connected",
-    "newsletter_subtext": "Essays, training announcements, and practice resources — infrequently, with intent.",
+    "newsletter_subtext": "Essays, training announcements, and practice resources, infrequently, with intent.",
     "social_heading": "Follow",
     "copyright": "© {{ year }} Center for Balanced Living. All rights reserved.",
     "privacy_policy": "Privacy Policy",
@@ -177,10 +177,10 @@
   },
 
   "hero": {
-    "cfbl_default_heading": "Healing happens in relationship.",
+    "cfbl_default_heading": "Your Path To Healing Begins Here",
     "cfbl_default_subhead": "Evidence-based care with warmth, attunement, and a whole-person approach.",
     "institute_default_heading": "Continuing Education for Clinicians",
-    "institute_default_subhead": "Training for licensed professionals — rigorous, applied, and peer-facing.",
+    "institute_default_subhead": "Training for licensed professionals: rigorous, applied, and peer-facing.",
     "musa_default_heading": "Essays on psychology, culture, and the examined life.",
     "musa_default_byline": "Dr. Angela Serravalle, Psy.D."
   },
