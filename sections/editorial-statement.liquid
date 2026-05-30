@@ -1,0 +1,123 @@
+{% liquid
+  assign bg = section.settings.background | default: 'navy'
+  case bg
+    when 'navy'
+      assign bg_color = 'var(--cfbl-deep-navy)'
+      assign text_color = 'var(--cfbl-sand-pale)'
+      assign rule_color = 'rgba(212,191,168,0.2)'
+    when 'sand'
+      assign bg_color = 'var(--cfbl-sand)'
+      assign text_color = 'var(--cfbl-deep-navy)'
+      assign rule_color = 'var(--cfbl-rule)'
+    when 'white'
+      assign bg_color = '#fff'
+      assign text_color = 'var(--cfbl-deep-navy)'
+      assign rule_color = 'var(--cfbl-rule)'
+    else
+      assign bg_color = 'var(--cfbl-deep-navy)'
+      assign text_color = 'var(--cfbl-sand-pale)'
+      assign rule_color = 'rgba(212,191,168,0.2)'
+  endcase
+%}
+
+<style>
+  #shopify-section-{{ section.id }} .editorial-statement {
+    background: {{ bg_color }};
+    padding: var(--space-10) 0;
+  }
+
+  #shopify-section-{{ section.id }} .editorial-statement__inner {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 var(--space-6);
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .editorial-statement__rule {
+    width: 48px;
+    height: 1px;
+    background: {{ rule_color }};
+    margin: 0 auto var(--space-7);
+    display: block;
+  }
+
+  #shopify-section-{{ section.id }} .editorial-statement__text {
+    font-family: var(--cfbl-font-display);
+    font-size: clamp(1.625rem, 3.5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.25;
+    color: {{ text_color }};
+    letter-spacing: 0.01em;
+    margin: 0 0 var(--space-6);
+    font-style: italic;
+  }
+
+  #shopify-section-{{ section.id }} .editorial-statement__attribution {
+    font-family: var(--cfbl-font-body);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: {{ text_color }};
+    opacity: 0.55;
+    margin: 0;
+  }
+
+  #shopify-section-{{ section.id }} .editorial-statement__rule--bottom {
+    margin: var(--space-7) auto 0;
+  }
+</style>
+
+<section class="editorial-statement" aria-label="Editorial statement">
+  <div class="editorial-statement__inner">
+    <span class="editorial-statement__rule" aria-hidden="true"></span>
+    {%- if section.settings.statement != blank -%}
+      <p class="editorial-statement__text">{{ section.settings.statement | escape }}</p>
+    {%- endif -%}
+    {%- if section.settings.attribution != blank -%}
+      <p class="editorial-statement__attribution">{{ section.settings.attribution | escape }}</p>
+    {%- endif -%}
+    <span class="editorial-statement__rule editorial-statement__rule--bottom" aria-hidden="true"></span>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Editorial Statement",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "statement",
+      "label": "Statement text",
+      "default": "The nervous system does not distinguish between past and present. Clinical work starts there."
+    },
+    {
+      "type": "text",
+      "id": "attribution",
+      "label": "Attribution (optional)",
+      "default": "Dr. Angela Serravalle, Psy.D."
+    },
+    {
+      "type": "select",
+      "id": "background",
+      "label": "Background",
+      "options": [
+        { "value": "navy", "label": "Deep Navy (dark)" },
+        { "value": "sand", "label": "Sand (light)" },
+        { "value": "white", "label": "White" }
+      ],
+      "default": "navy"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editorial Statement",
+      "settings": {
+        "statement": "The nervous system does not distinguish between past and present. Clinical work starts there.",
+        "attribution": "Dr. Angela Serravalle, Psy.D.",
+        "background": "navy"
+      }
+    }
+  ]
+}
+{% endschema %}

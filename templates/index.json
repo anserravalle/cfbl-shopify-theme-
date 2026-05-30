@@ -3,9 +3,9 @@
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "Integrated Trauma Based Clinical Services \u00b7 Townsend, DE",
+        "eyebrow": "Trauma-Based Clinical Services · Townsend, DE",
         "heading": "Healing Happens In Relationship.",
-        "subheading": "We pair evidence-based care with warmth, attunement, and a holistic approach to mind, body, and spirit.",
+        "subheading": "The body holds what the mind cannot yet process. At Center for Balanced Living, we integrate polyvagal-informed care, somatic awareness, and evidence-based trauma treatment for individuals, families, and children navigating complex trauma, anxiety, and developmental wounds.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Meet the Team",
@@ -14,20 +14,27 @@
         "brand": "cfbl"
       }
     },
+    "editorial_statement": {
+      "type": "editorial-statement",
+      "settings": {
+        "statement": "What we know from polyvagal theory: safety is not a thought. It is a physiological state. Our clinical work is built on that premise.",
+        "attribution": "Dr. Angela Serravalle, Psy.D.",
+        "background": "navy"
+      }
+    },
     "pathway_cards": {
       "type": "pathway-cards",
       "settings": {
-        "heading": "Three Pathways to Support",
-        "eyebrow": "Where would you like to begin"
+        "eyebrow": "Where would you like to begin",
+        "heading": "Three Pathways to Support"
       },
       "blocks": {
         "pathway_clients": {
           "type": "pathway",
           "settings": {
-            "icon": "CFBL",
             "kicker": "For Clients",
-            "title": "CFBL Clinical Services",
-            "description": "<p>Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-based treatment for mental health across the lifespan.</p>",
+            "title": "Center for Balanced Living",
+            "description": "Therapy, psychological evaluation, and group treatment for individuals and families. Trauma-based care grounded in polyvagal theory, IFS, and somatic experiencing.",
             "cta_label": "Explore Clinical Services",
             "cta_url": "/pages/cfbl",
             "brand_color": "cfbl"
@@ -36,10 +43,9 @@
         "pathway_professionals": {
           "type": "pathway",
           "settings": {
-            "icon": "INST",
             "kicker": "For Professionals",
             "title": "CFBL Institute",
-            "description": "<p>Continuing education for professionals seeking integrated training in trauma. Live workshops and on-demand courses built for licensed clinicians.</p>",
+            "description": "Continuing education for licensed clinicians. Live workshops and on-demand courses in trauma assessment, nervous system theory, and applied clinical reasoning.",
             "cta_label": "View Trainings and CE",
             "cta_url": "/pages/institute",
             "brand_color": "institute"
@@ -48,10 +54,9 @@
         "pathway_readers": {
           "type": "pathway",
           "settings": {
-            "icon": "PUB",
-            "kicker": "For Everyone",
-            "title": "CFBL Publications",
-            "description": "<p>Books, essays, and longer-form writing on psychology, memory, and being human. Writing by Dr. Angela Serravalle for readers everywhere.</p>",
+            "kicker": "For Readers",
+            "title": "MUSA",
+            "description": "Books and essays on psychology, memory, and being human. Longer-form writing by Dr. Angela Serravalle for readers interested in the science and phenomenology of trauma.",
             "cta_label": "Read the Writing",
             "cta_url": "/pages/musa",
             "brand_color": "musa"
@@ -77,7 +82,7 @@
           "settings": {
             "kicker": "Individual Therapy",
             "heading": "Individual Therapy",
-            "description": "<p>One-on-one therapy for adults and adolescents navigating trauma, anxiety, grief, and identity. Evidence-based, trauma-based, and tailored to your goals.</p>",
+            "description": "One-on-one therapy for adults and adolescents navigating complex trauma, anxiety, grief, and identity disruption. We draw on EMDR, IFS, somatic experiencing, and attachment-based approaches. Treatment is tailored to your window of tolerance.",
             "cta_label": "Learn more",
             "cta_url": "/pages/therapy"
           }
@@ -87,7 +92,7 @@
           "settings": {
             "kicker": "Psychological Evaluations",
             "heading": "Psychological Evaluations",
-            "description": "<p>Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment planning, school supports, and clinical decision-making.</p>",
+            "description": "Comprehensive evaluations for children, adolescents, and adults. We assess for autism, ADHD, learning differences, and complex trauma presentations. Reports are written for clinical utility, not just diagnosis.",
             "cta_label": "Learn more",
             "cta_url": "/pages/evaluations"
           }
@@ -97,7 +102,7 @@
           "settings": {
             "kicker": "Wellness Groups",
             "heading": "Wellness Groups",
-            "description": "<p>Community-grounded groups focused on grief, parenting, and somatic resourcing. Structured and time-limited, with open enrollment periods.</p>",
+            "description": "Community-grounded groups focused on grief, somatic resourcing, and nervous system regulation. Structured and time-limited, informed by current research in polyvagal theory and group trauma treatment.",
             "cta_label": "Learn more",
             "cta_url": "/pages/groups"
           }
@@ -113,7 +118,7 @@
       "type": "three-branch-overview",
       "settings": {
         "heading": "One practice. Three doors.",
-        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA are three distinct properties under one roof, each serving a different audience with its own voice and editorial identity."
+        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA each serve a distinct audience with a distinct clinical voice. Three doors. One integrated practice."
       }
     },
     "team": {
@@ -130,7 +135,7 @@
             "name": "Dr. Angela (Niki) Serravalle",
             "credentials": "Psy.D., LPCMH, NCC",
             "role": "Founder and Licensed Psychologist",
-            "bio_short": "A trauma-based psychologist, educator, and writer. Founder of the Center for Balanced Living, the CFBL Institute, and MUSA.",
+            "bio_short": "A trauma-based psychologist, educator, and writer. Founder of Center for Balanced Living, CFBL Institute, and MUSA.",
             "profile_image": ""
           }
         }
@@ -142,7 +147,7 @@
     "featured_training": {
       "type": "featured-training",
       "settings": {
-        "eyebrow": "CFBL Institute \u00b7 Upcoming",
+        "eyebrow": "CFBL Institute · Upcoming",
         "heading": "Continuing education in trauma-based practice.",
         "brand": "institute"
       },
@@ -150,13 +155,13 @@
         "training_1": {
           "type": "training",
           "settings": {
-            "kicker": "6.0 CE Hours \u00b7 Live Online",
+            "kicker": "6.0 CE Hours · Live Online",
             "title": "Trauma-Based Assessment: Integrating the ACEs Framework",
             "presenter": "Angela Serravalle, Psy.D.",
             "date": "November 14, 2026",
             "format": "Live Online",
             "price": "$245",
-            "description": "<p>Integrating psychometric reasoning with somatic and nervous-system awareness. A six-hour workshop for LCSWs, LPCs, psychologists, and PMHNPs.</p>",
+            "description": "<p>A six-hour workshop integrating psychometric assessment with nervous system theory. We examine how trauma presentations affect test performance, scoring validity, and diagnostic clarity. For licensed clinicians in trauma, forensic, and educational settings.</p>",
             "cta_label": "Register",
             "cta_url": "/collections/trainings"
           }
@@ -169,7 +174,7 @@
     "featured_essay": {
       "type": "featured-essay",
       "settings": {
-        "eyebrow": "MUSA \u00b7 Essays and Publications",
+        "eyebrow": "MUSA · Essays and Publications",
         "heading": "New writing on psychology, memory, and being human.",
         "brand": "musa"
       },
@@ -178,8 +183,8 @@
           "type": "essay",
           "settings": {
             "title": "On Memory and the Body: What Trauma Teaches Us About Time",
-            "byline": "Angela Serravalle \u00b7 May 2026",
-            "lede": "The body keeps a record that the mind is still learning to read. What clinical work reveals about the strangeness of traumatic memory.",
+            "byline": "Angela Serravalle · May 2026",
+            "lede": "The body keeps a record that the mind is still learning to read. This essay explores what clinical work reveals about traumatic memory, the limits of narrative, and why trauma treatment must begin below the neck.",
             "cta_label": "Read the essay",
             "cta_url": "/blogs/essays"
           }
@@ -193,12 +198,12 @@
       "type": "contact-cta",
       "settings": {
         "heading": "Ready to take the first step?",
-        "subheading": "We're accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
+        "subheading": "We are accepting new clients. A free 15-minute consultation helps us understand what you are looking for and whether we are the right fit.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Contact Us",
         "cta_secondary_url": "/pages/contact",
-        "footnote": "Middletown, DE \u00b7 In-person and telehealth \u00b7 Most insurance accepted",
+        "footnote": "Townsend, DE · In-person and telehealth · Most insurance accepted",
         "brand": "cfbl"
       }
     },
@@ -207,15 +212,16 @@
       "settings": {
         "eyebrow": "Stay Connected",
         "heading": "Stay connected",
-        "description": "<p>Updates from the practice, new trainings from the Institute, and new essays from MUSA. No more than twice a month.</p>",
+        "description": "<p>New trainings from the Institute, new essays from MUSA, and occasional updates from the practice. We write when we have something worth saying.</p>",
         "button_label": "Subscribe",
         "brand": "cfbl",
-      "background": "navy"
+        "background": "navy"
       }
     }
   },
   "order": [
     "hero",
+    "editorial_statement",
     "pathway_cards",
     "service_cards",
     "three_branch",
