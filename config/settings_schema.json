@@ -416,11 +416,11 @@
         "label": "Max content width",
         "options": [
           { "value": "960px",  "label": "Narrow (960px)" },
-          { "value": "1120px", "label": "Standard (1120px, default)" },
-          { "value": "1280px", "label": "Wide (1280px)" },
+          { "value": "1120px", "label": "Standard (1120px)" },
+          { "value": "1320px", "label": "Wider (1320px, default)" },
           { "value": "1440px", "label": "Full wide (1440px)" }
         ],
-        "default": "1120px"
+        "default": "1320px"
       }
     ]
   },
