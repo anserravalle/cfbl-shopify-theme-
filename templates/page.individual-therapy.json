@@ -114,35 +114,35 @@
           "type": "item",
           "settings": {
             "question": "Do you accept insurance?",
-            "answer": "Yes. We accept most major insurance plans including Highmark Blue Cross Blue Shield, Aetna, Cigna, and United Healthcare. We recommend verifying your behavioral health benefits before your first appointment. Our administrative team can help with this process."
+            "answer": "<p>Yes. We accept most major insurance plans including Highmark Blue Cross Blue Shield, Aetna, Cigna, and United Healthcare. We recommend verifying your behavioral health benefits before your first appointment. Our administrative team can help with this process.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Do you offer telehealth?",
-            "answer": "Yes. We offer telehealth sessions throughout the state of Delaware. Telehealth is available for individual therapy and most consultation services. Some evaluation services require in-person attendance."
+            "answer": "<p>Yes. We offer telehealth sessions throughout the state of Delaware. Telehealth is available for individual therapy and most consultation services. Some evaluation services require in-person attendance.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "How long does therapy typically last?",
-            "answer": "This varies considerably depending on your goals and presentation. Some clients find meaningful resolution in 12 to 20 sessions. Others engage in longer-term work spanning a year or more. We revisit goals and progress regularly so that therapy remains purposeful."
+            "answer": "<p>This varies considerably depending on your goals and presentation. Some clients find meaningful resolution in 12 to 20 sessions. Others engage in longer-term work spanning a year or more. We revisit goals and progress regularly so that therapy remains purposeful.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "What is your cancellation policy?",
-            "answer": "We ask for 24 hours notice for cancellations. Late cancellations and no-shows may be subject to a fee. We understand that life is unpredictable and handle exceptions with flexibility."
+            "answer": "<p>We ask for 24 hours notice for cancellations. Late cancellations and no-shows may be subject to a fee. We understand that life is unpredictable and handle exceptions with flexibility.</p>"
           }
         },
         "q5": {
           "type": "item",
           "settings": {
             "question": "Are you currently accepting new clients?",
-            "answer": "Availability varies by clinician. Please reach out through our contact form or call the office to ask about current openings. We do our best to match you with the right clinician based on your needs and preferences."
+            "answer": "<p>Availability varies by clinician. Please reach out through our contact form or call the office to ask about current openings. We do our best to match you with the right clinician based on your needs and preferences.</p>"
           }
         }
       },

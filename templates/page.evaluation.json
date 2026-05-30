@@ -103,35 +103,35 @@
           "type": "item",
           "settings": {
             "question": "How long does an evaluation take?",
-            "answer": "Most evaluations involve 2 to 4 hours of direct testing, distributed across one or two sessions. The full process from intake to feedback typically takes 4 to 8 weeks depending on scheduling and report turnaround."
+            "answer": "<p>Most evaluations involve 2 to 4 hours of direct testing, distributed across one or two sessions. The full process from intake to feedback typically takes 4 to 8 weeks depending on scheduling and report turnaround.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Does insurance cover psychological evaluations?",
-            "answer": "Coverage varies by plan and by the reason for evaluation. Evaluations conducted for diagnostic or clinical purposes are often covered. Evaluations requested solely for school or workplace documentation may not be. We recommend contacting your insurance provider before scheduling."
+            "answer": "<p>Coverage varies by plan and by the reason for evaluation. Evaluations conducted for diagnostic or clinical purposes are often covered. Evaluations requested solely for school or workplace documentation may not be. We recommend contacting your insurance provider before scheduling.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "Can you evaluate adults, or only children?",
-            "answer": "We evaluate children, adolescents, and adults. Many of our adult referrals involve questions about ADHD, autism, or complex diagnostic presentations that were not identified earlier in life."
+            "answer": "<p>We evaluate children, adolescents, and adults. Many of our adult referrals involve questions about ADHD, autism, or complex diagnostic presentations that were not identified earlier in life.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "Will I receive a written report?",
-            "answer": "Yes. Every evaluation includes a written psychological report and a live feedback session. We do not release reports without a feedback meeting."
+            "answer": "<p>Yes. Every evaluation includes a written psychological report and a live feedback session. We do not release reports without a feedback meeting.</p>"
           }
         },
         "q5": {
           "type": "item",
           "settings": {
             "question": "Do you provide documentation for school accommodations or disability services?",
-            "answer": "Yes. Our reports are written to meet the documentation standards required by most school districts, colleges, and universities. We are familiar with IEP, 504 Plan, and disability services office requirements."
+            "answer": "<p>Yes. Our reports are written to meet the documentation standards required by most school districts, colleges, and universities. We are familiar with IEP, 504 Plan, and disability services office requirements.</p>"
           }
         }
       },

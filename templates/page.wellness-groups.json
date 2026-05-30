@@ -79,28 +79,28 @@
           "type": "item",
           "settings": {
             "question": "Do I need to be in individual therapy to join a group?",
-            "answer": "Not necessarily. Some groups are appropriate as a standalone service. Others work best alongside individual therapy. We discuss this during the enrollment consultation."
+            "answer": "<p>Not necessarily. Some groups are appropriate as a standalone service. Others work best alongside individual therapy. We discuss this during the enrollment consultation.</p>"
           }
         },
         "q2": {
           "type": "item",
           "settings": {
             "question": "Does insurance cover group therapy?",
-            "answer": "Group therapy is often covered by insurance when it is clinically indicated. Wellness groups may be billed differently. We will help you understand your coverage before you enroll."
+            "answer": "<p>Group therapy is often covered by insurance when it is clinically indicated. Wellness groups may be billed differently. We will help you understand your coverage before you enroll.</p>"
           }
         },
         "q3": {
           "type": "item",
           "settings": {
             "question": "What is the group size?",
-            "answer": "Our groups are intentionally small, typically 5 to 8 participants. This allows for meaningful connection and adequate clinical attention."
+            "answer": "<p>Our groups are intentionally small, typically 5 to 8 participants. This allows for meaningful connection and adequate clinical attention.</p>"
           }
         },
         "q4": {
           "type": "item",
           "settings": {
             "question": "Can I join a group mid-cycle?",
-            "answer": "Most of our groups are closed enrollment, meaning all members start together. This protects the safety and cohesion of the group. Ongoing groups with rolling enrollment are noted as such."
+            "answer": "<p>Most of our groups are closed enrollment, meaning all members start together. This protects the safety and cohesion of the group. Ongoing groups with rolling enrollment are noted as such.</p>"
           }
         }
       },
