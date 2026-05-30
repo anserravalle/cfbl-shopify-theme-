@@ -1,3 +1,59 @@
 {
-  "current": {}
+  "current": {
+    "brand_mode": "cfbl",
+
+    "cfbl_navy": "#2B5275",
+    "cfbl_sky_blue": "#4E9FBF",
+    "cfbl_terracotta": "#A0533E",
+    "cfbl_sand": "#EED9C5",
+    "cfbl_sand_light": "#F5E7D6",
+    "cfbl_sand_pale": "#FAF1E6",
+    "cfbl_ink": "#1F2A33",
+    "cfbl_rule": "#D4C4B0",
+
+    "inst_forest": "#3D5A52",
+    "inst_sage": "#6F8F7A",
+    "inst_sage_mist": "#D0DDD8",
+    "inst_cream": "#EAE2D0",
+    "inst_ink": "#2A3530",
+
+    "musa_oxblood": "#6E1F23",
+    "musa_ochre": "#C5A572",
+    "musa_walnut": "#8B6A4E",
+    "musa_bone": "#F1E8D8",
+    "musa_parchment": "#EDE0C8",
+    "musa_ink": "#1F1A16",
+
+    "cfbl_font_display": "'Cormorant SC', serif",
+    "inst_font_display": "'DM Serif Display', serif",
+    "musa_font_display": "'Playfair Display', serif",
+    "cfbl_font_body": "'Montserrat', system-ui, sans-serif",
+    "inst_font_body": "'Lora', Georgia, serif",
+    "musa_font_body": "'EB Garamond', Georgia, serif",
+    "inst_font_utility": "'Inter', system-ui, sans-serif",
+    "musa_font_utility": "'Inter', system-ui, sans-serif",
+    "base_font_size": 16,
+    "heading_weight": "500",
+
+    "btn_primary_bg": "#2B5275",
+    "btn_primary_text": "#FFFFFF",
+    "btn_primary_hover": "#1F3D57",
+    "btn_secondary_text": "#2B5275",
+    "btn_secondary_border": "#2B5275",
+    "border_radius": "8px",
+
+    "section_spacing": "medium",
+    "container_width": "1120px",
+
+    "header_bg": "#FFFFFF",
+    "header_text": "#1F2A33",
+    "header_style": "sticky",
+    "show_client_portal": true,
+    "portal_label": "Client Portal",
+
+    "footer_bg": "#FAF1E6",
+    "footer_text": "#1F2A33",
+    "show_newsletter": true,
+    "newsletter_heading": "Stay connected"
+  }
 }

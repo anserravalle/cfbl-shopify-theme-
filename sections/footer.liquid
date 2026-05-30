@@ -1,20 +1,20 @@
 <style>
   .site-footer {
-    background: var(--cfbl-sand-pale) !important;
-    color: var(--cfbl-ink) !important;
+    background: {{ settings.footer_bg | default: '#FAF1E6' }};
+    color: {{ settings.footer_text | default: '#1F2A33' }};
     font-family: var(--cfbl-font-body);
     font-size: 0.9375rem;
     padding: var(--space-9) 0 0;
   }
 
   .site-footer a {
-    color: var(--cfbl-deep-navy) !important;
+    color: var(--cfbl-deep-navy);
     text-decoration: none;
     transition: color var(--dur-fast) var(--ease);
   }
 
   .site-footer a:hover {
-    color: var(--cfbl-terracotta) !important;
+    color: var(--cfbl-terracotta);
   }
 
   .site-footer__cols {
@@ -383,7 +383,7 @@
     {
       "type": "link_list",
       "id": "musa_links",
-      "label": "MUSA links",
+      "label": "MUSA links"
     },
     {
       "type": "header",
