@@ -3,47 +3,47 @@
   ─────────────────────────────────────────────────────────────
   Outputs a <script type="application/ld+json"> block for
   structured data markup. Place in the <head> or just before
-  </body> — Google accepts both locations.
+  </body>, Google accepts both locations.
 
   Parameters:
-    schema_type   (required) — 'Organization' | 'Person' | 'Course'
+    schema_type   (required), 'Organization' | 'Person' | 'Course'
                                | 'Book' | 'Article'
 
   Organization parameters (CFBL pages):
-    org_name      — organization name
-    org_url       — canonical URL
-    org_telephone — phone number
-    org_address   — street address string
-    org_logo_url  — absolute URL to logo image
+    org_name     , organization name
+    org_url      , canonical URL
+    org_telephone, phone number
+    org_address  , street address string
+    org_logo_url , absolute URL to logo image
 
   Person parameters (Dr. Serravalle / MUSA pages):
-    person_name       — full name
-    person_job_title  — job title / credentials
-    person_url        — profile page URL
-    person_image_url  — absolute URL to headshot
+    person_name      , full name
+    person_job_title , job title / credentials
+    person_url       , profile page URL
+    person_image_url , absolute URL to headshot
 
   Course parameters (Institute training pages):
-    course_name         — course/training title
-    course_description  — course description
-    course_provider     — provider name (default: CFBL Institute)
-    course_start_date   — ISO 8601 date string e.g. "2025-09-15"
-    course_url          — registration/detail page URL
-    course_mode         — 'online' | 'onsite' | 'blended'
+    course_name        , course/training title
+    course_description , course description
+    course_provider    , provider name (default: CFBL Institute)
+    course_start_date  , ISO 8601 date string e.g. "2025-09-15"
+    course_url         , registration/detail page URL
+    course_mode        , 'online' | 'onsite' | 'blended'
 
   Book parameters (MUSA book pages):
-    book_name       — book title
-    book_author     — author name
-    book_isbn       — ISBN-13 or ISBN-10
-    book_url        — book detail page URL
-    book_image_url  — absolute URL to cover image
+    book_name      , book title
+    book_author    , author name
+    book_isbn      , ISBN-13 or ISBN-10
+    book_url       , book detail page URL
+    book_image_url , absolute URL to cover image
 
   Article parameters (MUSA essay pages):
-    article_headline   — essay/article title
-    article_author     — author name
-    article_date       — ISO 8601 published date e.g. "2025-04-01"
-    article_url        — canonical article URL
-    article_image_url  — absolute URL to article image (optional)
-    article_publisher  — publisher name (default: MUSA)
+    article_headline  , essay/article title
+    article_author    , author name
+    article_date      , ISO 8601 published date e.g. "2025-04-01"
+    article_url       , canonical article URL
+    article_image_url , absolute URL to article image (optional)
+    article_publisher , publisher name (default: MUSA)
 {%- endcomment -%}
 
 {%- liquid

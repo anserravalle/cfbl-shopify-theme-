@@ -5,19 +5,19 @@
 
   Visual spec:
   - Paper (#F0EAE0) background, no shadow, 2px radius
-  - 2px Forest (#3D5A52) left border — full height of the card
+  - 2px Forest (#3D5A52) left border, full height of the card
   - Inter uppercase kicker with optional CE hours
   - Cormorant SC title in Forest
   - Lora description in Ink
   - Forest "Register →" link in Inter uppercase
 
   Parameters:
-    title        (required) — training/course name
-    description  (required) — course abstract or description
-    url          (required) — registration or detail page URL
-    ce_hours     (optional) — numeric CE hours e.g. "6"
-    date         (optional) — date string e.g. "June 14, 2025"
-    format       (optional) — "Live Online" | "In-Person" | "Self-Study"
+    title        (required), training/course name
+    description  (required), course abstract or description
+    url          (required), registration or detail page URL
+    ce_hours     (optional), numeric CE hours e.g. "6"
+    date         (optional), date string e.g. "June 14, 2025"
+    format       (optional), "Live Online" | "In-Person" | "Self-Study"
 {%- endcomment -%}
 
 <article class="card card-training" aria-label="{{ title | escape }}">

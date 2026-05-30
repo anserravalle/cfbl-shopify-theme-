@@ -113,7 +113,7 @@
       "type": "three-branch-overview",
       "settings": {
         "heading": "One practice. Three doors.",
-        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA are three distinct properties under one roof \u2014 each serving a different audience with its own voice and editorial identity."
+        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA are three distinct properties under one roof, each serving a different audience with its own voice and editorial identity."
       }
     },
     "team": {
@@ -210,7 +210,7 @@
         "description": "<p>Updates from the practice, new trainings from the Institute, and new essays from MUSA. No more than twice a month.</p>",
         "button_label": "Subscribe",
         "brand": "cfbl",
-      "background": "navy-dark"
+      "background": "navy"
       }
     }
   },

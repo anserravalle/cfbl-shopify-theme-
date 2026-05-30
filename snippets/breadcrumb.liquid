@@ -14,12 +14,12 @@
   The component respects Schema.org BreadcrumbList markup.
 
   Parameters:
-    breadcrumb  (optional) — array of {title, url} objects.
+    breadcrumb  (optional), array of {title, url} objects.
                              Last item is the current page.
-    separator   (optional) — separator character/string.
+    separator   (optional), separator character/string.
                              Default: the › character.
 
-  Usage — manual array:
+  Usage, manual array:
     {%- liquid
       assign crumbs = '' | split: ''
       assign home = 'crumbs' | split: ''
@@ -39,7 +39,7 @@
     Note: For simplicity, pass as a JSON-like structure via metafields
     or build inline. See section schemas for practical usage.
 
-  Usage — auto-detection (no params):
+  Usage, auto-detection (no params):
     {% render 'breadcrumb' %}
 {%- endcomment -%}
 

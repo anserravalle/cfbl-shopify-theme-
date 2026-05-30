@@ -14,9 +14,9 @@
   <!-- Page Title -->
   <title>
     {%- if template == 'index' -%}
-      {{ shop.name }}{% if settings.meta_title_suffix != blank %} — {{ settings.meta_title_suffix }}{% endif %}
+      {{ shop.name }}{% if settings.meta_title_suffix != blank %}, {{ settings.meta_title_suffix }}{% endif %}
     {%- else -%}
-      {{ page_title }} — {{ shop.name }}{% if settings.meta_title_suffix != blank %} · {{ settings.meta_title_suffix }}{% endif %}
+      {{ page_title }}, {{ shop.name }}{% if settings.meta_title_suffix != blank %} · {{ settings.meta_title_suffix }}{% endif %}
     {%- endif -%}
   </title>
 

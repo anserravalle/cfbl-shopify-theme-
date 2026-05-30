@@ -75,7 +75,7 @@
       "settings": {
         "eyebrow": "Who We Are",
         "heading": "A practice built on relationship.",
-        "body": "<p>Center for Balanced Living is a trauma-based clinical services practice in Middletown, Delaware. We work with adults, adolescents, and children navigating trauma, anxiety, grief, developmental challenges, and identity questions. Our approach is evidence-based, relationally grounded, and attentive to the whole person \u2014 mind, body, and spirit.</p>",
+        "body": "<p>Center for Balanced Living is a trauma-based clinical services practice in Middletown, Delaware. We work with adults, adolescents, and children navigating trauma, anxiety, grief, developmental challenges, and identity questions. Our approach is evidence-based, relationally grounded, and attentive to the whole person: mind, body, and spirit.</p>",
         "image": "",
         "image_position": "right",
         "cta_label": "Read more about us",
@@ -109,7 +109,7 @@
     "testimonial": {
       "type": "testimonial-quote",
       "settings": {
-        "quote": "Working with this practice changed how I understand myself. The care here is unlike anything I'd experienced before \u2014 careful, steady, and real.",
+        "quote": "Working with this practice changed how I understand myself. The care here is unlike anything I'd experienced before, careful, steady, and real.",
         "attribution": "Client, Center for Balanced Living",
         "brand": "cfbl"
       }

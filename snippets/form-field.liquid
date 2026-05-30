@@ -5,22 +5,22 @@
   label, proper aria attributes, and consistent styling.
 
   Parameters:
-    field_type    (required) — 'text' | 'email' | 'tel' | 'textarea' | 'select'
-    field_id      (required) — unique id for the field (used for label association)
-    label         (required) — visible label text
-    required      (optional) — 'true' to mark field as required
+    field_type    (required), 'text' | 'email' | 'tel' | 'textarea' | 'select'
+    field_id      (required), unique id for the field (used for label association)
+    label         (required), visible label text
+    required      (optional), 'true' to mark field as required
                                Adds aria-required and visual asterisk
-    placeholder   (optional) — placeholder text for input/textarea
-    value         (optional) — pre-filled value
-    options       (optional) — for field_type 'select': array of option objects
+    placeholder   (optional), placeholder text for input/textarea
+    value         (optional), pre-filled value
+    options       (optional), for field_type 'select': array of option objects
                                Each should have .value and .label properties
                                Pass as a Liquid array of hashes
-    hint          (optional) — helper text shown below the field
-    error         (optional) — error message (shown when non-blank)
-    name          (optional) — form field name attribute (defaults to field_id)
-    autocomplete  (optional) — HTML autocomplete attribute
-    rows          (optional) — rows attribute for textarea (default: 5)
-    class         (optional) — additional CSS classes on the .field-group wrapper
+    hint          (optional), helper text shown below the field
+    error         (optional), error message (shown when non-blank)
+    name          (optional), form field name attribute (defaults to field_id)
+    autocomplete  (optional), HTML autocomplete attribute
+    rows          (optional), rows attribute for textarea (default: 5)
+    class         (optional), additional CSS classes on the .field-group wrapper
 
   Usage examples:
     {% render 'form-field',

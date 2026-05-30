@@ -1,5 +1,5 @@
 {% liquid
-  assign bg = section.settings.background | default: 'navy-dark'
+  assign bg = section.settings.background | default: 'navy'
 
   case bg
     when 'sand'
@@ -11,6 +11,9 @@
     when 'bone'
       assign bg_color = 'var(--musa-bone)'
       assign brand_class = 'brand-musa'
+    when 'navy'
+      assign bg_color = 'var(--cfbl-deep-navy)'
+      assign brand_class = 'brand-cfbl'
     when 'navy-dark'
       assign bg_color = '#1A3347'
       assign brand_class = 'brand-cfbl'

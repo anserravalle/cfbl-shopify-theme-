@@ -386,7 +386,7 @@
         "options": [
           { "value": "0px", "label": "Square (0px)" },
           { "value": "4px", "label": "Slight (4px)" },
-          { "value": "8px", "label": "Rounded (8px — default)" },
+          { "value": "8px", "label": "Rounded (8px, default)" },
           { "value": "12px", "label": "More rounded (12px)" },
           { "value": "999px", "label": "Pill (fully rounded)" }
         ],
@@ -416,7 +416,7 @@
         "label": "Max content width",
         "options": [
           { "value": "960px",  "label": "Narrow (960px)" },
-          { "value": "1120px", "label": "Standard (1120px — default)" },
+          { "value": "1120px", "label": "Standard (1120px, default)" },
           { "value": "1280px", "label": "Wide (1280px)" },
           { "value": "1440px", "label": "Full wide (1440px)" }
         ],
