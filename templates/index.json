@@ -209,7 +209,8 @@
         "heading": "Stay connected",
         "description": "<p>Updates from the practice, new trainings from the Institute, and new essays from MUSA. No more than twice a month.</p>",
         "button_label": "Subscribe",
-        "brand": "cfbl"
+        "brand": "cfbl",
+      "background": "navy-dark"
       }
     }
   },
