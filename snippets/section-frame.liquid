@@ -1,0 +1,112 @@
+{%- comment -%}
+  section-frame.liquid
+  ─────────────────────────────────────────────────────────────
+  Shared layout/style overrides for content sections. Emits raw CSS
+  (call it INSIDE a section's existing <style> block).
+
+  Handles:
+    - padding_top / padding_bottom  (none|small|medium|large|xl)
+    - heading_size                  (sm|md|lg|xl)
+    - text_align                    (left|center)
+    - section_bg                    (custom color override)
+    - layout_style                  (full|boxed)
+
+  "boxed" renders the section as a rounded card: the division's
+  lightest color is the card, the darkest color is the frame behind
+  it, and the page background stays tan.
+
+  Params:
+    section (required)
+    brand   (optional) 'cfbl' | 'institute' | 'musa'  (default: cfbl)
+{%- endcomment -%}
+{%- liquid
+  assign _brand = brand | default: 'cfbl'
+
+  assign pt = section.settings.padding_top | default: 'medium'
+  assign pb = section.settings.padding_bottom | default: 'medium'
+  if pt == 'none'
+    assign pt_val = '0'
+  elsif pt == 'small'
+    assign pt_val = 'var(--space-6)'
+  elsif pt == 'large'
+    assign pt_val = 'var(--space-11)'
+  elsif pt == 'xl'
+    assign pt_val = 'calc(var(--space-11) * 1.5)'
+  else
+    assign pt_val = 'var(--space-9)'
+  endif
+  if pb == 'none'
+    assign pb_val = '0'
+  elsif pb == 'small'
+    assign pb_val = 'var(--space-6)'
+  elsif pb == 'large'
+    assign pb_val = 'var(--space-11)'
+  elsif pb == 'xl'
+    assign pb_val = 'calc(var(--space-11) * 1.5)'
+  else
+    assign pb_val = 'var(--space-9)'
+  endif
+  assign hs = section.settings.heading_size | default: 'md'
+  if hs == 'sm'
+    assign hs_scale = '0.8'
+  elsif hs == 'lg'
+    assign hs_scale = '1.2'
+  elsif hs == 'xl'
+    assign hs_scale = '1.45'
+  else
+    assign hs_scale = '1'
+  endif
+
+  assign ls = section.settings.layout_style | default: 'full'
+
+  case _brand
+    when 'institute'
+      assign frame_dark = 'var(--inst-forest)'
+      assign card_light = 'var(--inst-paper)'
+    when 'musa'
+      assign frame_dark = 'var(--musa-oxblood)'
+      assign card_light = 'var(--musa-bone)'
+    else
+      assign frame_dark = 'var(--cfbl-deep-navy)'
+      assign card_light = 'var(--cfbl-sand-pale)'
+  endcase
+-%}
+{%- if ls == 'boxed' -%}
+  #shopify-section-{{ section.id }} {
+    background: var(--cfbl-sand) !important;
+    padding: var(--space-7) var(--space-6);
+  }
+  #shopify-section-{{ section.id }} > section,
+  #shopify-section-{{ section.id }} > div:first-child {
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    background: {% if section.settings.section_bg != blank %}{{ section.settings.section_bg }}{% else %}{{ card_light }}{% endif %} !important;
+    border: 14px solid {{ frame_dark }};
+    border-radius: 32px;
+    box-shadow: 0 18px 44px rgba(31, 42, 51, 0.10);
+    padding-top: {{ pt_val }} !important;
+    padding-bottom: {{ pb_val }} !important;
+    overflow: hidden;
+  }
+{%- else -%}
+  {%- if section.settings.section_bg != blank -%}
+  #shopify-section-{{ section.id }} { background: {{ section.settings.section_bg }} !important; }
+  #shopify-section-{{ section.id }} > section,
+  #shopify-section-{{ section.id }} > div { background: {{ section.settings.section_bg }} !important; }
+  {%- endif -%}
+  #shopify-section-{{ section.id }} > section,
+  #shopify-section-{{ section.id }} > div:first-child {
+    padding-top: {{ pt_val }} !important;
+    padding-bottom: {{ pb_val }} !important;
+  }
+{%- endif -%}
+{%- if section.settings.text_align == 'center' -%}
+  #shopify-section-{{ section.id }} h1,
+  #shopify-section-{{ section.id }} h2,
+  #shopify-section-{{ section.id }} h3,
+  #shopify-section-{{ section.id }} p { text-align: center; }
+{%- endif -%}
+  #shopify-section-{{ section.id }} h1,
+  #shopify-section-{{ section.id }} h2,
+  #shopify-section-{{ section.id }} h3 { font-size: calc(1em * {{ hs_scale }}); }
