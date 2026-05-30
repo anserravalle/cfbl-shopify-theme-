@@ -1,17 +1,17 @@
 <style>
-  #shopify-section-{{ section.id }} .team-grid-section {
+  /* Section must not have overflow:hidden — sticky needs it */
+  #shopify-section-{{ section.id }} {
     background: var(--cfbl-sand-pale);
-    padding: var(--space-9) 0;
   }
 
-  #shopify-section-{{ section.id }} .team-grid-section__inner {
+  #shopify-section-{{ section.id }} .team-section {
+    padding: var(--space-9) 0 0;
+  }
+
+  #shopify-section-{{ section.id }} .team-head-wrap {
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: 0 var(--space-6);
-  }
-
-  #shopify-section-{{ section.id }} .team-grid-section__head {
-    margin: 0 0 var(--space-8);
+    padding: 0 var(--space-6) var(--space-8);
   }
 
   #shopify-section-{{ section.id }} .team-grid-section__eyebrow {
@@ -42,41 +42,32 @@
     margin: var(--space-4) 0 0;
   }
 
-  /* Scroll container */
-  #shopify-section-{{ section.id }} .team-scroll-outer {
+  /* Sticky scroll container */
+  #shopify-section-{{ section.id }} .team-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
     overflow: hidden;
-    margin: 0 calc(-1 * var(--space-6));
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      black 8%,
-      black 92%,
-      transparent 100%
-    );
-    mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      black 8%,
-      black 92%,
-      transparent 100%
-    );
+    display: flex;
+    align-items: center;
+    background: var(--cfbl-sand-pale);
   }
 
-  #shopify-section-{{ section.id }} .team-scroll-track {
+  #shopify-section-{{ section.id }} .team-hscroll {
+    width: 100%;
+    overflow: hidden;
+    padding: var(--space-3) 0 var(--space-7);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 92%, transparent 100%);
+  }
+
+  #shopify-section-{{ section.id }} .team-hscroll__track {
     display: flex;
     gap: var(--space-6);
-    padding: var(--space-2) var(--space-6) var(--space-4);
+    padding: 0 var(--space-6);
     width: max-content;
-    animation: team-marquee 50s linear infinite;
-  }
-
-  #shopify-section-{{ section.id }} .team-scroll-track:hover {
-    animation-play-state: paused;
-  }
-
-  @keyframes team-marquee {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+    will-change: transform;
+    transition: transform 0.05s linear;
   }
 
   /* Cards */
@@ -102,11 +93,6 @@
     object-fit: cover;
     object-position: top center;
     display: block;
-    transition: transform var(--dur-slow) var(--ease);
-  }
-
-  #shopify-section-{{ section.id }} .team-card:hover .team-card__photo img {
-    transform: scale(1.02);
   }
 
   #shopify-section-{{ section.id }} .team-card__photo-placeholder {
@@ -178,10 +164,33 @@
     color: var(--cfbl-deep-navy);
   }
 
-  /* Reduce motion */
-  @media (prefers-reduced-motion: reduce) {
-    #shopify-section-{{ section.id }} .team-scroll-track {
-      animation: none;
+  /* Mobile: static horizontal scroll snap, no JS effect */
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .team-section {
+      padding-bottom: var(--space-9);
+    }
+
+    #shopify-section-{{ section.id }} .team-sticky {
+      position: relative;
+      height: auto;
+      overflow: visible;
+    }
+
+    #shopify-section-{{ section.id }} .team-hscroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+      mask-image: linear-gradient(to right, black 80%, transparent 100%);
+      padding-bottom: var(--space-4);
+    }
+
+    #shopify-section-{{ section.id }} .team-hscroll__track {
+      transition: none;
+    }
+
+    #shopify-section-{{ section.id }} .team-card {
+      scroll-snap-align: start;
     }
   }
 
@@ -222,49 +231,30 @@
       assign hs_scale = '1'
     endif
   -%}
-  {%- if section.settings.section_bg != blank -%}
-  #shopify-section-{{ section.id }} { background: {{ section.settings.section_bg }} !important; }
-  #shopify-section-{{ section.id }} > section,
-  #shopify-section-{{ section.id }} > div { background: {{ section.settings.section_bg }} !important; }
-  {%- endif -%}
-  #shopify-section-{{ section.id }} > section,
-  #shopify-section-{{ section.id }} > div:first-child {
-    padding-top: {{ pt_val }} !important;
-    padding-bottom: {{ pb_val }} !important;
-  }
-  {%- if section.settings.text_align == 'center' -%}
-  #shopify-section-{{ section.id }} h1,
-  #shopify-section-{{ section.id }} h2,
-  #shopify-section-{{ section.id }} h3,
-  #shopify-section-{{ section.id }} p { text-align: center; }
-  {%- endif -%}
-  #shopify-section-{{ section.id }} h1,
-  #shopify-section-{{ section.id }} h2,
-  #shopify-section-{{ section.id }} h3 { font-size: calc(1em * {{ hs_scale }}); }
 </style>
 
-<section class="team-grid-section brand-cfbl" aria-labelledby="team-heading-{{ section.id }}">
-  <div class="team-grid-section__inner">
-    <div class="team-grid-section__head">
-      {%- if section.settings.eyebrow != blank -%}
-        <p class="team-grid-section__eyebrow">{{ section.settings.eyebrow | escape }}</p>
-      {%- endif -%}
-      {%- if section.settings.heading != blank -%}
-        <h2 class="team-grid-section__heading" id="team-heading-{{ section.id }}">
-          {{ section.settings.heading | escape }}
-        </h2>
-      {%- endif -%}
-      {%- if section.settings.subheading != blank -%}
-        <p class="team-grid-section__subheading">{{ section.settings.subheading }}</p>
-      {%- endif -%}
-    </div>
+<section
+  class="team-section brand-cfbl"
+  id="team-section-{{ section.id }}"
+  aria-labelledby="team-heading-{{ section.id }}"
+>
+  <div class="team-head-wrap">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="team-grid-section__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
+    {%- if section.settings.heading != blank -%}
+      <h2 class="team-grid-section__heading" id="team-heading-{{ section.id }}">
+        {{ section.settings.heading | escape }}
+      </h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="team-grid-section__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
   </div>
 
-  {%- if section.blocks.size > 0 -%}
-    <div class="team-scroll-outer">
-      <div class="team-scroll-track">
-
-        {%- comment -%} Original set {%- endcomment -%}
+  <div class="team-sticky">
+    <div class="team-hscroll" id="team-hscroll-{{ section.id }}">
+      <div class="team-hscroll__track" id="team-track-{{ section.id }}">
         {%- for block in section.blocks -%}
           <div class="team-card" {{ block.shopify_attributes }}>
             <div class="team-card__photo">
@@ -303,51 +293,45 @@
             </div>
           </div>
         {%- endfor -%}
-
-        {%- comment -%} Duplicate set for seamless loop {%- endcomment -%}
-        {%- for block in section.blocks -%}
-          <div class="team-card" aria-hidden="true">
-            <div class="team-card__photo">
-              {%- if block.settings.photo != blank -%}
-                {{
-                  block.settings.photo
-                  | image_url: width: 600
-                  | image_tag:
-                    loading: 'lazy',
-                    alt: '',
-                    widths: '280, 420, 560',
-                    sizes: '280px'
-                }}
-              {%- else -%}
-                <div class="team-card__photo-placeholder"></div>
-              {%- endif -%}
-            </div>
-            <div class="team-card__body">
-              {%- if block.settings.name != blank -%}
-                <h3 class="team-card__name">{{ block.settings.name | escape }}</h3>
-              {%- endif -%}
-              {%- if block.settings.credentials != blank -%}
-                <p class="team-card__credentials">{{ block.settings.credentials | escape }}</p>
-              {%- endif -%}
-              {%- if block.settings.role != blank -%}
-                <p class="team-card__role">{{ block.settings.role | escape }}</p>
-              {%- endif -%}
-              {%- if block.settings.bio_short != blank -%}
-                <p class="team-card__bio">{{ block.settings.bio_short }}</p>
-              {%- endif -%}
-              {%- if block.settings.url != blank -%}
-                <span class="team-card__link" aria-hidden="true">
-                  {{ block.settings.cta_label | default: 'View Full Bio' | escape }} &#8594;
-                </span>
-              {%- endif -%}
-            </div>
-          </div>
-        {%- endfor -%}
-
       </div>
     </div>
-  {%- endif -%}
+  </div>
 </section>
+
+<script>
+(function () {
+  var sid    = '{{ section.id }}';
+  var wrap   = document.getElementById('team-section-' + sid);
+  var hscroll = document.getElementById('team-hscroll-' + sid);
+  var track  = document.getElementById('team-track-' + sid);
+  if (!wrap || !hscroll || !track) return;
+
+  var dist = 0;
+
+  function setup () {
+    if (window.innerWidth < 768) {
+      wrap.style.paddingBottom = '';
+      track.style.transform = '';
+      return;
+    }
+    dist = Math.max(0, track.scrollWidth - hscroll.offsetWidth);
+    /* Pad section so sticky has room to travel */
+    wrap.style.paddingBottom = dist + 'px';
+    tick();
+  }
+
+  function tick () {
+    if (window.innerWidth < 768 || dist === 0) return;
+    var top = wrap.getBoundingClientRect().top;
+    var progress = Math.max(0, Math.min(1, -top / dist));
+    track.style.transform = 'translateX(' + (-progress * dist) + 'px)';
+  }
+
+  setup();
+  window.addEventListener('resize', setup, { passive: true });
+  window.addEventListener('scroll', tick,  { passive: true });
+})();
+</script>
 
 {% schema %}
 {
