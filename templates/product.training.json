@@ -1,22 +1,22 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "featured_training": {
       "type": "featured-training",
       "settings": {
-        "eyebrow": "CFBL Institute · Course",
-        "populate_from_product": true,
-        "show_register_form": true,
-        "brand": "institute"
-      },
-      "blocks": {}
+        "eyebrow": "CFBL Institute · Course"
+      }
     },
     "faq": {
       "type": "faq-accordion",
-      "settings": {
-        "eyebrow": "Common Questions",
-        "heading": "Registration and CE Credit",
-        "brand": "institute"
-      },
       "blocks": {
         "faq_1": {
           "type": "item",
@@ -47,19 +47,21 @@
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4"]
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4"
+      ],
+      "settings": {
+        "heading": "Registration and CE Credit"
+      }
     },
     "contact_cta": {
       "type": "contact-cta",
       "settings": {
         "heading": "Questions about this training?",
-        "subheading": "Contact the Institute for group rates, custom arrangements, or CE approval questions.",
-        "cta_primary_label": "Contact the Institute",
-        "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "View All Trainings",
-        "cta_secondary_url": "/collections/trainings",
-        "footnote": "",
-        "brand": "institute"
+        "subheading": "Contact the Institute for group rates, custom arrangements, or CE approval questions."
       }
     }
   },

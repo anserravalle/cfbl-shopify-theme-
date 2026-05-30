@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -22,11 +31,6 @@
     },
     "eval_types": {
       "type": "service-cards",
-      "settings": {
-        "heading": "Types of Evaluation",
-        "subheading": "We conduct evaluations across a range of clinical questions.",
-        "brand": "cfbl"
-      },
       "blocks": {
         "autism": {
           "type": "service",
@@ -74,7 +78,17 @@
           }
         }
       },
-      "block_order": ["autism", "adhd", "academic", "personality", "diagnostic"]
+      "block_order": [
+        "autism",
+        "adhd",
+        "academic",
+        "personality",
+        "diagnostic"
+      ],
+      "settings": {
+        "heading": "Types of Evaluation",
+        "subheading": "We conduct evaluations across a range of clinical questions."
+      }
     },
     "process": {
       "type": "split-content",
@@ -95,9 +109,6 @@
     },
     "faq": {
       "type": "faq-accordion",
-      "settings": {
-        "heading": "Common Questions"
-      },
       "blocks": {
         "q1": {
           "type": "item",
@@ -135,19 +146,32 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "heading": "Common Questions"
+      }
     },
     "contact": {
       "type": "contact-cta",
       "settings": {
         "heading": "Schedule an evaluation consultation.",
-        "subheading": "Start with a brief consultation to discuss your referral question and determine which evaluation is the right fit.",
-        "cta_primary_label": "Schedule a Consultation",
-        "cta_primary_url": "/pages/contact",
-        "footnote": "Townsend, DE. In-person testing. Reports provided within 4 to 6 weeks.",
-        "brand": "cfbl"
+        "subheading": "Start with a brief consultation to discuss your referral question and determine which evaluation is the right fit."
       }
     }
   },
-  "order": ["hero", "what_eval", "eval_types", "process", "testimonial", "faq", "contact"]
+  "order": [
+    "hero",
+    "what_eval",
+    "eval_types",
+    "process",
+    "testimonial",
+    "faq",
+    "contact"
+  ]
 }

@@ -1,17 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero-brand",
       "settings": {
+        "brand": "cfbl",
         "eyebrow": "Center for Balanced Living · Services",
         "heading": "",
         "subheading": "",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "",
-        "cta_secondary_url": "",
-        "image": "",
-        "brand": "cfbl"
+        "cta_secondary_url": ""
       }
     },
     "split_detail": {
@@ -23,17 +31,11 @@
         "image": "",
         "image_position": "right",
         "cta_label": "Schedule a Consultation",
-        "cta_url": "/pages/contact",
-        "brand": "cfbl"
+        "cta_url": "/pages/contact"
       }
     },
     "faq": {
       "type": "faq-accordion",
-      "settings": {
-        "eyebrow": "Common Questions",
-        "heading": "Frequently Asked Questions",
-        "brand": "cfbl"
-      },
       "blocks": {
         "faq_1": {
           "type": "item",
@@ -57,27 +59,27 @@
           }
         }
       },
-      "block_order": ["faq_1", "faq_2", "faq_3"]
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
     },
     "testimonial": {
       "type": "testimonial-quote",
       "settings": {
         "quote": "The care here is unlike anything I'd experienced before, careful, steady, and attuned to what I actually needed.",
-        "attribution": "Client, Center for Balanced Living",
-        "brand": "cfbl"
+        "attribution": "Client, Center for Balanced Living"
       }
     },
     "contact_cta": {
       "type": "contact-cta",
       "settings": {
         "heading": "Ready to take the first step?",
-        "subheading": "We're accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
-        "cta_primary_label": "Schedule a Consultation",
-        "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "Contact Us",
-        "cta_secondary_url": "/pages/contact",
-        "footnote": "Middletown, DE · In-person and telehealth · Most insurance accepted",
-        "brand": "cfbl"
+        "subheading": "We're accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps."
       }
     }
   },

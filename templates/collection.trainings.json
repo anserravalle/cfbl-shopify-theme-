@@ -1,41 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "CFBL Institute \u00b7 Training Catalog",
+        "brand": "institute",
+        "eyebrow": "CFBL Institute · Training Catalog",
         "heading": "Continuing Education for the Practicing Clinician.",
         "subheading": "Live workshops, on-demand courses, and clinical consultation. All approved for CE credit.",
         "cta_primary_label": "",
         "cta_primary_url": "",
         "cta_secondary_label": "CE Information",
-        "cta_secondary_url": "/pages/ce-information",
-        "image": "",
-        "brand": "institute"
+        "cta_secondary_url": "/pages/ce-information"
       }
     },
     "resource_grid": {
       "type": "resource-grid",
       "settings": {
-        "eyebrow": "All Trainings",
-        "heading": "Course Catalog",
-        "show_filters": true,
-        "filter_by_format": true,
-        "filter_by_ce_type": true,
-        "filter_by_topic": true,
-        "populate_from_collection": true,
-        "collection_handle": "trainings",
-        "brand": "institute"
+        "heading": "Course Catalog"
       }
     },
     "newsletter": {
       "type": "newsletter-signup",
       "settings": {
-        "eyebrow": "Institute Updates",
-        "heading": "New training announcements.",
-        "description": "<p>New course announcements, CE deadlines, and clinical resources. For clinicians.</p>",
-        "button_label": "Subscribe",
-        "brand": "institute"
+        "heading": "New training announcements."
       }
     }
   },

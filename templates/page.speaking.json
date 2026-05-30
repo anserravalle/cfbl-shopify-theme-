@@ -1,17 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "MUSA \u00b7 Speaking",
+        "brand": "musa",
+        "eyebrow": "MUSA · Speaking",
         "heading": "Speaking and Appearances.",
         "subheading": "Angela Serravalle speaks on trauma, psychology, clinical practice, and the art of clinical writing. Available for academic conferences, clinical trainings, and literary events.",
         "cta_primary_label": "",
         "cta_primary_url": "",
         "cta_secondary_label": "",
-        "cta_secondary_url": "",
-        "image": "",
-        "brand": "musa"
+        "cta_secondary_url": ""
       }
     },
     "split_speaking": {
@@ -23,21 +31,14 @@
         "image": "",
         "image_position": "right",
         "cta_label": "",
-        "cta_url": "",
-        "brand": "musa"
+        "cta_url": ""
       }
     },
     "contact_cta": {
       "type": "contact-cta",
       "settings": {
         "heading": "Speaking inquiries.",
-        "subheading": "Please include your organization, event type, audience, and proposed dates. Responses within 5 business days.",
-        "cta_primary_label": "Send an Inquiry",
-        "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "",
-        "cta_secondary_url": "",
-        "footnote": "",
-        "brand": "musa"
+        "subheading": "Please include your organization, event type, audience, and proposed dates. Responses within 5 business days."
       }
     }
   },

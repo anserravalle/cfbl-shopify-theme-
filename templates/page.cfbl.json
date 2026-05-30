@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -15,11 +24,6 @@
     },
     "services_overview": {
       "type": "service-cards",
-      "settings": {
-        "heading": "Clinical Services",
-        "subheading": "Evidence-based care for adults, adolescents, and children.",
-        "brand": "cfbl"
-      },
       "blocks": {
         "therapy": {
           "type": "service",
@@ -49,7 +53,15 @@
           }
         }
       },
-      "block_order": ["therapy", "evaluations", "groups"]
+      "block_order": [
+        "therapy",
+        "evaluations",
+        "groups"
+      ],
+      "settings": {
+        "heading": "Clinical Services",
+        "subheading": "Evidence-based care for adults, adolescents, and children."
+      }
     },
     "approach": {
       "type": "split-content",
@@ -57,9 +69,9 @@
         "eyebrow": "Our Approach",
         "heading": "Clinically rigorous. Relationally warm.",
         "body": "<p>At Center for Balanced Living, we work from a trauma-based framework, meaning we understand that symptoms, behaviors, and relational patterns are often adaptations to difficult experiences, not character flaws or fixed diagnoses.</p><p>Our clinicians integrate evidence-based modalities including EMDR, Cognitive Behavioral Therapy, somatic approaches, and psychodynamic work, tailored to each client's history, goals, and nervous system.</p>",
+        "image_position": "right",
         "cta_label": "Meet the Team",
-        "cta_url": "/pages/team",
-        "image_position": "right"
+        "cta_url": "/pages/team"
       }
     },
     "credentials": {
@@ -73,17 +85,11 @@
     },
     "team": {
       "type": "team-grid",
-      "settings": {
-        "heading": "Our Team",
-        "subheading": "Licensed clinicians with advanced training in trauma-based practice."
-      },
       "blocks": {
         "serravalle": {
           "type": "member",
           "settings": {
             "name": "Dr. Angela (Niki) Serravalle",
-            "title": "Psy.D., LPCMH, NCC",
-            "bio": "Licensed psychologist, EMDR Certified Therapist and Approved Consultant, and founder of Center for Balanced Living. Specializing in trauma, psychological evaluation, and professional training.",
             "url": "/pages/team"
           }
         },
@@ -91,8 +97,6 @@
           "type": "member",
           "settings": {
             "name": "Amanda Foxwell",
-            "title": "LAMCH, NCC",
-            "bio": "EMDR-trained therapist specializing in trauma and anxiety for teens and adults. Holistic and nature-based approach. Accepting new clients.",
             "url": "/pages/team"
           }
         },
@@ -100,13 +104,19 @@
           "type": "member",
           "settings": {
             "name": "Kirsten Lowe",
-            "title": "LAMCH, NCC",
-            "bio": "Trauma-based therapist specializing in CBT, goal-focused therapy, and accountability. Accepting new clients.",
             "url": "/pages/team"
           }
         }
       },
-      "block_order": ["serravalle", "foxwell", "lowe"]
+      "block_order": [
+        "serravalle",
+        "foxwell",
+        "lowe"
+      ],
+      "settings": {
+        "heading": "Our Team",
+        "subheading": "Licensed clinicians with advanced training in trauma-based practice."
+      }
     },
     "testimonial": {
       "type": "testimonial-quote",
@@ -120,15 +130,17 @@
       "type": "contact-cta",
       "settings": {
         "heading": "Ready to take the first step?",
-        "subheading": "We are accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps.",
-        "cta_primary_label": "Schedule a Consultation",
-        "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "Contact Us",
-        "cta_secondary_url": "/pages/contact",
-        "footnote": "Townsend, DE. In-person and telehealth. Most insurance accepted.",
-        "brand": "cfbl"
+        "subheading": "We are accepting new clients. Schedule a free 15-minute consultation to discuss fit, scheduling, and next steps."
       }
     }
   },
-  "order": ["hero", "services_overview", "approach", "credentials", "team", "testimonial", "contact"]
+  "order": [
+    "hero",
+    "services_overview",
+    "approach",
+    "credentials",
+    "team",
+    "testimonial",
+    "contact"
+  ]
 }

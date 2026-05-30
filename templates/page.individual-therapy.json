@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -22,11 +31,6 @@
     },
     "areas_of_care": {
       "type": "service-cards",
-      "settings": {
-        "heading": "Areas of Care",
-        "subheading": "We work with adults and adolescents across a wide range of concerns.",
-        "brand": "cfbl"
-      },
       "blocks": {
         "trauma": {
           "type": "service",
@@ -93,7 +97,20 @@
           }
         }
       },
-      "block_order": ["trauma", "anxiety", "depression", "grief", "identity", "relationships", "transitions", "burnout"]
+      "block_order": [
+        "trauma",
+        "anxiety",
+        "depression",
+        "grief",
+        "identity",
+        "relationships",
+        "transitions",
+        "burnout"
+      ],
+      "settings": {
+        "heading": "Areas of Care",
+        "subheading": "We work with adults and adolescents across a wide range of concerns."
+      }
     },
     "modalities": {
       "type": "split-content",
@@ -106,9 +123,6 @@
     },
     "faq": {
       "type": "faq-accordion",
-      "settings": {
-        "heading": "Common Questions"
-      },
       "blocks": {
         "q1": {
           "type": "item",
@@ -146,19 +160,31 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ],
+      "settings": {
+        "heading": "Common Questions"
+      }
     },
     "contact": {
       "type": "contact-cta",
       "settings": {
         "heading": "Begin here.",
-        "subheading": "Schedule a free 15-minute consultation to discuss fit, availability, and next steps. No commitment required.",
-        "cta_primary_label": "Schedule a Consultation",
-        "cta_primary_url": "/pages/contact",
-        "footnote": "Townsend, DE. In-person and telehealth. Most insurance accepted.",
-        "brand": "cfbl"
+        "subheading": "Schedule a free 15-minute consultation to discuss fit, availability, and next steps. No commitment required."
       }
     }
   },
-  "order": ["hero", "what_therapy", "areas_of_care", "modalities", "faq", "contact"]
+  "order": [
+    "hero",
+    "what_therapy",
+    "areas_of_care",
+    "modalities",
+    "faq",
+    "contact"
+  ]
 }

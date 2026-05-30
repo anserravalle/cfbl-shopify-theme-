@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
@@ -22,11 +31,6 @@
     },
     "current_groups": {
       "type": "service-cards",
-      "settings": {
-        "heading": "Current Groups",
-        "subheading": "Contact us to ask about availability and upcoming enrollment dates.",
-        "brand": "cfbl"
-      },
       "blocks": {
         "rooted": {
           "type": "service",
@@ -56,7 +60,15 @@
           }
         }
       },
-      "block_order": ["rooted", "writing", "petloss"]
+      "block_order": [
+        "rooted",
+        "writing",
+        "petloss"
+      ],
+      "settings": {
+        "heading": "Current Groups",
+        "subheading": "Contact us to ask about availability and upcoming enrollment dates."
+      }
     },
     "how_to_join": {
       "type": "split-content",
@@ -64,16 +76,13 @@
         "eyebrow": "How to Join",
         "heading": "Enrollment is a process, not a transaction.",
         "body": "<p>We take enrollment seriously because group composition matters. A group that is poorly matched does not serve anyone well.</p><p>To inquire about a group, start by reaching out through our contact form. We will schedule a brief consultation to discuss the group, your goals, and whether the fit is right. If it is, we will add you to the enrollment list for the next available cycle.</p><p>Some groups maintain a waitlist. We will always be transparent about availability and timing.</p>",
+        "image_position": "left",
         "cta_label": "Inquire About Groups",
-        "cta_url": "/pages/contact",
-        "image_position": "left"
+        "cta_url": "/pages/contact"
       }
     },
     "faq": {
       "type": "faq-accordion",
-      "settings": {
-        "heading": "Common Questions"
-      },
       "blocks": {
         "q1": {
           "type": "item",
@@ -104,19 +113,30 @@
           }
         }
       },
-      "block_order": ["q1", "q2", "q3", "q4"]
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "heading": "Common Questions"
+      }
     },
     "contact": {
       "type": "contact-cta",
       "settings": {
         "heading": "Interested in joining a group?",
-        "subheading": "Reach out to ask about current availability, upcoming enrollment dates, and whether a group is the right fit for where you are.",
-        "cta_primary_label": "Inquire About Groups",
-        "cta_primary_url": "/pages/contact",
-        "footnote": "Townsend, DE. In-person and telehealth options vary by group.",
-        "brand": "cfbl"
+        "subheading": "Reach out to ask about current availability, upcoming enrollment dates, and whether a group is the right fit for where you are."
       }
     }
   },
-  "order": ["hero", "about_groups", "current_groups", "how_to_join", "faq", "contact"]
+  "order": [
+    "hero",
+    "about_groups",
+    "current_groups",
+    "how_to_join",
+    "faq",
+    "contact"
+  ]
 }

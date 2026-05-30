@@ -1,36 +1,32 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "split_resource": {
       "type": "split-content",
       "settings": {
         "eyebrow": "CFBL Institute · Resource",
-        "populate_from_product": true,
-        "show_purchase_form": true,
-        "image_position": "right",
-        "brand": "institute"
+        "image_position": "right"
       }
     },
     "resource_grid": {
       "type": "resource-grid",
       "settings": {
-        "eyebrow": "Related Resources",
-        "heading": "You may also find useful",
-        "show_filters": false,
-        "populate_from_product_related": true,
-        "brand": "institute"
+        "heading": "You may also find useful"
       }
     },
     "contact_cta": {
       "type": "contact-cta",
       "settings": {
         "heading": "Questions about this resource?",
-        "subheading": "Contact the Institute for licensing, group access, or questions about how to use this resource in supervision or training.",
-        "cta_primary_label": "Contact the Institute",
-        "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "View All Resources",
-        "cta_secondary_url": "/collections/resources",
-        "footnote": "",
-        "brand": "institute"
+        "subheading": "Contact the Institute for licensing, group access, or questions about how to use this resource in supervision or training."
       }
     }
   },

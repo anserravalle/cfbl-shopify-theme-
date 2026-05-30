@@ -1,23 +1,22 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "book_feature": {
       "type": "book-feature",
-      "settings": {
-        "eyebrow": "MUSA \u00b7 Books",
-        "populate_from_product": true,
-        "show_purchase_form": true,
-        "brand": "musa"
-      },
-      "blocks": {}
+      "settings": {}
     },
     "newsletter": {
       "type": "newsletter-signup",
       "settings": {
-        "eyebrow": "Subscribe",
-        "heading": "New essays, when they appear.",
-        "description": "<p>No digest, no schedule. An email when something new is published.</p>",
-        "button_label": "Subscribe",
-        "brand": "musa"
+        "heading": "New essays, when they appear."
       }
     }
   },

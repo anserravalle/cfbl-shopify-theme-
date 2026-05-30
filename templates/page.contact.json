@@ -1,18 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero-brand",
       "settings": {
+        "brand": "cfbl",
         "eyebrow": "Center for Balanced Living",
         "heading": "Get in Touch.",
         "subheading": "",
         "cta_primary_label": "",
         "cta_primary_url": "",
         "cta_secondary_label": "",
-        "cta_secondary_url": "",
-        "image": "",
-        "layout": "simple",
-        "brand": "cfbl"
+        "cta_secondary_url": ""
       }
     },
     "split_contact": {
@@ -21,25 +28,14 @@
         "eyebrow": "Contact Information",
         "heading": "We're in Middletown, Delaware.",
         "body": "<p>Center for Balanced Living is located in Middletown, DE. We offer in-person appointments at the office and telehealth appointments for clients throughout Delaware. For new client inquiries, the fastest route is the consultation request form.</p>",
-        "contact_display": true,
-        "address": "Middletown, DE 19709",
-        "phone": "(302) 555-0140",
-        "email": "hello@balancedlivingde.com",
-        "hours": "Monday through Friday, 9 AM to 5 PM",
         "image": "",
-        "image_position": "right",
-        "show_form": true,
-        "brand": "cfbl"
+        "image_position": "right"
       }
     },
     "newsletter": {
       "type": "newsletter-signup",
       "settings": {
-        "eyebrow": "Stay Connected",
-        "heading": "Stay connected",
-        "description": "<p>Practice updates, new service announcements, and resources from the Institute and MUSA. No more than twice a month.</p>",
-        "button_label": "Subscribe",
-        "brand": "cfbl"
+        "heading": "Stay connected"
       }
     }
   },

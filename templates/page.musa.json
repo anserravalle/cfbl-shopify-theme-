@@ -1,32 +1,35 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero-brand",
       "settings": {
-        "eyebrow": "MUSA \u00b7 Essays and Publications",
+        "brand": "musa",
+        "eyebrow": "MUSA · Essays and Publications",
         "heading": "Writing on psychology, memory, and being human.",
         "subheading": "Essays, books, and longer-form work by Angela Serravalle.",
         "cta_primary_label": "Read the Essays",
         "cta_primary_url": "/blogs/essays",
         "cta_secondary_label": "Books",
-        "cta_secondary_url": "/pages/books",
-        "image": "",
-        "brand": "musa"
+        "cta_secondary_url": "/pages/books"
       }
     },
     "featured_essay": {
       "type": "featured-essay",
-      "settings": {
-        "eyebrow": "Latest Essay",
-        "heading": "",
-        "brand": "musa"
-      },
       "blocks": {
         "essay_1": {
           "type": "essay",
           "settings": {
             "title": "On Memory and the Body: What Trauma Teaches Us About Time",
-            "byline": "Angela Serravalle \u00b7 May 2026",
+            "byline": "Angela Serravalle · May 2026",
             "lede": "The body keeps a record that the mind is still learning to read. What clinical practice reveals about the strangeness of traumatic memory, its resistance to narrative, its refusal of sequence.",
             "cta_label": "Read the essay",
             "cta_url": "/blogs/essays/on-memory-and-the-body"
@@ -35,50 +38,36 @@
       },
       "block_order": [
         "essay_1"
-      ]
+      ],
+      "settings": {}
     },
     "book_feature": {
       "type": "book-feature",
-      "settings": {
-        "eyebrow": "Book",
-        "brand": "musa"
-      },
       "blocks": {
         "book_1": {
           "type": "book",
           "settings": {
             "title": "The Diagnostic Gaze",
-            "subtitle": "When Assessment Becomes Care",
             "author": "Angela Serravalle",
-            "description": "<p>A clinician's account of what happens in the space between observation and diagnosis, and what is at stake when a framework becomes a verdict.</p>",
-            "publisher": "Pending",
-            "year": "Forthcoming",
-            "cover_image": "musa-book-icon.png",
-            "cta_label": "Learn more",
             "cta_url": "/pages/the-diagnostic-gaze"
           }
         }
       },
       "block_order": [
         "book_1"
-      ]
+      ],
+      "settings": {}
     },
     "editorial_archive": {
       "type": "editorial-archive",
       "settings": {
-        "eyebrow": "All Essays",
-        "heading": "Archive",
-        "brand": "musa"
+        "heading": "Archive"
       }
     },
     "newsletter": {
       "type": "newsletter-signup",
       "settings": {
-        "eyebrow": "Subscribe",
-        "heading": "New essays, when they appear.",
-        "description": "<p>No digest, no schedule. An email when something new is published.</p>",
-        "button_label": "Subscribe",
-        "brand": "musa"
+        "heading": "New essays, when they appear."
       }
     }
   },

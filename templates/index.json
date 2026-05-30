@@ -1,17 +1,25 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
       "type": "hero-brand",
       "settings": {
+        "brand": "cfbl",
         "eyebrow": "Trauma-Based Clinical Services · Townsend, DE",
         "heading": "Your Path To Healing Begins Here",
         "subheading": "The body holds what the mind cannot yet process. At Center for Balanced Living, we integrate nature based care, somatic awareness, and evidence-based trauma treatment for individuals, families, and children navigating complex trauma, anxiety, and developmental wounds.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Meet the Team",
-        "cta_secondary_url": "/pages/team",
-        "image": "",
-        "brand": "cfbl"
+        "cta_secondary_url": "/pages/team"
       }
     },
     "editorial_statement": {
@@ -24,11 +32,6 @@
     },
     "service_cards": {
       "type": "service-cards",
-      "settings": {
-        "eyebrow": "CFBL Clinical Services",
-        "heading": "Individual, Group, and Evaluation Services",
-        "brand": "cfbl"
-      },
       "blocks": {
         "service_therapy": {
           "type": "service",
@@ -62,7 +65,10 @@
         "service_therapy",
         "service_eval",
         "service_groups"
-      ]
+      ],
+      "settings": {
+        "heading": "Individual, Group, and Evaluation Services"
+      }
     },
     "three_branch": {
       "type": "three-branch-overview",
@@ -85,11 +91,6 @@
     },
     "team": {
       "type": "team-grid",
-      "settings": {
-        "eyebrow": "Our Team",
-        "heading": "Meet Our Team",
-        "brand": "cfbl"
-      },
       "blocks": {
         "member_serravalle": {
           "type": "member",
@@ -97,22 +98,20 @@
             "name": "Dr. Angela (Niki) Serravalle",
             "credentials": "Psy.D., LPCMH, NCC",
             "role": "Founder and Licensed Psychologist",
-            "bio_short": "A trauma-based psychologist, educator, and writer. Founder of Center for Balanced Living, CFBL Institute, and MUSA.",
-            "profile_image": ""
+            "bio_short": "A trauma-based psychologist, educator, and writer. Founder of Center for Balanced Living, CFBL Institute, and MUSA."
           }
         }
       },
       "block_order": [
         "member_serravalle"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "Our Team",
+        "heading": "Meet Our Team"
+      }
     },
     "featured_training": {
       "type": "featured-training",
-      "settings": {
-        "eyebrow": "CFBL Institute · Upcoming",
-        "heading": "Continuing education in trauma-based practice.",
-        "brand": "institute"
-      },
       "blocks": {
         "training_1": {
           "type": "training",
@@ -131,15 +130,13 @@
       },
       "block_order": [
         "training_1"
-      ]
+      ],
+      "settings": {
+        "eyebrow": "CFBL Institute · Upcoming"
+      }
     },
     "featured_essay": {
       "type": "featured-essay",
-      "settings": {
-        "eyebrow": "MUSA · Essays and Publications",
-        "heading": "New writing on psychology, memory, and being human.",
-        "brand": "musa"
-      },
       "blocks": {
         "essay_1": {
           "type": "essay",
@@ -154,29 +151,20 @@
       },
       "block_order": [
         "essay_1"
-      ]
+      ],
+      "settings": {}
     },
     "contact_cta": {
       "type": "contact-cta",
       "settings": {
         "heading": "Ready to take the first step?",
-        "subheading": "We are accepting new clients. A free 15-minute consultation helps us understand what you are looking for and whether we are the right fit.",
-        "cta_primary_label": "Schedule a Consultation",
-        "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "Send a Message",
-        "cta_secondary_url": "/pages/contact",
-        "footnote": "Townsend, DE · In-person and telehealth · Most insurance accepted",
-        "brand": "cfbl"
+        "subheading": "We are accepting new clients. A free 15-minute consultation helps us understand what you are looking for and whether we are the right fit."
       }
     },
     "newsletter": {
       "type": "newsletter-signup",
       "settings": {
-        "eyebrow": "Stay Connected",
         "heading": "Stay connected",
-        "description": "<p>New trainings from the Institute, new essays from MUSA, and occasional updates from the practice. We write when we have something worth saying.</p>",
-        "button_label": "Subscribe",
-        "brand": "cfbl",
         "background": "navy"
       }
     }
