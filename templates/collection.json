@@ -1,0 +1,456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "collection_title_size": "h1",
+        "image_size": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "promotion_image_nYdp7N": {
+          "type": "promotion_image",
+          "settings": {
+            "position": 4,
+            "column_span": "1",
+            "image": "shopify://shop_images/fpo-supervise.jpg",
+            "title": "Supervision",
+            "content": "<p>Dr. Serravalle is currently supervising Undergrad and Graduate level counselors working their way towards licensure as Mental Health Counselors and Psychologists. </p><p>As a Consultant for EMDRIA, she supervises those who have completed the Basic Training in EMDR as well as those continuing towards Certification. </p><p></p><p></p>",
+            "link_url": "shopify://pages/contact",
+            "link_text": "View all",
+            "heading_tag": "h4",
+            "text_position": "place-self-end-start text-start",
+            "text_color": "#ffffff",
+            "overlay_color": "#2b5275",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "promotion_image_nYdp7N"
+      ],
+      "disabled": true,
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "filter_layout": "sidebar",
+        "show_sort_by": false,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": false,
+        "open_first_filter_group": false
+      }
+    },
+    "media_with_text_cFEpaE": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_zGEkqy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fpo-therapy_1.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Therapy",
+            "content": "<p>Dr. Niki Serravalle and her team offer trauma-informed individual therapy for adults and teens throughout Delaware. </p><p>Grounded in nervous system awareness, somatic processing, and relational attunement to support healing from complex trauma, PTSD, anxiety, and identity-related concerns. </p><p>Accepting insurance and private pay.</p>",
+            "link_text": "Get Started (302) 609-3780",
+            "link_url": "shopify://pages/contact",
+            "background": "#ece5e1",
+            "background_gradient": "",
+            "text_color": "#2b5275",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_Pt3L8z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fpo-evals.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Evaluations",
+            "content": "<p>Center for Balanced Living offers comprehensive educational, psychological, and neuropsychological evaluations for children, adolescents, and adults in Delaware. </p><p>Led by Dr. Niki Serravalle. Accepting insurance and private pay.</p>",
+            "link_text": "Get Started Today",
+            "link_url": "shopify://pages/contact",
+            "background": "#ece5e1",
+            "background_gradient": "",
+            "text_color": "#2b5275",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_w9AAUW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sticky-note-to-ship-code.jpg",
+            "media_width": 35,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Educational Training",
+            "content": "<p>Professional trainings, certification programs, and experiential workshops for clinicians and community members in Delaware. </p><p>Led by Dr. Niki Serravalle at Center for Balanced Living.</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://collections/educational-training",
+            "background": "#ece5e1",
+            "background_gradient": "",
+            "text_color": "#2b5275",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_c8t3rH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fpo-consult.jpg",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 40,
+            "subheading": "",
+            "title": "Consultation",
+            "content": "<p>Clinical supervision, EMDR consultation, and wellness groups for clinicians and community members in Townsend, Delaware. Center for Balanced Living.</p>",
+            "link_text": "Start Today",
+            "link_url": "shopify://pages/contact",
+            "background": "#ece5e1",
+            "background_gradient": "",
+            "text_color": "#2b5275",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_FYeymC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fpo-supervise.jpg",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Supervision",
+            "content": "<p>Clinical supervision for LPC associates, PsyD trainees, and licensed clinicians. EMDR consultation available for therapists pursuing EMDRIA certification through Dr. Niki Serravalle.</p><p></p>",
+            "link_text": "Get Started Today",
+            "link_url": "shopify://pages/contact",
+            "background": "#ece5e1",
+            "background_gradient": "",
+            "text_color": "#2b5275",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_Hgf7kC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Calendar_photo.jpg",
+            "media_width": 45,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Upcoming Events</h3><p>Discover are and upcoming events in your community hosted by Center for Balanced Living!</p>",
+            "link_text": "Learn More",
+            "link_url": "https://www.eventbrite.com/organizations/events",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "rgba(0,0,0,0)",
+            "button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_Pi7dmx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/create_an_image_for_a_psychologist_showing_someone_reading_the_monthly_news_letter_sitting_at_a_desk_and_smiling.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Monthly Newsletter</h3><p>Stay updated with news, events and resources from Center for Balanced Living. Sign up and never miss an announcement!</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://blogs/newsletter",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_L3UmiK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/free-photo-of-blogging-tips-for-beginners.jpg",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Our Blog</h3><p><em> </em>Explore insights, tips and stories from Center for Balanced Living staff. Stay informed and inspired by our latest posts!</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://blogs/balanced-living-blog",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_8zt9gK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/supervisefpo.jpg",
+            "media_width": 55,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Supervision <br/>Services</h3><p>Dr. Serravalle is able to supervise those working towards LPC and PsyD. She is also a Consultant in Training for EMDRIA and is able to supervise those working towards certification in EMDR.</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://products/therapy",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_DNyXPV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fpo-consult.jpg",
+            "media_width": 55,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Consultation Services</h3><p>Dr. Serravalle is available to consult on any aspects of her expertise including trauma therapy, psychological evaluations and clinical writing. </p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://products/therapy",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_zGEkqy",
+        "image_Pt3L8z",
+        "image_w9AAUW",
+        "image_c8t3rH",
+        "image_FYeymC",
+        "image_Hgf7kC",
+        "image_Pi7dmx",
+        "image_L3UmiK",
+        "image_8zt9gK",
+        "image_DNyXPV"
+      ],
+      "settings": {
+        "section_class_name": "theme-media-section",
+        "full_width": false,
+        "spacing": "medium"
+      }
+    },
+    "rich_text_mjBmNK": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_GWXXHX": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h1>Our Services</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GWXXHX"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_ycr6HQ": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_RE9D7q": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h2>Contact Us</h2><p>Contact us for more information about our Training Services. For immediate service please call our office.</p><h3>Call: (302) 608-3780</h3><p>Alternatively, our contact form is available for your convenience. We typically respond within 24-48 hours.</p>"
+          }
+        },
+        "liquid_EKRFgi": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-RsFh4H\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_RE9D7q",
+        "liquid_EKRFgi"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#f6f3ee",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_link_blocks_ThnTzP": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_gB7GWm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled-5_eceafdb7-af06-40b1-ace2-dd3ed3498522.png",
+            "stretch_image": true,
+            "link_text": "Register",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ece5e1",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_Fek7Ja": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled-6_3a26ddad-d8ff-4a8d-b48e-02ba45aac324.png",
+            "stretch_image": true,
+            "link_text": "Register",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ece5e1",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_ePQLea": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled-8.png",
+            "stretch_image": true,
+            "link_text": "Register",
+            "link_url": "",
+            "background": "",
+            "text_color": "#f2f2f2",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_q83qnm": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_gB7GWm",
+        "item_Fek7Ja",
+        "item_ePQLea",
+        "item_q83qnm"
+      ],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "Check Out One of Our Groups",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main",
+    "media_with_text_cFEpaE",
+    "rich_text_mjBmNK",
+    "rich_text_ycr6HQ",
+    "image_link_blocks_ThnTzP"
+  ]
+}

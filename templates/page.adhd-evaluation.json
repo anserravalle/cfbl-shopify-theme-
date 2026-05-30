@@ -1,0 +1,438 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "100ch"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5>ADHD and executive functioning evaluations are designed to provide diagnostic clarity when there are questions about attention, impulsivity, hyperactivity, organization, working memory, emotional regulation, task completion, academic functioning, or daily life demands.</h5><h5>At Center for Balanced Living, ADHD evaluations are completed with clinical care and attention to the whole person. The goal is not simply to determine whether someone meets criteria for ADHD, but to understand how attention, executive functioning, learning, emotional regulation, anxiety, sleep, trauma, and environmental demands may be interacting.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_DaQDyr": {
+      "type": "rich-text",
+      "blocks": {
+        "button_cd8fMb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Request an Evaluation",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_cd8fMb"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_Qya8dM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GiBh9t": {
+          "type": "heading",
+          "settings": {
+            "text": "Who Evaluations May Help",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_C4cfCH": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Evaluations may be helpful for children, adolescents, and adults when there are concerns about attention, learning, emotional functioning, behavior, personality, autism, or diagnostic uncertainty. </p><p>They can also be useful when previous questions have gone unanswered or when a more complete understanding is needed to guide support and recommendations.</p><p><strong>An evaluation may be helpful for concerns such as:</strong></p>"
+          }
+        },
+        "liquid_tcQb8w": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<ul class=\"service-list\">\n  <li>Attention and executive functioning concerns</li>\n  <li>Learning and academic difficulties</li>\n  <li>Autism-related questions</li>\n  <li>Diagnostic clarification</li>\n  <li>Emotional and behavioral concerns</li>\n  <li>Personality and relational functioning</li>\n  <li>Mood and anxiety-related symptoms</li>\n  <li>Developmental concerns</li>\n  <li>Treatment planning needs</li>\n  <li>School or accommodation recommendations</li>\n</ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GiBh9t",
+        "richtext_C4cfCH",
+        "liquid_tcQb8w"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#9cbea9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_iqJ9kj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qpFQwy": {
+          "type": "heading",
+          "settings": {
+            "text": "What a Psychological Evaluation Can Provide",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YPUUga": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>A psychological evaluation can help clarify patterns that may not be fully understood through conversation alone. By integrating clinical interview data, behavioral observations, standardized testing, rating scales, and collateral information when appropriate, the evaluation process provides a more complete picture of strengths, vulnerabilities, and diagnostic considerations.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpFQwy",
+        "richtext_YPUUga"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BCUGzw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vwcczb": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Approach",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_dyBmGT": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Our approach to evaluation is thoughtful, comprehensive, and individualized. We do not rely on one test score or one symptom in isolation. Instead, we look carefully at the whole person in context and work to answer the referral question with depth, accuracy, and practical usefulness. The goal is not simply to assign a diagnosis, but to provide insight, clarity, and recommendations that meaningfully guide next steps.</p>"
+          }
+        },
+        "button_EQPft9": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More About the Types of Evaluations We Provide",
+            "url": "shopify://products/psychological-evaluations",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vwcczb",
+        "richtext_dyBmGT",
+        "button_EQPft9"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#e5f3f6",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "two_col_layout_A9FUKx": {
+      "type": "two-col-layout",
+      "disabled": true,
+      "name": "Two Column Layout",
+      "settings": {
+        "image": "shopify://shop_images/not-game-puzzles-or-game-blocks-more-like-psychological-assessment.png",
+        "subheading": "",
+        "title": "What to Expect",
+        "rich_text": "<p>The evaluation process typically includes an initial consultation, record review when relevant, testing sessions, scoring and interpretation, and a feedback appointment to review results. Each evaluation is tailored to the referral question and may vary depending on age, presenting concerns, and the scope of the assessment.</p>",
+        "image_position": "left",
+        "display_mode": "all",
+        "section_background": "",
+        "section_text_color": "",
+        "button_text": "",
+        "button_url": "",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_iNUXi6": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section class=\"adhd-eval-section\">\n  <div class=\"adhd-eval-container\">\n\n    <div class=\"adhd-eval-intro\">\n      <p class=\"adhd-eval-eyebrow\">ADHD Evaluations</p>\n      <h2>Understanding attention, executive functioning, and daily life demands</h2>\n      <p>\n        ADHD and executive functioning evaluations are designed to clarify patterns of attention, organization, emotional regulation, learning, follow-through, and daily functioning.\n      </p>\n    </div>\n\n    <div class=\"adhd-eval-grid\">\n\n      <div class=\"adhd-eval-card\">\n        <p class=\"adhd-card-label\">Clinical clarity</p>\n        <h3>What this type of evaluation may help clarify</h3>\n        <p>\n          This evaluation may be appropriate when there are questions related to ADHD, attention, impulsivity, hyperactivity, executive functioning, organization, planning, working memory, emotional regulation, academic performance, task initiation, follow-through, or diagnostic clarification.\n        </p>\n        <p>\n          It may also be useful when someone has been described as bright but inconsistent, capable but overwhelmed, unmotivated, forgetful, emotionally reactive, or unable to keep up with daily expectations despite effort.\n        </p>\n      </div>\n\n      <div class=\"adhd-eval-card\">\n        <p class=\"adhd-card-label\">Who this supports</p>\n        <h3>Who may benefit</h3>\n        <p>\n          Children, teens, and adults may benefit from an ADHD evaluation when there are concerns about focus, distractibility, impulsivity, restlessness, disorganization, procrastination, emotional overwhelm, difficulty completing tasks, academic struggles, work performance, or daily functioning.\n        </p>\n        <p>\n          Evaluations may also be helpful for parents, schools, therapists, physicians, or other referral sources seeking diagnostic clarity and individualized recommendations.\n        </p>\n      </div>\n\n    </div>\n\n  </div>\n</section>\n\n<style>\n  .adhd-eval-section {\n    width: 100%;\n    padding: 56px 0;\n    background: linear-gradient(135deg, #F6F3ED 0%, #E5F3F6 100%);\n  }\n\n  .adhd-eval-container {\n    max-width: 1120px;\n    margin: 0 auto;\n    padding: 0 20px;\n  }\n\n  .adhd-eval-intro {\n    max-width: 780px;\n    margin: 0 auto 34px;\n    text-align: center;\n  }\n\n  .adhd-eval-eyebrow {\n    margin: 0 0 10px;\n    font-family: Montserrat, sans-serif;\n    font-size: 13px;\n    line-height: 1.4;\n    letter-spacing: 0.12em;\n    text-transform: uppercase;\n    color: #9D654E;\n    font-weight: 600;\n  }\n\n  .adhd-eval-intro h2 {\n    margin: 0 0 14px;\n    font-family: 'Spectral SC', serif;\n    font-size: 40px;\n    line-height: 1.16;\n    font-weight: 300;\n    color: #2B5275;\n  }\n\n  .adhd-eval-intro p {\n    margin: 0;\n    font-family: Montserrat, sans-serif;\n    font-size: 16px;\n    line-height: 1.8;\n    color: #3D2D29;\n  }\n\n  .adhd-eval-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    gap: 24px;\n  }\n\n  .adhd-eval-card {\n    position: relative;\n    overflow: hidden;\n    background: #FFFFFF;\n    border: 1px solid rgba(43, 82, 117, 0.16);\n    border-radius: 26px;\n    padding: 38px;\n    box-shadow: 0 14px 34px rgba(43, 82, 117, 0.10);\n  }\n\n  .adhd-eval-card::before {\n    content: \"\";\n    position: absolute;\n    top: -70px;\n    right: -70px;\n    width: 170px;\n    height: 170px;\n    border-radius: 50%;\n    background-color: rgba(78, 159, 191, 0.14);\n  }\n\n  .adhd-card-label {\n    margin: 0 0 14px;\n    font-family: Montserrat, sans-serif;\n    font-size: 12px;\n    line-height: 1.4;\n    letter-spacing: 0.12em;\n    text-transform: uppercase;\n    color: #9D654E;\n    font-weight: 600;\n    position: relative;\n    z-index: 1;\n  }\n\n  .adhd-eval-card h3 {\n    margin: 0 0 16px;\n    font-family: 'Spectral SC', serif;\n    font-size: 31px;\n    line-height: 1.18;\n    font-weight: 300;\n    color: #2B5275;\n    position: relative;\n    z-index: 1;\n  }\n\n  .adhd-eval-card p {\n    margin: 0 0 14px;\n    font-family: Montserrat, sans-serif;\n    font-size: 16px;\n    line-height: 1.82;\n    color: #3D2D29;\n    position: relative;\n    z-index: 1;\n  }\n\n  .adhd-eval-card p:last-child {\n    margin-bottom: 0;\n  }\n\n  @media screen and (min-width: 850px) {\n    .adhd-eval-grid {\n      grid-template-columns: repeat(2, 1fr);\n      align-items: stretch;\n    }\n  }\n\n  @media screen and (max-width: 700px) {\n    .adhd-eval-section {\n      padding: 38px 0;\n    }\n\n    .adhd-eval-intro h2 {\n      font-size: 31px;\n    }\n\n    .adhd-eval-card {\n      padding: 30px 24px;\n      border-radius: 22px;\n    }\n\n    .adhd-eval-card h3 {\n      font-size: 26px;\n    }\n\n    .adhd-eval-card p {\n      font-size: 15px;\n      line-height: 1.75;\n    }\n  }\n</style>",
+        "background": "#93ced7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_NTYfE3": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<h4>What This Evaluation Can Clarify</h4>\n\n<p style=\"margin-bottom: 24px;\">An ADHD evaluation can help determine whether attention-related difficulties are consistent with ADHD or better explained by other factors such as anxiety, trauma, learning differences, mood concerns, or broader executive functioning challenges. For children, the evaluation may help clarify patterns affecting learning, behavior, and school functioning.</p>\n\n<p>For adolescents and adults, it may bring greater understanding to chronic disorganization, mental overload, difficulty sustaining routines, emotional exhaustion, or the longstanding experience of working much harder than others just to keep up.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_aTct6W": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section class=\"adhd-expect-section\">\n  <div class=\"adhd-expect-container\">\n\n    <div class=\"adhd-expect-card\">\n      <p class=\"adhd-expect-eyebrow\">ADHD Evaluations</p>\n      <h2>What to expect</h2>\n\n      <div class=\"adhd-expect-list\">\n\n        <div class=\"adhd-expect-item\">\n          <span class=\"adhd-expect-dot\"></span>\n          <p>A clinical interview focused on current concerns, developmental history, school or work functioning, strengths, and evaluation goals.</p>\n        </div>\n\n        <div class=\"adhd-expect-item\">\n          <span class=\"adhd-expect-dot\"></span>\n          <p>Review of relevant records, which may include school records, prior evaluations, treatment history, medical information, or collateral information when appropriate.</p>\n        </div>\n\n        <div class=\"adhd-expect-item\">\n          <span class=\"adhd-expect-dot\"></span>\n          <p>Standardized measures of attention, executive functioning, emotional and behavioral functioning, and academic or cognitive skills as clinically indicated.</p>\n        </div>\n\n        <div class=\"adhd-expect-item\">\n          <span class=\"adhd-expect-dot\"></span>\n          <p>A feedback session and integrated written report with diagnostic impressions, individualized recommendations, and next steps for treatment, school planning, workplace support, or daily functioning.</p>\n        </div>\n\n      </div>\n    </div>\n\n  </div>\n</section>\n\n<style>\n  .adhd-expect-section {\n    width: 100%;\n    padding: 46px 0;\n    background-color: transparent;\n  }\n\n  .adhd-expect-container {\n    max-width: 980px;\n    margin: 0 auto;\n    padding: 0 20px;\n  }\n\n  .adhd-expect-card {\n    background: linear-gradient(135deg, #FFFFFF 0%, #F6F3ED 100%);\n    border: 1px solid rgba(43, 82, 117, 0.16);\n    border-radius: 24px;\n    padding: 38px;\n    box-shadow: 0 14px 34px rgba(43, 82, 117, 0.10);\n  }\n\n  .adhd-expect-eyebrow {\n    margin: 0 0 10px;\n    font-family: Montserrat, sans-serif;\n    font-size: 13px;\n    line-height: 1.4;\n    letter-spacing: 0.12em;\n    text-transform: uppercase;\n    color: #9D654E;\n    font-weight: 600;\n  }\n\n  .adhd-expect-card h2 {\n    margin: 0 0 24px;\n    font-family: 'Spectral SC', serif;\n    font-size: 38px;\n    line-height: 1.15;\n    font-weight: 300;\n    color: #2B5275;\n  }\n\n  .adhd-expect-list {\n    display: flex;\n    flex-direction: column;\n    gap: 16px;\n  }\n\n  .adhd-expect-item {\n    display: grid;\n    grid-template-columns: 12px 1fr;\n    gap: 14px;\n    align-items: start;\n  }\n\n  .adhd-expect-dot {\n    width: 8px;\n    height: 8px;\n    margin-top: 11px;\n    border-radius: 50%;\n    background-color: #2B5275;\n    display: block;\n  }\n\n  .adhd-expect-item p {\n    margin: 0;\n    font-family: Montserrat, sans-serif;\n    font-size: 16px;\n    line-height: 1.8;\n    color: #3D2D29;\n  }\n\n  @media screen and (max-width: 600px) {\n    .adhd-expect-section {\n      padding: 32px 0;\n    }\n\n    .adhd-expect-card {\n      padding: 28px 24px;\n      border-radius: 20px;\n    }\n\n    .adhd-expect-card h2 {\n      font-size: 31px;\n    }\n\n    .adhd-expect-item p {\n      font-size: 15px;\n      line-height: 1.75;\n    }\n  }\n</style>",
+        "background": "#79baab",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "tabs_nmw3cm": {
+      "type": "tabs",
+      "blocks": {
+        "tab_pkig78": {
+          "type": "tab",
+          "settings": {
+            "title": "AUTISM SPECTRUM",
+            "content": "<p>These evaluations help clarify questions related to autism spectrum presentation, including social communication differences, sensory experiences, repetitive patterns, masking, and developmental history. The goal is to provide a thoughtful and comprehensive understanding of the individual’s profile.</p>",
+            "page": ""
+          }
+        },
+        "tab_fchYWT": {
+          "type": "tab",
+          "settings": {
+            "title": "PERSONALITY AND EMOTIONAL FUNCTIONING",
+            "content": "<p>These evaluations help clarify patterns related to mood, anxiety, personality functioning, coping, emotional regulation, and interpersonal style. They can be useful when concerns are complex, longstanding, or difficult to fully understand through conversation alone.</p>",
+            "page": ""
+          }
+        },
+        "tab_a48zQz": {
+          "type": "tab",
+          "settings": {
+            "title": "ATTENTION AND EXECUTIVE FUNCTIONING",
+            "content": "<p>Evaluations in this area help clarify concerns related to attention, impulsivity, organization, working memory, task initiation, and self-regulation. They can support understanding of ADHD and related executive functioning difficulties across school, work, and daily life.</p>",
+            "page": ""
+          }
+        },
+        "tab_PJrCt6": {
+          "type": "tab",
+          "settings": {
+            "title": "ACADEMIC AND LEARNING CONCERNS",
+            "content": "<p>Evaluations in this area explore concerns related to reading, writing, math, academic performance, learning differences, and the cognitive processes that may affect school functioning. They can help also identify strengths, challenges, and recommendations for support.</p>",
+            "page": ""
+          }
+        },
+        "tab_jpctwN": {
+          "type": "tab",
+          "settings": {
+            "title": "DIAGNOSTIC CLARIFICATION",
+            "content": "<p>Some evaluations are designed to answer broader or more complex diagnostic questions when there is uncertainty about the nature of the concerns. The goal is to provide greater clarity, more accurate understanding, and practical recommendations for next steps.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_pkig78",
+        "tab_fchYWT",
+        "tab_a48zQz",
+        "tab_PJrCt6",
+        "tab_jpctwN"
+      ],
+      "disabled": true,
+      "name": "Tabs",
+      "settings": {
+        "blockId": "",
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "Types of Evaluations",
+        "title": "Areas of Evaluations",
+        "first_tab_open": false,
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Why Clarity Matters",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>For many individuals and families, the evaluation process provides language for experiences that have felt confusing, frustrating, or difficult to explain. Greater clarity can support treatment planning, educational advocacy, self-understanding, and more effective support across settings.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "disabled": true,
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Begin Here",
+        "content": "<p>If you or your child are struggling with focus, organization, follow-through, emotional regulation, or school and work demands, an ADHD and executive functioning evaluation can help clarify what is contributing to those challenges. These evaluations are especially helpful when symptoms overlap with anxiety, learning concerns, trauma, mood difficulties, sleep problems, or developmental differences.</p><p> <em>We usually respond within 24 hours. </em></p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p><p></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "rich_text_DaQDyr",
+    "rich_text_Qya8dM",
+    "rich_text_iqJ9kj",
+    "rich_text_BCUGzw",
+    "two_col_layout_A9FUKx",
+    "custom_liquid_iNUXi6",
+    "custom_liquid_NTYfE3",
+    "custom_liquid_aTct6W",
+    "tabs_nmw3cm",
+    "rich_text_LJLekq",
+    "contact_YJwAey"
+  ]
+}

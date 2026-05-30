@@ -1,0 +1,338 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Center for Balanced Living offers therapy, psychological evaluations, supervision, and consultation grounded in clinical expertise, thoughtful care, and a commitment to meaningful growth. </h4><h4>Whether you are seeking support for yourself, your child, or your professional development, our services are designed to provide clarity, connection, and next steps that fit your needs.</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "disabled": true,
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/faded.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_DaQDyr": {
+      "type": "rich-text",
+      "blocks": {
+        "button_cd8fMb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Services at Center for Balanced Living",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_cd8fMb"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_Qya8dM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GiBh9t": {
+          "type": "heading",
+          "settings": {
+            "text": "Read Dr. Serravalle's Blog",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "subheading_qiCwkw": {
+          "type": "subheading",
+          "settings": {
+            "text": "Make It Make Sense"
+          }
+        },
+        "richtext_C4cfCH": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Read reflections, clinical insights, and practical resources from our practice.</p>"
+          }
+        },
+        "button_TAkGNW": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://pages/blog",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_GiBh9t",
+        "subheading_qiCwkw",
+        "richtext_C4cfCH",
+        "button_TAkGNW"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#9cbea9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_iqJ9kj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qpFQwy": {
+          "type": "heading",
+          "settings": {
+            "text": "Join the Newsletter",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YPUUga": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Join our newsletter for practice updates, workshops, and mental health resources.</p>"
+          }
+        },
+        "button_BxyMnx": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://pages/newsletters",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpFQwy",
+        "richtext_YPUUga",
+        "button_BxyMnx"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BCUGzw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vwcczb": {
+          "type": "heading",
+          "settings": {
+            "text": "Educational Programs or Events",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_dyBmGT": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Explore workshops, groups, guest speakers, and community events that bring education, support, and meaningful connection to our practice community.</p>"
+          }
+        },
+        "button_EQPft9": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "View Offerings",
+            "url": "shopify://pages/educational-programs",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vwcczb",
+        "richtext_dyBmGT",
+        "button_EQPft9"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#e5f3f6",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "settings": {
+            "text": "Stay Connected Beyond the Calendar",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Explore our latest writing, join our newsletter, and stay informed about future groups, workshops, and community offerings from Center for Balanced Living.</p>"
+          }
+        },
+        "button_UrHyph": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://collections",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3",
+        "button_UrHyph"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Share Your Interests",
+        "content": "<p>We welcome your input about the kinds of groups, workshops, guest speakers, and community events that would be most meaningful to you. Your feedback helps us build offerings that foster connection, learning, and support within our community.</p><p><strong>Contact Us at (302) 608-3780. </strong></p><p><em>We typically respond within 24 hours.</em></p><p>You may also complete our contact form, and a member of our team will be in touch.</p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "rich_text_DaQDyr",
+    "rich_text_Qya8dM",
+    "rich_text_iqJ9kj",
+    "rich_text_BCUGzw",
+    "rich_text_LJLekq",
+    "contact_YJwAey"
+  ]
+}

@@ -1,0 +1,298 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "collection_title_size": "h2",
+        "image_size": "sm",
+        "image": "shopify://shop_images/Nano_Banana_Pro_using_our_logo_create_a_professional_private_practice_image_of_a_ad_for_mental_healt_2.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "groups",
+        "featured_product_heading": "Check Out Our Programs",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "featured_collection_3hGfza": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "{{ collection }}",
+        "products": [
+          "rooted-and-rising-somatic-healing-with-amanda",
+          "vision-boards-and-values-with-brianna",
+          "writing-your-way-to-healing-with-dr-serravalle"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Current Offerings",
+        "content": "",
+        "link_url": "https://www.eventbrite.com/o/center-for-balanced-living-121062482552",
+        "link_text": "Register Here",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 8,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 2,
+        "filter_layout": "drawer",
+        "show_sort_by": false,
+        "show_filters": false,
+        "show_filter_group_name": true,
+        "show_filter_values_count": false,
+        "open_first_filter_group": false
+      }
+    },
+    "contact_iUH8jj": {
+      "type": "contact",
+      "disabled": true,
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "Contact Us",
+        "title": "I would like to learn more!",
+        "content": "",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "media_with_text_cFEpaE": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_Hgf7kC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Calendar_photo.jpg",
+            "media_width": 45,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Upcoming Events</h3><p>Discover are and upcoming events in your community hosted by Center for Balanced Living!</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://pages/event-calendar",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "rgba(0,0,0,0)",
+            "button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_Pi7dmx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/create_an_image_for_a_psychologist_showing_someone_reading_the_monthly_news_letter_sitting_at_a_desk_and_smiling.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Monthly Newsletter</h3><p>Stay updated with news, events and resources from Center for Balanced Living. Sign up and never miss an announcement!</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://blogs/newsletter",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_L3UmiK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/free-photo-of-blogging-tips-for-beginners.jpg",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Our Blog</h3><p><em> </em>Explore insights, tips and stories from Center for Balanced Living staff. Stay informed and inspired by our latest posts!</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://blogs/balanced-living-blog",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_8zt9gK": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/supervisefpo.jpg",
+            "media_width": 55,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Supervision <br/>Services</h3><p>Dr. Serravalle is able to supervise those working towards LPC and PsyD. She is also a Consultant in Training for EMDRIA and is able to supervise those working towards certification in EMDR.</p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://products/therapy",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_DNyXPV": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/fpo-consult.jpg",
+            "media_width": 55,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h3>Consultation Services</h3><p>Dr. Serravalle is available to consult on any aspects of her expertise including trauma therapy, psychological evaluations and clinical writing. </p>",
+            "link_text": "Learn More",
+            "link_url": "shopify://products/therapy",
+            "background": "#f6f3ee",
+            "background_gradient": "",
+            "text_color": "rgba(0,0,0,0)",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Hgf7kC",
+        "image_Pi7dmx",
+        "image_L3UmiK",
+        "image_8zt9gK",
+        "image_DNyXPV"
+      ],
+      "settings": {
+        "section_class_name": "theme-media-section",
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "rich_text_mjBmNK": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_GWXXHX": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h1>Our Services</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GWXXHX"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_ycr6HQ": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_RE9D7q": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h2>Contact Us</h2><p>Contact us for more information about our Training Services. For immediate service please call our office.</p><h3>Call: (302) 608-3780</h3><p>Alternatively, our contact form is available for your convenience. We typically respond within 24-48 hours.</p>"
+          }
+        },
+        "liquid_EKRFgi": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-RsFh4H\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_RE9D7q",
+        "liquid_EKRFgi"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#f6f3ee",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "featured_collection_3hGfza",
+    "main",
+    "contact_iUH8jj",
+    "media_with_text_cFEpaE",
+    "rich_text_mjBmNK",
+    "rich_text_ycr6HQ"
+  ]
+}

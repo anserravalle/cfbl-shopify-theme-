@@ -1,0 +1,424 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "p {font-size: 24px;}",
+        "h1 {font-size: 55px !important; font-weight: 500 !important;}"
+      ],
+      "settings": {
+        "content_width": "100%"
+      }
+    },
+    "rich_text_fGRMWH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yY3V3G": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Services",
+            "heading_tag": "h1",
+            "text_color": "#162b3d",
+            "gradient": ""
+          }
+        },
+        "richtext_6PmiQf": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h6>At Center for Balanced Living, we offer therapy, psychological evaluations, consultation, supervision, and educational services grounded in clinical expertise, trauma-informed care, and respect for the whole person. </h6><h6>Our services are designed to meet clients, families, and professionals at different points in the healing and growth process, whether you are seeking emotional support, diagnostic clarity, family guidance, or continued professional development.</h6><h6>We understand that reaching out for care can feel overwhelming, especially when you are not sure where to begin. Our goal is to help you identify the service that best fits your needs and to provide care that is thoughtful, research-based, and responsive to your lived experience.</h6><h6>Whether you are beginning therapy, pursuing an evaluation, or looking for training and consultation, our work begins with careful listening, clinical clarity, and a collaborative path forward.</h6>"
+          }
+        },
+        "image_yHknTK": {
+          "type": "image",
+          "settings": {
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "heading_yY3V3G",
+        "richtext_6PmiQf",
+        "image_yHknTK"
+      ],
+      "custom_css": [
+        "h6 {font-size: 24px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f4f2ee",
+        "background_gradient": "",
+        "text_color": "#162b3d"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6>At Center for Balanced Living, we offer therapy, psychological evaluations, consultation, supervision, and educational services grounded in clinical expertise, trauma-informed care, and respect for the whole person. </h6><h6>Our services are designed to meet clients, families, and professionals at different points in the healing and growth process, whether you are seeking emotional support, diagnostic clarity, family guidance, or continued professional development.</h6><h6>We understand that reaching out for care can feel overwhelming, especially when you are not sure where to begin. Our goal is to help you identify the service that best fits your needs and to provide care that is thoughtful, research-based, and responsive to your lived experience.</h6><h6>Whether you are beginning therapy, pursuing an evaluation, or looking for training and consultation, our work begins with careful listening, clinical clarity, and a collaborative path forward.</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h6 {font-size: 30px;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f4f2ee",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15
+      }
+    },
+    "rich_text_iqJ9kj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qpFQwy": {
+          "type": "heading",
+          "settings": {
+            "text": "Join the Newsletter",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YPUUga": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Join our newsletter for practice updates, workshops, and mental health resources.</p>"
+          }
+        },
+        "button_BxyMnx": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://pages/newsletters",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpFQwy",
+        "richtext_YPUUga",
+        "button_BxyMnx"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_KkhHX8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_zTW8Yz": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_Cc9iPb": {
+          "type": "heading",
+          "settings": {
+            "text": "Individual Therapy",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_xUbN7r": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Individual therapy provides a space to better understand yourself, work through challenges, and move toward meaningful change. At Center for Balanced Living, we offer trauma-informed therapy for children, adolescents, and adults, grounded in mindfulness, nature, and science, with growth supported through relational development, attunement, exposure, and skill building.</p>"
+          }
+        },
+        "button_CpUCRH": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Learn More",
+            "url": "shopify://pages/individual-therapy",
+            "background": "",
+            "text_color": "#f4f2ee"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_zTW8Yz",
+        "heading_Cc9iPb",
+        "richtext_xUbN7r",
+        "button_CpUCRH"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/psychological-therapy-in-a-private-practice.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f4f2ee",
+        "overlay_color": "#000000",
+        "overlay_opacity": 57
+      }
+    },
+    "image_with_text_overlay_xx4gNk": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_3nmdgL": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_t9gxCT": {
+          "type": "heading",
+          "settings": {
+            "text": "Psychological Evaluations",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_UfMQwe": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Psychological evaluations are designed to bring greater clarity to concerns that may feel confusing, complex, or difficult to define. At Center for Balanced Living, we provide thoughtful, screenings, comprehensive screenings, and comprehensive evaluations that help answer important questions and guide meaningful recommendations for support, treatment, and planning.</p>"
+          }
+        },
+        "button_WFV4fc": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://pages/psychological-evaluations",
+            "background": "#2b5275",
+            "text_color": "#f4f2ee"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3nmdgL",
+        "heading_t9gxCT",
+        "richtext_UfMQwe",
+        "button_WFV4fc"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/not-game-puzzles-or-game-blocks-more-like-psychological-assessment.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#f4f2ee",
+        "overlay_color": "#000000",
+        "overlay_opacity": 57
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "settings": {
+            "text": "Stay Connected Beyond the Calendar",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Explore our latest writing, join our newsletter, and stay informed about future groups, workshops, and community offerings from Center for Balanced Living.</p>"
+          }
+        },
+        "button_UrHyph": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://collections",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3",
+        "button_UrHyph"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_9dmgwC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_U6GNz8": {
+          "type": "heading",
+          "settings": {
+            "text": "Evaluations",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_QGXcxr": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Psychological evaluations are designed to bring greater clarity to concerns that may feel confusing, complex, or difficult to define. At Center for Balanced Living, we provide thoughtful, screenings, comprehensive screenings, and comprehensive evaluations that help answer important questions and guide meaningful recommendations for support, treatment, and planning.</p>"
+          }
+        },
+        "button_GAK7rk": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More",
+            "url": "shopify://pages/psychological-evaluations",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_U6GNz8",
+        "richtext_QGXcxr",
+        "button_GAK7rk"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#9cbea9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Ready to Take the Next Step?",
+        "content": "<p>We welcome inquiries from individuals, families, and professionals seeking services at Center for Balanced Living. Please share a few details below, and a member of our team will be in touch.</p><p><strong>Contact Us at (302) 608-3780. </strong></p><p><em>We typically respond within 24 hours.</em></p><p>You may also complete our contact form, and a member of our team will be in touch.</p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f4f2ee",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_fGRMWH",
+    "image_with_text_overlay_QnMCtz",
+    "rich_text_iqJ9kj",
+    "image_with_text_overlay_KkhHX8",
+    "image_with_text_overlay_xx4gNk",
+    "rich_text_LJLekq",
+    "rich_text_9dmgwC",
+    "contact_YJwAey"
+  ]
+}

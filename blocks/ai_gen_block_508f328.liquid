@@ -1,0 +1,480 @@
+{% doc %}
+  @prompt
+    For the CFBL Institute banner, where the logo is on one side and the mission or intro text is on the other, use this prompt:
+    
+    Create a clean, elevated split-layout banner for the CFBL Institute page. The left side should feature the CFBL Institute logo prominently with balanced spacing around it. The right side should feature the mission and introductory text for the Institute, with a clear heading, short supporting paragraph, and optional button underneath. The layout should feel warm, refined, professional, and clinically grounded. It should reflect a psychologist-led educational institute, not a corporate training company.
+    
+    Use a two-column structure on desktop, with the logo on the left and the text content on the right. On mobile, stack the logo above the text. Keep the design spacious, minimal, and polished. Use soft, brand-aligned styling with strong readability and visual balance. The section should feel thoughtful and credible, with enough white space to let both the logo and the message stand out.
+    
+    Include:
+    
+    logo/image area on the left
+    heading on the right
+    mission or introductory paragraph on the right
+    optional button below the text
+    responsive mobile stacking
+    clean spacing and alignment
+    no overly busy backgrounds
+    no corporate or tech-style design elements
+    
+    Suggested default content:
+    Heading: CFBL Institute
+    Text: Training, education, and professional development rooted in thoughtful, trauma-informed, and ecologically grounded care.
+    Button: Explore Offerings
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-institute-banner-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.vertical_padding }}px {{ block.settings.horizontal_padding }}px;
+  }
+
+  .ai-institute-banner__container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ block.settings.column_gap }}px;
+    align-items: center;
+  }
+
+  .ai-institute-banner__logo-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: {{ block.settings.logo_padding }}px;
+  }
+
+  .ai-institute-banner__logo-{{ ai_gen_id }} {
+    max-width: {{ block.settings.logo_max_width }}px;
+    width: 100%;
+    height: auto;
+  }
+
+  .ai-institute-banner__logo-placeholder-{{ ai_gen_id }} {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: {{ block.settings.logo_max_width }}px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+  }
+
+  .ai-institute-banner__logo-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-institute-banner__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .ai-institute-banner__content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.content_gap }}px;
+    padding: {{ block.settings.content_padding }}px;
+  }
+
+  .ai-institute-banner__heading-{{ ai_gen_id }} {
+    margin: 0;
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .ai-institute-banner__text-{{ ai_gen_id }} {
+    margin: 0;
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.6;
+  }
+
+  .ai-institute-banner__button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_text_size }}px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+  }
+
+  .ai-institute-banner__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+    color: {{ block.settings.button_hover_text_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-institute-banner__container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.mobile_gap }}px;
+    }
+
+    .ai-institute-banner__heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+    }
+
+    .ai-institute-banner__text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.9 }}px;
+    }
+
+    .ai-institute-banner-{{ ai_gen_id }} {
+      padding: {{ block.settings.vertical_padding | times: 0.7 }}px {{ block.settings.horizontal_padding | times: 0.7 }}px;
+    }
+
+    .ai-institute-banner__logo-wrapper-{{ ai_gen_id }} {
+      padding: {{ block.settings.logo_padding | times: 0.5 }}px;
+    }
+
+    .ai-institute-banner__content-{{ ai_gen_id }} {
+      padding: {{ block.settings.content_padding | times: 0.5 }}px;
+    }
+  }
+{% endstyle %}
+
+<cfbl-institute-banner-{{ ai_gen_id }}
+  class="ai-institute-banner-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-institute-banner__container-{{ ai_gen_id }}">
+    <div class="ai-institute-banner__logo-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.logo %}
+        <img
+          src="{{ block.settings.logo | image_url: width: 800 }}"
+          alt="{{ block.settings.logo.alt | default: 'CFBL Institute logo' | escape }}"
+          loading="lazy"
+          width="{{ block.settings.logo.width }}"
+          height="{{ block.settings.logo.height }}"
+          class="ai-institute-banner__logo-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-institute-banner__logo-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-institute-banner__empty-state-{{ ai_gen_id }}">
+            Add your logo
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-institute-banner__content-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-institute-banner__heading-{{ ai_gen_id }}">
+          {{ block.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.text != blank %}
+        <div class="ai-institute-banner__text-{{ ai_gen_id }}">
+          {{ block.settings.text }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.show_button and block.settings.button_text != blank %}
+        <a
+          href="{{ block.settings.button_link }}"
+          class="ai-institute-banner__button-{{ ai_gen_id }}"
+        >
+          {{ block.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</cfbl-institute-banner-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CfblInstituteBanner{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+
+    customElements.define('cfbl-institute-banner-{{ ai_gen_id }}', CfblInstituteBanner{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "CFBL Institute banner",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": "Logo max width",
+      "min": 100,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "logo_padding",
+      "label": "Logo padding",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>CFBL Institute</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Training, education, and professional development rooted in thoughtful, trauma-informed, and ecologically grounded care.</p>"
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "Content padding",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Explore offerings"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Maximum width",
+      "min": 800,
+      "max": 1600,
+      "step": 40,
+      "unit": "px",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "label": "Column gap",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "label": "Content gap",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "label": "Mobile gap",
+      "min": 16,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "vertical_padding",
+      "label": "Vertical padding",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "label": "Horizontal padding",
+      "min": 16,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#f6f3ed"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#2b5275"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#2b5275"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background",
+      "default": "#2b5275"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#eed9c5"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Button hover background",
+      "default": "#4e9484"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text",
+      "default": "#eed9c5"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "button_text_size",
+      "label": "Button text size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "label": "Button vertical padding",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "label": "Button horizontal padding",
+      "min": 16,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Button border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "CFBL Institute banner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,136 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+ARTICLE AUTHOR
+----------------------------------------------------------------------------------------------------------------------
+
+Shows the article author if one is set
+
+* show_date
+* show_author
+* show_comments_count
+{%- endcomment -%}
+{% assign author_page_gid = article.metafields.custom.author_reference %}
+{% if author_page_gid %}
+  {% assign author_page = pages[author_page_gid] %}
+  {% if author_page %}
+    {% comment %}only render CSS if exists{% endcomment %}
+    <style>
+      .author-bio-mobile {
+        display:none;
+      }
+      .author-section {
+        align-items: center;
+        display:flex;
+        flex-wrap:wrap;
+        max-width:950px;
+        margin:0 auto;
+      }
+      .author-block-title {
+        margin-bottom:2rem;
+        flex-basis:100%;        
+        width:100%;
+      }
+      .author-block-title h6 {
+        font-weight:500 !important;
+      }
+      .author-section--bio {
+        flex-basis:calc(100% - 150px);
+        width:calc(100% - 150px);
+        padding-left:30px;
+      }
+      .author-section--bio p {
+        font-size:90%;
+    
+      }
+      .author-section-image-wrapper {
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        overflow:hidden;
+      }
+      .author-section-image-wrapper img {
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+      .author-section--img {
+        margin-bottom:1rem;
+        flex-basis:150px;
+        width:150px;    
+      }
+      .author-section--name {
+        margin-bottom:1rem;
+      }
+      .author-section--content p {
+        margin-bottom:1rem;
+      }
+      @media (max-width:767px) {
+        .author-bio-desktop {
+          display:none !important;
+        }
+        .author-bio-mobile {
+          display:block !important;
+        }
+        .author-section--img,
+        .author-section--bio {
+          /* padding:0; */
+          /* flex-basis:100%;
+          width:100%; */
+        }
+        .author-block-title {
+          text-align:center;
+        }
+        .author-section--bio {
+          flex-basis:calc(100% - 100px);
+          width:calc(100% - 100px);
+          padding-left:15px;
+        }
+        .author-section-image-wrapper {
+          width:100px;
+          height:100px;
+        }
+        .author-section--img {
+          flex-basis:100px;
+          width:100px;    
+        }
+      }
+    </style>
+    {% assign author_display_name_raw = author_page.metafields.custom.author_display_name %}
+    {% assign author_bio_raw = author_page.metafields.custom.author_bio %}
+    {% assign author_headshot = author_page.metafields.custom.author_headshot %}
+    <div id="authorBio" class="author-section">      
+      <div class="author-block-title">
+        <h6>ABOUT THE AUTHOR</h6>
+      </div>  
+      {% if author_headshot %}
+        <div class="author-section--img">
+          <div class="author-section-image-wrapper">
+            <img src="{{ author_headshot | img_url: 'medium' }}" alt="{{ author_display_name_raw }} headshot" width="100%" height="auto">
+          </div>
+        </div>
+      {% endif %}
+      {% if author_bio_raw or author_display_name_raw %}
+          <div class="author-section--bio">
+  
+            {% if author_display_name_raw %}
+              <h5 class="author-section--name">{{ author_display_name_raw | metafield_tag }}</h5>
+            {% endif %}
+  
+            {% if author_bio_raw %}
+              <div class="author-bio-desktop">
+              {{ author_bio_raw | metafield_tag }}
+              </div>
+            {% endif %}
+            
+          </div>
+          {% if author_bio_raw %}
+            <div class="author-bio-mobile">
+                {{ author_bio_raw | metafield_tag }}
+            </div>
+          {% endif %}
+      {% endif %}
+    </div>
+    <hr />
+  {% endif %}
+{% endif %}

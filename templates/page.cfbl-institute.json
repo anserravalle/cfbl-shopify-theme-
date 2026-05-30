@@ -1,0 +1,228 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "p {font-size: 24px;}",
+        "h1 {font-size: 55px !important; font-weight: 500 !important;}"
+      ],
+      "settings": {
+        "content_width": "100%"
+      }
+    },
+    "17795494128ffaf9b4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_664eede_awAhQX": {
+          "type": "ai_gen_block_664eede",
+          "settings": {
+            "layout": "image_left",
+            "vertical_alignment": "center",
+            "desktop_width_percent": 100,
+            "max_content_width": 1200,
+            "image": "shopify://shop_images/drserravalle.png",
+            "image_border_radius": 20,
+            "heading": "CFBL Institute",
+            "text": "<p>Founded and led by Dr. Niki Serravalle, licensed clinical psychologist and founder of the Center for Balanced Living.</p>",
+            "text_alignment": "left",
+            "heading_size": 50,
+            "heading_color": "#1d486f",
+            "heading_line_height": 1.6,
+            "heading_spacing": 20,
+            "text_size": 20,
+            "text_color": "#2b5275",
+            "text_line_height": 1.7,
+            "paragraph_spacing": 15,
+            "section_padding": 45,
+            "text_padding": 5,
+            "column_gap": 25,
+            "mobile_gap": 15,
+            "background_color": "#9eb1c4",
+            "border_radius": 10
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_664eede_awAhQX"
+      ],
+      "settings": {}
+    },
+    "multi_column_K7pVd9": {
+      "type": "multi-column",
+      "blocks": {
+        "item_ktKPWP": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Clinically Grounded",
+            "heading_tag": "h4",
+            "content": "<p>Every offering is rooted in current research and informed by years of direct clinical work, not abstract theory alone.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_y7UdP3": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Trauma-Informed",
+            "heading_tag": "h4",
+            "content": "<p>We teach what we practice: trauma-aware, nervous system attuned care that respects the body's role in healing.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        },
+        "item_BCQjb9": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Practical Application",
+            "heading_tag": "h4",
+            "content": "<p>Our trainings translate into how clinicians assess, conceptualize, and treat. Insight you can use in session.</p><p></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_external": false,
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_ktKPWP",
+        "item_y7UdP3",
+        "item_BCQjb9"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "section_class_name": "Our Approach",
+        "blockId": "",
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "small",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "Our Approach",
+        "content": "<p>CFBL Institute exists to bridge the gap between clinical theory and applied practice. Our work is grounded in trauma-informed science, nervous system awareness, cultural humility, and the lived complexity of real clinical work. </p>",
+        "background": "#ece5e1",
+        "background_gradient": "",
+        "text_color": "#61819e"
+      }
+    },
+    "media_with_text_HGLeMT": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_a9Bpwj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/drserravalle_training3.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Professional Trainings",
+            "content": "<p>Advanced clinical trainings for licensed clinicians and graduate students ready to deepen their work in trauma, evaluation, and nervous system informed care. Built to translate directly into how you assess, conceptualize, and treat.</p>",
+            "link_text": "View Trainings",
+            "link_url": "shopify://pages/professional-clinical-trainings",
+            "background": "#1d486f",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#eed9c5",
+            "button_text_color": "#2b5275"
+          }
+        },
+        "image_cafWbn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/psychology-training.png",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Courses & Certifications",
+            "content": "<p>Multi-session courses that build clinical knowledge sequentially, with time to integrate between sessions. For clinicians strengthening their foundation and students building it for the first time.</p>",
+            "link_text": "Browse Courses",
+            "link_url": "shopify://pages/courses-certification",
+            "background": "#5b988a",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#2b5275",
+            "button_text_color": ""
+          }
+        },
+        "image_h8iwkr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/drserravalleworkshop.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Workshops",
+            "content": "<p>Workshops designed to bring trauma-informed, ecologically grounded, and meaningful learning into accessible, practical conversation.</p>",
+            "link_text": "View Our Workshops",
+            "link_url": "shopify://pages/workshops",
+            "background": "#b89370",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_a9Bpwj",
+        "image_cafWbn",
+        "image_h8iwkr"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "section_class_name": "media-default-section",
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "custom_liquid_yMymjD": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"background-color: #EAE2D0; padding: 64px 32px; text-align: center;\">\n  <div style=\"max-width: 540px; margin: 0 auto;\">\n    <h2 style=\"font-family: 'Spectral SC', serif; font-weight: 300; font-size: 32px; color: #2B5275; margin: 0 0 16px 0;\">Stay informed about the Institute</h2>\n    <p style=\"font-family: 'Montserrat', sans-serif; font-size: 16px; color: #2B5275; line-height: 1.6; margin: 0 0 32px 0;\">Trainings, courses, workshops, and Institute announcements are shared through Letters from CFBL Newsletter. Quiet correspondence for clinicians and learners.</p>\n    {% form 'customer' %}\n      {{ form.errors | default_errors }}\n      <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter, institute-interest\">\n      <input type=\"hidden\" name=\"contact[accepts_marketing]\" value=\"true\">\n      <div style=\"display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 480px; margin: 0 auto;\">\n        <input type=\"email\" name=\"contact[email]\" placeholder=\"Email address\" required style=\"flex: 1; min-width: 220px; padding: 12px 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; border: 1px solid #2B5275; background: #ffffff; color: #2B5275;\">\n        <button type=\"submit\" style=\"padding: 12px 28px; font-family: 'Montserrat', sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; background-color: #2B5275; color: #ffffff; border: none; cursor: pointer;\">Subscribe</button>\n      </div>\n      {% if form.posted_successfully? %}\n        <p style=\"margin-top: 24px; font-family: 'Montserrat', sans-serif; color: #2B5275;\">Thank you. You are on the list.</p>\n      {% endif %}\n    {% endform %}\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17795494128ffaf9b4",
+    "multi_column_K7pVd9",
+    "media_with_text_HGLeMT",
+    "custom_liquid_yMymjD"
+  ]
+}

@@ -1,0 +1,363 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "two_col_layout_nA9AnV": {
+      "type": "two-col-layout",
+      "custom_css": [
+        "h2 {font-size: 70px;}",
+        "p {font-size: 25px; font-family: Montserrat;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/treefpo.png",
+        "subheading": "",
+        "title": "Your Path To Healing Begins Here",
+        "rich_text": "<p>Center for Balanced Living offers therapy, psychological evaluations, consultation, supervision, and educational services grounded in trauma-informed, research-based care. </p><p>We support children, adolescents, adults, families, and professionals with services designed to foster insight, clarity, and meaningful growth.</p>",
+        "image_position": "left",
+        "display_mode": "all",
+        "section_background": "rgba(0,0,0,0)",
+        "section_text_color": "#2b5275",
+        "button_text": "Start the Conversation",
+        "button_url": "shopify://pages/contact",
+        "button_background": "#2b5275",
+        "button_text_color": "#f0eae0"
+      }
+    },
+    "rich_text_636RRB": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_fmRimr": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_GRWmk4": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_DemFfx": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fmRimr",
+        "heading_GRWmk4",
+        "richtext_DemFfx"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/homepage.png",
+            "content_max_width": 840,
+            "mobile_text_position": "place-self-center-start text-start",
+            "desktop_text_position": "sm:place-self-center-start sm:text-start",
+            "subheading": "ABOUT US",
+            "title": "Our approach to care is relational, clinically grounded, and informed by a holistic understanding of development. We integrate evidence-based practice with thoughtful conceptualization to support healing, diagnostic clarity, and sustainable growth.",
+            "heading_tag": "h3",
+            "button_text": "",
+            "button_link": "shopify://pages/about-us",
+            "text_color": "{{ shop.brand.colors.primary[0].background }}",
+            "button_background": "#ece5e1",
+            "button_text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "custom_css": [
+        "p {font-size: 32px; font-family: Montserrat;}",
+        ".subheading {font-family: Spectral SC; font-size: 55px; font-weight: 200;}"
+      ],
+      "settings": {
+        "custom_css_class": "vertical-flex-between",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "show_initial_transition": false,
+        "image_size": "auto",
+        "controls_type": "filled_arrows",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 6,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": ""
+      }
+    },
+    "177953427652eb5b55": {
+      "type": "_blocks",
+      "custom_css": [],
+      "settings": {}
+    },
+    "rich_text_YxR3RC": {
+      "type": "rich-text",
+      "blocks": {
+        "page_XBYykU": {
+          "type": "page",
+          "settings": {
+            "page": "about-us"
+          }
+        },
+        "richtext_Yyc49w": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h1>Serving clients throughout Delaware including <a href=\"/pages/trauma-informed-therapy-and-psychological-evaluations-in-wilmington-delaware\" title=\"Wilmington, Delaware\">Wilmington,</a> <a href=\"/pages/therapy-newark-delaware\" title=\"Newark, Delaware\">Newark</a>, <a href=\"/pages/therapy-dover-delaware\" title=\"Dover, Delaware\">Dover</a>, <a href=\"/pages/therapy-middletown-delaware\" title=\"Middletown, Delaware\">and Middletown.</a></h1>"
+          }
+        }
+      },
+      "block_order": [
+        "page_XBYykU",
+        "richtext_Yyc49w"
+      ],
+      "custom_css": [
+        "h1 {font-size: 38px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f4f2ee",
+        "background_gradient": "",
+        "text_color": "#2b5275"
+      }
+    },
+    "17795371334a9b53ea": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_1305ebe_yVYJ4t": {
+          "type": "ai_gen_block_1305ebe",
+          "settings": {
+            "section_heading": "Choose Your Path",
+            "section_heading_color": "#162b3d",
+            "section_heading_size": 60,
+            "section_heading_font": "cormorant_n6",
+            "section_subheading": "Therapy, evaluations, and professional training each begin with careful listening, clinical clarity, and respect for the whole person.",
+            "section_subheading_color": "#162b3d",
+            "section_subheading_size": 24,
+            "section_subheading_font": "montserrat_i5",
+            "section_background_color": "#b8c9bc",
+            "card_gap": 20,
+            "image_height_desktop": 500,
+            "image_height_mobile": 300,
+            "image_border_radius": 16,
+            "image_button_spacing": 20,
+            "text_box_background_color": "#6f8f7a",
+            "text_box_opacity": 0.8,
+            "button_hover_color": "#0f2a3d",
+            "image_1": "shopify://shop_images/IMG_6162.jpg",
+            "heading_1": "Begin Therapy",
+            "heading_color_1": "#f0eae0",
+            "heading_size_1": 30,
+            "heading_font_1": "montserrat_n5",
+            "heading_letter_spacing_1": 0,
+            "subheading_1": "Support for healing and change.",
+            "subheading_color_1": "#f0eae0",
+            "subheading_size_1": 20,
+            "subheading_font_1": "montserrat_n4",
+            "subheading_line_height_1": 1.8,
+            "overlay_padding_1": 45,
+            "overlay_border_radius_1": 14,
+            "overlay_width_1": 80,
+            "overlay_max_width_1": 400,
+            "overlay_min_height_1": 10,
+            "overlay_bottom_position_1": 100,
+            "button_text_1": "Explore Therapy",
+            "button_link_1": "shopify://pages/individual-therapy",
+            "button_color_1": "#2b5275",
+            "button_text_color_1": "#f0eae0",
+            "button_font_size_1": 21,
+            "button_border_radius_1": 24,
+            "image_2": "shopify://shop_images/IMG_2622.jpg",
+            "heading_2": "Get an Evaluation",
+            "heading_color_2": "#f0eae0",
+            "heading_size_2": 30,
+            "heading_font_2": "montserrat_n5",
+            "heading_letter_spacing_2": 1.5,
+            "subheading_2": "Clarity for diagnosis and next steps.",
+            "subheading_color_2": "#f0eae0",
+            "subheading_size_2": 20,
+            "subheading_font_2": "montserrat_n4",
+            "subheading_line_height_2": 1.8,
+            "overlay_padding_2": 45,
+            "overlay_border_radius_2": 14,
+            "overlay_width_2": 85,
+            "overlay_max_width_2": 700,
+            "overlay_min_height_2": 0,
+            "overlay_bottom_position_2": 100,
+            "button_text_2": "Explore Evaluations",
+            "button_link_2": "shopify://pages/psychological-evaluations",
+            "button_color_2": "#2b5275",
+            "button_text_color_2": "#f0eae0",
+            "button_font_size_2": 20,
+            "button_border_radius_2": 24,
+            "image_3": "shopify://shop_images/B1BB9BB8-0F0E-4315-AD7B-C4C07154FDDF.jpg",
+            "heading_3": "Learn With Us",
+            "heading_color_3": "#f0eae0",
+            "heading_size_3": 30,
+            "heading_font_3": "montserrat_n5",
+            "heading_letter_spacing_3": 1.5,
+            "subheading_3": "Clinical training, supervision, and consultation.",
+            "subheading_color_3": "#f0eae0",
+            "subheading_size_3": 20,
+            "subheading_font_3": "montserrat_n4",
+            "subheading_line_height_3": 1,
+            "overlay_padding_3": 45,
+            "overlay_border_radius_3": 14,
+            "overlay_width_3": 85,
+            "overlay_max_width_3": 700,
+            "overlay_min_height_3": 70,
+            "overlay_bottom_position_3": 100,
+            "button_text_3": "Learn With Us",
+            "button_link_3": "shopify://pages/cfbl-institute",
+            "button_color_3": "#2b5275",
+            "button_text_color_3": "#f0eae0",
+            "button_font_size_3": 21,
+            "button_border_radius_3": 24
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_1305ebe_yVYJ4t"
+      ],
+      "custom_css": [],
+      "settings": {}
+    },
+    "press": {
+      "type": "press",
+      "blocks": {
+        "16644243327ba53d2a-0": {
+          "type": "quote",
+          "settings": {
+            "logo": "shopify://shop_images/CBL_Mark_Color_2x_aff8397e-285d-4a37-b86a-79c4e2e8014b.png",
+            "logo_width": 150,
+            "author": "Angela (Niki) Serravalle, Psychologist, PsyD, LPCMH, NCC",
+            "content": "My approach to care begins with the understanding that each person is unique. Treatment should be thoughtful, responsive, and grounded in both clinical depth and the needs of the individual.",
+            "show_rating": false,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "16644243327ba53d2a-0"
+      ],
+      "custom_css": [
+        "blockquote {font-size: 35px;}"
+      ],
+      "settings": {
+        "title": "",
+        "full_width": true,
+        "content_size": "medium",
+        "background": "#f4f2ee",
+        "background_gradient": "",
+        "text_color": "#162b3d",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "contact_hD9Txi": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_D3tdih": {
+          "type": "dropdown",
+          "settings": {
+            "title": "How can we help?",
+            "values": "Individual Therapy, Psychological Evaluation, Clinical Supervision, EMDR Consultation, Professional Training, Something Else"
+          }
+        },
+        "text_i78wYf": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_FypcLF": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method Of Contact",
+            "values": "Email, Phone, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_D3tdih",
+        "text_i78wYf",
+        "dropdown_FypcLF"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Start the Conversation",
+        "content": "<p>Whether you are seeking therapy, evaluations, consultation, supervision, or training, our team is here to help you take the next step. To speak with us directly, please call our office.</p><h4><strong>Call us: (302) 608-3780</strong></h4><p></p><p>You may also use our contact form, and we typically respond within 24-48 hours.</p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p>",
+        "text_position": "center",
+        "contact_form_size": "large",
+        "background": "#2b5275",
+        "background_gradient": "",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "#2b5275",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "two_col_layout_nA9AnV",
+    "rich_text_636RRB",
+    "slideshow",
+    "177953427652eb5b55",
+    "rich_text_YxR3RC",
+    "17795371334a9b53ea",
+    "press",
+    "contact_hD9Txi"
+  ]
+}

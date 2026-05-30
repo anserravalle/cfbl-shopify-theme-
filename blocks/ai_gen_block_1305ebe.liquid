@@ -1,0 +1,1403 @@
+{% doc %}
+  @prompt
+    Create a responsive Shopify homepage section called “Choose Your Path.”
+    
+    Build this as an editable Shopify theme section with settings in the theme editor, so I can change all images, headings, subheadings, button text, button links, colors, font sizes, font styles, spacing, and opacity without editing code.
+    
+    The section should have three side-by-side image cards on desktop and stack vertically on mobile.
+    
+    Each card should include:
+    
+    Image
+    
+    Centered text overlay on the image
+    
+    A semi-transparent box directly behind the heading and subheading only
+    
+    Small heading inside the overlay box
+    
+    Short subheading inside the overlay box
+    
+    Filled button below the image, outside the image overlay
+    
+    Button link that can be selected in the theme editor
+    
+    The button must be below the image, not on top of the image.
+    
+    The transparent overlay box should sit only behind the heading and subheading. Do not darken the entire image. Do not place the button inside the overlay box.
+    
+    Each card should have editable settings for:
+    
+    Image
+    
+    Heading
+    
+    Subheading
+    
+    Button text
+    
+    Button link
+    
+    Heading color
+    
+    Heading font size
+    
+    Heading font family or font style
+    
+    Heading letter spacing
+    
+    Subheading color
+    
+    Subheading font size
+    
+    Subheading font family or font style
+    
+    Subheading line height
+    
+    Overlay box background color
+    
+    Overlay box opacity
+    
+    Overlay box padding
+    
+    Overlay box border radius
+    
+    Overlay box width or max-width
+    
+    Button color
+    
+    Button text color
+    
+    Button font size
+    
+    Button border radius
+    
+    Section-level editable settings should include:
+    
+    Section heading
+    
+    Section subheading
+    
+    Section heading color
+    
+    Section heading font size
+    
+    Section heading font family or font style
+    
+    Section subheading color
+    
+    Section subheading font size
+    
+    Section subheading font family or font style
+    
+    Background color
+    
+    Card gap
+    
+    Image height desktop
+    
+    Image height mobile
+    
+    Image border radius
+    
+    Button color
+    
+    Button hover color
+    
+    Text box opacity
+    
+    Text box background color
+    
+    Default layout and style:
+    
+    Clean, warm, polished, and clinical
+    
+    Rounded image corners
+    
+    Centered overlay box on each image
+    
+    Centered button under each image
+    
+    Dark blue or deep green filled buttons
+    
+    White or warm cream overlay text
+    
+    Dark navy or charcoal transparent overlay box
+    
+    Soft spacing between image and button
+    
+    Responsive and accessible on mobile
+    
+    Default section heading:
+    
+    Choose Your Path
+    
+    Default section subheading:
+    
+    Therapy, evaluations, and professional training each begin with careful listening, clinical clarity, and respect for the whole person.
+    
+    Default card 1:
+    
+    Heading: Begin Therapy
+    
+    Subheading: Support for healing and change.
+    
+    Button text: Explore Therapy
+    
+    Default card 2:
+    
+    Heading: Get an Evaluation
+    
+    Subheading: Clarity for diagnosis and next steps.
+    
+    Button text: Explore Evaluations
+    
+    Default card 3:
+    
+    Heading: Learn With Us
+    
+    Subheading: Clinical training, supervision, and consultation.
+    
+    Button text: Learn With Us
+    
+    Important design requirements:
+    
+    The overlay box must be a separate editable design element behind the heading and subheading.
+    
+    The overlay box must have opacity controls in the theme editor.
+    
+    The heading and subheading must each have editable controls for color, size, and font style.
+    
+    The section heading and section subheading must also have editable controls for color, size, and font style.
+    
+    All text, images, buttons, links, colors, font sizes, font styles, opacity, padding, image height, and spacing should be editable later from the Shopify theme editor without touching code.
+    
+    Make sure the overlay text remains readable on busy nature images., the overlay box needs to be able to be bigger both width and height for the text , each of the text boxes should be centered and bottom to the image
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-choose-path-section-{{ ai_gen_id }} {
+    background-color: {{ block.settings.section_background_color }};
+    padding: 60px 20px;
+    width: 100%;
+  }
+
+  .ai-choose-path-container-{{ ai_gen_id }} {
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+
+  .ai-choose-path-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ai-choose-path-section-heading-{{ ai_gen_id }} {
+    font-family: {{ block.settings.section_heading_font.family }}, {{ block.settings.section_heading_font.fallback_families }};
+    font-weight: {{ block.settings.section_heading_font.weight }};
+    font-style: {{ block.settings.section_heading_font.style }};
+    color: {{ block.settings.section_heading_color }};
+    font-size: {{ block.settings.section_heading_size }}px;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+
+  .ai-choose-path-section-subheading-{{ ai_gen_id }} {
+    font-family: {{ block.settings.section_subheading_font.family }}, {{ block.settings.section_subheading_font.fallback_families }};
+    font-weight: {{ block.settings.section_subheading_font.weight }};
+    font-style: {{ block.settings.section_subheading_font.style }};
+    color: {{ block.settings.section_subheading_color }};
+    font-size: {{ block.settings.section_subheading_size }}px;
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .ai-choose-path-cards-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.card_gap }}px;
+  }
+
+  .ai-choose-path-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ai-choose-path-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.image_height_desktop }}px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    margin-bottom: {{ block.settings.image_button_spacing }}px;
+  }
+
+  .ai-choose-path-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-choose-path-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-choose-path-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-choose-path-overlay-box-1-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: {{ block.settings.overlay_bottom_position_1 }}px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    background-color: {{ block.settings.text_box_background_color }};
+    opacity: {{ block.settings.text_box_opacity }};
+    padding: {{ block.settings.overlay_padding_1 }}px;
+    border-radius: {{ block.settings.overlay_border_radius_1 }}px;
+    width: {{ block.settings.overlay_width_1 }}%;
+    max-width: {{ block.settings.overlay_max_width_1 }}px;
+    min-height: {{ block.settings.overlay_min_height_1 }}px;
+  }
+
+  .ai-choose-path-overlay-box-2-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: {{ block.settings.overlay_bottom_position_2 }}px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    background-color: {{ block.settings.text_box_background_color }};
+    opacity: {{ block.settings.text_box_opacity }};
+    padding: {{ block.settings.overlay_padding_2 }}px;
+    border-radius: {{ block.settings.overlay_border_radius_2 }}px;
+    width: {{ block.settings.overlay_width_2 }}%;
+    max-width: {{ block.settings.overlay_max_width_2 }}px;
+    min-height: {{ block.settings.overlay_min_height_2 }}px;
+  }
+
+  .ai-choose-path-overlay-box-3-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: {{ block.settings.overlay_bottom_position_3 }}px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    background-color: {{ block.settings.text_box_background_color }};
+    opacity: {{ block.settings.text_box_opacity }};
+    padding: {{ block.settings.overlay_padding_3 }}px;
+    border-radius: {{ block.settings.overlay_border_radius_3 }}px;
+    width: {{ block.settings.overlay_width_3 }}%;
+    max-width: {{ block.settings.overlay_max_width_3 }}px;
+    min-height: {{ block.settings.overlay_min_height_3 }}px;
+  }
+
+  .ai-choose-path-text-content-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: {{ block.settings.overlay_bottom_position_1 }}px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;
+    width: 90%;
+  }
+
+  .ai-choose-path-text-content-2-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: {{ block.settings.overlay_bottom_position_2 }}px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;
+    width: 90%;
+  }
+
+  .ai-choose-path-text-content-3-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: {{ block.settings.overlay_bottom_position_3 }}px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 3;
+    width: 90%;
+  }
+
+  .ai-choose-path-heading-1-{{ ai_gen_id }} {
+    font-family: {{ block.settings.heading_font_1.family }}, {{ block.settings.heading_font_1.fallback_families }};
+    font-weight: {{ block.settings.heading_font_1.weight }};
+    font-style: {{ block.settings.heading_font_1.style }};
+    color: {{ block.settings.heading_color_1 }};
+    font-size: {{ block.settings.heading_size_1 }}px;
+    letter-spacing: {{ block.settings.heading_letter_spacing_1 }}px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+
+  .ai-choose-path-heading-2-{{ ai_gen_id }} {
+    font-family: {{ block.settings.heading_font_2.family }}, {{ block.settings.heading_font_2.fallback_families }};
+    font-weight: {{ block.settings.heading_font_2.weight }};
+    font-style: {{ block.settings.heading_font_2.style }};
+    color: {{ block.settings.heading_color_2 }};
+    font-size: {{ block.settings.heading_size_2 }}px;
+    letter-spacing: {{ block.settings.heading_letter_spacing_2 }}px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+
+  .ai-choose-path-heading-3-{{ ai_gen_id }} {
+    font-family: {{ block.settings.heading_font_3.family }}, {{ block.settings.heading_font_3.fallback_families }};
+    font-weight: {{ block.settings.heading_font_3.weight }};
+    font-style: {{ block.settings.heading_font_3.style }};
+    color: {{ block.settings.heading_color_3 }};
+    font-size: {{ block.settings.heading_size_3 }}px;
+    letter-spacing: {{ block.settings.heading_letter_spacing_3 }}px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+
+  .ai-choose-path-subheading-1-{{ ai_gen_id }} {
+    font-family: {{ block.settings.subheading_font_1.family }}, {{ block.settings.subheading_font_1.fallback_families }};
+    font-weight: {{ block.settings.subheading_font_1.weight }};
+    font-style: {{ block.settings.subheading_font_1.style }};
+    color: {{ block.settings.subheading_color_1 }};
+    font-size: {{ block.settings.subheading_size_1 }}px;
+    line-height: {{ block.settings.subheading_line_height_1 }};
+    margin: 0;
+  }
+
+  .ai-choose-path-subheading-2-{{ ai_gen_id }} {
+    font-family: {{ block.settings.subheading_font_2.family }}, {{ block.settings.subheading_font_2.fallback_families }};
+    font-weight: {{ block.settings.subheading_font_2.weight }};
+    font-style: {{ block.settings.subheading_font_2.style }};
+    color: {{ block.settings.subheading_color_2 }};
+    font-size: {{ block.settings.subheading_size_2 }}px;
+    line-height: {{ block.settings.subheading_line_height_2 }};
+    margin: 0;
+  }
+
+  .ai-choose-path-subheading-3-{{ ai_gen_id }} {
+    font-family: {{ block.settings.subheading_font_3.family }}, {{ block.settings.subheading_font_3.fallback_families }};
+    font-weight: {{ block.settings.subheading_font_3.weight }};
+    font-style: {{ block.settings.subheading_font_3.style }};
+    color: {{ block.settings.subheading_color_3 }};
+    font-size: {{ block.settings.subheading_size_3 }}px;
+    line-height: {{ block.settings.subheading_line_height_3 }};
+    margin: 0;
+  }
+
+  .ai-choose-path-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 14px 32px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .ai-choose-path-button-1-{{ ai_gen_id }} {
+    background-color: {{ block.settings.button_color_1 }};
+    color: {{ block.settings.button_text_color_1 }};
+    font-size: {{ block.settings.button_font_size_1 }}px;
+    border-radius: {{ block.settings.button_border_radius_1 }}px;
+  }
+
+  .ai-choose-path-button-2-{{ ai_gen_id }} {
+    background-color: {{ block.settings.button_color_2 }};
+    color: {{ block.settings.button_text_color_2 }};
+    font-size: {{ block.settings.button_font_size_2 }}px;
+    border-radius: {{ block.settings.button_border_radius_2 }}px;
+  }
+
+  .ai-choose-path-button-3-{{ ai_gen_id }} {
+    background-color: {{ block.settings.button_color_3 }};
+    color: {{ block.settings.button_text_color_3 }};
+    font-size: {{ block.settings.button_font_size_3 }}px;
+    border-radius: {{ block.settings.button_border_radius_3 }}px;
+  }
+
+  .ai-choose-path-button-1-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  .ai-choose-path-button-2-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  .ai-choose-path-button-3-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-choose-path-cards-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .ai-choose-path-image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.image_height_mobile }}px;
+    }
+
+    .ai-choose-path-section-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.section_heading_size }}px * 0.8);
+    }
+
+    .ai-choose-path-section-subheading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.section_subheading_size }}px * 0.9);
+    }
+
+    .ai-choose-path-heading-1-{{ ai_gen_id }},
+    .ai-choose-path-heading-2-{{ ai_gen_id }},
+    .ai-choose-path-heading-3-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size_1 }}px * 0.85);
+    }
+
+    .ai-choose-path-subheading-1-{{ ai_gen_id }},
+    .ai-choose-path-subheading-2-{{ ai_gen_id }},
+    .ai-choose-path-subheading-3-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.subheading_size_1 }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<div class="ai-choose-path-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-choose-path-container-{{ ai_gen_id }}">
+    <div class="ai-choose-path-header-{{ ai_gen_id }}">
+      {% if block.settings.section_heading != blank %}
+        <h2 class="ai-choose-path-section-heading-{{ ai_gen_id }}">
+          {{ block.settings.section_heading }}
+        </h2>
+      {% endif %}
+      {% if block.settings.section_subheading != blank %}
+        <p class="ai-choose-path-section-subheading-{{ ai_gen_id }}">
+          {{ block.settings.section_subheading }}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="ai-choose-path-cards-{{ ai_gen_id }}">
+      <div class="ai-choose-path-item-{{ ai_gen_id }}">
+        <div class="ai-choose-path-image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.image_1 %}
+            <img
+              src="{{ block.settings.image_1 | image_url: width: 800 }}"
+              alt="{{ block.settings.image_1.alt | escape }}"
+              class="ai-choose-path-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ block.settings.image_1.width }}"
+              height="{{ block.settings.image_1.height }}"
+            >
+          {% else %}
+            <div class="ai-choose-path-image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+
+          <div class="ai-choose-path-overlay-box-1-{{ ai_gen_id }}"></div>
+
+          <div class="ai-choose-path-text-content-{{ ai_gen_id }}">
+            {% if block.settings.heading_1 != blank %}
+              <h3 class="ai-choose-path-heading-1-{{ ai_gen_id }}">
+                {{ block.settings.heading_1 }}
+              </h3>
+            {% endif %}
+            {% if block.settings.subheading_1 != blank %}
+              <p class="ai-choose-path-subheading-1-{{ ai_gen_id }}">
+                {{ block.settings.subheading_1 }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+
+        {% if block.settings.button_text_1 != blank %}
+          <a
+            href="{{ block.settings.button_link_1 }}"
+            class="ai-choose-path-button-{{ ai_gen_id }} ai-choose-path-button-1-{{ ai_gen_id }}"
+          >
+            {{ block.settings.button_text_1 }}
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="ai-choose-path-item-{{ ai_gen_id }}">
+        <div class="ai-choose-path-image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.image_2 %}
+            <img
+              src="{{ block.settings.image_2 | image_url: width: 800 }}"
+              alt="{{ block.settings.image_2.alt | escape }}"
+              class="ai-choose-path-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ block.settings.image_2.width }}"
+              height="{{ block.settings.image_2.height }}"
+            >
+          {% else %}
+            <div class="ai-choose-path-image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+
+          <div class="ai-choose-path-overlay-box-2-{{ ai_gen_id }}"></div>
+
+          <div class="ai-choose-path-text-content-2-{{ ai_gen_id }}">
+            {% if block.settings.heading_2 != blank %}
+              <h3 class="ai-choose-path-heading-2-{{ ai_gen_id }}">
+                {{ block.settings.heading_2 }}
+              </h3>
+            {% endif %}
+            {% if block.settings.subheading_2 != blank %}
+              <p class="ai-choose-path-subheading-2-{{ ai_gen_id }}">
+                {{ block.settings.subheading_2 }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+
+        {% if block.settings.button_text_2 != blank %}
+          <a
+            href="{{ block.settings.button_link_2 }}"
+            class="ai-choose-path-button-{{ ai_gen_id }} ai-choose-path-button-2-{{ ai_gen_id }}"
+          >
+            {{ block.settings.button_text_2 }}
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="ai-choose-path-item-{{ ai_gen_id }}">
+        <div class="ai-choose-path-image-wrapper-{{ ai_gen_id }}">
+          {% if block.settings.image_3 %}
+            <img
+              src="{{ block.settings.image_3 | image_url: width: 800 }}"
+              alt="{{ block.settings.image_3.alt | escape }}"
+              class="ai-choose-path-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ block.settings.image_3.width }}"
+              height="{{ block.settings.image_3.height }}"
+            >
+          {% else %}
+            <div class="ai-choose-path-image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+
+          <div class="ai-choose-path-overlay-box-3-{{ ai_gen_id }}"></div>
+
+          <div class="ai-choose-path-text-content-3-{{ ai_gen_id }}">
+            {% if block.settings.heading_3 != blank %}
+              <h3 class="ai-choose-path-heading-3-{{ ai_gen_id }}">
+                {{ block.settings.heading_3 }}
+              </h3>
+            {% endif %}
+            {% if block.settings.subheading_3 != blank %}
+              <p class="ai-choose-path-subheading-3-{{ ai_gen_id }}">
+                {{ block.settings.subheading_3 }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+
+        {% if block.settings.button_text_3 != blank %}
+          <a
+            href="{{ block.settings.button_link_3 }}"
+            class="ai-choose-path-button-{{ ai_gen_id }} ai-choose-path-button-3-{{ ai_gen_id }}"
+          >
+            {{ block.settings.button_text_3 }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Choose your path",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section heading"
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Heading",
+      "default": "Choose Your Path"
+    },
+    {
+      "type": "color",
+      "id": "section_heading_color",
+      "label": "Heading color",
+      "default": "#1a3a52"
+    },
+    {
+      "type": "range",
+      "id": "section_heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "font_picker",
+      "id": "section_heading_font",
+      "label": "Heading font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "header",
+      "content": "Section subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "section_subheading",
+      "label": "Subheading",
+      "default": "Therapy, evaluations, and professional training each begin with careful listening, clinical clarity, and respect for the whole person."
+    },
+    {
+      "type": "color",
+      "id": "section_subheading_color",
+      "label": "Subheading color",
+      "default": "#4a5568"
+    },
+    {
+      "type": "range",
+      "id": "section_subheading_size",
+      "label": "Subheading size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "font_picker",
+      "id": "section_subheading_font",
+      "label": "Subheading font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "Background color",
+      "default": "#f7f3ef"
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Gap between items",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Image settings"
+    },
+    {
+      "type": "range",
+      "id": "image_height_desktop",
+      "label": "Image height (desktop)",
+      "min": 200,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "image_height_mobile",
+      "label": "Image height (mobile)",
+      "min": 200,
+      "max": 500,
+      "step": 20,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "image_button_spacing",
+      "label": "Space between image and button",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Overlay box style"
+    },
+    {
+      "type": "color",
+      "id": "text_box_background_color",
+      "label": "Background color",
+      "default": "#1a3a52"
+    },
+    {
+      "type": "range",
+      "id": "text_box_opacity",
+      "label": "Opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.8
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#0f2a3d"
+    },
+    {
+      "type": "header",
+      "content": "Item 1 - Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Item 1 - Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "Heading",
+      "default": "Begin Therapy"
+    },
+    {
+      "type": "color",
+      "id": "heading_color_1",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_1",
+      "label": "Size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font_1",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing_1",
+      "label": "Letter spacing",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Item 1 - Subheading"
+    },
+    {
+      "type": "text",
+      "id": "subheading_1",
+      "label": "Subheading",
+      "default": "Support for healing and change."
+    },
+    {
+      "type": "color",
+      "id": "subheading_color_1",
+      "label": "Color",
+      "default": "#f7f3ef"
+    },
+    {
+      "type": "range",
+      "id": "subheading_size_1",
+      "label": "Size",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "font_picker",
+      "id": "subheading_font_1",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "subheading_line_height_1",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "header",
+      "content": "Item 1 - Overlay box"
+    },
+    {
+      "type": "range",
+      "id": "overlay_padding_1",
+      "label": "Padding",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "overlay_border_radius_1",
+      "label": "Border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "overlay_width_1",
+      "label": "Width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "overlay_max_width_1",
+      "label": "Max width",
+      "min": 200,
+      "max": 700,
+      "step": 20,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "overlay_min_height_1",
+      "label": "Min height",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "overlay_bottom_position_1",
+      "label": "Distance from bottom",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Item 1 - Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text_1",
+      "label": "Text",
+      "default": "Explore Therapy"
+    },
+    {
+      "type": "url",
+      "id": "button_link_1",
+      "label": "Link"
+    },
+    {
+      "type": "color",
+      "id": "button_color_1",
+      "label": "Background color",
+      "default": "#1a5f4f"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_1",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size_1",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius_1",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Item 2 - Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Item 2 - Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "Heading",
+      "default": "Get an Evaluation"
+    },
+    {
+      "type": "color",
+      "id": "heading_color_2",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_2",
+      "label": "Size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font_2",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing_2",
+      "label": "Letter spacing",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Item 2 - Subheading"
+    },
+    {
+      "type": "text",
+      "id": "subheading_2",
+      "label": "Subheading",
+      "default": "Clarity for diagnosis and next steps."
+    },
+    {
+      "type": "color",
+      "id": "subheading_color_2",
+      "label": "Color",
+      "default": "#f7f3ef"
+    },
+    {
+      "type": "range",
+      "id": "subheading_size_2",
+      "label": "Size",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "font_picker",
+      "id": "subheading_font_2",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "subheading_line_height_2",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "header",
+      "content": "Item 2 - Overlay box"
+    },
+    {
+      "type": "range",
+      "id": "overlay_padding_2",
+      "label": "Padding",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "overlay_border_radius_2",
+      "label": "Border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "overlay_width_2",
+      "label": "Width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "overlay_max_width_2",
+      "label": "Max width",
+      "min": 200,
+      "max": 700,
+      "step": 20,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "overlay_min_height_2",
+      "label": "Min height",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "overlay_bottom_position_2",
+      "label": "Distance from bottom",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Item 2 - Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text_2",
+      "label": "Text",
+      "default": "Explore Evaluations"
+    },
+    {
+      "type": "url",
+      "id": "button_link_2",
+      "label": "Link"
+    },
+    {
+      "type": "color",
+      "id": "button_color_2",
+      "label": "Background color",
+      "default": "#1a5f4f"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_2",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size_2",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius_2",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Item 3 - Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Item 3 - Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_3",
+      "label": "Heading",
+      "default": "Learn With Us"
+    },
+    {
+      "type": "color",
+      "id": "heading_color_3",
+      "label": "Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_3",
+      "label": "Size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font_3",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_letter_spacing_3",
+      "label": "Letter spacing",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Item 3 - Subheading"
+    },
+    {
+      "type": "text",
+      "id": "subheading_3",
+      "label": "Subheading",
+      "default": "Clinical training, supervision, and consultation."
+    },
+    {
+      "type": "color",
+      "id": "subheading_color_3",
+      "label": "Color",
+      "default": "#f7f3ef"
+    },
+    {
+      "type": "range",
+      "id": "subheading_size_3",
+      "label": "Size",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "font_picker",
+      "id": "subheading_font_3",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "subheading_line_height_3",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "header",
+      "content": "Item 3 - Overlay box"
+    },
+    {
+      "type": "range",
+      "id": "overlay_padding_3",
+      "label": "Padding",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "overlay_border_radius_3",
+      "label": "Border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "overlay_width_3",
+      "label": "Width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "overlay_max_width_3",
+      "label": "Max width",
+      "min": 200,
+      "max": 700,
+      "step": 20,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "overlay_min_height_3",
+      "label": "Min height",
+      "min": 0,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "overlay_bottom_position_3",
+      "label": "Distance from bottom",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Item 3 - Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text_3",
+      "label": "Text",
+      "default": "Learn With Us"
+    },
+    {
+      "type": "url",
+      "id": "button_link_3",
+      "label": "Link"
+    },
+    {
+      "type": "color",
+      "id": "button_color_3",
+      "label": "Background color",
+      "default": "#1a5f4f"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_3",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size_3",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius_3",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Choose your path"
+    }
+  ]
+}
+{% endschema %}

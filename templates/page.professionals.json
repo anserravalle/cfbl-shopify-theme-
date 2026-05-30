@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "p {font-size: 28px;}"
+      ],
+      "settings": {
+        "content_width": "100%"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>At Center for Balanced Living, we believe therapy is more than filling a schedule or moving clients through sessions. We are committed to thoughtful, ethical, and client-centered care, while creating a professional environment where clinicians feel supported, respected, and valued.<br/><br/>We are building a team of therapists who care deeply about growth, emotional intelligence, collaboration, professionalism, and high-quality clinical work.<br/><br/></h2>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "custom_liquid_FQhLYr": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section style=\"max-width: 1100px; margin: 0 auto 56px auto; padding: 0 12px;\">\n  <div style=\"text-align: center; margin-bottom: 28px;\">\n    <h2 style=\"margin: 0 0 10px 0; font-size: 30px; line-height: 1.2;\">Who We’re Looking For</h2>\n    <p style=\"margin: 0; font-size: 17px; line-height: 1.7;\">\n      We are especially drawn to clinicians who are thoughtful, growth-oriented, and deeply committed to meaningful service.\n    </p>\n  </div>\n\n  <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;\">\n    <div style=\"border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 28px; background: white;\">\n      <h4 style=\"margin: 0 0 12px 0; font-size: 22px;\">Trauma-Informed and Thoughtful</h3>\n      <p style=\"margin: 0; font-size: 16px; line-height: 1.7;\">\n        Clinicians who value trauma-based therapy and appreciate the ecological and biological factors that shape emotional well-being.\n      </p>\n    </div>\n\n    <div style=\"border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 28px; background: white;\">\n      <h4 style=\"margin: 0 0 12px 0; font-size: 22px;\">Growth-Oriented</h3>\n      <p style=\"margin: 0; font-size: 16px; line-height: 1.7;\">\n        Early-career therapists who want to strengthen their clinical skills, deepen their professional identity, and continue growing in a supportive practice environment.\n      </p>\n    </div>\n\n    <div style=\"border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 28px; background: white;\">\n      <h4 style=\"margin: 0 0 12px 0; font-size: 22px;\">Purpose-Driven</h3>\n      <p style=\"margin: 0; font-size: 16px; line-height: 1.7;\">\n        Clinicians who feel genuine passion for this work and approach it with a strong sense of responsibility, care, and service to others.\n      </p>\n    </div>\n  </div>\n</section>",
+        "background": "#93ced7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_EnfLVV": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section style=\"max-width: 1100px; margin: 0 auto 56px auto; padding: 0 12px;\">\n  <div style=\"border-radius: 20px; padding: 40px 30px; background: var(--color-background, #f8f8f8);\">\n    <div style=\"text-align: center; margin-bottom: 28px;\">\n      <h2 style=\"margin: 0 0 10px 0; font-size: 30px; line-height: 1.2;\">Why Work With Us</h2>\n      <p style=\"margin: 0; font-size: 17px; line-height: 1.7;\">\n        We aim to create a setting where therapists can do meaningful work while continuing to develop professionally.\n      </p>\n    </div>\n\n    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;\">\n      <div style=\"padding: 24px; border-radius: 16px; background: white;\">\n        <h4 style=\"margin: 0 0 10px 0; font-size: 21px;\">Supportive Culture</h3>\n        <p style=\"margin: 0; font-size: 16px; line-height: 1.7;\">A professional environment where clinicians feel respected, encouraged, and well-supported.</p>\n      </div>\n\n      <div style=\"padding: 24px; border-radius: 16px; background: white;\">\n        <h4 style=\"margin: 0 0 10px 0; font-size: 21px;\">Clinical Growth</h3>\n        <p style=\"margin: 0; font-size: 16px; line-height: 1.7;\">Opportunities for consultation, supervision, and continued development across levels of training. Including EMDR and Nature Based Certifications.</p>\n      </div>\n\n      <div style=\"padding: 24px; border-radius: 16px; background: white;\">\n        <h4 style=\"margin: 0 0 10px 0; font-size: 21px;\">Thoughtful Leadership</h3>\n        <p style=\"margin: 0; font-size: 16px; line-height: 1.7;\">A practice culture shaped by integrity, professionalism, and careful attention to client care.</p>\n      </div>\n\n      <div style=\"padding: 24px; border-radius: 16px; background: white;\">\n        <h4 style=\"margin: 0 0 10px 0; font-size: 21px;\">Meaningful Work</h3>\n        <p style=\"margin: 0; font-size: 16px; line-height: 1.7;\">The chance to build a career grounded in depth, purpose, and high-quality psychological care.</p>\n      </div>\n    </div>\n  </div>\n</section>",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_6wYnMP": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section style=\"max-width: 1100px; margin: 0 auto 56px auto; padding: 0 12px;\">\n  <div style=\"text-align: center; margin-bottom: 28px;\">\n    <h2 style=\"margin: 0 0 10px 0; font-size: 30px; line-height: 1.2;\">Ways to Connect With Us</h2>\n    <p style=\"margin: 0; font-size: 17px; line-height: 1.7;\">\n      Whether you are seeking guidance, professional development, or a long-term role, there are several ways to engage with our practice.\n    </p>\n  </div>\n\n  <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px;\">\n    <div style=\"border-radius: 18px; padding: 30px; background: var(--color-background, #f8f8f8);\">\n      <h5 style=\"margin: 0 0 12px 0; font-size: 24px;\">Consultation</h3>\n      <p style=\"margin: 0 0 18px 0; font-size: 16px; line-height: 1.7;\">\n        For clinicians seeking professional support, clinical reflection, or specialized guidance.\n      </p>\n      <a href=\"/pages/consultation\" style=\"display: inline-block; text-decoration: none; padding: 12px 18px; border-radius: 999px; background: current EED9C5  Color; color:;\">Learn More</a>\n    </div>\n\n    <div style=\"border-radius: 18px; padding: 30px; background: var(--color-background, #f8f8f8);\">\n      <h5 style=\"margin: 0 0 12px 0; font-size: 24px;\">Supervision</h3>\n      <p style=\"margin: 0 0 18px 0; font-size: 16px; line-height: 1.7;\">\n        For developing therapists who want thoughtful support, structured guidance, and deeper clinical growth.\n      </p>\n      <a href=\"/pages/supervision\" style=\"display: inline-block; text-decoration: none; padding: 12px 18px; border-radius: 999px; background: current  Color; color: ;\">Learn More</a>\n    </div>\n\n    <div style=\"border-radius: 18px; padding: 30px; background: var(--color-background, #f8f8f8);\">\n      <h5 style=\"margin: 0 0 12px 0; font-size: 24px;\">Join Our Team</h3>\n      <p style=\"margin: 0 0 18px 0; font-size: 16px; line-height: 1.7;\">\n        For clinicians interested in becoming part of a supportive, growth-oriented group practice.\n      </p>\n      <a href=\"/pages/contact\" style=\"display: inline-block; text-decoration: none; padding: 12px 18px; border-radius: 999px; background:  current Color; color; \">Contact Us</a>\n    </div>\n  </div>\n</section>",
+        "background": "#7db4a7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_97JU6i": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Tell Us You Are Ready",
+        "content": "<p>We welcome inquiries from clinicians who feel aligned with our mission, values, and approach to care. Please share a few details below, and we will be in touch if there appears to be a good fit.</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "custom_liquid_FQhLYr",
+    "custom_liquid_EnfLVV",
+    "custom_liquid_6wYnMP",
+    "contact_97JU6i"
+  ]
+}

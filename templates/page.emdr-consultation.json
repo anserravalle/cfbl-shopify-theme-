@@ -1,0 +1,324 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Dr. Serravalle is a Certified EMDR Therapist and EMDRIA Approved Consultant, offering consultation grounded in clinical integrity, reflection, and practical guidance for meaningful trauma-focused work.</h4><h4>EMDR consultation offers a space for clinicians to deepen their understanding of the EMDR process, strengthen case conceptualization, and receive thoughtful support in applying EMDR with greater clarity and confidence. </h4><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Nano_Banana_2_-_A_calm__refined_office_image_with_soft_natural_light__neutral_tones__and_a_sense_of_1.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#2b5275",
+        "overlay_opacity": 64
+      }
+    },
+    "rich_text_DaQDyr": {
+      "type": "rich-text",
+      "blocks": {
+        "button_cd8fMb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Learn More About EMDR Consultaton",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_cd8fMb"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_Qya8dM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GiBh9t": {
+          "type": "heading",
+          "settings": {
+            "text": "Consultation Grounded in Advanced EMDR Training",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_C4cfCH": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>As a Certified EMDR Therapist and EMDRIA Approved Consultant, Dr. Serravalle provides consultation that supports clinicians in developing stronger EMDR case conceptualization, greater confidence in clinical decision-making, and more thoughtful use of the model in trauma-focused work. Consultation is grounded in both fidelity to the EMDR model and responsiveness to the complexity of real clinical practice.</p><p><strong>While consultation is tailored to the clinician’s experience and goals, the process may include the following:</strong></p>"
+          }
+        },
+        "liquid_tcQb8w": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<ul class=\"service-list\">\n  <li><strong>Consultation tailored to your level of experience:</strong> Sessions are shaped around your training, current clinical work, and specific goals for consultation.</li>\n  <li><strong>Case conceptualization support:</strong> Consultation may include discussion of target planning, treatment sequencing, readiness, stabilization, and challenges that arise in the EMDR process.</li>\n  <li><strong>Guidance with stuck points:</strong> Sessions can provide space to think through blocked processing, clinical complexity, pacing, and other areas where additional perspective may be helpful.</li>\n  <li><strong>Integration of protocol and clinical judgment:</strong> Consultation supports both fidelity to the EMDR model and thoughtful decision-making in real clinical practice.</li>\n  <li><strong>Reflective and trauma-informed discussion:</strong> The process is designed to strengthen confidence, deepen understanding, and support more intentional trauma-focused work.</li>\n</ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GiBh9t",
+        "richtext_C4cfCH",
+        "liquid_tcQb8w"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#9cbea9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_iqJ9kj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qpFQwy": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Approach to Therapy",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YPUUga": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Our approach is relational, clinically grounded, and responsive to the whole person. We understand that symptoms do not exist in isolation. They are often connected to past experiences, current stressors, relationships, nervous system patterns, and the ways people have learned to adapt in order to cope. Therapy is not one-size-fits-all. We work collaboratively to understand what you are carrying, what is getting in the way, and what support will be most effective.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpFQwy",
+        "richtext_YPUUga"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BCUGzw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vwcczb": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Therapeutic Approaches",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_dyBmGT": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Our clinicians draw from evidence-based and insight-oriented approaches based on each client’s needs, goals, and developmental stage. Depending on the presenting concerns, therapy may include work focused on emotional insight, nervous system regulation, coping skills, trauma processing, relationship patterns, or identity development.</p>"
+          }
+        },
+        "button_EQPft9": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More About Our Credentials",
+            "url": "shopify://pages/credentials",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vwcczb",
+        "richtext_dyBmGT",
+        "button_EQPft9"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#e5f3f6",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "two_col_layout_A9FUKx": {
+      "type": "two-col-layout",
+      "disabled": true,
+      "name": "Two Column Layout",
+      "settings": {
+        "image": "shopify://shop_images/psychological-therapy-in-a-private-practice.png",
+        "subheading": "",
+        "title": "",
+        "rich_text": "<p>If you are seeking consultation with an EMDRIA Approved Consultant to support your EMDR practice, strengthen case conceptualization, or deepen your trauma-focused work, we welcome you to reach out to discuss fit and next steps.</p>",
+        "image_position": "left",
+        "display_mode": "all",
+        "section_background": "",
+        "section_text_color": "",
+        "button_text": "",
+        "button_url": "",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "settings": {
+            "text": "Finding the Right Fit",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>We know that reaching out for therapy can feel vulnerable. You do not need to have everything figured out before contacting us. If you are unsure where to start, our team can help you think through what type of service, therapist, or level of support makes the most sense for your needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Begin Here",
+        "content": "<p>If you are seeking consultation with an EMDRIA Approved Consultant, we welcome you to reach out to discuss your goals, level of training, and whether this consultation is the right fit for your needs.<br/><br/>To learn more about EMDR consultation or request next steps, contact our office.</p><p><strong>Schedule a free consultation call at (302) 608-3780. </strong><em>We typically respond within 24 hours.</em></p><p>You may also complete our contact form, and a member of our team will be in touch.</p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "rich_text_DaQDyr",
+    "rich_text_Qya8dM",
+    "rich_text_iqJ9kj",
+    "rich_text_BCUGzw",
+    "two_col_layout_A9FUKx",
+    "rich_text_LJLekq",
+    "contact_YJwAey"
+  ]
+}

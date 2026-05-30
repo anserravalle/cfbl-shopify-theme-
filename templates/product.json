@@ -1,0 +1,560 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "text_8WMbKH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you're seeking supervision for EMDR certification, support as a Licensed Associate Clinical Mental Health Counselor (LACMH), or clinical guidance in trauma-focused therapy, Dr. Serravalle is able to meet your current clinical needs, goals for supervision or consultation, and can support your growth as a trauma-informed clinician. </p><p></p>"
+          }
+        },
+        "text_fjTBTh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "button_KLaEcf": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://pages/contact",
+            "text": "Learn More",
+            "size": "lg",
+            "style": "fill",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "liquid_bqRKhG": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-RsFh4H\"></div>"
+          }
+        },
+        "button_6TLfNr": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "#contact",
+            "text": "Email Us",
+            "size": "lg",
+            "style": "outline",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_8WMbKH",
+        "text_fjTBTh",
+        "separator",
+        "button_KLaEcf",
+        "liquid_bqRKhG",
+        "button_6TLfNr"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 50,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "rich_text_FyF4NC": {
+      "type": "rich-text",
+      "blocks": {
+        "image_pqGEQn": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.product_secondary_media.value }}",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        },
+        "divider_hrkbc7": {
+          "type": "divider",
+          "settings": {}
+        },
+        "richtext_pTYPBf": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "{{ product.metafields.custom.product_secondary_content | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "image_pqGEQn",
+        "divider_hrkbc7",
+        "richtext_pTYPBf"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_6gWdWr": {
+      "type": "faq",
+      "blocks": {
+        "item_DP7dac": {
+          "type": "item",
+          "settings": {
+            "title": "What is therapy like?",
+            "content": "<p>To be successful in therapy requires two things. One, a trusting therapeutic relationship. And two, a commitment from both individuals to show up and do the work. As a client, you want to feel connected and safe with your therapist. You want to believe their training, expertise and style match your needs. Therefore, the first few sessions are essential to getting to know one another. After that, it’s being committed to showing up and a willingness to explore the parts of yourself or your life that need adjusting. </p>"
+          }
+        },
+        "item_EyHBAa": {
+          "type": "item",
+          "settings": {
+            "title": "Do you have in person or telehealth sessions?",
+            "content": "<p>At this time we offer both in person and telehealth sessions. We can discuss what works best for you and which location can best help you meet your needs. </p>"
+          }
+        },
+        "item_9f98dA": {
+          "type": "item",
+          "settings": {
+            "title": "How long are the sessions?",
+            "content": "<p>The individual sessions are usually about 50 minutes. Dr. Serravalle works hard to start on time and end on time out of respect for her clients. </p>"
+          }
+        },
+        "item_VxqLkG": {
+          "type": "item",
+          "settings": {
+            "title": "How do I get started?",
+            "content": "<p>Simply call us or fill out our contact form and someone from our office will contact you within 24 hours.</p><p><a href=\"/pages/contact\" title=\"New Client Questionairre\">New Client Questionairre</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_DP7dac",
+        "item_EyHBAa",
+        "item_9f98dA",
+        "item_VxqLkG"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "",
+        "content": "<h2>Popular <br/>Questions</h2>",
+        "team_avatar_width": 240,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "VIEW ALL FAQS",
+        "button_url": "shopify://pages/faq",
+        "text_position": "start",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "linear-gradient(320deg, rgba(239, 239, 239, 1), rgba(239, 239, 239, 0.8) 68%)",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "rgba(0,0,0,0)",
+        "accordion_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "text_with_icons_n4bDT4": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_KETj8d": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-chat",
+            "custom_icon": "shopify://shop_images/flexibletherapyIcon.svg",
+            "mobile_icon_width": 52,
+            "icon_width": 52,
+            "icon_background_type": "circle",
+            "icon_background": "#ece5e1",
+            "icon_color": "#389fbc",
+            "title": "",
+            "content": "<h4>Flexible Therapy <br/>Modes</h4><p>Offering both in-office and online therapy sessions, we ensure accessibility and convenience to fit your lifestyle. Whether you prefer the personal touch of face-to-face sessions or the flexibility of online consultations, our service adapts to meet your needs.</p>"
+          }
+        },
+        "item_gfNz7N": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-credit-card",
+            "custom_icon": "shopify://shop_images/insurance-cashpay.svg",
+            "mobile_icon_width": 52,
+            "icon_width": 52,
+            "icon_background_type": "circle",
+            "icon_background": "#ece5e1",
+            "icon_color": "#389fbc",
+            "title": "",
+            "content": "<h4>Multiple Payment <br/>Options</h4><p>Understanding the importance of mental health care, we provide various payment options including insurance billing, cash payments, and CareCredit plans. Our goal is to make therapy accessible, ensuring that financial constraints do not hinder your path to wellness.</p>"
+          }
+        },
+        "item_8rM3Wz": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-secure-profile",
+            "custom_icon": "shopify://shop_images/groupUserIcon.svg",
+            "mobile_icon_width": 52,
+            "icon_width": 52,
+            "icon_background_type": "circle",
+            "icon_background": "#ece5e1",
+            "icon_color": "#389fbc",
+            "title": "",
+            "content": "<h4>Personal & Group Sessions</h4><p>Our services are designed to cater to both individual preferences and the dynamics of group therapy. Whether seeking personalized care or the shared experiences of group sessions, our therapy programs are tailored to support your journey to healing in a setting that feels right for you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_KETj8d",
+        "item_gfNz7N",
+        "item_8rM3Wz"
+      ],
+      "disabled": true,
+      "settings": {
+        "blockId": "",
+        "full_width": false,
+        "stack_on_mobile": true,
+        "title": "Our Benefits",
+        "heading_tag": "h4",
+        "text_alignment": "start",
+        "icon_spacing": "large",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(323deg, rgba(246, 243, 237, 1), rgba(221, 239, 242, 0) 68%)",
+        "text_color": "#162b3d"
+      }
+    },
+    "rich_text_XEnrei": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_fRqtbF": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h2>Get Started</h2><p>Whether you're seeking therapy, evaluations, consultations, or training, our dedicated team is here to support your journey toward well-being. For immediate service please call our office.</p><h3>Call: (302) 608-3780</h3><p>Alternatively, our contact form is available for your convenience. We typically respond within 24 hours.</p>"
+          }
+        },
+        "divider_CWif4c": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {}
+        },
+        "button_d7rD9p": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "GET STARTED",
+            "url": "#FPO",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "liquid_jNBVrX": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-RsFh4H\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_fRqtbF",
+        "divider_CWif4c",
+        "button_d7rD9p",
+        "liquid_jNBVrX"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_X8p6Pt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_49yBfp": {
+          "type": "heading",
+          "settings": {
+            "text": "What our clients say...",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_49yBfp"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "press_PzngY7": {
+      "type": "press",
+      "blocks": {
+        "quote_WJrjJE": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Thank you immensely for the comprehensive report. I recognize the significant effort you and your team have invested in it. Gaining deeper insight into myself and understanding the roots of my challenges is invaluable to me. The report is both thorough and enlightening. I plan to share it with my therapist in hopes of making meaningful progress on these issues. Again, thank you very much.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_9VWHb7": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Dr Seravalle is wonderful! Her attention to detail and understanding of testing information is wonderful. I appreciated that she would let the testing and scores be her guide in helping to determine, what, if any, additional testing was recommended. We couldn't be happier with the invaluable information she helped us to gather.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_t8zQxF": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "- Mrs. Jane",
+            "content": "Jada is incredibly kind and understanding. She has a lot of empathy for the families and clients who come through the door. She is very thorough and always follows through.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_dLYYUT": {
+          "type": "quote",
+          "disabled": true,
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Having worked with Dr. Serravalle I am very confident that her practice and her team are highly trained, skilled, and equipped to help patients in the same or similar ways that she helped me. I felt like I received comprehensive and well-rounded treatment - of course related to my diagnosis but I also felt like I came out of therapy each session more connected to myself and more in tune with who I was and now am as a person. I would not be where I am in my life were it not for the time I spent working with Dr. Serravalle. The understanding of myself led to having such confidence in myself and that is invaluable.",
+            "show_rating": false,
+            "rating": 5
+          }
+        },
+        "quote_NQAxPM": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "",
+            "content": "Dr. Serrevalle was very welcoming and friendly. She put me at ease and helped me with practices to calm myself and let go of my anger and sadness.",
+            "show_rating": false,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "quote_WJrjJE",
+        "quote_9VWHb7",
+        "quote_t8zQxF",
+        "quote_dLYYUT",
+        "quote_NQAxPM"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "full_width": false,
+        "content_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    },
+    "recently_viewed_products_YMUjCy": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "products_count": 3,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "<h3>Recently Viewed</h3>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "featured_collection_FtbDte": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all-services",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "subheading": "",
+        "title": "",
+        "content": "<h3>All Services</h3>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_link_blocks_MpPPTQ": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_eiT7Kc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled-5_eceafdb7-af06-40b1-ace2-dd3ed3498522.png",
+            "stretch_image": true,
+            "link_text": "Register Now",
+            "link_url": "https://www.eventbrite.com/e/vision-boards-with-brianna-tickets-1983903837784?aff=oddtdtcreator",
+            "background": "",
+            "text_color": "#ece5e1",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_hNcbzd": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled-6_3a26ddad-d8ff-4a8d-b48e-02ba45aac324.png",
+            "stretch_image": true,
+            "link_text": "Register Now",
+            "link_url": "",
+            "background": "",
+            "text_color": "#f6f3ed",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_QXNGa4": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Untitled-8.png",
+            "stretch_image": true,
+            "link_text": "Register Now",
+            "link_url": "",
+            "background": "",
+            "text_color": "#2b5275",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "item_KfP3j4": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_eiT7Kc",
+        "item_hNcbzd",
+        "item_QXNGa4",
+        "item_KfP3j4"
+      ],
+      "disabled": true,
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": false,
+        "block_size": "large",
+        "subheading": "",
+        "title": "Sign Up Here",
+        "content": "",
+        "link_url": "",
+        "link_text": "Register now space limited",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_FyF4NC",
+    "faq_6gWdWr",
+    "text_with_icons_n4bDT4",
+    "rich_text_XEnrei",
+    "rich_text_X8p6Pt",
+    "press_PzngY7",
+    "recently_viewed_products_YMUjCy",
+    "featured_collection_FtbDte",
+    "image_link_blocks_MpPPTQ"
+  ]
+}

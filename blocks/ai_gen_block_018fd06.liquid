@@ -1,0 +1,772 @@
+{% doc %}
+  @prompt
+    magazine style layout with a image and a text box that slightly overlap with completely customizable options for both including shapes, sizes, colors, fonts, and spacing, can you add a customizer for the background color of the layout
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-magazine-layout-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: {{ block.settings.section_padding }}px 0;
+    background-color: {{ block.settings.layout_bg_color }};
+  }
+
+  .ai-magazine-layout__container-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    align-items: {{ block.settings.vertical_alignment }};
+    justify-content: {{ block.settings.horizontal_alignment }};
+    min-height: {{ block.settings.min_height }}px;
+  }
+
+  .ai-magazine-layout__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: {{ block.settings.image_width }}%;
+    z-index: {{ block.settings.image_z_index }};
+    {% if block.settings.image_shape == 'circle' %}
+      border-radius: 50%;
+      overflow: hidden;
+      aspect-ratio: 1;
+    {% elsif block.settings.image_shape == 'rounded' %}
+      border-radius: {{ block.settings.image_border_radius }}px;
+      overflow: hidden;
+    {% endif %}
+  }
+
+  .ai-magazine-layout__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-magazine-layout__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-magazine-layout__image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-magazine-layout__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-magazine-layout__text-box-{{ ai_gen_id }} {
+    position: absolute;
+    width: {{ block.settings.text_box_width }}%;
+    padding: {{ block.settings.text_box_padding }}px;
+    background-color: {{ block.settings.text_box_bg_color }};
+    z-index: {{ block.settings.text_box_z_index }};
+    
+    {% if block.settings.text_box_position == 'top-left' %}
+      top: {{ block.settings.text_box_offset_vertical }}%;
+      left: {{ block.settings.text_box_offset_horizontal }}%;
+    {% elsif block.settings.text_box_position == 'top-right' %}
+      top: {{ block.settings.text_box_offset_vertical }}%;
+      right: {{ block.settings.text_box_offset_horizontal }}%;
+    {% elsif block.settings.text_box_position == 'bottom-left' %}
+      bottom: {{ block.settings.text_box_offset_vertical }}%;
+      left: {{ block.settings.text_box_offset_horizontal }}%;
+    {% elsif block.settings.text_box_position == 'bottom-right' %}
+      bottom: {{ block.settings.text_box_offset_vertical }}%;
+      right: {{ block.settings.text_box_offset_horizontal }}%;
+    {% elsif block.settings.text_box_position == 'center-left' %}
+      top: 50%;
+      left: {{ block.settings.text_box_offset_horizontal }}%;
+      transform: translateY(-50%);
+    {% elsif block.settings.text_box_position == 'center-right' %}
+      top: 50%;
+      right: {{ block.settings.text_box_offset_horizontal }}%;
+      transform: translateY(-50%);
+    {% endif %}
+
+    {% if block.settings.text_box_shape == 'circle' %}
+      border-radius: 50%;
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    {% elsif block.settings.text_box_shape == 'rounded' %}
+      border-radius: {{ block.settings.text_box_border_radius }}px;
+    {% endif %}
+
+    {% if block.settings.text_box_shadow %}
+      box-shadow: 0 {{ block.settings.text_box_shadow_y }}px {{ block.settings.text_box_shadow_blur }}px rgba(0, 0, 0, {{ block.settings.text_box_shadow_opacity }});
+    {% endif %}
+  }
+
+  .ai-magazine-layout__heading-{{ ai_gen_id }} {
+    margin: 0 0 {{ block.settings.heading_spacing }}px 0;
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    line-height: {{ block.settings.heading_line_height }};
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-magazine-layout__text-{{ ai_gen_id }} {
+    margin: 0;
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    font-family: {{ block.settings.text_font.family }}, {{ block.settings.text_font.fallback_families }};
+    font-weight: {{ block.settings.text_font.weight }};
+    line-height: {{ block.settings.text_line_height }};
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-magazine-layout__button-{{ ai_gen_id }} {
+    display: inline-block;
+    margin-top: {{ block.settings.button_spacing }}px;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    font-size: {{ block.settings.button_text_size }}px;
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+  .ai-magazine-layout__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg_color }};
+    color: {{ block.settings.button_hover_text_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-magazine-layout__container-{{ ai_gen_id }} {
+      flex-direction: column;
+      min-height: auto;
+    }
+
+    .ai-magazine-layout__image-wrapper-{{ ai_gen_id }} {
+      width: 100%;
+      margin-bottom: {{ block.settings.mobile_spacing }}px;
+    }
+
+    .ai-magazine-layout__text-box-{{ ai_gen_id }} {
+      position: relative;
+      width: 100%;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      transform: none;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-magazine-layout-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-magazine-layout__container-{{ ai_gen_id }}">
+    <div class="ai-magazine-layout__image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 2000 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-magazine-layout__image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-magazine-layout__image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-magazine-layout__empty-state-{{ ai_gen_id }}">
+            Add an image to get started
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-magazine-layout__text-box-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-magazine-layout__heading-{{ ai_gen_id }}">
+          {{ block.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.text != blank %}
+        <div class="ai-magazine-layout__text-{{ ai_gen_id }}">
+          {{ block.settings.text }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+        <a href="{{ block.settings.button_link }}" class="ai-magazine-layout__button-{{ ai_gen_id }}">
+          {{ block.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Magazine layout",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "layout_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "label": "Minimum height",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "horizontal_alignment",
+      "label": "Horizontal alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "mobile_spacing",
+      "label": "Mobile spacing",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Width",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 60
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Aspect ratio",
+      "options": [
+        {
+          "value": "1/1",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "4/3",
+          "label": "Landscape (4:3)"
+        },
+        {
+          "value": "16/9",
+          "label": "Wide (16:9)"
+        },
+        {
+          "value": "3/4",
+          "label": "Portrait (3:4)"
+        },
+        {
+          "value": "2/3",
+          "label": "Tall (2:3)"
+        }
+      ],
+      "default": "4/3"
+    },
+    {
+      "type": "select",
+      "id": "image_shape",
+      "label": "Shape",
+      "options": [
+        {
+          "value": "square",
+          "label": "Square"
+        },
+        {
+          "value": "rounded",
+          "label": "Rounded"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "image_z_index",
+      "label": "Layer order",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Text box"
+    },
+    {
+      "type": "select",
+      "id": "text_box_position",
+      "label": "Position",
+      "options": [
+        {
+          "value": "top-left",
+          "label": "Top left"
+        },
+        {
+          "value": "top-right",
+          "label": "Top right"
+        },
+        {
+          "value": "center-left",
+          "label": "Center left"
+        },
+        {
+          "value": "center-right",
+          "label": "Center right"
+        },
+        {
+          "value": "bottom-left",
+          "label": "Bottom left"
+        },
+        {
+          "value": "bottom-right",
+          "label": "Bottom right"
+        }
+      ],
+      "default": "bottom-right"
+    },
+    {
+      "type": "range",
+      "id": "text_box_offset_horizontal",
+      "label": "Horizontal offset",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "text_box_offset_vertical",
+      "label": "Vertical offset",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "text_box_width",
+      "label": "Width",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "text_box_padding",
+      "label": "Padding",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "select",
+      "id": "text_box_shape",
+      "label": "Shape",
+      "options": [
+        {
+          "value": "square",
+          "label": "Square"
+        },
+        {
+          "value": "rounded",
+          "label": "Rounded"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        }
+      ],
+      "default": "rounded"
+    },
+    {
+      "type": "range",
+      "id": "text_box_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "text_box_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "text_box_z_index",
+      "label": "Layer order",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "checkbox",
+      "id": "text_box_shadow",
+      "label": "Enable shadow",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "text_box_shadow_y",
+      "label": "Shadow vertical offset",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "text_box_shadow_blur",
+      "label": "Shadow blur",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "text_box_shadow_opacity",
+      "label": "Shadow opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.2
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Magazine Style Layout</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Create stunning overlapping layouts with complete control over design and spacing.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Heading style"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Size",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.2
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Spacing below",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Text style"
+    },
+    {
+      "type": "font_picker",
+      "id": "text_font",
+      "label": "Font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "text_line_height",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Button style"
+    },
+    {
+      "type": "range",
+      "id": "button_spacing",
+      "label": "Spacing above",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "label": "Vertical padding",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "label": "Horizontal padding",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "button_text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Hover background color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Magazine layout"
+    }
+  ]
+}
+{% endschema %}

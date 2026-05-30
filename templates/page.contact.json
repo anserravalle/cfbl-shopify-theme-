@@ -1,0 +1,154 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h1 {font-size: 65px !important; font-weight: 500 !important;}"
+      ],
+      "settings": {
+        "content_width": "120ch"
+      }
+    },
+    "image_with_text_overlay_XE8QDV": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_bf9gVP": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_zcEiJP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6><strong>Whether you are reaching out for therapy, a psychological evaluation, supervision, consultation, or additional information about our services, we welcome you to contact our office. </strong></h6><h6><strong>Our team will help guide you to the next step that best fits your needs. We serve the </strong><a href=\"/pages/trauma-informed-therapy-and-psychological-evaluations-in-wilmington-delaware\" title=\"Wilmington, Delaware\"><strong>Wilmington, </strong></a><strong> </strong><a href=\"/pages/therapy-newark-delaware\" title=\"Newark, Delaware\"><strong>Newark</strong></a><strong>, </strong><a href=\"/pages/therapy-dover-delaware\" title=\"Dover, Delaware\"><strong>Dover</strong></a><strong>, </strong><a href=\"/pages/therapy-middletown-delaware\" title=\"Middletown, Delaware\"><strong>Middletown</strong></a><strong>, </strong><a href=\"/pages/herapy-smyrna-delaware\" title=\"Smyrna, Delaware\"><strong>Smyrna,</strong></a><strong> </strong><a href=\"/pages/herapy-bear-delaware\" title=\"Bear, Delaware\"><strong>Bear,</strong></a><strong> and </strong><a href=\"/pages/delaware\" title=\"delaware\"><strong>communities across New Castle County and beyond.</strong></a></h6><h6><strong>Call: (302) 608-3780<br/>Fax: (302) 355-3226</strong></h6><h6><strong>Alternatively, our contact form is available for your convenience. We typically respond within 24-48 hours.</strong></h6>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bf9gVP",
+        "richtext_zcEiJP"
+      ],
+      "custom_css": [
+        "h6 {font-size: 32px; width: 100% !important; max-width: 150% !important;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#eed9c5",
+        "overlay_opacity": 9
+      }
+    },
+    "contact_mAgQFY": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_xntrBr": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you contacting us about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation (EMDR), Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_fAUgU4": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_bBdVr3": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_xntrBr",
+        "text_fAUgU4",
+        "dropdown_bBdVr3"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "<p>We welcome inquiries about therapy, psychological evaluations, supervision, consultation, groups, workshops, and educational offerings. </p><p>Complete the form below, and a member of our team will be in touch within 24-48  hours.</p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p>",
+        "text_position": "center",
+        "contact_form_size": "large",
+        "background": "#ece5e1",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#f6f3ee",
+        "contact_text_color": "#162b3d",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "rich_text_Y8mGAf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tRfmrw": {
+          "type": "heading",
+          "settings": {
+            "text": "What to Expect After You Reach Out",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_JDznhY": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Once you contact our office, a member of our team will review your inquiry and follow up with you about next steps. Response times may vary slightly depending on the nature of the inquiry, but we aim to respond as promptly as possible.</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tRfmrw",
+        "richtext_JDznhY"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#93ced7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_XE8QDV",
+    "contact_mAgQFY",
+    "rich_text_Y8mGAf"
+  ]
+}

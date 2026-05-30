@@ -1,0 +1,230 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "60ch"
+      }
+    },
+    "image_with_text_overlay_6yWLTH": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_XejeHa": {
+          "type": "subheading",
+          "settings": {
+            "text": "A Publication by Dr. Niki Serravalle"
+          }
+        },
+        "heading_MTbB9y": {
+          "type": "heading",
+          "settings": {
+            "text": "Musa",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_FWFtxR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Writing with intention. Reflections on clinical work, healing, and the slow craft of paying attention.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XejeHa",
+        "heading_MTbB9y",
+        "richtext_FWFtxR"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/Banner_for_musa.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#1c4239",
+        "overlay_opacity": 40
+      }
+    },
+    "rich_text_rAXFph": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_qFUdjE": {
+          "type": "subheading",
+          "settings": {
+            "text": "About The Writing"
+          }
+        },
+        "heading_GNygXR": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_mc4cDd": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>In Latin and Italian, Musa is the muse, the figure who animates writing, thinking, and creative work. To write in the company of a muse, the ancients believed, was to listen carefully and give shape to what mattered most. It was writing with intention.</p><p>Musa is where I house my writing. It holds my reflections, my newsletter, and in time my books. A space where the clinical, the literary, and the personal meet on the page.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qFUdjE",
+        "heading_GNygXR",
+        "richtext_mc4cDd"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#f3e7d3",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_MNGACx": {
+      "type": "multi-column",
+      "blocks": {
+        "item_VpVXDj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/journal.png",
+            "column_size": "3",
+            "title": "Make It Make Sense",
+            "heading_tag": "h3",
+            "content": "<h4><em>The Blog</em></h4><p>Reflections on trauma, healing, clinical work, and the slow craft of paying attention. It is the intersection of knowing and asking from an infinitely curious mind.</p>",
+            "link_url": "shopify://blogs/balanced-living-blog",
+            "link_text": "Read The Blog",
+            "link_external": true,
+            "link_style": "button"
+          }
+        },
+        "item_YJWMfy": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/newlsetter_icon_b26afe57-3ec1-48e0-b058-d55c1ab4b881.png",
+            "column_size": "3",
+            "title": "Letters from the Practice",
+            "heading_tag": "h3",
+            "content": "<h4><em>The Newsletter</em></h4><p>Quiet correspondence on clinical work, current writing, and what is coming next from CFBL Institute. There is also information about the staff and events at CFBL. </p>",
+            "link_url": "shopify://blogs/current-newsletter",
+            "link_text": "Check Us Out",
+            "link_external": true,
+            "link_style": "button"
+          }
+        },
+        "item_BCREgk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/book_icon_276c3c41-c348-4c21-abf9-f78a7d8f5f96.png",
+            "column_size": "3",
+            "title": "Books",
+            "heading_tag": "h3",
+            "content": "<h4></h4><h4></h4><h4><em>Forthcoming</em></h4><p>A space held for the books in progress. Including the publishing of Dr. Serravalle's memoir, The Stories We Told: The Dance of Codependency.</p><p>Join the list to be the first to know when they have arrived.</p>",
+            "link_url": "shopify://pages/niki-serravalle",
+            "link_text": "Be The First To Know",
+            "link_external": false,
+            "link_style": "button"
+          }
+        }
+      },
+      "block_order": [
+        "item_VpVXDj",
+        "item_YJWMfy",
+        "item_BCREgk"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "section_class_name": "default-multicol",
+        "blockId": "",
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Inside Musa",
+        "content": "<p>Three places to find the writing: the blog, the newsletter, and the books to come.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_qK7Uda": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_FWwLXx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/drserravalle.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "About the Author",
+            "title": "Dr. Niki Serravalle",
+            "content": "<p>Dr. Niki Serravalle is a licensed clinical psychologist, author, and the founder of the Center for Balanced Living. </p><p>Her clinical work centers on trauma-informed care, psychological evaluation, and the integration of nature-based and somatic approaches into therapeutic practice.</p><p><br/>She writes Musa from her practice in Delaware, where the clinical and the personal continually meet. </p><p>Her first book, The Stories We Told: The Dance of Codependency, is forthcoming.</p>",
+            "link_text": "Learn More About Dr. Serravalle",
+            "link_url": "shopify://pages/niki-serravalle",
+            "background": "#75a1b3",
+            "background_gradient": "",
+            "text_color": "#eed9c5",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_FWwLXx"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "section_class_name": "media-default-section",
+        "full_width": false,
+        "spacing": "none"
+      }
+    },
+    "custom_liquid_AWt39y": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"background-color: #EAE2D0; padding: 64px 32px; text-align: center;\">\n  <div style=\"max-width: 540px; margin: 0 auto;\">\n    <h2 style=\"font-family: 'Spectral SC', serif; font-weight: 300; font-size: 32px; color: #2B5275; margin: 0 0 16px 0;\">Letters from CFBL</h2>\n    <p style=\"font-family: 'Montserrat', sans-serif; font-size: 16px; color: #2B5275; line-height: 1.6; margin: 0 0 32px 0;\">Periodic correspondence on writing, the Institute, and the practice. From Dr. Niki Serravalle and the team.</p>\n    {% form 'customer' %}\n      {{ form.errors | default_errors }}\n      <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter, musa-reader\">\n      <input type=\"hidden\" name=\"contact[accepts_marketing]\" value=\"true\">\n      <div style=\"display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 480px; margin: 0 auto;\">\n        <input type=\"email\" name=\"contact[email]\" placeholder=\"Email address\" required style=\"flex: 1; min-width: 220px; padding: 12px 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; border: 1px solid #2B5275; background: #ffffff; color: #2B5275;\">\n        <button type=\"submit\" style=\"padding: 12px 28px; font-family: 'Montserrat', sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; background-color: #2B5275; color: #ffffff; border: none; cursor: pointer;\">Subscribe</button>\n      </div>\n      {% if form.posted_successfully? %}\n        <p style=\"margin-top: 24px; font-family: 'Montserrat', sans-serif; color: #2B5275;\">Thank you. You are on the list.</p>\n      {% endif %}\n    {% endform %}\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_6yWLTH",
+    "rich_text_rAXFph",
+    "multi_column_MNGACx",
+    "media_with_text_qK7Uda",
+    "custom_liquid_AWt39y"
+  ]
+}

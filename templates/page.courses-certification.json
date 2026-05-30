@@ -1,0 +1,190 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "p {font-size: 25px;}"
+      ],
+      "settings": {
+        "content_width": "100%"
+      }
+    },
+    "custom_liquid_EzXbB9": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- ============================================\n     PROFESSIONAL TRAINING: SPECIALTY AREAS\n     ============================================ -->\n\n<section style=\"padding: 80px 20px; margin: 32px 0; background-color: #ede0c8; border-top: 1px solid #d4c5b9; border-bottom: 1px solid #d4c5b9;\">\n  <div style=\"max-width: 1180px; margin: 0 auto;\">\n\n    <p style=\"font-size: 0.75rem; color: #8b6f5c; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 14px 0; text-align: center; font-weight: 600;\">From CFBL Institute</p>\n\n    <h2 style=\"font-size: 2rem; color: #3a342e; text-align: center; margin: 0 0 20px 0; line-height: 1.2;\">Advanced Training for Practicing Clinicians</h2>\n\n    <p style=\"font-size: 1.0625rem; line-height: 1.7; color: #4a443e; text-align: center; max-width: 700px; margin: 0 auto 64px auto;\">\n      Continuing education for psychologists, therapists, and counselors who are already doing the work and want to do it more skillfully. Each training is built from current research and shaped by years of direct clinical practice, with formats that include intensives, consultation cohorts, guest expert sessions, and community-based events.\n    </p>\n\n    <div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;\">\n\n\n      <!-- CARD 1: TRAUMA-INFORMED PRACTICE -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 200px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/somatic.jpg?v=1779759843');\" data-image=\"trauma-informed-practice\">\n        </div>\n        <div style=\"padding: 28px;\">\n          <p style=\"font-size: 0.7rem; color: #8b6f5c; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 10px 0; font-weight: 600;\">Specialty Area</p>\n          <h3 style=\"font-size: 1.25rem; color: #3a342e; margin: 0 0 12px 0; line-height: 1.25;\">Trauma-Informed Practice</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.6; color: #4a443e; margin: 0;\">\n            Integrating nervous system awareness, somatic responsiveness, and relational safety into evidence-based clinical care.\n          </p>\n        </div>\n      </div>\n\n\n      <!-- CARD 2: PSYCHOLOGICAL EVALUATION -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 200px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/Psychological_Evaluation_Diagnostic_Clarity.jpg?v=1779759842');\" data-image=\"psychological-evaluation\">\n        </div>\n        <div style=\"padding: 28px;\">\n          <p style=\"font-size: 0.7rem; color: #8b6f5c; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 10px 0; font-weight: 600;\">Specialty Area</p>\n          <h3 style=\"font-size: 1.25rem; color: #3a342e; margin: 0 0 12px 0; line-height: 1.25;\">Psychological Evaluation &amp; Diagnostic Clarity</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.6; color: #4a443e; margin: 0;\">\n            Sharpening diagnostic reasoning, integrating test data with clinical history, and writing reports that drive treatment.\n          </p>\n        </div>\n      </div>\n\n\n      <!-- CARD 3: EMDR -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 200px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/EMDR_Trauma-Focused_Work.webp?v=1779759842');\" data-image=\"emdr\">\n        </div>\n        <div style=\"padding: 28px;\">\n          <p style=\"font-size: 0.7rem; color: #8b6f5c; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 10px 0; font-weight: 600;\">Specialty Area</p>\n          <h3 style=\"font-size: 1.25rem; color: #3a342e; margin: 0 0 12px 0; line-height: 1.25;\">EMDR &amp; Trauma-Focused Work</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.6; color: #4a443e; margin: 0;\">\n            Advanced application of EMDR protocols, complex trauma presentations, and the clinical judgment that holds both.\n          </p>\n        </div>\n      </div>\n\n\n      <!-- CARD 4: CLINICAL CONSULTATION -->\n      <div style=\"background-color: #ffffff; border: 1px solid #e8dfd6; overflow: hidden; display: flex; flex-direction: column;\">\n        <div style=\"width: 100%; height: 200px; background-color: #ece5e1; background-size: cover; background-position: center; background-image:URL('https://cdn.shopify.com/s/files/1/0861/1528/7346/files/vitaly-gariev-ak1UP0hIK28-unsplash.jpg?v=1779759865');\" data-image=\"clinical-consultation\">\n        </div>\n        <div style=\"padding: 28px;\">\n          <p style=\"font-size: 0.7rem; color: #8b6f5c; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 10px 0; font-weight: 600;\">Specialty Area</p>\n          <h3 style=\"font-size: 1.25rem; color: #3a342e; margin: 0 0 12px 0; line-height: 1.25;\">Clinical Consultation &amp; Case Conceptualization</h3>\n          <p style=\"font-size: 0.9375rem; line-height: 1.6; color: #4a443e; margin: 0;\">\n            Building case formulations that hold complexity. Refining the questions you ask and the hypotheses you test.\n          </p>\n        </div>\n      </div>\n\n\n     \n    </div>\n\n\n    <!-- FOOTER NOTE + CTA -->\n    <div style=\"text-align: center; margin-top: 64px; padding-top: 40px; border-top: 1px solid #d4c5b9;\">\n      <p style=\"font-size: 0.9375rem; line-height: 1.65; color: #6a635a; max-width: 620px; margin: 0 auto 28px auto; font-style: italic;\">\n        Trainings are offered as intensives, ongoing consultation cohorts, and select community-based events. CE eligibility varies by offering.\n      </p>\n      <a href=\"/pages/contact\" style=\"display: inline-block; background-color: #8b6f5c; color: #ffffff; padding: 14px 32px; text-decoration: none; font-size: 0.9375rem; letter-spacing: 0.05em;\">Inquire About Training</a>\n    </div>\n\n  </div>\n</section>",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_cWgaU8": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_LpPR9z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/emdria-basic-training.png",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "EMDR Basic Training",
+            "content": "<p>12-week EMDR Basic Training course for licensed clinicians and advanced graduate students integrating Eye Movement Desensitization and Reprocessing into clinical practice. The curriculum follows the standardized EMDRIA model and covers the eight phases of EMDR, the adaptive information processing framework, and the clinical skills required to safely and effectively treat trauma using EMDR therapy.</p><p>This program is currently undergoing EMDRIA review. Registration will open to waitlist members first once approval is granted. Join the waitlist to be notified the moment enrollment becomes available.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#5c84a8",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#2b5275",
+            "button_text_color": "#eed9c5"
+          }
+        }
+      },
+      "block_order": [
+        "image_LpPR9z"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "section_class_name": "media-default-section",
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_kfWjmc": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_jcjBjM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5491.jpg",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Foundations of Nature-Based Clinical Work",
+            "content": "<p>12-week course exploring the integration of nature-based interventions into trauma-informed clinical practice. Built around the intersection of ecological theory, nervous system science, and applied psychological work, the curriculum covers the conceptual foundations, clinical applications, and ethical considerations of nature-based therapy across populations and settings.</p><p>For licensed clinicians, advanced graduate students, and helping professionals seeking to develop a grounded, research-informed approach to nature-based clinical work. Foundations serves as the entry course for the forthcoming CFBL Institute certification in nature-based clinical practice.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#2b5275",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_jcjBjM"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "section_class_name": "media-default-section",
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Share Your Interests",
+        "content": "<p>We welcome inquiries about professional trainings, guest speakers, and future educational offerings. If you are interested in learning more, attending a training, or sharing what topics you would like to see, please complete the form below.</p><p><strong>Contact Us at (302) 608-3780. </strong></p><p><em>We typically respond within 24 hours.</em></p><p>You may also complete our contact form, and a member of our team will be in touch.</p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#ece5e1",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "1779557670148f9ed0": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_FMfrDi": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"background-color: #EAE2D0; padding: 64px 32px; text-align: center;\">\n  <div style=\"max-width: 540px; margin: 0 auto;\">\n    <h2 style=\"font-family: 'Spectral SC', serif; font-weight: 300; font-size: 32px; color: #2B5275; margin: 0 0 16px 0;\">Stay informed about future courses</h2>\n    <p style=\"font-family: 'Montserrat', sans-serif; font-size: 16px; color: #2B5275; line-height: 1.6; margin: 0 0 32px 0;\">New courses and EMDRIA-approved offerings are announced through Letters from CFBL Newsletter. Join the list to be notified the moment registration opens.</p>\n    {% form 'customer' %}\n      {{ form.errors | default_errors }}\n      <input type=\"hidden\" name=\"contact[tags]\" value=\"newsletter, courses-interest\">\n      <input type=\"hidden\" name=\"contact[accepts_marketing]\" value=\"true\">\n      <div style=\"display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 480px; margin: 0 auto;\">\n        <input type=\"email\" name=\"contact[email]\" placeholder=\"Email address\" required style=\"flex: 1; min-width: 220px; padding: 12px 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; border: 1px solid #2B5275; background: #ffffff; color: #2B5275;\">\n        <button type=\"submit\" style=\"padding: 12px 28px; font-family: 'Montserrat', sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; background-color: #2B5275; color: #ffffff; border: none; cursor: pointer;\">Subscribe</button>\n      </div>\n      {% if form.posted_successfully? %}\n        <p style=\"margin-top: 24px; font-family: 'Montserrat', sans-serif; color: #2B5275;\">Thank you. You are on the list.</p>\n      {% endif %}\n    {% endform %}\n  </div>\n</div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_EzXbB9",
+    "media_with_text_cWgaU8",
+    "media_with_text_kfWjmc",
+    "contact_YJwAey",
+    "1779557670148f9ed0",
+    "custom_liquid_FMfrDi"
+  ]
+}

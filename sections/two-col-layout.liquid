@@ -1,0 +1,197 @@
+{% render 'section-spacing-collapsing' %}
+{%- assign image_position = section.settings.image_position -%}
+{%- assign display_mode_class = '' -%}
+{%- if section.settings.display_mode == 'desktop' -%}
+  {%- assign display_mode_class = 'hidden-md-down' -%}
+{%- elsif section.settings.display_mode == 'mobile' -%}
+  {%- assign display_mode_class = 'show-md' -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-background: {{ section.settings.section_background | default: "inherit" }};
+    --section-text-color: {{ section.settings.section_text_color | default: "inherit" }};
+    --two-column-layout-max-width: 580px;
+    --two-column-layout-grid-template: none;
+    --two-column-layout-column-gap: var(--spacing-20);
+    --two-column-layout-alignment: center;
+    background: var(--section-background);
+    color: var(--section-text-color);
+  }
+
+  .two-column-layout__text {
+    max-width: var(--two-column-layout-max-width);
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} {
+      --two-column-layout-max-width: none;
+      --two-column-layout-grid-template: minmax(0, 0.8fr) minmax(0, 1fr);
+      --two-column-layout-column-gap: var(--spacing-20);
+      --two-column-layout-alignment: start;
+    }
+
+    .two-column-layout__text {
+      max-width: none;
+    }
+  }
+
+  @media screen and (min-width: 1150px) {
+    #shopify-section-{{ section.id }} {
+      --two-column-layout-column-gap: var(--spacing-24);
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    #shopify-section-{{ section.id }} {
+      --two-column-layout-column-gap: var(--spacing-28);
+    }
+  }
+</style>
+
+<div class="{{ display_mode_class }}">
+  <div class="section section--narrow section-blends section-full">
+    <div class="two-column-layout" style="display: grid; grid-template-columns: var(--two-column-layout-grid-template); gap: var(--two-column-layout-column-gap); align-items: var(--two-column-layout-alignment); background: var(--section-background);">
+      {% if image_position == 'left' %}
+        <div class="two-column-layout__image">
+          <img src="{{ section.settings.image | image_url: width: 1000 }}" loading="lazy" class="rounded-sm shadow-sm" alt="{{ section.settings.title }}" style="width: 100%;">
+        </div>
+        <div class="two-column-layout__text prose">
+          {% if section.settings.subheading != blank %}
+            <p class="subheading">{{ section.settings.subheading | escape }}</p>
+          {% endif %}
+          <h2 class="h1">{{ section.settings.title }}</h2>
+          <div>{{ section.settings.rich_text }}</div>
+          {% if section.settings.button_text != blank %}
+            <a href="{{ section.settings.button_url }}" class="button button--xl" style="background-color: {{ section.settings.button_background }}; color: {{ section.settings.button_text_color }};">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+      {% else %}
+        <div class="two-column-layout__text prose">
+          {% if section.settings.subheading != blank %}
+            <p class="subheading">{{ section.settings.subheading | escape }}</p>
+          {% endif %}
+          <h2 class="h1">{{ section.settings.title }}</h2>
+          <div>{{ section.settings.rich_text }}</div>
+          {% if section.settings.button_text != blank %}
+            <a href="{{ section.settings.button_url }}" class="button button--xl" style="background-color: {{ section.settings.button_background }}; color: {{ section.settings.button_text_color }};">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+        <div class="two-column-layout__image">
+          <img src="{{ section.settings.image | image_url: width: 1000 }}" loading="lazy" class="rounded-sm shadow-sm" alt="{{ section.settings.title }}" style="width: 100%;">
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Two Column Layout",
+  "class": "shopify-section--two-column-layout",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1000 x 1200px .jpg recommended"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Two Column Layout"
+    },
+    {
+      "type": "richtext",
+      "id": "rich_text",
+      "label": "Rich Text",
+      "default": "<p>Add your rich text here.</p>"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "display_mode",
+      "label": "Display Mode",
+      "options": [
+        {
+          "value": "all",
+          "label": "All"
+        },
+        {
+          "value": "desktop",
+          "label": "Desktop only"
+        },
+        {
+          "value": "mobile",
+          "label": "Mobile only"
+        }
+      ],
+      "default": "all"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section Background"
+    },
+    {
+      "type": "color",
+      "id": "section_text_color",
+      "label": "Section Text Color"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button Background Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two Column Layout",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

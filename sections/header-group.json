@@ -1,0 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message": {
+          "type": "message",
+          "settings": {
+            "text": "NOW ACCEPTING NEW CLIENTS, CLICK HERE TO GET STARTED",
+            "url": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "message"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky": true,
+        "text_size": "text-base",
+        "navigation_mode": "arrows",
+        "scrolling_speed": 10,
+        "background": "#93ced7",
+        "background_gradient": "",
+        "text_color": "#162b3d"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "enable_sticky": false,
+        "hide_on_scroll": false,
+        "logo": "{{shop.brand.logo}}",
+        "logo_max_width": 140,
+        "logo_mobile_max_width": 110,
+        "menu": "main-menu",
+        "sidebar_menu": "",
+        "secondary_menu": "",
+        "menu_open_trigger": "hover",
+        "opening_from": "left",
+        "layout": "logo_left_navigation_inline",
+        "show_social_media": true,
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "show_country_flag": false,
+        "show_country_name": false,
+        "transparent_header_text_color": "#2b5275",
+        "reduce_padding": true,
+        "background_opacity": 1,
+        "background_blur_radius": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

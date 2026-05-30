@@ -1,0 +1,540 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "rich_text_FM9Vkk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JLEFbY": {
+          "type": "heading",
+          "settings": {
+            "text": "About our practice",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YgwAxw": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p><em>Meet the team at Center for Balanced Living. We are a group of trauma-informed therapists, psychologists, and counselors dedicated to supporting healing, growth, and clarity. Watch to learn more about who we are and how we work.</em></p>"
+          }
+        },
+        "liquid_WnBdNU": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_JLEFbY",
+        "richtext_YgwAxw",
+        "liquid_WnBdNU"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "video_EVDTJd": {
+      "type": "video",
+      "blocks": {
+        "play_QtXmFB": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_Kjwbwq": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h2"
+          }
+        },
+        "heading_x4V9wi": {
+          "type": "heading",
+          "settings": {
+            "text": "Center for Balanced Living",
+            "heading_tag": "h3"
+          }
+        },
+        "subheading_6kRYm9": {
+          "type": "subheading",
+          "settings": {
+            "text": "Dr. Serravalle discusses the services offered at Center for Balanced Living"
+          }
+        }
+      },
+      "block_order": [
+        "play_QtXmFB",
+        "heading_Kjwbwq",
+        "heading_x4V9wi",
+        "subheading_6kRYm9"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "fill",
+        "video": "shopify://files/videos/copy_3794C8C0-0285-4F62-A945-DCF67048EF71.mov",
+        "external_video_url": "",
+        "poster": "shopify://shop_images/Nano_Banana_2_Create_ONE_photorealistic_image_featuring_the_same_woman_from_the_uploaded_headshot_as_3.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 63
+      }
+    },
+    "custom_liquid_iLrVWX": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<hr/>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_Gt4F43": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hRCwUW": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Angela Livingston",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "subheading_wU7kgE": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Psychometrician"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hRCwUW",
+        "subheading_wU7kgE"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "video_nrtxpE": {
+      "type": "video",
+      "blocks": {
+        "play_Eiqrkg": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_jphUrC": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h2"
+          }
+        },
+        "heading_TcrJEQ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Angela Livingston",
+            "heading_tag": "h3"
+          }
+        },
+        "subheading_D9tiTP": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Learn more about our staff"
+          }
+        }
+      },
+      "block_order": [
+        "play_Eiqrkg",
+        "heading_jphUrC",
+        "heading_TcrJEQ",
+        "subheading_D9tiTP"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "md",
+        "video": "shopify://files/videos/copy_BE8C2778-2D3C-4A0B-8539-78488E61548A.mov",
+        "external_video_url": "",
+        "poster": "shopify://shop_images/fpo-consult.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 63
+      }
+    },
+    "rich_text_T8jiqk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yYmxYM": {
+          "type": "heading",
+          "settings": {
+            "text": "Amanda Foxwell",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "subheading_bmkUYX": {
+          "type": "subheading",
+          "settings": {
+            "text": "Licensed Counselor (LAMCH), NCC"
+          }
+        },
+        "richtext_e6exqd": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p><em>Amanda Foxwell is an EMDR-trained therapist specializing in trauma and anxiety for teens and adults. She brings a holistic, nature-based approach to her work and is currently accepting new clients.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yYmxYM",
+        "subheading_bmkUYX",
+        "richtext_e6exqd"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_ckDtFQ": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<hr/>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "video_ef3pXG": {
+      "type": "video",
+      "blocks": {
+        "play_bcLYfd": {
+          "type": "play",
+          "settings": {}
+        },
+        "heading_9TVWiX": {
+          "type": "heading",
+          "settings": {
+            "text": "Amanda Foxwell",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "play_bcLYfd",
+        "heading_9TVWiX"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "autoplay": false,
+        "video_size": "md",
+        "video": "shopify://files/videos/copy_112D5C01-5EEF-4BB8-AEE1-1110028F43F0_2e29e8dd-b5e4-44b3-ba40-4a013e3d8c26.mov",
+        "external_video_url": "",
+        "poster": "shopify://shop_images/Nano_Banana_2_Create_ONE_photorealistic_image_featuring_the_same_woman_from_the_uploaded_headshot_as.png",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_cQXxTg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FCgcAG": {
+          "type": "heading",
+          "settings": {
+            "text": "Kirsten Lowe",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "subheading_mMmgwD": {
+          "type": "subheading",
+          "settings": {
+            "text": "Licensed Counselor (LAMCH), NCC"
+          }
+        },
+        "richtext_QGiqPp": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p><em>Trauma-informed therapist specializing in CBT, goal-focused therapy, and accountability. Accepting new clients.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FCgcAG",
+        "subheading_mMmgwD",
+        "richtext_QGiqPp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_overlay_DD3VCk": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_hrzrJX": {
+          "type": "heading",
+          "settings": {
+            "text": "Kirsten Lowe",
+            "heading_tag": "h1"
+          }
+        },
+        "button_bwirfH": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Coming Soon",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_hrzrJX",
+        "button_bwirfH"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify://shop_images/kirsten.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "image_with_text_overlay_fzBVqP": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_dj8dJp": {
+          "type": "heading",
+          "settings": {
+            "text": "Dr. Serravalle",
+            "heading_tag": "h1"
+          }
+        },
+        "button_GakN3B": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Coming Soon",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_dj8dJp",
+        "button_GakN3B"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify://shop_images/Untitled_Facebook_Shops_Cover_Square_7fd52b03-75c3-41e7-9232-5fc25f8a068a.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_r34jmX": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_hCQn3H": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<h2>Connect With Us</h2><p>Whether you're seeking therapy, evaluations, consultations, or training, our dedicated team is here to support your journey toward well-being.</p><p>For immediate service please call our office.</p><h3>Call: (302) 608-3780</h3><p>Alternatively, our contact form is available for your convenience.</p><p>We typically respond within 24-48 hours.</p>"
+          }
+        },
+        "divider_hL7tdw": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {}
+        },
+        "liquid_CnrR4f": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"width:100%;\">\n<div class=\"klaviyo-form-RsFh4H\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_hCQn3H",
+        "divider_hL7tdw",
+        "liquid_CnrR4f"
+      ],
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_zaJULe": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_N9kNre": {
+          "type": "subheading",
+          "settings": {
+            "text": "Licensed Clinical Psychologist, LPCMH, NCC"
+          }
+        },
+        "heading_a73aDt": {
+          "type": "heading",
+          "settings": {
+            "text": "Dr. Serravalle",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_d6BPJY": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p><em>Clinical psychologist, EMDR consultant, and founder of Center for Balanced Living. Specializing in psychological evaluations, supervision, and professional training.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_N9kNre",
+        "heading_a73aDt",
+        "richtext_d6BPJY"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_7kUpV4": {
+      "type": "contact",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "subheading": "Contact Us",
+        "title": "Contact us today to ask a question or book a consultation.",
+        "content": "<p>Call: (302) 608-3780<br/>Fax: (302) 355-3226<br/>Email: <a href=\"mailto:admin@balancedlivingde.com\" title=\"mailto:admin@balancedlivingde.com\">admin@balancedlivingde.com</a></p>",
+        "text_position": "start",
+        "contact_form_size": "small",
+        "background": "#f3efe7",
+        "background_gradient": "",
+        "text_color": "#162b3d",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "#162b3d",
+        "button_background": "#162b3d",
+        "button_text_color": "#ece5e1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_FM9Vkk",
+    "video_EVDTJd",
+    "custom_liquid_iLrVWX",
+    "rich_text_Gt4F43",
+    "video_nrtxpE",
+    "rich_text_T8jiqk",
+    "custom_liquid_ckDtFQ",
+    "video_ef3pXG",
+    "rich_text_cQXxTg",
+    "image_with_text_overlay_DD3VCk",
+    "image_with_text_overlay_fzBVqP",
+    "rich_text_r34jmX",
+    "rich_text_zaJULe",
+    "contact_7kUpV4"
+  ]
+}

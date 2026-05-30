@@ -1,0 +1,438 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "100ch"
+      }
+    },
+    "image_with_text_overlay_QnMCtz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_NhMgTp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h6>Personality and emotional functioning evaluations are designed to provide a deeper understanding of how a person experiences themselves, relates to others, manages emotions, copes with stress, and responds to life circumstances. These evaluations can be especially helpful when symptoms feel complex, longstanding, confusing, or difficult to explain through a brief clinical conversation alone.</h6><h6>At Center for Balanced Living, these evaluations are completed with care, clinical depth, and respect for the whole person. The goal is not to reduce someone to a diagnosis, but to better understand the patterns that may be shaping their distress, relationships, coping style, and treatment needs.</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_NhMgTp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "section_class_name": "default-section",
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/today.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_DaQDyr": {
+      "type": "rich-text",
+      "blocks": {
+        "button_cd8fMb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Request an Evaluation",
+            "url": "shopify://pages/contact",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_cd8fMb"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_Qya8dM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GiBh9t": {
+          "type": "heading",
+          "settings": {
+            "text": "Who Evaluations May Help",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_C4cfCH": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Evaluations may be helpful for children, adolescents, and adults when there are concerns about attention, learning, emotional functioning, behavior, personality, autism, or diagnostic uncertainty. </p><p>They can also be useful when previous questions have gone unanswered or when a more complete understanding is needed to guide support and recommendations.</p><p><strong>An evaluation may be helpful for concerns such as:</strong></p>"
+          }
+        },
+        "liquid_tcQb8w": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<ul class=\"service-list\">\n  <li>Attention and executive functioning concerns</li>\n  <li>Learning and academic difficulties</li>\n  <li>Autism-related questions</li>\n  <li>Diagnostic clarification</li>\n  <li>Emotional and behavioral concerns</li>\n  <li>Personality and relational functioning</li>\n  <li>Mood and anxiety-related symptoms</li>\n  <li>Developmental concerns</li>\n  <li>Treatment planning needs</li>\n  <li>School or accommodation recommendations</li>\n</ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GiBh9t",
+        "richtext_C4cfCH",
+        "liquid_tcQb8w"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "start",
+        "background": "#9cbea9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_iqJ9kj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qpFQwy": {
+          "type": "heading",
+          "settings": {
+            "text": "What a Psychological Evaluation Can Provide",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_YPUUga": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>A psychological evaluation can help clarify patterns that may not be fully understood through conversation alone. By integrating clinical interview data, behavioral observations, standardized testing, rating scales, and collateral information when appropriate, the evaluation process provides a more complete picture of strengths, vulnerabilities, and diagnostic considerations.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpFQwy",
+        "richtext_YPUUga"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_BCUGzw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Vwcczb": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Approach",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_dyBmGT": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>Our approach to evaluation is thoughtful, comprehensive, and individualized. We do not rely on one test score or one symptom in isolation. Instead, we look carefully at the whole person in context and work to answer the referral question with depth, accuracy, and practical usefulness. The goal is not simply to assign a diagnosis, but to provide insight, clarity, and recommendations that meaningfully guide next steps.</p>"
+          }
+        },
+        "button_EQPft9": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Learn More About the Types of Evaluations We Provide",
+            "url": "shopify://products/psychological-evaluations",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vwcczb",
+        "richtext_dyBmGT",
+        "button_EQPft9"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": false,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#e5f3f6",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "two_col_layout_A9FUKx": {
+      "type": "two-col-layout",
+      "disabled": true,
+      "name": "Two Column Layout",
+      "settings": {
+        "image": "shopify://shop_images/not-game-puzzles-or-game-blocks-more-like-psychological-assessment.png",
+        "subheading": "",
+        "title": "What to Expect",
+        "rich_text": "<p>The evaluation process typically includes an initial consultation, record review when relevant, testing sessions, scoring and interpretation, and a feedback appointment to review results. Each evaluation is tailored to the referral question and may vary depending on age, presenting concerns, and the scope of the assessment.</p>",
+        "image_position": "left",
+        "display_mode": "all",
+        "section_background": "",
+        "section_text_color": "",
+        "button_text": "",
+        "button_url": "",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_iNUXi6": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section class=\"personality-eval-info\">\n  <div class=\"personality-eval-wrap\">\n\n    <div class=\"personality-eval-card\">\n      <h3>What this type of evaluation may help clarify</h3>\n      <p>\n        This evaluation may be appropriate when there are questions related to mood, anxiety, trauma, emotional regulation, personality functioning, interpersonal patterns, self-esteem, identity, coping strategies, or diagnostic clarification. It may also be useful when someone has been in therapy but feels stuck, has received different diagnoses over time, or wants a more complete picture of their emotional and psychological functioning.\n      </p>\n    </div>\n\n    <div class=\"personality-eval-card\">\n      <h3>Who may benefit</h3>\n      <p>\n        Adults or older adolescents may benefit from this type of evaluation when they are seeking greater clarity about emotional distress, relationship patterns, trauma-related symptoms, personality traits, or treatment direction. It may also be helpful for therapists, physicians, or other referral sources who are seeking diagnostic clarity to guide treatment planning.\n      </p>\n    </div>\n\n    <div class=\"personality-eval-card\">\n      <h3>What to expect</h3>\n      <p>\n        The evaluation typically includes a clinical interview, review of relevant history, standardized psychological measures, and an integrated written report. Recommendations may include diagnostic impressions, treatment considerations, therapy approaches that may be helpful, and next steps for care.\n      </p>\n    </div>\n\n  </div>\n</section>\n\n<style>\n  .personality-eval-info {\n    width: 100%;\n    padding: 40px 0;\n    background-color: transparent;\n  }\n\n  .personality-eval-wrap {\n    max-width: 1100px;\n    margin: 0 auto;\n    padding: 0 20px;\n    display: grid;\n    grid-template-columns: 1fr;\n    gap: 22px;\n  }\n\n  .personality-eval-card {\n    background-color: #F6F3ED;\n    border: 1px solid rgba(43, 82, 117, 0.18);\n    border-radius: 18px;\n    padding: 28px;\n  }\n\n  .personality-eval-card h3 {\n    margin: 0 0 14px;\n    font-family: 'Spectral SC', serif;\n    font-size: 28px;\n    line-height: 1.25;\n    font-weight: 300;\n    color: #2B5275;\n  }\n\n  .personality-eval-card p {\n    margin: 0;\n    font-family: Montserrat, sans-serif;\n    font-size: 16px;\n    line-height: 1.8;\n    color: #3D2D29;\n  }\n\n  @media screen and (min-width: 850px) {\n    .personality-eval-wrap {\n      grid-template-columns: repeat(3, 1fr);\n      align-items: stretch;\n    }\n\n    .personality-eval-card {\n      padding: 30px;\n    }\n\n    .personality-eval-card h3 {\n      font-size: 25px;\n    }\n  }\n\n  @media screen and (max-width: 600px) {\n    .personality-eval-info {\n      padding: 28px 0;\n    }\n\n    .personality-eval-card {\n      padding: 24px;\n      border-radius: 16px;\n    }\n\n    .personality-eval-card h3 {\n      font-size: 24px;\n    }\n\n    .personality-eval-card p {\n      font-size: 15px;\n      line-height: 1.75;\n    }\n  }\n</style>",
+        "background": "#93ced7",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_NTYfE3": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<h4>What This Evaluation Can Clarify</h4>\n\n<p style=\"margin-bottom: 24px;\">An ADHD evaluation can help determine whether attention-related difficulties are consistent with ADHD or better explained by other factors such as anxiety, trauma, learning differences, mood concerns, or broader executive functioning challenges. For children, the evaluation may help clarify patterns affecting learning, behavior, and school functioning.</p>\n\n<p>For adolescents and adults, it may bring greater understanding to chronic disorganization, mental overload, difficulty sustaining routines, emotional exhaustion, or the longstanding experience of working much harder than others just to keep up.</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_aTct6W": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"personality-eval-card\">\n  <h3>What to expect</h3>\n\n  <div style=\"display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0;\">\n    \n    <div style=\"display: grid; grid-template-columns: 10px 1fr; gap: 12px; align-items: start;\">\n      <span style=\"width: 7px; height: 7px; background-color: #2B5275; border-radius: 50%; margin-top: 10px; display: block;\"></span>\n      <p style=\"margin: 0; font-family: Montserrat, sans-serif; font-size: 16px; line-height: 1.8; color: #3D2D29;\">\n        A clinical interview to better understand current concerns, relevant history, and evaluation goals.\n      </p>\n    </div>\n\n    <div style=\"display: grid; grid-template-columns: 10px 1fr; gap: 12px; align-items: start;\">\n      <span style=\"width: 7px; height: 7px; background-color: #2B5275; border-radius: 50%; margin-top: 10px; display: block;\"></span>\n      <p style=\"margin: 0; font-family: Montserrat, sans-serif; font-size: 16px; line-height: 1.8; color: #3D2D29;\">\n        Review of relevant background information, which may include prior treatment, records, or collateral information when appropriate.\n      </p>\n    </div>\n\n    <div style=\"display: grid; grid-template-columns: 10px 1fr; gap: 12px; align-items: start;\">\n      <span style=\"width: 7px; height: 7px; background-color: #2B5275; border-radius: 50%; margin-top: 10px; display: block;\"></span>\n      <p style=\"margin: 0; font-family: Montserrat, sans-serif; font-size: 16px; line-height: 1.8; color: #3D2D29;\">\n        Standardized psychological measures selected based on the referral question and areas of concern.\n      </p>\n    </div>\n\n    <div style=\"display: grid; grid-template-columns: 10px 1fr; gap: 12px; align-items: start;\">\n      <span style=\"width: 7px; height: 7px; background-color: #2B5275; border-radius: 50%; margin-top: 10px; display: block;\"></span>\n      <p style=\"margin: 0; font-family: Montserrat, sans-serif; font-size: 16px; line-height: 1.8; color: #3D2D29;\">\n        An integrated written report with diagnostic impressions, treatment considerations, and recommendations for next steps.\n      </p>\n    </div>\n\n  </div>\n</div>",
+        "background": "#79baab",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "tabs_nmw3cm": {
+      "type": "tabs",
+      "blocks": {
+        "tab_pkig78": {
+          "type": "tab",
+          "settings": {
+            "title": "AUTISM SPECTRUM",
+            "content": "<p>These evaluations help clarify questions related to autism spectrum presentation, including social communication differences, sensory experiences, repetitive patterns, masking, and developmental history. The goal is to provide a thoughtful and comprehensive understanding of the individual’s profile.</p>",
+            "page": ""
+          }
+        },
+        "tab_fchYWT": {
+          "type": "tab",
+          "settings": {
+            "title": "PERSONALITY AND EMOTIONAL FUNCTIONING",
+            "content": "<p>These evaluations help clarify patterns related to mood, anxiety, personality functioning, coping, emotional regulation, and interpersonal style. They can be useful when concerns are complex, longstanding, or difficult to fully understand through conversation alone.</p>",
+            "page": ""
+          }
+        },
+        "tab_a48zQz": {
+          "type": "tab",
+          "settings": {
+            "title": "ATTENTION AND EXECUTIVE FUNCTIONING",
+            "content": "<p>Evaluations in this area help clarify concerns related to attention, impulsivity, organization, working memory, task initiation, and self-regulation. They can support understanding of ADHD and related executive functioning difficulties across school, work, and daily life.</p>",
+            "page": ""
+          }
+        },
+        "tab_PJrCt6": {
+          "type": "tab",
+          "settings": {
+            "title": "ACADEMIC AND LEARNING CONCERNS",
+            "content": "<p>Evaluations in this area explore concerns related to reading, writing, math, academic performance, learning differences, and the cognitive processes that may affect school functioning. They can help also identify strengths, challenges, and recommendations for support.</p>",
+            "page": ""
+          }
+        },
+        "tab_jpctwN": {
+          "type": "tab",
+          "settings": {
+            "title": "DIAGNOSTIC CLARIFICATION",
+            "content": "<p>Some evaluations are designed to answer broader or more complex diagnostic questions when there is uncertainty about the nature of the concerns. The goal is to provide greater clarity, more accurate understanding, and practical recommendations for next steps.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_pkig78",
+        "tab_fchYWT",
+        "tab_a48zQz",
+        "tab_PJrCt6",
+        "tab_jpctwN"
+      ],
+      "disabled": true,
+      "name": "Tabs",
+      "settings": {
+        "blockId": "",
+        "full_width": true,
+        "content_size": "medium",
+        "subheading": "Types of Evaluations",
+        "title": "Areas of Evaluations",
+        "first_tab_open": false,
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "rich_text_LJLekq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CwiRy3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Why Clarity Matters",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_AEf9k3": {
+          "type": "richtext",
+          "settings": {
+            "paragraph_class_name": "richtext-p-section",
+            "content": "<p>For many individuals and families, the evaluation process provides language for experiences that have felt confusing, frustrating, or difficult to explain. Greater clarity can support treatment planning, educational advocacy, self-understanding, and more effective support across settings.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CwiRy3",
+        "richtext_AEf9k3"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "display_mode": "all",
+        "section_class_name": "default-richtext",
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "#eed9c5",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact_YJwAey": {
+      "type": "contact",
+      "blocks": {
+        "dropdown_dPg9jX": {
+          "type": "dropdown",
+          "disabled": true,
+          "settings": {
+            "title": "What are you interested in learning more about?",
+            "values": "Therapy, Psychological Evaluation, Clinical Supervision, Clinical Consultation, Groups or Workshops, Educational Programs, Other"
+          }
+        },
+        "text_QCb99q": {
+          "type": "text",
+          "settings": {
+            "title": "Phone Number",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "dropdown_RAWDUA": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Preferred Method of Contact",
+            "values": "Phone, Email, Either"
+          }
+        }
+      },
+      "block_order": [
+        "dropdown_dPg9jX",
+        "text_QCb99q",
+        "dropdown_RAWDUA"
+      ],
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Begin Here",
+        "content": "<p>If you are seeking clarity but are not sure where to begin, a personality and emotional functioning evaluation can help organize the picture. This type of evaluation looks at emotional patterns, coping, relationships, trauma-related concerns, and diagnostic questions to support more informed treatment planning.</p><p> <em>We usually respond within 24 hours. </em></p><p><em><strong>This form is not intended for emergencies or urgent mental health concerns. If you are experiencing an emergency, call 911 or go to your nearest emergency room.</strong></em></p><p></p>",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "#f2f2f2",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QnMCtz",
+    "rich_text_DaQDyr",
+    "rich_text_Qya8dM",
+    "rich_text_iqJ9kj",
+    "rich_text_BCUGzw",
+    "two_col_layout_A9FUKx",
+    "custom_liquid_iNUXi6",
+    "custom_liquid_NTYfE3",
+    "custom_liquid_aTct6W",
+    "tabs_nmw3cm",
+    "rich_text_LJLekq",
+    "contact_YJwAey"
+  ]
+}
