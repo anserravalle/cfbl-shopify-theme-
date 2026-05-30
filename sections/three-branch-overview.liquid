@@ -110,6 +110,15 @@
 
   .branch-cta:hover { text-decoration: underline; text-underline-offset: 3px; }
 
+  .branch-logo {
+    display: block;
+    max-height: 44px;
+    max-width: 130px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 0 var(--space-5);
+  }
+
   @media (max-width: 768px) {
     .three-branch__grid {
       grid-template-columns: 1fr;
@@ -189,6 +198,9 @@
 
   <div class="three-branch__grid">
     <div class="branch-panel branch-panel--cfbl">
+      {%- if section.settings.cfbl_logo != blank -%}
+        {{ section.settings.cfbl_logo | image_url: width: 260 | image_tag: class: 'branch-logo', loading: 'lazy', alt: 'Center for Balanced Living' }}
+      {%- endif -%}
       <span class="branch-label">For Clients</span>
       <h3 class="branch-heading">{{ section.settings.cfbl_heading | default: 'Center for Balanced Living' }}</h3>
       <p class="branch-body">{{ section.settings.cfbl_body | default: 'Therapy, psychological evaluation, groups, and consultation for individuals and families. Trauma-informed care in Middletown, DE.' }}</p>
@@ -200,6 +212,9 @@
     </div>
 
     <div class="branch-panel branch-panel--institute">
+      {%- if section.settings.inst_logo != blank -%}
+        {{ section.settings.inst_logo | image_url: width: 260 | image_tag: class: 'branch-logo', loading: 'lazy', alt: 'CFBL Institute' }}
+      {%- endif -%}
       <span class="branch-label">For Professionals</span>
       <h3 class="branch-heading">{{ section.settings.inst_heading | default: 'CFBL Institute' }}</h3>
       <p class="branch-body">{{ section.settings.inst_body | default: 'Continuing education in trauma-based practice, assessment, and applied clinical reasoning. For licensed clinicians.' }}</p>
@@ -211,6 +226,9 @@
     </div>
 
     <div class="branch-panel branch-panel--musa">
+      {%- if section.settings.musa_logo != blank -%}
+        {{ section.settings.musa_logo | image_url: width: 260 | image_tag: class: 'branch-logo', loading: 'lazy', alt: 'MUSA' }}
+      {%- endif -%}
       <span class="branch-label">For Readers</span>
       <h3 class="branch-heading">{{ section.settings.musa_heading | default: 'MUSA' }}</h3>
       <p class="branch-body">{{ section.settings.musa_body | default: 'Books, essays, and longer-form writing on psychology, memory, and being human. A publication by Dr. Angela Serravalle.' }}</p>
@@ -251,6 +269,11 @@
       "content": "Center for Balanced Living"
     },
     {
+      "type": "image_picker",
+      "id": "cfbl_logo",
+      "label": "CFBL logo image"
+    },
+    {
       "type": "text",
       "id": "cfbl_heading",
       "label": "Heading",
@@ -278,6 +301,11 @@
       "content": "CFBL Institute"
     },
     {
+      "type": "image_picker",
+      "id": "inst_logo",
+      "label": "Institute logo image"
+    },
+    {
       "type": "text",
       "id": "inst_heading",
       "label": "Heading",
@@ -303,6 +331,11 @@
     {
       "type": "header",
       "content": "MUSA"
+    },
+    {
+      "type": "image_picker",
+      "id": "musa_logo",
+      "label": "MUSA logo image"
     },
     {
       "type": "text",
