@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "brand": "cfbl",
+        "eyebrow": "Center for Balanced Living · Our Team",
+        "heading": "Amanda Foxwell",
+        "subheading": "LAMCH, NCC · Therapist",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Back to the Team",
+        "cta_secondary_url": "/pages/team-introductions",
+        "image": ""
+      }
+    },
+    "bio": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "About",
+        "heading": "Holistic, nature-based care for teens and adults.",
+        "body": "<p>Amanda Foxwell is an EMDR-trained therapist specializing in trauma and anxiety for teens and adults. Her approach is holistic and nature-based, grounded in the relationship between client and clinician.</p><p>She is currently accepting new clients.</p><p>Add more about Amanda's background, training, and approach here.</p>",
+        "image_position": "right"
+      }
+    },
+    "contact": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Work with Amanda",
+        "subheading": "Schedule a free 15-minute consultation to discuss fit, availability, and next steps.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "footnote": "Townsend, DE · In-person and telehealth · Most insurance accepted",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": ["hero", "bio", "contact"]
+}

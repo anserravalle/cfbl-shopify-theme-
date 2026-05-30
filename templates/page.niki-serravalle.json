@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "brand": "cfbl",
+        "eyebrow": "Center for Balanced Living · Our Team",
+        "heading": "Dr. Angela (Niki) Serravalle",
+        "subheading": "Psy.D., LPCMH, NCC · Founder and Licensed Psychologist",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Back to the Team",
+        "cta_secondary_url": "/pages/team-introductions",
+        "image": ""
+      }
+    },
+    "bio": {
+      "type": "split-content",
+      "settings": {
+        "eyebrow": "About",
+        "heading": "A trauma-based psychologist, educator, and writer.",
+        "body": "<p>Dr. Angela (Niki) Serravalle is a licensed psychologist and licensed professional counselor, an EMDR Certified Therapist and Approved Consultant, and the founder of Center for Balanced Living. Her clinical work centers on trauma, psychological evaluation, and professional training.</p><p>She is the founder of the CFBL Institute, providing continuing education for licensed clinicians, and of MUSA, a publication of essays and longer-form writing on psychology and being human.</p><p>Add more about Dr. Serravalle's background, training, and clinical philosophy here.</p>",
+        "image_position": "right"
+      }
+    },
+    "contact": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Work with Dr. Serravalle",
+        "subheading": "Schedule a free 15-minute consultation to discuss fit, availability, and next steps.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "footnote": "Townsend, DE · In-person and telehealth · Most insurance accepted",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": ["hero", "bio", "contact"]
+}
