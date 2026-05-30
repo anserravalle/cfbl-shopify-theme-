@@ -4,7 +4,7 @@
       "type": "hero-brand",
       "settings": {
         "eyebrow": "Trauma-Based Clinical Services · Townsend, DE",
-        "heading": "Healing Happens In Relationship.",
+        "heading": "Your Path To Healing Begins Here",
         "subheading": "The body holds what the mind cannot yet process. At Center for Balanced Living, we integrate polyvagal-informed care, somatic awareness, and evidence-based trauma treatment for individuals, families, and children navigating complex trauma, anxiety, and developmental wounds.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
@@ -222,7 +222,6 @@
   "order": [
     "hero",
     "editorial_statement",
-    "pathway_cards",
     "service_cards",
     "three_branch",
     "team",
