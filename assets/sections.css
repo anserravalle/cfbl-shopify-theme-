@@ -1,5 +1,5 @@
 /* ============================================================
-   SECTIONS.CSS — Section-level layout styles
+   SECTIONS.CSS - Section-level layout styles
    CFBL Brand Family · Shopify 2.0 Theme
    ============================================================ */
 
@@ -20,7 +20,7 @@
 }
 
 /* ============================================================
-   BACKGROUND VARIANTS — Paper grounds per brand
+   BACKGROUND VARIANTS - Paper grounds per brand
    ============================================================ */
 
 /* CFBL backgrounds */
@@ -55,10 +55,10 @@
 }
 
 /* ============================================================
-   DARK SECTION VARIANTS — CTA blocks
+   DARK SECTION VARIANTS - CTA blocks
    ============================================================ */
 
-/* CFBL — Navy dark section */
+/* CFBL - Navy dark section */
 .section--navy {
   background-color: var(--cfbl-deep-navy);
   color: #fff;
@@ -101,7 +101,7 @@
   border-color: #fff;
 }
 
-/* Institute — Forest dark section */
+/* Institute - Forest dark section */
 .section--forest {
   background-color: var(--inst-forest);
   color: var(--inst-paper);
@@ -144,7 +144,7 @@
   border-color: var(--inst-paper);
 }
 
-/* MUSA — Oxblood dark section */
+/* MUSA - Oxblood dark section */
 .section--oxblood {
   background-color: var(--musa-oxblood);
   color: var(--musa-bone);
@@ -188,7 +188,7 @@
 }
 
 /* ============================================================
-   SECTION HEADER — Centered headline block
+   SECTION HEADER - Centered headline block
    ============================================================ */
 
 .section-header {
@@ -264,7 +264,7 @@
 }
 
 /* ============================================================
-   PATHWAY GRID — Three brand pathways on homepage
+   PATHWAY GRID - Three brand pathways on homepage
    ============================================================ */
 
 .pathway-grid {
@@ -393,7 +393,7 @@
 .pathway-card--musa .pathway-card__cta { color: var(--musa-oxblood); font-family: var(--musa-font-utility); }
 
 /* ============================================================
-   SERVICE GRID — CFBL service cards
+   SERVICE GRID - CFBL service cards
    ============================================================ */
 
 .service-grid {
@@ -415,7 +415,7 @@
 }
 
 /* ============================================================
-   COURSE GRID — Institute training cards
+   COURSE GRID - Institute training cards
    ============================================================ */
 
 .course-grid {
@@ -431,13 +431,13 @@
 }
 
 /* ============================================================
-   ESSAY LIST — Vertical list for MUSA essays
+   ESSAY LIST - Vertical list for MUSA essays
    ============================================================ */
 
 .essay-list {
   display: flex;
   flex-direction: column;
-  /* No gap — the top border on each card creates the separation */
+  /* No gap - the top border on each card creates the separation */
 }
 
 .essay-list--grid {
@@ -454,7 +454,7 @@
 }
 
 /* ============================================================
-   SPLIT CONTENT — 50/50 image + text
+   SPLIT CONTENT - 50/50 image + text
    ============================================================ */
 
 .split-content {
@@ -493,7 +493,7 @@
 
 /* CFBL: allow a single warm photographic image */
 .brand-cfbl .split-content__media img {
-  /* Subtle veil via a sibling element — not on the img itself */
+  /* Subtle veil via a sibling element - not on the img itself */
 }
 
 .split-content__body {
@@ -621,7 +621,7 @@
 .brand-musa .team-card__credentials { font-family: var(--musa-font-utility); color: var(--musa-walnut); }
 
 /* ============================================================
-   THREE-BRANCH OVERVIEW — Full-width 3-column
+   THREE-BRANCH OVERVIEW - Full-width 3-column
    ============================================================ */
 
 .three-branch-overview {

@@ -1,10 +1,10 @@
 /* ============================================================
-   COMPONENTS.CSS — Shared UI components
+   COMPONENTS.CSS - Shared UI components
    CFBL Brand Family · Shopify 2.0 Theme
    ============================================================ */
 
 /* ============================================================
-   NAVIGATION — Site Header
+   NAVIGATION - Site Header
    ============================================================ */
 
 .site-header {
@@ -379,7 +379,7 @@
 }
 
 /* ============================================================
-   BUTTONS — Extended component styles
+   BUTTONS - Extended component styles
    (Base .btn defined in base.css)
    ============================================================ */
 
@@ -407,7 +407,7 @@
   transition: transform var(--dur-base) var(--ease);
 }
 
-/* Subtle lift on hover — content-first, not card-y */
+/* Subtle lift on hover - content-first, not card-y */
 .card:hover {
   transform: translateY(-1px);
 }
@@ -420,7 +420,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  /* No shadow — flat surface */
+  /* No shadow - flat surface */
 }
 
 .card-service__kicker {
@@ -473,13 +473,13 @@
 .card-training {
   background: var(--inst-paper);
   border-radius: var(--radius-sm);
-  /* Left-side Forest border — full height of card */
+  /* Left-side Forest border - full height of card */
   border-left: 2px solid var(--inst-forest);
   padding: var(--space-5) var(--space-6);
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  /* No shadow — flat */
+  /* No shadow - flat */
 }
 
 .card-training__meta {
@@ -569,7 +569,7 @@
 
 /* ---- Essay Card (MUSA) ---- */
 .card-essay {
-  /* No fill — transparent background */
+  /* No fill - transparent background */
   background: transparent;
   padding-block: var(--space-5);
   /* Ochre top rule */

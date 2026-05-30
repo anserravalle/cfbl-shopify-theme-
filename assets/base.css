@@ -1,5 +1,5 @@
 /* ============================================================
-   BASE.CSS — Global resets, layout utilities, type defaults
+   BASE.CSS - Global resets, layout utilities, type defaults
    CFBL Brand Family · Shopify 2.0 Theme
    ============================================================ */
 
@@ -19,7 +19,7 @@
   --cfbl-sand-light:  #F5E7D6;  /* Light tint */
   --cfbl-sand-pale:   #FAF1E6;  /* Lighter tint for variation */
   --cfbl-terracotta:  #9D654E;  /* Earth accent, sparing */
-  --cfbl-ink:         #1F2A33;  /* Body text — never pure black */
+  --cfbl-ink:         #1F2A33;  /* Body text - never pure black */
   --cfbl-rule:        rgba(43, 82, 117, 0.18);
 
   /* --- Type --- */
@@ -39,7 +39,7 @@
   --inst-cream:      #EAE2D0;  /* Default background ground */
   --inst-paper:      #F0EAE0;  /* Lighter variation ground */
   --inst-forest:     #3D5A52;  /* Anchor: buttons, rules, key ink */
-  --inst-ink:        #2A3530;  /* Body text — never pure black */
+  --inst-ink:        #2A3530;  /* Body text - never pure black */
   --inst-rule:       rgba(61, 90, 82, 0.22);
 
   /* --- Type --- */
@@ -59,7 +59,7 @@
   --musa-oxblood:    #6E1F23;  /* Signature accent: drop caps, links, pull quotes */
   --musa-ochre:      #C5A572;  /* Secondary accent, section rules */
   --musa-walnut:     #4A4036;  /* Subheads, bylines, hairline rules */
-  --musa-ink:        #1F1A16;  /* Body text — warmer than black */
+  --musa-ink:        #1F1A16;  /* Body text - warmer than black */
   --musa-rule:       rgba(74, 64, 54, 0.22);
 
   /* --- Type --- */
@@ -69,7 +69,7 @@
 }
 
 /* ============================================================
-   SHARED TOKENS — Spacing, radii, motion
+   SHARED TOKENS - Spacing, radii, motion
    ============================================================ */
 :root {
   /* Spacing scale (8px base) */
@@ -87,7 +87,7 @@
   /* Container widths */
   --measure-prose: 64ch;
   --measure-narrow: 48ch;
-  --container-max: 1200px;
+  --container-max: 1320px;
   --container-text: 720px;
 
   /* Radii */
@@ -109,7 +109,7 @@
 }
 
 /* ============================================================
-   SEMANTIC TYPE — Brand-scoped defaults
+   SEMANTIC TYPE - Brand-scoped defaults
    ============================================================ */
 .brand-cfbl {
   background: var(--cfbl-sand);
@@ -211,7 +211,7 @@
 }
 
 /* ============================================================
-   BUTTONS — Brand-aware
+   BUTTONS - Brand-aware
    ============================================================ */
 .btn {
   display: inline-flex;
@@ -270,7 +270,7 @@
 .rule-ochre     { border: 0; border-top: 1px solid var(--musa-ochre); }
 
 /* ============================================================
-   FOCUS — Accessibility floor
+   FOCUS - Accessibility floor
    ============================================================ */
 :focus-visible {
   outline: 2px solid currentColor;
@@ -412,7 +412,7 @@ button {
    ACCESSIBILITY UTILITIES
    ============================================================ */
 
-/* Visually hidden — readable by screen readers */
+/* Visually hidden - readable by screen readers */
 .visually-hidden {
   position: absolute;
   width: 1px;
