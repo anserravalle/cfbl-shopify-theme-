@@ -22,53 +22,6 @@
         "background": "navy"
       }
     },
-    "pathway_cards": {
-      "type": "pathway-cards",
-      "settings": {
-        "eyebrow": "Where would you like to begin",
-        "heading": "Three Pathways to Support"
-      },
-      "blocks": {
-        "pathway_clients": {
-          "type": "pathway",
-          "settings": {
-            "kicker": "For Clients",
-            "title": "Center for Balanced Living",
-            "description": "Therapy, psychological evaluation, and group treatment for individuals and families. Trauma-based care grounded in polyvagal theory, IFS, and somatic experiencing.",
-            "cta_label": "Explore Clinical Services",
-            "cta_url": "/pages/cfbl",
-            "brand_color": "cfbl"
-          }
-        },
-        "pathway_professionals": {
-          "type": "pathway",
-          "settings": {
-            "kicker": "For Professionals",
-            "title": "CFBL Institute",
-            "description": "Continuing education for licensed clinicians. Live workshops and on-demand courses in trauma assessment, nervous system theory, and applied clinical reasoning.",
-            "cta_label": "View Trainings and CE",
-            "cta_url": "/pages/institute",
-            "brand_color": "institute"
-          }
-        },
-        "pathway_readers": {
-          "type": "pathway",
-          "settings": {
-            "kicker": "For Readers",
-            "title": "MUSA",
-            "description": "Books and essays on psychology, memory, and being human. Longer-form writing by Dr. Angela Serravalle for readers interested in the science and phenomenology of trauma.",
-            "cta_label": "Read the Writing",
-            "cta_url": "/pages/musa",
-            "brand_color": "musa"
-          }
-        }
-      },
-      "block_order": [
-        "pathway_clients",
-        "pathway_professionals",
-        "pathway_readers"
-      ]
-    },
     "service_cards": {
       "type": "service-cards",
       "settings": {
