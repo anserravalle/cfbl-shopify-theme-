@@ -53,6 +53,7 @@
 
   .branch-panel {
     padding: var(--space-7) var(--space-6);
+    position: relative;
   }
 
   .branch-panel:not(:last-child) {
@@ -111,12 +112,15 @@
   .branch-cta:hover { text-decoration: underline; text-underline-offset: 3px; }
 
   .branch-logo {
-    display: block;
-    max-height: 44px;
-    max-width: 130px;
+    position: absolute;
+    top: var(--space-6);
+    right: var(--space-6);
+    max-height: 36px;
+    max-width: 100px;
     width: auto;
     object-fit: contain;
-    margin: 0 0 var(--space-5);
+    object-position: right center;
+    opacity: 0.85;
   }
 
   @media (max-width: 768px) {
