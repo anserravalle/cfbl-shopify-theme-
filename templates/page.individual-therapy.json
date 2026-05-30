@@ -104,6 +104,39 @@
         "image_position": "left"
       }
     },
+    "testimonial": {
+      "type": "testimonial-quote",
+      "settings": {
+        "eyebrow": "In Their Words",
+        "heading": "From clients in therapy",
+        "layout": "carousel",
+        "background": "sand"
+      },
+      "blocks": {
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "I felt heard from the very first session. For the first time, therapy felt like it was actually built around me.",
+            "attribution": "Adult therapy client"
+          }
+        },
+        "q2": {
+          "type": "quote",
+          "settings": {
+            "quote": "The work we did helped me understand my patterns instead of just managing them. It changed how I move through the world.",
+            "attribution": "Therapy client"
+          }
+        },
+        "q3": {
+          "type": "quote",
+          "settings": {
+            "quote": "Steady, patient, and never rushed. I always felt like I was in capable hands.",
+            "attribution": "Adolescent's parent"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3"]
+    },
     "faq": {
       "type": "faq-accordion",
       "settings": {
@@ -160,5 +193,5 @@
       }
     }
   },
-  "order": ["hero", "what_therapy", "areas_of_care", "modalities", "faq", "contact"]
+  "order": ["hero", "what_therapy", "areas_of_care", "modalities", "testimonial", "faq", "contact"]
 }

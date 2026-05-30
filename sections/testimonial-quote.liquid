@@ -33,82 +33,218 @@
       assign accent_color = 'var(--cfbl-deep-navy)'
       assign brand_class = 'brand-cfbl'
   endcase
+
+  assign brand_key = brand_class | remove: 'brand-'
+
+  case brand_key
+    when 'institute'
+      assign quote_font = 'var(--inst-font-display)'
+    when 'musa'
+      assign quote_font = 'var(--musa-font-display)'
+    else
+      assign quote_font = 'var(--cfbl-font-display)'
+  endcase
+
+  assign block_count = section.blocks.size
+  assign layout = section.settings.layout | default: 'carousel'
+  if block_count < 2
+    assign layout = 'single'
+  endif
 %}
 
 <style>
-  #shopify-section-{{ section.id }} .testimonial-quote {
-    background: {{ bg_color }};
+  #shopify-section-{{ section.id }} .quotes {
+    background: {{ section.settings.section_bg | default: bg_color }};
     padding: var(--space-10) 0;
   }
 
-  #shopify-section-{{ section.id }} .testimonial-quote__inner {
+  #shopify-section-{{ section.id }} .quotes__inner {
     max-width: var(--container-text);
     margin: 0 auto;
     padding: 0 var(--space-6);
+  }
+
+  #shopify-section-{{ section.id }} .quotes__head {
     text-align: center;
+    margin: 0 0 var(--space-8);
   }
 
-  #shopify-section-{{ section.id }} .testimonial-quote__mark {
+  #shopify-section-{{ section.id }} .quotes__eyebrow {
     display: block;
-    font-family: 'Cormorant SC', Georgia, serif;
-    font-size: 6rem;
-    line-height: 0.65;
-    color: {{ accent_color }};
-    opacity: 0.25;
-    margin: 0 0 var(--space-5);
-    pointer-events: none;
-    user-select: none;
-    aria-hidden: true;
-  }
-
-  {%- if bg == 'bone' or bg == 'musa' -%}
-  #shopify-section-{{ section.id }} .testimonial-quote__mark {
-    font-family: 'DM Serif Display', Georgia, serif;
-  }
-  {%- endif -%}
-
-  #shopify-section-{{ section.id }} .testimonial-quote__text {
-    font-size: clamp(1.375rem, 2.5vw, 2rem);
-    line-height: 1.45;
-    color: {{ text_color }};
-    margin: 0 0 var(--space-6);
-    font-style: italic;
-  }
-
-  #shopify-section-{{ section.id }} .testimonial-quote__text--cfbl {
-    font-family: var(--cfbl-font-display);
-    font-weight: 400;
-  }
-
-  #shopify-section-{{ section.id }} .testimonial-quote__text--institute {
-    font-family: var(--inst-font-display);
-    font-weight: 400;
-  }
-
-  #shopify-section-{{ section.id }} .testimonial-quote__text--musa {
-    font-family: var(--musa-font-display);
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  #shopify-section-{{ section.id }} .testimonial-quote__attribution {
     font-family: 'Inter', system-ui, sans-serif;
-    font-size: 0.8125rem;
-    font-weight: 500;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.16em;
     color: {{ accent_color }};
     opacity: 0.7;
+    margin: 0 0 var(--space-3);
+  }
+
+  #shopify-section-{{ section.id }} .quotes__title {
+    font-family: {{ quote_font }};
+    font-size: clamp(1.625rem, 3vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.2;
+    color: {{ text_color }};
     margin: 0;
   }
 
-  #shopify-section-{{ section.id }} .testimonial-quote__rule {
+  /* Each pull-quote */
+  #shopify-section-{{ section.id }} .quote {
+    text-align: center;
+    padding: 0 var(--space-2);
+  }
+
+  #shopify-section-{{ section.id }} .quote__mark {
+    display: block;
+    font-family: {{ quote_font }};
+    font-size: 5.5rem;
+    line-height: 0.6;
+    height: 2.4rem;
+    color: {{ accent_color }};
+    opacity: 0.22;
+    margin: 0 auto var(--space-4);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  #shopify-section-{{ section.id }} .quote__text {
+    font-family: {{ quote_font }};
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.375rem, 2.6vw, 2.125rem);
+    line-height: 1.45;
+    color: {{ text_color }};
+    margin: 0 0 var(--space-6);
+  }
+
+  #shopify-section-{{ section.id }} .quote__rule {
     width: 40px;
     height: 1px;
     background: {{ accent_color }};
-    opacity: 0.3;
+    opacity: 0.35;
     margin: 0 auto var(--space-4);
     border: none;
+  }
+
+  #shopify-section-{{ section.id }} .quote__attribution {
+    display: block;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: {{ accent_color }};
+    opacity: 0.75;
+  }
+
+  /* Stack layout: quotes separated by hairlines */
+  #shopify-section-{{ section.id }} .quotes--stack .quote + .quote {
+    margin-top: var(--space-9);
+    padding-top: var(--space-9);
+    border-top: 1px solid {{ accent_color }};
+    border-image: none;
+  }
+  #shopify-section-{{ section.id }} .quotes--stack .quote + .quote {
+    border-top-color: {{ accent_color }};
+  }
+
+  /* Carousel layout */
+  #shopify-section-{{ section.id }} .quotes__viewport {
+    position: relative;
+  }
+
+  #shopify-section-{{ section.id }} .quotes__track {
+    display: grid;
+  }
+
+  #shopify-section-{{ section.id }} .quotes--carousel .quote {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s;
+  }
+
+  #shopify-section-{{ section.id }} .quotes--carousel .quote.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  #shopify-section-{{ section.id }} .quotes__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-top: var(--space-7);
+  }
+
+  #shopify-section-{{ section.id }} .quotes__arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid {{ accent_color }};
+    background: transparent;
+    color: {{ accent_color }};
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: opacity var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+    flex-shrink: 0;
+  }
+
+  #shopify-section-{{ section.id }} .quotes__arrow:hover,
+  #shopify-section-{{ section.id }} .quotes__arrow:focus-visible {
+    opacity: 1;
+    background: {{ accent_color }};
+    color: {{ bg_color }};
+    outline: none;
+  }
+
+  #shopify-section-{{ section.id }} .quotes__arrow svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  #shopify-section-{{ section.id }} .quotes__dots {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  #shopify-section-{{ section.id }} .quotes__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    background: {{ accent_color }};
+    opacity: 0.25;
+    cursor: pointer;
+    transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+  }
+
+  #shopify-section-{{ section.id }} .quotes__dot.is-active {
+    opacity: 0.85;
+    transform: scale(1.3);
+  }
+
+  #shopify-section-{{ section.id }} .quotes__dot:focus-visible {
+    outline: 2px solid {{ accent_color }};
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #shopify-section-{{ section.id }} .quotes--carousel .quote {
+      transition: opacity 0.01s linear;
+      transform: none;
+    }
   }
 
   /* DYNAMIC SECTION OVERRIDES */
@@ -137,99 +273,166 @@
     else
       assign pb_val = 'var(--space-9)'
     endif
-    assign hs = section.settings.heading_size | default: 'md'
-    if hs == 'sm'
-      assign hs_scale = '0.8'
-    elsif hs == 'lg'
-      assign hs_scale = '1.2'
-    elsif hs == 'xl'
-      assign hs_scale = '1.45'
-    else
-      assign hs_scale = '1'
-    endif
   -%}
-  {%- if section.settings.section_bg != blank -%}
-  #shopify-section-{{ section.id }} { background: {{ section.settings.section_bg }} !important; }
-  #shopify-section-{{ section.id }} > section,
-  #shopify-section-{{ section.id }} > div { background: {{ section.settings.section_bg }} !important; }
-  {%- endif -%}
-  #shopify-section-{{ section.id }} > section,
-  #shopify-section-{{ section.id }} > div:first-child {
-    padding-top: {{ pt_val }} !important;
-    padding-bottom: {{ pb_val }} !important;
+  #shopify-section-{{ section.id }} .quotes {
+    padding-top: {{ pt_val }};
+    padding-bottom: {{ pb_val }};
   }
-  {%- if section.settings.text_align == 'center' -%}
-  #shopify-section-{{ section.id }} h1,
-  #shopify-section-{{ section.id }} h2,
-  #shopify-section-{{ section.id }} h3,
-  #shopify-section-{{ section.id }} p { text-align: center; }
-  {%- endif -%}
-  #shopify-section-{{ section.id }} h1,
-  #shopify-section-{{ section.id }} h2,
-  #shopify-section-{{ section.id }} h3 { font-size: calc(1em * {{ hs_scale }}); }
 </style>
 
-<section class="testimonial-quote {{ brand_class }}" aria-label="Testimonial">
-  <div class="testimonial-quote__inner">
-    <span class="testimonial-quote__mark" aria-hidden="true">&ldquo;</span>
-
-    {%- if section.settings.quote != blank -%}
-      <blockquote>
-        <p class="testimonial-quote__text testimonial-quote__text--{{ brand_class | remove: 'brand-' }}">
-          {{ section.settings.quote }}
-        </p>
-        {%- if section.settings.attribution != blank -%}
-          <hr class="testimonial-quote__rule" aria-hidden="true">
-          <footer>
-            <cite class="testimonial-quote__attribution">{{ section.settings.attribution | escape }}</cite>
-          </footer>
+<section class="quotes {{ brand_class }}" aria-label="{{ section.settings.heading | default: 'Testimonials' | escape }}">
+  <div class="quotes__inner">
+    {%- if section.settings.eyebrow != blank or section.settings.heading != blank -%}
+      <div class="quotes__head">
+        {%- if section.settings.eyebrow != blank -%}
+          <span class="quotes__eyebrow">{{ section.settings.eyebrow | escape }}</span>
         {%- endif -%}
-      </blockquote>
+        {%- if section.settings.heading != blank -%}
+          <h2 class="quotes__title">{{ section.settings.heading | escape }}</h2>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if block_count > 0 -%}
+      <div
+        class="quotes__viewport"
+        {% if layout == 'carousel' %}data-quote-carousel data-autoplay="{{ section.settings.autoplay | default: true }}"{% endif %}
+      >
+        <div class="quotes__track quotes--{{ layout }}" {% if layout == 'carousel' %}aria-live="polite"{% endif %}>
+          {%- for block in section.blocks -%}
+            <figure
+              class="quote{% if layout == 'carousel' and forloop.first %} is-active{% endif %}"
+              data-quote-slide
+              {% if layout == 'carousel' and forloop.first == false %}aria-hidden="true"{% endif %}
+              {{ block.shopify_attributes }}
+            >
+              <span class="quote__mark" aria-hidden="true">&ldquo;</span>
+              {%- if block.settings.quote != blank -%}
+                <blockquote class="quote__text">{{ block.settings.quote }}</blockquote>
+              {%- endif -%}
+              {%- if block.settings.attribution != blank -%}
+                <hr class="quote__rule" aria-hidden="true">
+                <figcaption class="quote__attribution">{{ block.settings.attribution | escape }}</figcaption>
+              {%- endif -%}
+            </figure>
+          {%- endfor -%}
+        </div>
+
+        {%- if layout == 'carousel' -%}
+          <div class="quotes__controls">
+            <button type="button" class="quotes__arrow" data-quote-prev aria-label="Previous quote">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="quotes__dots" role="tablist" aria-label="Choose quote">
+              {%- for block in section.blocks -%}
+                <button type="button" class="quotes__dot{% if forloop.first %} is-active{% endif %}" data-quote-dot data-index="{{ forloop.index0 }}" aria-label="Quote {{ forloop.index }}"></button>
+              {%- endfor -%}
+            </div>
+            <button type="button" class="quotes__arrow" data-quote-next aria-label="Next quote">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        {%- endif -%}
+      </div>
     {%- endif -%}
   </div>
 </section>
 
+{%- if layout == 'carousel' -%}
+<script>
+  (function () {
+    var root = document.querySelector('#shopify-section-{{ section.id }} [data-quote-carousel]');
+    if (!root || root.dataset.quoteInit === '1') return;
+    root.dataset.quoteInit = '1';
+
+    var slides = Array.prototype.slice.call(root.querySelectorAll('[data-quote-slide]'));
+    var dots = Array.prototype.slice.call(root.querySelectorAll('[data-quote-dot]'));
+    var prev = root.querySelector('[data-quote-prev]');
+    var next = root.querySelector('[data-quote-next]');
+    if (slides.length < 2) return;
+
+    var index = 0;
+    var timer = null;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var autoplay = root.dataset.autoplay !== 'false' && !reduce;
+
+    function show(i) {
+      index = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) {
+        var on = n === index;
+        s.classList.toggle('is-active', on);
+        if (on) { s.removeAttribute('aria-hidden'); } else { s.setAttribute('aria-hidden', 'true'); }
+      });
+      dots.forEach(function (d, n) { d.classList.toggle('is-active', n === index); });
+    }
+
+    function start() {
+      if (!autoplay) return;
+      stop();
+      timer = window.setInterval(function () { show(index + 1); }, 7000);
+    }
+    function stop() { if (timer) { window.clearInterval(timer); timer = null; } }
+
+    if (next) next.addEventListener('click', function () { show(index + 1); start(); });
+    if (prev) prev.addEventListener('click', function () { show(index - 1); start(); });
+    dots.forEach(function (d) {
+      d.addEventListener('click', function () { show(parseInt(d.dataset.index, 10)); start(); });
+    });
+
+    root.addEventListener('mouseenter', stop);
+    root.addEventListener('mouseleave', start);
+    root.addEventListener('focusin', stop);
+    root.addEventListener('focusout', start);
+
+    show(0);
+    start();
+  })();
+</script>
+{%- endif -%}
+
 {% schema %}
 {
-  "name": "Testimonial Quote",
+  "name": "Testimonial Quotes",
   "settings": [
     {
-      "type": "textarea",
-      "id": "quote",
-      "label": "Quote text",
-      "default": "Working with the team at CFBL changed how I understand my own patterns. Evidence-based, thoughtful, and deeply human."
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow (small label above heading)",
+      "default": "In Their Words"
     },
     {
       "type": "text",
-      "id": "attribution",
-      "label": "Attribution",
-      "default": "Client, Center for Balanced Living"
+      "id": "heading",
+      "label": "Section heading",
+      "default": "What clients say"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "How to show multiple quotes",
+      "info": "Carousel shows one at a time (rotating). Stacked shows them all down the page.",
+      "options": [
+        { "value": "carousel", "label": "Carousel (one at a time)" },
+        { "value": "stack", "label": "Stacked (all visible)" }
+      ],
+      "default": "carousel"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto-advance carousel",
+      "default": true
     },
     {
       "type": "select",
       "id": "background",
-      "label": "Background",
+      "label": "Brand color theme",
       "options": [
-        {
-          "value": "sand",
-          "label": "Sand (CFBL)"
-        },
-        {
-          "value": "cream",
-          "label": "Cream (Institute)"
-        },
-        {
-          "value": "bone",
-          "label": "Bone (MUSA)"
-        },
-        {
-          "value": "navy-dark",
-          "label": "Deep Navy (dark)"
-        },
-        {
-          "value": "forest-dark",
-          "label": "Forest (dark)"
-        }
+        { "value": "sand", "label": "Sand (CFBL)" },
+        { "value": "cream", "label": "Cream (Institute)" },
+        { "value": "bone", "label": "Bone (MUSA)" },
+        { "value": "navy-dark", "label": "Deep Navy (dark)" },
+        { "value": "forest-dark", "label": "Forest (dark)" }
       ],
       "default": "sand"
     },
@@ -240,34 +443,19 @@
     {
       "type": "color",
       "id": "section_bg",
-      "label": "Background color",
-      "info": "Leave blank to use the brand default background."
+      "label": "Custom background color",
+      "info": "Leave blank to use the brand color theme above."
     },
     {
       "type": "select",
       "id": "padding_top",
       "label": "Top padding",
       "options": [
-        {
-          "value": "none",
-          "label": "None"
-        },
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium (default)"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        },
-        {
-          "value": "xl",
-          "label": "Extra large"
-        }
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium (default)" },
+        { "value": "large", "label": "Large" },
+        { "value": "xl", "label": "Extra large" }
       ],
       "default": "medium"
     },
@@ -276,76 +464,48 @@
       "id": "padding_bottom",
       "label": "Bottom padding",
       "options": [
-        {
-          "value": "none",
-          "label": "None"
-        },
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium (default)"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        },
-        {
-          "value": "xl",
-          "label": "Extra large"
-        }
+        { "value": "none", "label": "None" },
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium (default)" },
+        { "value": "large", "label": "Large" },
+        { "value": "xl", "label": "Extra large" }
       ],
       "default": "medium"
-    },
-    {
-      "type": "select",
-      "id": "text_align",
-      "label": "Heading & text alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left (default)"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        }
-      ],
-      "default": "left"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "label": "Heading size",
-      "options": [
-        {
-          "value": "sm",
-          "label": "Small"
-        },
-        {
-          "value": "md",
-          "label": "Medium (default)"
-        },
-        {
-          "value": "lg",
-          "label": "Large"
-        },
-        {
-          "value": "xl",
-          "label": "Extra large"
-        }
-      ],
-      "default": "md"
     }
   ],
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote text",
+          "default": "The care here is careful, steady, and deeply human. I finally felt understood."
+        },
+        {
+          "type": "text",
+          "id": "attribution",
+          "label": "Attribution",
+          "info": "Use a role only, never a name. For example: Therapy client, Workshop participant, Parent of a client, Supervisee.",
+          "default": "Therapy client"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 50,
   "presets": [
     {
-      "name": "Testimonial Quote",
+      "name": "Testimonial Quotes",
       "settings": {
-        "background": "sand"
-      }
+        "background": "sand",
+        "layout": "carousel"
+      },
+      "blocks": [
+        { "type": "quote" },
+        { "type": "quote" }
+      ]
     }
   ]
 }

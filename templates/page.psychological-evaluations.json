@@ -88,10 +88,35 @@
     "testimonial": {
       "type": "testimonial-quote",
       "settings": {
-        "quote": "The evaluation gave us language for what we had been seeing for years. The feedback session was the first time we actually understood what our child needed.",
-        "attribution": "Parent of an adolescent client",
+        "eyebrow": "In Their Words",
+        "heading": "From families we have worked with",
+        "layout": "carousel",
         "background": "sand"
-      }
+      },
+      "blocks": {
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "The evaluation gave us language for what we had been seeing for years. The feedback session was the first time we actually understood what our child needed.",
+            "attribution": "Parent of an adolescent client"
+          }
+        },
+        "q2": {
+          "type": "quote",
+          "settings": {
+            "quote": "Thorough, clear, and compassionate. The report was something we could actually bring to the school and use.",
+            "attribution": "Parent of a school-age client"
+          }
+        },
+        "q3": {
+          "type": "quote",
+          "settings": {
+            "quote": "For the first time I had answers instead of guesses. It changed how I understood my whole life.",
+            "attribution": "Adult evaluation client"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3"]
     },
     "faq": {
       "type": "faq-accordion",

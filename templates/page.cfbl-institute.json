@@ -88,6 +88,39 @@
         "brand": "institute"
       }
     },
+    "testimonial": {
+      "type": "testimonial-quote",
+      "settings": {
+        "eyebrow": "From the Field",
+        "heading": "What clinicians say about our trainings",
+        "layout": "carousel",
+        "background": "cream"
+      },
+      "blocks": {
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "One of the most clinically useful trainings I have attended. I left with tools I could use the very next day.",
+            "attribution": "Licensed clinician, training participant"
+          }
+        },
+        "q2": {
+          "type": "quote",
+          "settings": {
+            "quote": "Rigorous and grounded in real practice, not theory for its own sake. Exactly what continuing education should be.",
+            "attribution": "Workshop participant"
+          }
+        },
+        "q3": {
+          "type": "quote",
+          "settings": {
+            "quote": "The supervision and consultation completely changed how I work with trauma. Worth every hour.",
+            "attribution": "Supervisee"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3"]
+    },
     "contact_cta": {
       "type": "contact-cta",
       "settings": {
@@ -117,6 +150,7 @@
     "featured_training",
     "resource_grid",
     "event_list",
+    "testimonial",
     "contact_cta",
     "newsletter"
   ]

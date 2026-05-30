@@ -117,10 +117,28 @@
     "testimonial": {
       "type": "testimonial-quote",
       "settings": {
-        "quote": "Working with this practice changed how I understand myself. The care here is careful, steady, and real.",
-        "attribution": "Client, Center for Balanced Living",
+        "eyebrow": "In Their Words",
+        "heading": "What clients say",
+        "layout": "carousel",
         "background": "sand"
-      }
+      },
+      "blocks": {
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "Working with this practice changed how I understand myself. The care here is careful, steady, and real.",
+            "attribution": "Therapy client"
+          }
+        },
+        "q2": {
+          "type": "quote",
+          "settings": {
+            "quote": "I felt heard from the very first session. For the first time, therapy felt like it was actually built around me.",
+            "attribution": "Adult client"
+          }
+        }
+      },
+      "block_order": ["q1", "q2"]
     },
     "contact": {
       "type": "contact-cta",

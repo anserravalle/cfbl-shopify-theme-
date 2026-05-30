@@ -62,10 +62,21 @@
     "testimonial": {
       "type": "testimonial-quote",
       "settings": {
-        "quote": "The care here is unlike anything I'd experienced before, careful, steady, and attuned to what I actually needed.",
-        "attribution": "Client, Center for Balanced Living",
-        "brand": "cfbl"
-      }
+        "eyebrow": "In Their Words",
+        "heading": "What clients say",
+        "layout": "carousel",
+        "background": "sand"
+      },
+      "blocks": {
+        "q1": {
+          "type": "quote",
+          "settings": {
+            "quote": "The care here is unlike anything I had experienced before, careful, steady, and attuned to what I actually needed.",
+            "attribution": "Client"
+          }
+        }
+      },
+      "block_order": ["q1"]
     },
     "contact_cta": {
       "type": "contact-cta",
