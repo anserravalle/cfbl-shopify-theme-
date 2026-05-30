@@ -5,7 +5,7 @@
       "settings": {
         "eyebrow": "Trauma-Based Clinical Services · Townsend, DE",
         "heading": "Your Path To Healing Begins Here",
-        "subheading": "The body holds what the mind cannot yet process. At Center for Balanced Living, we integrate polyvagal-informed care, somatic awareness, and evidence-based trauma treatment for individuals, families, and children navigating complex trauma, anxiety, and developmental wounds.",
+        "subheading": "The body holds what the mind cannot yet process. At Center for Balanced Living, we integrate nature based care, somatic awareness, and evidence-based trauma treatment for individuals, families, and children navigating complex trauma, anxiety, and developmental wounds.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Meet the Team",
@@ -17,8 +17,8 @@
     "editorial_statement": {
       "type": "editorial-statement",
       "settings": {
-        "statement": "What we know from polyvagal theory: safety is not a thought. It is a physiological state. Our clinical work is built on that premise.",
-        "attribution": "Dr. Angela Serravalle, Psy.D.",
+        "statement": "The most meaningful change does not come from fixing what is wrong. It comes from understanding the patterns that have been shaping us all along.",
+        "attribution": "Dr. Niki Serravalle, Psy.D.",
         "background": "navy"
       }
     },
@@ -34,30 +34,27 @@
           "type": "service",
           "settings": {
             "kicker": "Individual Therapy",
-            "heading": "Individual Therapy",
+            "title": "Trauma-Based Therapy",
             "description": "One-on-one therapy for adults and adolescents navigating complex trauma, anxiety, grief, and identity disruption. We draw on EMDR, IFS, somatic experiencing, and attachment-based approaches. Treatment is tailored to your window of tolerance.",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/therapy"
+            "url": "/pages/therapy"
           }
         },
         "service_eval": {
           "type": "service",
           "settings": {
             "kicker": "Psychological Evaluations",
-            "heading": "Psychological Evaluations",
+            "title": "Psychological Evaluations",
             "description": "Comprehensive evaluations for children, adolescents, and adults. We assess for autism, ADHD, learning differences, and complex trauma presentations. Reports are written for clinical utility, not just diagnosis.",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/evaluations"
+            "url": "/pages/evaluations"
           }
         },
         "service_groups": {
           "type": "service",
           "settings": {
             "kicker": "Wellness Groups",
-            "heading": "Wellness Groups",
+            "title": "Wellness Groups",
             "description": "Community-grounded groups focused on grief, somatic resourcing, and nervous system regulation. Structured and time-limited, informed by current research in polyvagal theory and group trauma treatment.",
-            "cta_label": "Learn more",
-            "cta_url": "/pages/groups"
+            "url": "/pages/groups"
           }
         }
       },
@@ -71,7 +68,19 @@
       "type": "three-branch-overview",
       "settings": {
         "heading": "One practice. Three doors.",
-        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA each serve a distinct audience with a distinct clinical voice. Three doors. One integrated practice."
+        "subheading": "Center for Balanced Living, CFBL Institute, and MUSA each serve a distinct audience with a distinct clinical voice. Three doors. One integrated practice.",
+        "cfbl_heading": "Center for Balanced Living",
+        "cfbl_body": "Therapy, psychological evaluation, and groups for individuals and families. Trauma-informed care in Townsend, DE.",
+        "cfbl_cta_label": "Explore Clinical Services",
+        "cfbl_cta_url": "/pages/cfbl",
+        "inst_heading": "CFBL Institute",
+        "inst_body": "Continuing education in trauma-based practice, assessment, and applied clinical reasoning. For licensed clinicians.",
+        "inst_cta_label": "View Trainings and CE",
+        "inst_cta_url": "/pages/institute",
+        "musa_heading": "MUSA",
+        "musa_body": "Books, essays, and longer-form writing on psychology, healthcare and being human. A publication by Dr. Niki Serravalle.",
+        "musa_cta_label": "Read the Writing",
+        "musa_cta_url": "/pages/musa"
       }
     },
     "team": {
@@ -108,13 +117,13 @@
         "training_1": {
           "type": "training",
           "settings": {
-            "kicker": "6.0 CE Hours · Live Online",
-            "title": "Trauma-Based Assessment: Integrating the ACEs Framework",
+            "kicker": "6 CE Credits · Live Online",
+            "title": "Assessment for the Trauma Clinician",
             "presenter": "Angela Serravalle, Psy.D.",
             "date": "November 14, 2026",
             "format": "Live Online",
             "price": "$245",
-            "description": "<p>A six-hour workshop integrating psychometric assessment with nervous system theory. We examine how trauma presentations affect test performance, scoring validity, and diagnostic clarity. For licensed clinicians in trauma, forensic, and educational settings.</p>",
+            "description": "<p>A workshop integrating psychometric assessment with nervous system theory. For licensed clinicians working in trauma, forensic, and educational settings.</p>",
             "cta_label": "Register",
             "cta_url": "/collections/trainings"
           }
@@ -135,8 +144,8 @@
         "essay_1": {
           "type": "essay",
           "settings": {
-            "title": "On Memory and the Body: What Trauma Teaches Us About Time",
-            "byline": "Angela Serravalle · May 2026",
+            "title": "The Quiet Room",
+            "byline": "Angela Serravalle · November 2026",
             "lede": "The body keeps a record that the mind is still learning to read. This essay explores what clinical work reveals about traumatic memory, the limits of narrative, and why trauma treatment must begin below the neck.",
             "cta_label": "Read the essay",
             "cta_url": "/blogs/essays"
@@ -154,7 +163,7 @@
         "subheading": "We are accepting new clients. A free 15-minute consultation helps us understand what you are looking for and whether we are the right fit.",
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
-        "cta_secondary_label": "Contact Us",
+        "cta_secondary_label": "Send a Message",
         "cta_secondary_url": "/pages/contact",
         "footnote": "Townsend, DE · In-person and telehealth · Most insurance accepted",
         "brand": "cfbl"
