@@ -7,9 +7,9 @@
         "heading": "Rigorous CE for the Practicing Clinician.",
         "subheading": "Live workshops, on-demand courses, and clinical consultation. Taught by a practicing psychologist who carries a caseload.",
         "cta_primary_label": "View Trainings",
-        "cta_primary_url": "/collections/trainings",
+        "cta_primary_url": "/pages/professional-clinical-trainings",
         "cta_secondary_label": "CE Information",
-        "cta_secondary_url": "/pages/ce-information",
+        "cta_secondary_url": "/pages/courses-certification",
         "image": "",
         "brand": "institute"
       }
@@ -96,7 +96,7 @@
         "cta_primary_label": "Contact the Institute",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "View CE Information",
-        "cta_secondary_url": "/pages/ce-information",
+        "cta_secondary_url": "/pages/courses-certification",
         "footnote": "",
         "brand": "institute"
       }

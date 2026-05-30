@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-brand",
+      "settings": {
+        "eyebrow": "Center for Balanced Living · Our Team",
+        "heading": "Meet the clinicians behind the care",
+        "subheading": "Licensed clinicians with advanced training in trauma-based practice. Each member of our team brings a distinct specialty and a shared commitment to attuned, evidence-based care.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Explore Our Services",
+        "cta_secondary_url": "/pages/services",
+        "image": "",
+        "brand": "cfbl"
+      }
+    },
+    "team": {
+      "type": "team-grid",
+      "settings": {
+        "eyebrow": "Our Team",
+        "heading": "Meet Our Team",
+        "brand": "cfbl"
+      },
+      "blocks": {
+        "serravalle": {
+          "type": "member",
+          "settings": {
+            "name": "Dr. Angela (Niki) Serravalle",
+            "credentials": "Psy.D., LPCMH, NCC",
+            "role": "Founder and Licensed Psychologist",
+            "bio_short": "Licensed psychologist, EMDR Certified Therapist and Approved Consultant, and founder of Center for Balanced Living. Specializing in trauma, psychological evaluation, and professional training.",
+            "phone": "",
+            "email": "",
+            "url": "/pages/niki-serravalle",
+            "cta_label": "Read Full Bio"
+          }
+        },
+        "foxwell": {
+          "type": "member",
+          "settings": {
+            "name": "Amanda Foxwell",
+            "credentials": "LAMCH, NCC",
+            "role": "Therapist",
+            "bio_short": "EMDR-trained therapist specializing in trauma and anxiety for teens and adults. Holistic and nature-based approach. Accepting new clients.",
+            "phone": "",
+            "email": "",
+            "url": "/pages/amanda-foxwell",
+            "cta_label": "Read Full Bio"
+          }
+        },
+        "lowe": {
+          "type": "member",
+          "settings": {
+            "name": "Kirsten Lowe",
+            "credentials": "LAMCH, NCC",
+            "role": "Therapist",
+            "bio_short": "Trauma-based therapist specializing in CBT, goal-focused therapy, and accountability. Accepting new clients.",
+            "phone": "",
+            "email": "",
+            "url": "/pages/kirsten-lowe",
+            "cta_label": "Read Full Bio"
+          }
+        }
+      },
+      "block_order": [
+        "serravalle",
+        "foxwell",
+        "lowe"
+      ]
+    },
+    "contact_cta": {
+      "type": "contact-cta",
+      "settings": {
+        "heading": "Find the right fit for your care",
+        "subheading": "Not sure who to start with? A free 15-minute consultation helps us match you with the clinician best suited to your needs.",
+        "cta_primary_label": "Schedule a Consultation",
+        "cta_primary_url": "/pages/contact",
+        "cta_secondary_label": "Send a Message",
+        "cta_secondary_url": "/pages/contact",
+        "footnote": "Townsend, DE · In-person and telehealth · Most insurance accepted",
+        "brand": "cfbl"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "team",
+    "contact_cta"
+  ]
+}

@@ -34,7 +34,7 @@
             "kicker": "Autism Spectrum",
             "title": "Autism Spectrum Evaluation",
             "description": "<p>Comprehensive assessment for children, adolescents, and adults where autism spectrum disorder is a clinical question. Includes ADOS-2, ADI-R (when indicated), cognitive testing, and adaptive functioning measures.</p>",
-            "url": "/pages/autism-evaluation"
+            "url": "/pages/psychological-evaluations"
           }
         },
         "adhd": {
@@ -43,7 +43,7 @@
             "kicker": "Attention and Executive Function",
             "title": "ADHD and Executive Function",
             "description": "<p>Assessment of attention, working memory, processing speed, and executive functioning for children, adolescents, and adults. Supports diagnosis, accommodation requests, and treatment planning.</p>",
-            "url": "/pages/adhd-evaluation"
+            "url": "/pages/psychological-evaluations"
           }
         },
         "academic": {
@@ -52,7 +52,7 @@
             "kicker": "Academic and Learning",
             "title": "Academic and Learning Concerns",
             "description": "<p>Evaluation for learning disabilities, reading disorders, processing differences, and academic underachievement. Commonly requested for IEP, 504 Plan, and college accommodation documentation.</p>",
-            "url": "/pages/academic-and-learning"
+            "url": "/pages/psychological-evaluations"
           }
         },
         "personality": {
@@ -61,7 +61,7 @@
             "kicker": "Personality and Emotional Functioning",
             "title": "Personality and Emotional Functioning",
             "description": "<p>Assessment of personality structure, emotional regulation, relational patterns, and diagnostic questions related to mood, anxiety, trauma, and personality. Often requested when clinical picture is complex or unclear.</p>",
-            "url": "/pages/personality-and-emotional"
+            "url": "/pages/psychological-evaluations"
           }
         },
         "diagnostic": {
@@ -70,7 +70,7 @@
             "kicker": "Diagnostic Clarification",
             "title": "Diagnostic Clarification",
             "description": "<p>Targeted assessment when an existing diagnosis is in question, when multiple diagnoses are present, or when prior testing was inconclusive. Helps refine treatment direction and supports second opinions.</p>",
-            "url": "/pages/diagnostic-clarification"
+            "url": "/pages/psychological-evaluations"
           }
         }
       },

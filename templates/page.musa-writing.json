@@ -7,9 +7,9 @@
         "heading": "Writing on psychology, memory, and being human.",
         "subheading": "Essays, books, and longer-form work by Angela Serravalle.",
         "cta_primary_label": "Read the Essays",
-        "cta_primary_url": "/blogs/essays",
+        "cta_primary_url": "/blogs/balanced-living-blog",
         "cta_secondary_label": "Books",
-        "cta_secondary_url": "/pages/books",
+        "cta_secondary_url": "/pages/musa-writing",
         "image": "",
         "brand": "musa"
       }
@@ -53,9 +53,9 @@
             "description": "<p>A clinician's account of what happens in the space between observation and diagnosis, and what is at stake when a framework becomes a verdict.</p>",
             "publisher": "Pending",
             "year": "Forthcoming",
-            "cover_image": "musa-book-icon.png",
+            "cover_image": "",
             "cta_label": "Learn more",
-            "cta_url": "/pages/the-diagnostic-gaze"
+            "cta_url": "/pages/musa-writing"
           }
         }
       },

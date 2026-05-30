@@ -10,7 +10,7 @@
         "cta_primary_label": "Schedule a Consultation",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "Meet the Team",
-        "cta_secondary_url": "/pages/team"
+        "cta_secondary_url": "/pages/team-introductions"
       }
     },
     "services_overview": {
@@ -36,7 +36,7 @@
             "kicker": "Psychological Evaluations",
             "title": "Psychological Evaluations",
             "description": "<p>Comprehensive evaluations for children, adolescents, and adults. Diagnostic clarity that informs treatment, school supports, and clinical decision-making.</p>",
-            "url": "/pages/evaluations"
+            "url": "/pages/psychological-evaluations"
           }
         },
         "groups": {
@@ -45,7 +45,7 @@
             "kicker": "Wellness Groups",
             "title": "Wellness Groups",
             "description": "<p>Community-grounded groups focused on grief, creative expression, and somatic resourcing. Structured and time-limited, with open enrollment periods.</p>",
-            "url": "/pages/groups"
+            "url": "/pages/wellness-groups"
           }
         }
       },
@@ -58,7 +58,7 @@
         "heading": "Clinically rigorous. Relationally warm.",
         "body": "<p>At Center for Balanced Living, we work from a trauma-based framework, meaning we understand that symptoms, behaviors, and relational patterns are often adaptations to difficult experiences, not character flaws or fixed diagnoses.</p><p>Our clinicians integrate evidence-based modalities including EMDR, Cognitive Behavioral Therapy, somatic approaches, and psychodynamic work, tailored to each client's history, goals, and nervous system.</p>",
         "cta_label": "Meet the Team",
-        "cta_url": "/pages/team",
+        "cta_url": "/pages/team-introductions",
         "image_position": "right"
       }
     },
@@ -82,27 +82,33 @@
           "type": "member",
           "settings": {
             "name": "Dr. Angela (Niki) Serravalle",
-            "title": "Psy.D., LPCMH, NCC",
-            "bio": "Licensed psychologist, EMDR Certified Therapist and Approved Consultant, and founder of Center for Balanced Living. Specializing in trauma, psychological evaluation, and professional training.",
-            "url": "/pages/team"
+            "credentials": "Psy.D., LPCMH, NCC",
+            "role": "Founder and Licensed Psychologist",
+            "bio_short": "Licensed psychologist, EMDR Certified Therapist and Approved Consultant, and founder of Center for Balanced Living. Specializing in trauma, psychological evaluation, and professional training.",
+            "url": "/pages/niki-serravalle",
+            "cta_label": "Read Full Bio"
           }
         },
         "foxwell": {
           "type": "member",
           "settings": {
             "name": "Amanda Foxwell",
-            "title": "LAMCH, NCC",
-            "bio": "EMDR-trained therapist specializing in trauma and anxiety for teens and adults. Holistic and nature-based approach. Accepting new clients.",
-            "url": "/pages/team"
+            "credentials": "LAMCH, NCC",
+            "role": "Therapist",
+            "bio_short": "EMDR-trained therapist specializing in trauma and anxiety for teens and adults. Holistic and nature-based approach. Accepting new clients.",
+            "url": "/pages/amanda-foxwell",
+            "cta_label": "Read Full Bio"
           }
         },
         "lowe": {
           "type": "member",
           "settings": {
             "name": "Kirsten Lowe",
-            "title": "LAMCH, NCC",
-            "bio": "Trauma-based therapist specializing in CBT, goal-focused therapy, and accountability. Accepting new clients.",
-            "url": "/pages/team"
+            "credentials": "LAMCH, NCC",
+            "role": "Therapist",
+            "bio_short": "Trauma-based therapist specializing in CBT, goal-focused therapy, and accountability. Accepting new clients.",
+            "url": "/pages/kirsten-lowe",
+            "cta_label": "Read Full Bio"
           }
         }
       },

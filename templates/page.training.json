@@ -7,9 +7,9 @@
         "heading": "",
         "subheading": "",
         "cta_primary_label": "Register",
-        "cta_primary_url": "#register",
+        "cta_primary_url": "/pages/professional-clinical-trainings",
         "cta_secondary_label": "View CE Information",
-        "cta_secondary_url": "/pages/ce-information",
+        "cta_secondary_url": "/pages/courses-certification",
         "image": "",
         "brand": "institute"
       }
@@ -33,7 +33,7 @@
         "image": "",
         "image_position": "left",
         "cta_label": "Full faculty bio",
-        "cta_url": "/pages/faculty",
+        "cta_url": "/pages/team-introductions",
         "brand": "institute"
       }
     },
@@ -89,7 +89,7 @@
         "cta_primary_label": "Contact the Institute",
         "cta_primary_url": "/pages/contact",
         "cta_secondary_label": "View All Trainings",
-        "cta_secondary_url": "/collections/trainings",
+        "cta_secondary_url": "/pages/professional-clinical-trainings",
         "footnote": "",
         "brand": "institute"
       }
